@@ -1,0 +1,10 @@
+203.0.113.171 - - [2026-11-01 08:00:00] "GET /patients?email=gabi.teste55@example.com HTTP/1.1" 200
+198.51.100.21 - - [2026-11-02 09:07:13] "GET /patients?email=heitor.simulado93@example.com HTTP/1.1" 200
+198.51.100.238 - - [2026-11-03 10:14:26] "GET /patients?email=elisa.teste3@example.com HTTP/1.1" 200
+198.51.100.215 - - [2026-11-04 11:21:39] "GET /patients?email=bruno.simulado21@example.com HTTP/1.1" 200
+192.0.2.51 - - [2026-11-05 12:28:52] "GET /patients?email=bruno.exemplo50@example.com HTTP/1.1" 200
+198.51.100.248 - - [2026-11-06 13:35:05] "GET /patients?email=felipe.simulado62@example.com HTTP/1.1" 200
+203.0.113.225 - - [2026-11-07 14:42:18] "GET /patients?email=gabi.simulado60@example.com HTTP/1.1" 200
+198.51.100.98 - - [2026-11-08 15:49:31] "GET /patients?email=diego.exemplo75@example.com HTTP/1.1" 200
+203.0.113.174 - - [2026-11-09 16:56:44] "GET /patients?email=carla.amostra41@example.com HTTP/1.1" 200
+203.0.113.39 - - [2026-11-10 17:03:57] "GET /patients?email=felipe.teste97@example.com HTTP/1.1" 200

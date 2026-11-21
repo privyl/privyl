@@ -1,0 +1,14 @@
+2026-11-01T08:00:00Z ERROR payment declined card=5555 5555 5555 4444 ip=198.51.100.102
+2026-11-02T09:07:13Z INFO  order created for carla.exemplo41@example.com from 203.0.113.242
+2026-11-03T10:14:26Z WARN  address lookup failed for CEP 26300-552
+2026-11-04T11:21:39Z DEBUG customer phone (27) 90498-2378 verified
+2026-11-05T12:28:52Z ERROR payment declined card=3782 822463 10005 ip=198.51.100.186
+2026-11-06T13:35:05Z INFO  order created for carla.modelo96@example.com from 203.0.113.176
+2026-11-07T14:42:18Z WARN  address lookup failed for CEP 20311-030
+2026-11-08T15:49:31Z DEBUG customer phone (54) 90778-7871 verified
+2026-11-09T16:56:44Z ERROR payment declined card=4111 1111 1111 1111 ip=198.51.100.53
+2026-11-10T17:03:57Z INFO  order created for carla.ficticio54@example.com from 198.51.100.231
+2026-11-11T18:10:10Z WARN  address lookup failed for CEP 68255-098
+2026-11-12T19:17:23Z DEBUG customer phone (89) 93417-7863 verified
+2026-11-13T08:24:36Z ERROR payment declined card=5555 5555 5555 4444 ip=203.0.113.17
+2026-11-14T09:31:49Z INFO  order created for carla.exemplo41@example.com from 198.51.100.81

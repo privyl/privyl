@@ -1,3 +1,7 @@
-// Privyl core: createShield, mask, unmask and the vault will live here (Phase 1).
-
-export const VERSION = "0.0.0";
+export { createShield } from "./shield.js";
+export type { Candidate, MaskOptions, MaskResult, Shield, ShieldOptions } from "./shield.js";
+export { unmask } from "./unmask.js";
+export { Vault } from "./vault.js";
+export type { VaultData } from "./vault.js";
+export type { Detector, Finding, MatchContext } from "./types.js";
+export { allSameChar, hasContextBefore, onlyDigits } from "./utils.js";

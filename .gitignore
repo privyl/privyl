@@ -22,7 +22,7 @@ coverage/
 # Internal notes (kept private, never published)
 CLAUDE.md
 .claude/
-notes/
+/notes/
 
 # OS / editor
 .DS_Store
@@ -30,3 +30,6 @@ Thumbs.db
 .vscode/
 .idea/
 *.log
+
+# Fictional example logs are part of the demo
+!examples/**/*.log
