@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { notFound } from "next/navigation";
+import { connection } from "next/server";
 import type { ReactNode } from "react";
 import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
@@ -12,7 +13,7 @@ const mono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono" });
 
 type Props = { children: ReactNode; params: Promise<{ lang: string }> };
 
-// Pre-render /en and /pt at build time. Any other language returns 404.
+// Only /en and /pt exist. Any other language returns 404.
 export const generateStaticParams = () => locales.map((lang) => ({ lang }));
 export const dynamicParams = false;
 
@@ -29,6 +30,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function LangLayout({ children, params }: Props) {
+  // Render on each request (not at build time), so Next.js can add the CSP nonce from proxy.ts.
+  await connection();
   const { lang } = await params;
   if (!isLocale(lang)) notFound();
   const t = getDictionary(lang);
