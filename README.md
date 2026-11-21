@@ -38,6 +38,35 @@ const restored = shield.unmask(aiResponse, vault);
 - Privyl makes no network calls. The vault lives in memory unless you save it yourself
   (`vault.toJSON()` / `Vault.fromJSON()`); it contains the real data, so store it carefully.
 
+## Scan a project
+
+See how much personal data a project could send to an AI:
+
+```sh
+npx privyl scan ./my-project
+```
+
+```
+  data/customers.csv
+    2:13     CPF    529.***.***-25
+    2:28     Email  a***@example.com
+
+  Summary
+    CPF       1
+    Email     1
+
+  2 finding(s) in 1 of 4 file(s) scanned.
+```
+
+- Scans `.log .json .jsonl .csv .ts .js .md .env` and `.env.*`. Skips `node_modules`, `.git`,
+  `dist`, binary files and files over 10 MB.
+- Values are always shown partly hidden. Nothing leaves your machine.
+- `--json` prints a machine-readable report for CI.
+- `--fail-on-findings` exits with code 1 when anything is found, so a CI job can block a pull
+  request.
+- `--fix` writes masked copies to `privyl-masked/` (change it with `--out <dir>`). Originals are
+  never changed unless you also pass `--in-place`.
+
 ## What is detected
 
 | Country | Data                 | Notes                                                       |
