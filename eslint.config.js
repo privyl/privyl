@@ -3,10 +3,23 @@ import tseslint from "typescript-eslint";
 import prettier from "eslint-config-prettier";
 
 export default tseslint.config(
-  { ignores: ["**/dist/**", "**/node_modules/**", "**/.next/**", "**/coverage/**"] },
+  {
+    ignores: [
+      "**/dist/**",
+      "**/node_modules/**",
+      "**/.next/**",
+      "**/coverage/**",
+      "examples/*/**", // generated fictional projects
+    ],
+  },
   js.configs.recommended,
   ...tseslint.configs.strict,
   prettier,
+  {
+    // Node scripts (for example examples/generate.mjs).
+    files: ["**/*.mjs"],
+    languageOptions: { globals: { console: "readonly", process: "readonly" } },
+  },
   {
     // The library must run in browsers and edge runtimes: no Node APIs outside the CLI and tests.
     files: ["packages/privyl/src/**/*.ts"],

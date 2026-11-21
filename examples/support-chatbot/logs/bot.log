@@ -1,0 +1,12 @@
+[2026-11-01 08:00:00] session start ip=198.51.100.39 user=gabi.modelo40@example.com
+[2026-11-02 09:07:13] sent to model: "Heitor Teste CPF 923.295.953-44 asked about delivery"
+[2026-11-03 10:14:26] auth ok token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjbGllbnRlLWV4ZW1wbG8ifQ.ZmFrZS1zaWduYXR1cmUtZm9yLWRlbW8
+[2026-11-04 11:21:39] session start ip=198.51.100.29 user=bruno.simulado62@example.com
+[2026-11-05 12:28:52] sent to model: "Ana Exemplo CPF 910.609.474-04 asked about delivery"
+[2026-11-06 13:35:05] auth ok token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjbGllbnRlLWV4ZW1wbG8ifQ.ZmFrZS1zaWduYXR1cmUtZm9yLWRlbW8
+[2026-11-07 14:42:18] session start ip=192.0.2.158 user=carla.modelo12@example.com
+[2026-11-08 15:49:31] sent to model: "Bruno Exemplo CPF 015.503.231-30 asked about delivery"
+[2026-11-09 16:56:44] auth ok token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjbGllbnRlLWV4ZW1wbG8ifQ.ZmFrZS1zaWduYXR1cmUtZm9yLWRlbW8
+[2026-11-10 17:03:57] session start ip=198.51.100.146 user=heitor.teste16@example.com
+[2026-11-11 18:10:10] sent to model: "Bruno Amostra CPF 920.434.122-05 asked about delivery"
+[2026-11-12 19:17:23] auth ok token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJjbGllbnRlLWV4ZW1wbG8ifQ.ZmFrZS1zaWduYXR1cmUtZm9yLWRlbW8
