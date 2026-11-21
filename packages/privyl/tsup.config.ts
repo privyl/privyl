@@ -5,6 +5,7 @@ export default defineConfig({
     "core/index": "src/core/index.ts",
     "global/index": "src/global/index.ts",
     "br/index": "src/br/index.ts",
+    "testing/index": "src/testing/index.ts",
   },
   format: ["esm", "cjs"],
   dts: true,
