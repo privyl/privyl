@@ -5,7 +5,8 @@
 
 import { scanText, summarize, type ScanFinding } from "privyl/scan";
 import { useRef, useState, type DragEvent } from "react";
-import type { Dictionary } from "@/i18n/dictionaries";
+import type { Dictionary, Locale } from "@/i18n/dictionaries";
+import { detectorLabel } from "@/i18n/labels";
 
 const MAX_BYTES = 5 * 1024 * 1024;
 const MAX_LINES_SHOWN = 300;
@@ -19,7 +20,7 @@ interface Result {
   truncated: boolean;
 }
 
-export function DropScan({ t }: { t: Dictionary["drop"] }) {
+export function DropScan({ lang, t }: { lang: Locale; t: Dictionary["drop"] }) {
   const [result, setResult] = useState<Result>();
   const [dragging, setDragging] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -83,11 +84,7 @@ export function DropScan({ t }: { t: Dictionary["drop"] }) {
             strokeLinejoin="round"
           />
         </svg>
-        <button
-          type="button"
-          onClick={() => inputRef.current?.click()}
-          className="rounded-lg bg-white px-4 py-2 text-sm font-medium text-bg transition-opacity hover:opacity-90"
-        >
+        <button type="button" onClick={() => inputRef.current?.click()} className="btn btn-primary">
           {t.cta}
         </button>
         <p className="text-sm text-muted">{t.hint}</p>
@@ -139,7 +136,8 @@ export function DropScan({ t }: { t: Dictionary["drop"] }) {
                       key={row.label}
                       className="rounded-md border border-line px-2 py-0.5 text-xs"
                     >
-                      {row.label} <span className="text-sky tabular-nums">{row.count}</span>
+                      {detectorLabel(row.label, lang)}{" "}
+                      <span className="text-sky tabular-nums">{row.count}</span>
                     </li>
                   ))}
                 </ul>
@@ -147,7 +145,8 @@ export function DropScan({ t }: { t: Dictionary["drop"] }) {
                   {result.findings.slice(0, MAX_LINES_SHOWN).map((f, i) => (
                     <p key={i} className="grid grid-cols-[1fr_auto] gap-3">
                       <span className="truncate text-muted">
-                        {f.file}:{f.line} <span className="text-sky">{f.label}</span>
+                        {f.file}:{f.line}{" "}
+                        <span className="text-sky">{detectorLabel(f.label, lang)}</span>
                       </span>
                       <span className="text-alert">{f.preview}</span>
                     </p>

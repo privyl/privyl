@@ -19,7 +19,7 @@ export default async function PlaygroundPage({ params }: Props) {
     <div className="mx-auto max-w-6xl px-6 pt-16">
       <h1 className="text-4xl font-medium tracking-tight">{t.title}</h1>
       <p className="mt-3 mb-10 text-muted">{t.subtitle}</p>
-      <Playground t={t} />
+      <Playground lang={lang} t={t} />
     </div>
   );
 }

@@ -1,14 +1,16 @@
-import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CopyCommand } from "@/components/CopyCommand";
 import { DropScan } from "@/components/DropScan";
 import { HeroDemo } from "@/components/HeroDemo";
 import { Reveal } from "@/components/Reveal";
+import { ButtonLink } from "@/components/ui";
 import { ScanDemo } from "@/components/ScanDemo";
 import {
   Anywhere,
   BeforeAfter,
   Coverage,
+  FinalCta,
+  Heading,
   heroParts,
   HowItWorks,
   Section,
@@ -31,7 +33,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
         <div aria-hidden="true" className="hero-grid pointer-events-none absolute inset-0 -z-10" />
 
         <div className="mx-auto max-w-4xl px-6 text-center motion-safe:animate-fade-up">
-          <p className="mx-auto inline-flex items-center gap-2 rounded-full border border-line-strong bg-surface/50 px-4 py-1.5 text-sm text-muted backdrop-blur">
+          <p className="mx-auto inline-flex items-center gap-2 rounded-full border border-line-strong bg-surface/50 px-4 py-1.5 font-mono text-xs tracking-[0.3em] text-fg backdrop-blur">
             <span
               className="size-1.5 rounded-full bg-sky shadow-[0_0_10px] shadow-sky"
               aria-hidden="true"
@@ -56,18 +58,12 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
               copiedLabel={t.hero.copied}
             />
             <div className="flex flex-wrap justify-center gap-3">
-              <Link
-                href={`/${lang}/docs`}
-                className="rounded-lg bg-white px-5 py-2.5 text-sm font-medium text-bg shadow-[0_8px_30px_-10px] shadow-sky/60 transition-all hover:-translate-y-0.5 hover:opacity-95"
-              >
-                {t.hero.getStarted} →
-              </Link>
-              <Link
-                href={`/${lang}/playground`}
-                className="rounded-lg border border-line-strong bg-surface/40 px-5 py-2.5 text-sm backdrop-blur transition-colors hover:border-sky/50"
-              >
+              <ButtonLink href={`/${lang}/docs`} variant="primary">
+                {t.hero.getStarted}
+              </ButtonLink>
+              <ButtonLink href={`/${lang}/playground`} arrow={false}>
                 {t.hero.tryIt}
-              </Link>
+              </ButtonLink>
             </div>
           </div>
 
@@ -83,7 +79,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
 
         {/* Product window rising from the hero */}
         <div className="mx-auto mt-16 max-w-3xl px-6">
-          <HeroDemo parts={heroParts(t.heroDemo.sample)} t={t.heroDemo} />
+          <HeroDemo parts={heroParts(t.heroDemo.sample, lang)} t={t.heroDemo} />
         </div>
       </section>
 
@@ -94,24 +90,23 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
             <p className="mb-3 font-mono text-xs uppercase tracking-[0.2em] text-sky">
               {t.demo.kicker}
             </p>
-            <h2 className="text-3xl font-medium tracking-tight text-balance sm:text-[2.6rem] sm:leading-tight">
-              {t.demo.title}
-            </h2>
+            <Heading title={t.demo.title} center />
             <p className="mt-3 text-lg text-muted text-pretty">{t.demo.subtitle}</p>
           </div>
-          <ScanDemo projects={examples} t={t.demo} />
+          <ScanDemo projects={examples} lang={lang} t={t.demo} />
         </Reveal>
       </section>
 
       <Section id="try" title={t.drop.title} subtitle={t.drop.subtitle}>
-        <DropScan t={t.drop} />
+        <DropScan lang={lang} t={t.drop} />
       </Section>
 
-      <BeforeAfter t={t.beforeAfter} />
-      <HowItWorks t={t.how} />
+      <BeforeAfter lang={lang} t={t.beforeAfter} />
+      <HowItWorks lang={lang} t={t.how} />
       <Anywhere t={t.anywhere} />
-      <Coverage t={t.coverage} />
+      <Coverage lang={lang} t={t.coverage} />
       <Trust lang={lang} t={t.trust} />
+      <FinalCta lang={lang} t={t.cta} copy={t.hero} />
     </>
   );
 }
