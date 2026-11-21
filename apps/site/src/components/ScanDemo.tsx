@@ -5,8 +5,10 @@
 
 import { scanText, type ScanFinding } from "privyl/scan";
 import { useEffect, useMemo, useRef, useState } from "react";
-import type { Dictionary } from "@/i18n/dictionaries";
+import type { Dictionary, Locale } from "@/i18n/dictionaries";
+import { detectorLabel } from "@/i18n/labels";
 import type { ExampleProject } from "@/lib/server";
+import { RefreshIcon } from "./ui";
 import { Window } from "./Window";
 
 type Line =
@@ -17,7 +19,15 @@ type Line =
 
 const LINE_DELAY_MS = 16;
 
-export function ScanDemo({ projects, t }: { projects: ExampleProject[]; t: Dictionary["demo"] }) {
+export function ScanDemo({
+  projects,
+  lang,
+  t,
+}: {
+  projects: ExampleProject[];
+  lang: Locale;
+  t: Dictionary["demo"];
+}) {
   const [active, setActive] = useState(projects[0]?.id ?? "");
   const [visible, setVisible] = useState(0);
   const [run, setRun] = useState(0);
@@ -49,9 +59,12 @@ export function ScanDemo({ projects, t }: { projects: ExampleProject[]; t: Dicti
       for (const finding of file.findings) out.push({ kind: "finding", finding });
       total += file.findings.length;
     }
-    out.push({ kind: "summary", text: `${total} finding(s) in ${current.files.length} file(s)` });
+    out.push({
+      kind: "summary",
+      text: `${total} ${t.found} · ${current.files.length} ${t.files.toLowerCase()}`,
+    });
     return out;
-  }, [current]);
+  }, [current, t.found, t.files]);
 
   // Start only when the demo is on screen, so visitors actually see it run.
   useEffect(() => {
@@ -105,26 +118,23 @@ export function ScanDemo({ projects, t }: { projects: ExampleProject[]; t: Dicti
 
   return (
     <div ref={rootRef}>
-      <div role="tablist" aria-label={t.files} className="mb-4 flex flex-wrap justify-center gap-2">
-        {projects.map((p) => (
-          <button
-            key={p.id}
-            type="button"
-            role="tab"
-            aria-selected={p.id === active}
-            onClick={() => {
-              setActive(p.id);
-              setInView(true);
-            }}
-            className={`rounded-full border px-4 py-1.5 text-sm transition-colors ${
-              p.id === active
-                ? "border-sky/60 bg-sky/10 text-fg"
-                : "border-line text-muted hover:border-line-strong hover:text-fg"
-            }`}
-          >
-            {t.projects[p.id] ?? p.id}
-          </button>
-        ))}
+      <div className="mb-5 flex justify-center">
+        <div role="tablist" aria-label={t.files} className="segmented flex-wrap justify-center">
+          {projects.map((p) => (
+            <button
+              key={p.id}
+              type="button"
+              role="tab"
+              aria-selected={p.id === active}
+              onClick={() => {
+                setActive(p.id);
+                setInView(true);
+              }}
+            >
+              {t.projects[p.id] ?? p.id}
+            </button>
+          ))}
+        </div>
       </div>
 
       <Window
@@ -134,9 +144,10 @@ export function ScanDemo({ projects, t }: { projects: ExampleProject[]; t: Dicti
             type="button"
             onClick={() => setRun((r) => r + 1)}
             disabled={!done}
-            className="rounded-md px-2 py-0.5 text-xs text-muted transition-colors hover:text-fg disabled:opacity-40"
+            className="inline-flex items-center gap-1.5 rounded-md border border-line px-2 py-0.5 text-xs text-muted transition-colors hover:border-sky/40 hover:text-fg disabled:opacity-40"
           >
-            ↻ {t.replay}
+            <RefreshIcon className="size-3" />
+            {t.replay}
           </button>
         }
       >
@@ -171,7 +182,7 @@ export function ScanDemo({ projects, t }: { projects: ExampleProject[]; t: Dicti
             aria-live="off"
           >
             {shown.map((line, i) => (
-              <TerminalLine key={i} line={line} />
+              <TerminalLine key={i} line={line} lang={lang} />
             ))}
             {!done && <span className="inline-block h-4 w-2 animate-blink bg-sky align-middle" />}
           </div>
@@ -199,7 +210,7 @@ export function ScanDemo({ projects, t }: { projects: ExampleProject[]; t: Dicti
   );
 }
 
-function TerminalLine({ line }: { line: Line }) {
+function TerminalLine({ line, lang }: { line: Line; lang: Locale }) {
   switch (line.kind) {
     case "command":
       return (
@@ -216,7 +227,7 @@ function TerminalLine({ line }: { line: Line }) {
           <span className="text-muted">
             {f.line}:{f.column}
           </span>
-          <span className="truncate text-sky">{f.label}</span>
+          <span className="truncate text-sky">{detectorLabel(f.label, lang)}</span>
           <span className="truncate text-alert">{f.preview}</span>
         </p>
       );

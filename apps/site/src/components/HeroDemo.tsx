@@ -4,6 +4,7 @@
 
 import { useEffect, useState } from "react";
 import type { Dictionary } from "@/i18n/dictionaries";
+import { ShieldIcon } from "./ui";
 import { Window } from "./Window";
 
 export type HeroPart = { text: string } | { value: string; placeholder: string; label: string };
@@ -30,7 +31,7 @@ export function HeroDemo({ parts, t }: { parts: HeroPart[]; t: Dictionary["heroD
 
   return (
     <Window
-      title={t.title}
+      url={t.title}
       className="motion-safe:animate-float"
       actions={
         <span
@@ -78,20 +79,7 @@ export function HeroDemo({ parts, t }: { parts: HeroPart[]; t: Dictionary["heroD
           </div>
         </div>
         <div className="flex items-center gap-3 border-t border-line pt-4 text-xs text-muted">
-          <svg
-            viewBox="0 0 24 24"
-            className="size-4 text-sky"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.8"
-            aria-hidden="true"
-          >
-            <path
-              d="M12 3 4 6v6c0 4.4 3.4 8.2 8 9 4.6-.8 8-4.6 8-9V6l-8-3Z"
-              strokeLinejoin="round"
-            />
-            <path d="m9 12 2 2 4-4" strokeLinecap="round" strokeLinejoin="round" />
-          </svg>
+          <ShieldIcon className="size-4 shrink-0 text-sky" />
           {t.footer}
         </div>
       </div>

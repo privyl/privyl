@@ -33,7 +33,7 @@ export async function Navbar({ lang, t }: { lang: Locale; t: Dictionary["nav"] }
           href={GITHUB_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 rounded-lg border border-line-strong bg-white px-3 py-1.5 text-sm font-medium text-bg transition-opacity hover:opacity-90"
+          className="btn btn-primary btn-sm"
         >
           <GitHubIcon />
           {t.github}

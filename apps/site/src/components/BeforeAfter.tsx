@@ -30,7 +30,7 @@ export function BeforeAfterTabs({
 
   return (
     <div>
-      <div role="tablist" className="mb-4 flex flex-wrap gap-2">
+      <div role="tablist" className="segmented mb-5 flex-wrap">
         {scenarios.map((s) => (
           <button
             key={s.id}
@@ -38,17 +38,28 @@ export function BeforeAfterTabs({
             role="tab"
             aria-selected={s.id === current.id}
             onClick={() => setActive(s.id)}
-            className={`rounded-full border px-4 py-1.5 text-sm transition-colors ${
-              s.id === current.id
-                ? "border-sky/50 bg-sky/10 text-fg"
-                : "border-line text-muted hover:border-line-strong hover:text-fg"
-            }`}
           >
             {s.label}
           </button>
         ))}
       </div>
-      <div className="grid gap-4 md:grid-cols-2">
+      <div className="relative grid gap-4 md:grid-cols-2">
+        {/* Arrow between the two panels (desktop) */}
+        <span
+          aria-hidden="true"
+          className="absolute top-1/2 left-1/2 z-10 hidden size-9 -translate-x-1/2 -translate-y-1/2 place-items-center rounded-full border border-line-strong bg-elevated text-sky shadow-lg shadow-black/40 md:grid"
+        >
+          <svg viewBox="0 0 16 16" className="size-4">
+            <path
+              d="M3 8h9.5M8.5 4l4 4-4 4"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.8"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </span>
         <Panel label={before} tone="alert" badge={`${current.count} ${foundLabel}`}>
           <Highlighted segments={current.raw} tone="alert" />
         </Panel>

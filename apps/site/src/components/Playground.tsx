@@ -6,16 +6,17 @@ import { createShield, type Detector } from "privyl";
 import { br } from "privyl/br";
 import { global } from "privyl/global";
 import { useMemo, useState } from "react";
-import type { Dictionary } from "@/i18n/dictionaries";
+import type { Dictionary, Locale } from "@/i18n/dictionaries";
+import { localizeSegments } from "@/i18n/labels";
 import { maskedSegments } from "@/lib/highlight";
 import { Highlighted } from "./Highlighted";
 
-const GROUPS: { id: string; label: string; detectors: readonly Detector[] }[] = [
-  { id: "global", label: "🌐 Global", detectors: global },
-  { id: "br", label: "🇧🇷 Brasil", detectors: br },
+const GROUPS: { id: string; label: Record<Locale, string>; detectors: readonly Detector[] }[] = [
+  { id: "global", label: { en: "🌐 Global", pt: "🌐 Global" }, detectors: global },
+  { id: "br", label: { en: "🇧🇷 Brazil", pt: "🇧🇷 Brasil" }, detectors: br },
 ];
 
-export function Playground({ t }: { t: Dictionary["playground"] }) {
+export function Playground({ lang, t }: { lang: Locale; t: Dictionary["playground"] }) {
   const [input, setInput] = useState(t.sample);
   const [response, setResponse] = useState(t.response1);
   const [enabled, setEnabled] = useState<Record<string, boolean>>({ global: true, br: true });
@@ -44,7 +45,7 @@ export function Playground({ t }: { t: Dictionary["playground"] }) {
               onChange={(e) => setEnabled((s) => ({ ...s, [g.id]: e.target.checked }))}
               className="size-4 accent-[#639cc5]"
             />
-            {g.label}
+            {g.label[lang]}
           </label>
         ))}
         <span className="ml-auto inline-flex items-center gap-2 text-xs text-muted">
@@ -70,7 +71,10 @@ export function Playground({ t }: { t: Dictionary["playground"] }) {
         <div className={box}>
           <p className={label}>{t.masked}</p>
           <p className="font-mono text-sm leading-relaxed whitespace-pre-wrap" aria-live="polite">
-            <Highlighted segments={maskedSegments(text, findings, input)} tone="sky" />
+            <Highlighted
+              segments={localizeSegments(maskedSegments(text, findings, input), lang)}
+              tone="sky"
+            />
           </p>
         </div>
       </div>

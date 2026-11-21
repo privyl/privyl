@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { CheckIcon, CopyIcon } from "./ui";
 
 /** An install command with a copy button. */
 export function CopyCommand({
@@ -25,7 +26,7 @@ export function CopyCommand({
   };
 
   return (
-    <div className="inline-flex items-center gap-3 rounded-xl border border-line-strong bg-surface/80 py-1.5 pr-1.5 pl-4 font-mono text-sm">
+    <div className="inline-flex items-center gap-3 rounded-xl border border-line-strong bg-surface/80 py-1.5 pr-1.5 pl-4 font-mono text-sm shadow-[inset_0_1px_0] shadow-white/5 backdrop-blur">
       <span className="select-all">
         <span className="text-muted select-none">$ </span>
         {command}
@@ -34,9 +35,14 @@ export function CopyCommand({
         type="button"
         onClick={copy}
         aria-label={`${copyLabel}: ${command}`}
-        className="rounded-lg border border-line px-2.5 py-1 text-xs text-muted transition-colors hover:border-sky/50 hover:text-fg"
+        className={`inline-flex items-center gap-1.5 rounded-lg border px-2.5 py-1 font-sans text-xs transition-colors ${
+          copied
+            ? "border-sky/40 bg-sky/10 text-sky"
+            : "border-line text-muted hover:border-sky/50 hover:text-fg"
+        }`}
       >
-        <span aria-live="polite">{copied ? `✓ ${copiedLabel}` : copyLabel}</span>
+        {copied ? <CheckIcon className="size-3.5" /> : <CopyIcon />}
+        <span aria-live="polite">{copied ? copiedLabel : copyLabel}</span>
       </button>
     </div>
   );
