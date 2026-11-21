@@ -1,4 +1,8 @@
 {
   "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    // Node types are needed by the CLI and tests. ESLint blocks Node APIs everywhere else.
+    "types": ["node"]
+  },
   "include": ["src"]
 }

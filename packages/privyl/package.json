@@ -23,6 +23,9 @@
     "anonymization"
   ],
   "type": "module",
+  "bin": {
+    "privyl": "./dist/cli/index.js"
+  },
   "sideEffects": false,
   "files": [
     "dist"
@@ -42,6 +45,10 @@
     "./br": {
       "import": "./dist/br/index.js",
       "require": "./dist/br/index.cjs"
+    },
+    "./scan": {
+      "import": "./dist/scan/index.js",
+      "require": "./dist/scan/index.cjs"
     },
     "./testing": {
       "import": "./dist/testing/index.js",
