@@ -12,7 +12,7 @@ export async function Navbar({ lang, t }: { lang: Locale; t: Dictionary["nav"] }
     <header className="sticky top-3 z-50 px-4">
       <nav
         aria-label={t.menu}
-        className="mx-auto flex max-w-5xl items-center gap-2 rounded-2xl border border-line bg-bg/70 px-3 py-2 backdrop-blur-xl"
+        className="mx-auto flex max-w-5xl items-center gap-2 rounded-2xl border border-line-strong bg-surface/70 px-3 py-2 shadow-lg shadow-black/20 backdrop-blur-xl"
       >
         <Link href={`/${lang}`} className="mr-auto rounded-md px-2 py-1 text-fg">
           <Logo />
@@ -28,9 +28,11 @@ export async function Navbar({ lang, t }: { lang: Locale; t: Dictionary["nav"] }
             {t.benchmark}
           </Link>
         </div>
-        <LanguageSwitch lang={lang} label={t.language} ariaLabel={t.languageLabel} />
+        <LanguageSwitch lang={lang} groupLabel={t.languageGroup} />
         <a
           href={GITHUB_URL}
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex items-center gap-2 rounded-lg border border-line-strong bg-white px-3 py-1.5 text-sm font-medium text-bg transition-opacity hover:opacity-90"
         >
           <GitHubIcon />

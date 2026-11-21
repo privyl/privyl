@@ -28,7 +28,7 @@ export function Playground({ t }: { t: Dictionary["playground"] }) {
   const { text, vault, findings } = useMemo(() => shield.mask(input), [shield, input]);
   const restored = useMemo(() => shield.unmask(response, vault), [shield, response, vault]);
 
-  const box = "rounded-xl border border-line bg-surface p-4";
+  const box = "card p-5";
   const label = "mb-2 block text-xs uppercase tracking-wider text-muted";
 
   return (
