@@ -1,0 +1,239 @@
+// Documentation content. Code samples are shared; prose is translated.
+
+import type { Locale } from "./dictionaries";
+
+export interface DocSection {
+  id: string;
+  title: string;
+  /** Paragraphs. `inline code` in backticks is rendered as code. */
+  body: string[];
+  code?: string;
+}
+
+const code = {
+  install: `npm install privyl
+# or: pnpm add privyl · yarn add privyl · bun add privyl`,
+  quickStart: `import { createShield } from "privyl";
+import { br } from "privyl/br";
+import { global } from "privyl/global";
+
+const shield = createShield({ detectors: [...global, ...br] });
+
+const { text, vault, findings } = shield.mask(
+  "Cliente CPF 529.982.247-25, email joao@example.com",
+);
+// text → "Cliente CPF [CPF_1], email [EMAIL_1]"
+
+const answer = await askYourAI(text); // Claude, GPT, Gemini, a local model...
+const restored = shield.unmask(answer, vault);`,
+  conversation: `import { Vault } from "privyl";
+
+const vault = new Vault();
+shield.mask("Meu CPF é 529.982.247-25", { vault }).text;
+// → "Meu CPF é [CPF_1]"
+shield.mask("Confirma o CPF 529.982.247-25?", { vault }).text;
+// → "Confirma o CPF [CPF_1]?"  (same placeholder)
+
+// Save it yourself if you need to (it contains the real data):
+const saved = JSON.stringify(vault);
+const again = Vault.fromJSON(JSON.parse(saved));`,
+  unmask: `shield.unmask("Done, [cpf_1]! Sent to [EMAIL 1].", vault);
+// → "Done, 529.982.247-25! Sent to joao@example.com."
+// Also accepted: [CPF-1], [ CPF_1 ], [CPF\\_1], CPF_1`,
+  findings: `[
+  {
+    type: "br.cpf",
+    label: "CPF",
+    country: "br",
+    start: 12,
+    end: 26,
+    confidence: 0.99,
+    placeholder: "[CPF_1]"
+  }
+]`,
+  cli: `npx privyl scan ./my-project            # pretty report
+npx privyl scan ./logs --json            # JSON for CI
+npx privyl scan . --fail-on-findings     # exit code 1 if anything is found
+npx privyl scan . --fix                  # masked copies in ./privyl-masked
+npx privyl scan . --fix --out safe       # ...or another folder
+npx privyl scan . --fix --in-place       # overwrite originals (careful!)`,
+  detector: `import type { Detector } from "privyl";
+import { hasContextBefore } from "privyl";
+
+const employeeId: Detector = {
+  id: "acme.employee-id",
+  label: "Employee ID",
+  token: "EMPLOYEE",          // → [EMPLOYEE_1]
+  country: "global",
+  pattern: /\\bEMP-\\d{6}\\b/,
+  validate: (value, { text, start }) => hasContextBefore(text, start, /employee/i),
+  confidence: 0.9,
+};
+
+const shield = createShield({ detectors: [...global, ...br, employeeId] });`,
+  testing: `import { createFaker } from "privyl/testing";
+
+const faker = createFaker(42); // same seed, same values
+faker.cpf();     // valid check digits, linked to nobody
+faker.cnpj({ alphanumeric: true });
+faker.email();   // always @example.com
+faker.card();    // public test card numbers only`,
+};
+
+const en: DocSection[] = [
+  {
+    id: "install",
+    title: "Install",
+    body: [
+      "Privyl has no runtime dependencies and works in Node, Bun, Deno, browsers and edge runtimes.",
+    ],
+    code: code.install,
+  },
+  {
+    id: "quick-start",
+    title: "Quick start",
+    body: [
+      "Create a shield with the detectors you want, mask the text before sending it to the AI, and unmask the answer.",
+    ],
+    code: code.quickStart,
+  },
+  {
+    id: "conversations",
+    title: "Conversations and the vault",
+    body: [
+      "The vault maps placeholders to real values. Reuse the same vault across a conversation so the same value always gets the same placeholder.",
+      "The vault lives in memory. Privyl never sends it anywhere and never writes it to disk. If you store it, remember it contains the real data.",
+    ],
+    code: code.conversation,
+  },
+  {
+    id: "unmask",
+    title: "Unmasking AI answers",
+    body: [
+      "Models sometimes change placeholders a little. `unmask` accepts common variations and leaves unknown placeholders untouched.",
+    ],
+    code: code.unmask,
+  },
+  {
+    id: "findings",
+    title: "Findings (safe to log)",
+    body: [
+      "`mask` also returns `findings`: type, position and confidence of each detection. They never contain the real value.",
+    ],
+    code: code.findings,
+  },
+  {
+    id: "cli",
+    title: "CLI: privyl scan",
+    body: [
+      "Scan a folder to see how much personal data it could send to an AI. Values are always shown partly hidden.",
+      "Scanned: `.log .json .jsonl .csv .ts .js .md .env` and `.env.*`. Skipped: `node_modules`, `.git`, `dist`, binary files and files over 10 MB.",
+    ],
+    code: code.cli,
+  },
+  {
+    id: "custom-detectors",
+    title: "Custom detectors",
+    body: [
+      "A detector is a plain object: a regular expression to find candidates, an optional `validate` (check digits, context words) and a `confidence` used to resolve overlaps.",
+      "To add a whole country, see CONTRIBUTING.md on GitHub.",
+    ],
+    code: code.detector,
+  },
+  {
+    id: "testing",
+    title: "Fake test data",
+    body: [
+      "Never use real personal data in tests. `privyl/testing` generates format-valid fake data.",
+    ],
+    code: code.testing,
+  },
+  {
+    id: "limits",
+    title: "Limitations",
+    body: [
+      "Privyl reduces the risk of sending personal data to AI. It does not guarantee that everything is detected, and it does not make you compliant with LGPD or GDPR by itself.",
+      "Not detected yet: names, street addresses, dates of birth, RG, data inside images or PDFs, and encoded data (base64, URL encoding).",
+      "Check digits make false positives rare, but a random number can still match by chance (about 1 in 100 for CPF). Ambiguous formats need nearby context words.",
+    ],
+  },
+];
+
+const pt: DocSection[] = [
+  {
+    id: "install",
+    title: "Instalação",
+    body: ["O Privyl não tem dependências e funciona em Node, Bun, Deno, navegadores e edge."],
+    code: code.install,
+  },
+  {
+    id: "quick-start",
+    title: "Começo rápido",
+    body: [
+      "Crie um escudo com os detectores que quiser, mascare o texto antes de enviar para a IA e restaure a resposta.",
+    ],
+    code: code.quickStart,
+  },
+  {
+    id: "conversations",
+    title: "Conversas e o vault",
+    body: [
+      "O vault liga cada substituto ao valor real. Reaproveite o mesmo vault durante a conversa para que o mesmo valor receba sempre o mesmo substituto.",
+      "O vault fica na memória. O Privyl nunca envia nem grava o vault. Se você salvar, lembre que ele contém os dados reais.",
+    ],
+    code: code.conversation,
+  },
+  {
+    id: "unmask",
+    title: "Restaurando respostas da IA",
+    body: [
+      "Às vezes o modelo muda um pouco o substituto. O `unmask` aceita as variações comuns e não mexe em substitutos desconhecidos.",
+    ],
+    code: code.unmask,
+  },
+  {
+    id: "findings",
+    title: "Findings (seguros para log)",
+    body: [
+      "O `mask` também devolve `findings`: tipo, posição e confiança de cada detecção. Eles nunca contêm o valor real.",
+    ],
+    code: code.findings,
+  },
+  {
+    id: "cli",
+    title: "CLI: privyl scan",
+    body: [
+      "Analise uma pasta para ver quantos dados pessoais ela poderia enviar para a IA. Os valores sempre aparecem parcialmente ocultos.",
+      "Analisa: `.log .json .jsonl .csv .ts .js .md .env` e `.env.*`. Ignora: `node_modules`, `.git`, `dist`, binários e arquivos acima de 10 MB.",
+    ],
+    code: code.cli,
+  },
+  {
+    id: "custom-detectors",
+    title: "Detectores próprios",
+    body: [
+      "Um detector é um objeto simples: uma expressão regular para achar candidatos, um `validate` opcional (dígito verificador, palavras de contexto) e uma `confidence` usada nas sobreposições.",
+      "Para adicionar um país inteiro, veja o CONTRIBUTING.md no GitHub.",
+    ],
+    code: code.detector,
+  },
+  {
+    id: "testing",
+    title: "Dados falsos para testes",
+    body: [
+      "Nunca use dados pessoais reais em testes. O `privyl/testing` gera dados falsos com formato válido.",
+    ],
+    code: code.testing,
+  },
+  {
+    id: "limits",
+    title: "Limitações",
+    body: [
+      "O Privyl reduz o risco de enviar dados pessoais para a IA. Ele não garante que tudo seja detectado e, sozinho, não torna ninguém adequado à LGPD ou ao GDPR.",
+      "Ainda não detectado: nomes, endereços, datas de nascimento, RG, dados dentro de imagens ou PDFs e dados codificados (base64, URL encoding).",
+      "O dígito verificador torna falsos positivos raros, mas um número aleatório ainda pode coincidir (cerca de 1 em 100 para CPF). Formatos ambíguos precisam de palavras de contexto por perto.",
+    ],
+  },
+];
+
+export const getDocs = (lang: Locale): DocSection[] => (lang === "pt" ? pt : en);
