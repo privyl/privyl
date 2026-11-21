@@ -1,0 +1,52 @@
+{
+  "name": "privyl",
+  "version": "0.0.0",
+  "description": "Privyl — privacy layer for AI. Mask personal data before it reaches any LLM, restore it after.",
+  "license": "MIT",
+  "author": "Nycolas Inowe",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/privyl/privyl.git",
+    "directory": "packages/privyl"
+  },
+  "homepage": "https://github.com/privyl/privyl#readme",
+  "bugs": "https://github.com/privyl/privyl/issues",
+  "keywords": [
+    "pii",
+    "privacy",
+    "llm",
+    "ai",
+    "redaction",
+    "data-masking",
+    "lgpd",
+    "gdpr",
+    "anonymization"
+  ],
+  "type": "module",
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/core/index.cjs",
+  "module": "./dist/core/index.js",
+  "types": "./dist/core/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/core/index.js",
+      "require": "./dist/core/index.cjs"
+    },
+    "./global": {
+      "import": "./dist/global/index.js",
+      "require": "./dist/global/index.cjs"
+    },
+    "./br": {
+      "import": "./dist/br/index.js",
+      "require": "./dist/br/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit"
+  }
+}
