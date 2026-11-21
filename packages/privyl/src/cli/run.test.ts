@@ -102,6 +102,13 @@ describe("privyl scan", () => {
     expect(readFileSync(join(dir, ".env.example"), "utf8")).toBe("DB_PASSWORD=[SECRET_1]\n");
   });
 
+  it("--fail-on-findings exits with 1 only when something is found", () => {
+    expect(cli("scan", ".", "--fail-on-findings").code).toBe(1);
+    expect(cli("scan", ".", "--json", "--fail-on-findings").code).toBe(1);
+    expect(cli("scan", "clean.md", "--fail-on-findings").code).toBe(0);
+    expect(cli("scan", ".").code).toBe(0); // default: never fails
+  });
+
   it("rejects bad usage", () => {
     expect(cli("scan", "--in-place").code).toBe(2);
     expect(cli("scan", "--nope").code).toBe(2);

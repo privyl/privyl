@@ -20,6 +20,8 @@ Options:
   --fix         Write masked copies of files with findings to --out
   --out <dir>   Output folder for --fix (default: ${DEFAULT_OUT})
   --in-place    With --fix, overwrite the original files instead (careful!)
+  --fail-on-findings
+                Exit with code 1 if anything is found (to block a CI build)
   -h, --help    Show this help
 
 Scanned files: ${[...TEXT_EXTENSIONS].join(" ")} and .env.*
@@ -38,6 +40,7 @@ interface Options {
   fix: boolean;
   out: string;
   inPlace: boolean;
+  failOnFindings: boolean;
 }
 
 /** Runs the CLI and returns the exit code. */
@@ -102,17 +105,25 @@ export function run(argv: readonly string[], io: Io): number {
   } else {
     io.out(formatReport(findings, summary, scanned, written, io.color));
   }
-  return 0;
+  return options.failOnFindings && findings.length > 0 ? 1 : 0;
 }
 
 function parseOptions(args: string[]): Options {
-  const options: Options = { path: ".", json: false, fix: false, out: DEFAULT_OUT, inPlace: false };
+  const options: Options = {
+    path: ".",
+    json: false,
+    fix: false,
+    out: DEFAULT_OUT,
+    inPlace: false,
+    failOnFindings: false,
+  };
   let pathSet = false;
   for (let i = 0; i < args.length; i++) {
     const arg = args[i] as string;
     if (arg === "--json") options.json = true;
     else if (arg === "--fix") options.fix = true;
     else if (arg === "--in-place") options.inPlace = true;
+    else if (arg === "--fail-on-findings") options.failOnFindings = true;
     else if (arg === "--out") {
       const value = args[++i];
       if (!value) throw new Error("--out needs a folder name");

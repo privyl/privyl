@@ -62,6 +62,8 @@ npx privyl scan ./my-project
   `dist`, binary files and files over 10 MB.
 - Values are always shown partly hidden. Nothing leaves your machine.
 - `--json` prints a machine-readable report for CI.
+- `--fail-on-findings` exits with code 1 when anything is found, so a CI job can block a pull
+  request.
 - `--fix` writes masked copies to `privyl-masked/` (change it with `--out <dir>`). Originals are
   never changed unless you also pass `--in-place`.
 
