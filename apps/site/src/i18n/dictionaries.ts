@@ -11,7 +11,7 @@ const en = {
   meta: {
     title: "Privyl — Use any AI. Keep your data private.",
     description:
-      "Open-source privacy layer for AI. Mask personal data before it reaches any LLM, restore it after. Great with Brazilian documents.",
+      "Open-source privacy layer for AI. Masks personal data before it reaches any model and restores it in the answer. Runs on your machine. Built for Brazilian documents.",
   },
   nav: {
     docs: "Docs",
@@ -19,8 +19,7 @@ const en = {
     benchmark: "Benchmark",
     github: "GitHub",
     stars: "stars on GitHub",
-    language: "Português",
-    languageLabel: "Ler em português",
+    languageGroup: "Language",
     skip: "Skip to content",
     menu: "Main navigation",
   },
@@ -29,18 +28,27 @@ const en = {
     title1: "Use any AI.",
     title2: "Keep your data private.",
     subtitle:
-      "Privyl masks personal data before your text reaches Claude, GPT, Gemini or any model, and puts it back in the answer. Everything runs on your machine.",
+      "Privyl swaps personal data for placeholders before your text reaches Claude, ChatGPT, Gemini or any model — and puts the real values back in the answer. Nothing leaves your machine.",
     copy: "Copy",
     copied: "Copied",
     getStarted: "Get started",
-    github: "GitHub",
+    tryIt: "Try the playground",
     facts: ["3 lines of code", "No network calls", "Built for Brazilian documents"],
+  },
+  heroDemo: {
+    title: "chat → AI",
+    you: "You",
+    exposed: "exposed",
+    safe: "0 exposed",
+    footer: "The AI only sees placeholders. The real values stay in the vault, on your machine.",
+    sample:
+      "Hi! I'm Ana, CPF 529.982.247-25. My card 4111 1111 1111 1111 was declined — call me at (11) 98765-4321 or write to ana@example.com.",
   },
   demo: {
     kicker: "Live demo",
     title: "How much personal data is your project sending to AI?",
     subtitle:
-      "This is the real Privyl library scanning three fictional projects, right here in your browser.",
+      "This is the real Privyl library scanning three fictional projects — running right now, inside your browser.",
     projects: {
       "online-store": "Online store",
       "support-chatbot": "Support chatbot",
@@ -51,7 +59,7 @@ const en = {
     replay: "Run again",
     notice: "All data is fictional. Nothing is sent to a server.",
     totals: {
-      total: "Total findings",
+      total: "Total found",
       cpf: "CPFs",
       email: "Emails",
       card: "Cards",
@@ -59,41 +67,58 @@ const en = {
     },
   },
   drop: {
-    title: "Try it with your own files",
+    title: "Now try it with your own files",
     subtitle:
-      "Drop text files here. They are read and scanned by your browser: nothing is uploaded.",
+      "Drop text files below. Your browser reads and scans them — there is no upload, and the page is not allowed to connect to other sites.",
     cta: "Choose files",
     hint: "or drag and drop .log .json .csv .md .txt .env…",
     privacy: "Processed locally · no upload",
     results: "Results",
+    empty: "Your results will appear here.",
     none: "No personal data found.",
     skipped: "skipped (binary or larger than 5 MB)",
+    tooMany: "Only the first 25 files were scanned.",
     clear: "Clear",
     inFiles: "in",
     files: "file(s)",
   },
   beforeAfter: {
     title: "Before and after",
-    subtitle: "What the AI would see, and what it sees with Privyl.",
+    subtitle:
+      "What the AI would receive, and what it receives with Privyl. Real output of the library.",
     before: "Without Privyl",
     after: "With Privyl",
-    sample:
-      "Hi, I'm Ana. My CPF is 529.982.247-25 and my card 4111 1111 1111 1111 was declined. Call me at +55 11 98765-4321 or ana@example.com.",
+    found: "exposed",
+    scenarios: {
+      chat: {
+        label: "Support chat",
+        text: "Hi, I'm Ana. My CPF is 529.982.247-25 and my card 4111 1111 1111 1111 was declined. Call me at +55 11 98765-4321 or ana@example.com.",
+      },
+      log: {
+        label: "Server log",
+        text: "2026-11-21T14:02:11Z ERROR payment declined user=bruno@example.com cpf=11144477735 ip=203.0.113.42 card=5555 5555 5555 4444",
+      },
+      code: {
+        label: "Code & .env",
+        text: 'const customer = { cnpj: "11.222.333/0001-81", "pix": "3f2b9a4e-1c7d-4e8a-9b6f-2d4c8e1a7b3c" };\nDB_PASSWORD=s3cr3tPass99\nAWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE',
+      },
+    },
   },
   how: {
     title: "How it works",
+    subtitle: "Three steps around the call you already make.",
     steps: [
       {
         title: "Mask",
-        body: "Privyl finds personal data and swaps it for placeholders like [CPF_1]. The real values stay in a vault on your machine.",
+        body: "Privyl finds personal data and swaps it for placeholders like [CPF_1]. The real values go to a vault that never leaves your machine.",
       },
       {
         title: "Ask the AI",
-        body: "Send the masked text to any model. It can still reason about the request, without ever seeing the data.",
+        body: "Send the masked text to any model. It still understands the request — it just never sees the data.",
       },
       {
         title: "Unmask",
-        body: "Privyl puts the real values back in the answer, even if the AI wrote the placeholder a little differently.",
+        body: "Privyl puts the real values back in the answer, even when the AI writes [cpf_1] or CPF 1.",
       },
     ],
   },
@@ -104,11 +129,12 @@ const en = {
     runtimes: "Runtimes",
     localModels: "Local models",
     browsers: "Browsers",
-    edge: "Edge",
+    open: "Open",
+    trademark: "Logos are trademarks of their owners. Privyl is not affiliated with them.",
   },
   coverage: {
     title: "Coverage by country",
-    subtitle: "Detectors are plugins per country. Brazil first, more on the way.",
+    subtitle: "Detectors are plugins, one folder per country. Brazil first, more on the way.",
     country: "Country",
     data: "What is detected",
     global: "Global",
@@ -120,12 +146,21 @@ const en = {
       "Names, street addresses and dates of birth (they need a language model), RG, data inside images or PDFs, and encoded data.",
   },
   trust: {
-    title: "Open source. Prove it, don't promise it.",
+    title: "Open source. Proven, not promised.",
     items: [
       { title: "MIT license", body: "Read every line, fork it, use it at work." },
-      { title: "No network calls", body: "The library never talks to the internet." },
-      { title: "Tested on every commit", body: "True and false positive tests for each detector." },
-      { title: "Zero dependencies", body: "Runs in Node, Bun, Deno, browsers and edge." },
+      {
+        title: "No network calls",
+        body: "The library never talks to the internet. Check the code.",
+      },
+      {
+        title: "Tested on every commit",
+        body: "True and false positive tests for every detector.",
+      },
+      {
+        title: "Locked-down website",
+        body: "A strict security policy blocks this page from sending data to any other site.",
+      },
     ],
     source: "Source code",
     security: "Security policy",
@@ -139,7 +174,7 @@ const en = {
   },
   playground: {
     title: "Playground",
-    subtitle: "Type anything. Masking and unmasking happen live, in your browser.",
+    subtitle: "Type or paste anything. Masking and unmasking happen live, in your browser.",
     input: "Your text",
     masked: "What the AI receives",
     vault: "Vault (stays on your machine)",
@@ -173,7 +208,7 @@ const pt: Dictionary = {
   meta: {
     title: "Privyl — Use qualquer IA. Seus dados continuam seus.",
     description:
-      "Camada de privacidade open source para IA. Esconde dados pessoais antes de chegarem a qualquer LLM e devolve depois. Excelente com documentos brasileiros.",
+      "Camada de privacidade open source para IA. Esconde dados pessoais antes de chegarem a qualquer modelo e devolve na resposta. Roda na sua máquina. Feito para documentos brasileiros.",
   },
   nav: {
     docs: "Docs",
@@ -181,8 +216,7 @@ const pt: Dictionary = {
     benchmark: "Benchmark",
     github: "GitHub",
     stars: "estrelas no GitHub",
-    language: "English",
-    languageLabel: "Read in English",
+    languageGroup: "Idioma",
     skip: "Pular para o conteúdo",
     menu: "Navegação principal",
   },
@@ -191,18 +225,27 @@ const pt: Dictionary = {
     title1: "Use qualquer IA.",
     title2: "Seus dados continuam seus.",
     subtitle:
-      "O Privyl esconde dados pessoais antes de o texto chegar ao Claude, GPT, Gemini ou qualquer modelo, e devolve os dados reais na resposta. Tudo roda na sua máquina.",
+      "O Privyl troca dados pessoais por substitutos antes de o texto chegar ao Claude, ChatGPT, Gemini ou qualquer modelo — e devolve os valores reais na resposta. Nada sai da sua máquina.",
     copy: "Copiar",
     copied: "Copiado",
     getStarted: "Começar",
-    github: "GitHub",
+    tryIt: "Testar no playground",
     facts: ["3 linhas de código", "Nenhuma chamada de rede", "Feito para documentos brasileiros"],
+  },
+  heroDemo: {
+    title: "chat → IA",
+    you: "Você",
+    exposed: "expostos",
+    safe: "0 expostos",
+    footer: "A IA só vê substitutos. Os valores reais ficam no vault, na sua máquina.",
+    sample:
+      "Oi! Sou a Ana, CPF 529.982.247-25. Meu cartão 4111 1111 1111 1111 foi recusado — me liga no (11) 98765-4321 ou escreve para ana@example.com.",
   },
   demo: {
     kicker: "Demo ao vivo",
     title: "Quantos dados pessoais o seu projeto está enviando para a IA?",
     subtitle:
-      "Esta é a biblioteca Privyl de verdade analisando três projetos fictícios, aqui mesmo no seu navegador.",
+      "Esta é a biblioteca Privyl de verdade analisando três projetos fictícios — rodando agora, dentro do seu navegador.",
     projects: {
       "online-store": "Loja online",
       "support-chatbot": "Chatbot de suporte",
@@ -221,41 +264,57 @@ const pt: Dictionary = {
     },
   },
   drop: {
-    title: "Teste com seus arquivos",
+    title: "Agora teste com seus arquivos",
     subtitle:
-      "Solte arquivos de texto aqui. Eles são lidos e analisados pelo seu navegador: nada é enviado.",
+      "Solte arquivos de texto abaixo. O seu navegador lê e analisa — não há upload, e a página é proibida de se conectar a outros sites.",
     cta: "Escolher arquivos",
     hint: "ou arraste .log .json .csv .md .txt .env…",
     privacy: "Processado localmente · sem upload",
     results: "Resultado",
+    empty: "O resultado aparece aqui.",
     none: "Nenhum dado pessoal encontrado.",
     skipped: "ignorado (binário ou maior que 5 MB)",
+    tooMany: "Só os 25 primeiros arquivos foram analisados.",
     clear: "Limpar",
     inFiles: "em",
     files: "arquivo(s)",
   },
   beforeAfter: {
     title: "Antes e depois",
-    subtitle: "O que a IA veria, e o que ela vê com o Privyl.",
+    subtitle: "O que a IA receberia, e o que ela recebe com o Privyl. Saída real da biblioteca.",
     before: "Sem Privyl",
     after: "Com Privyl",
-    sample:
-      "Oi, sou a Ana. Meu CPF é 529.982.247-25 e meu cartão 4111 1111 1111 1111 foi recusado. Me liga no (11) 98765-4321 ou ana@example.com.",
+    found: "expostos",
+    scenarios: {
+      chat: {
+        label: "Chat de suporte",
+        text: "Oi, sou a Ana. Meu CPF é 529.982.247-25 e meu cartão 4111 1111 1111 1111 foi recusado. Me liga no (11) 98765-4321 ou ana@example.com.",
+      },
+      log: {
+        label: "Log do servidor",
+        text: "2026-11-21T14:02:11Z ERROR pagamento recusado cliente=bruno@example.com cpf=11144477735 ip=203.0.113.42 cartao=5555 5555 5555 4444",
+      },
+      code: {
+        label: "Código e .env",
+        text: 'const cliente = { cnpj: "11.222.333/0001-81", "pix": "3f2b9a4e-1c7d-4e8a-9b6f-2d4c8e1a7b3c" };\nDB_PASSWORD=s3cr3tPass99\nAWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE',
+      },
+    },
   },
   how: {
     title: "Como funciona",
+    subtitle: "Três passos em volta da chamada que você já faz.",
     steps: [
       {
         title: "Mascarar",
-        body: "O Privyl encontra dados pessoais e troca por substitutos como [CPF_1]. Os valores reais ficam num vault na sua máquina.",
+        body: "O Privyl encontra dados pessoais e troca por substitutos como [CPF_1]. Os valores reais vão para um vault que nunca sai da sua máquina.",
       },
       {
         title: "Perguntar à IA",
-        body: "Envie o texto protegido para qualquer modelo. Ele entende o pedido sem nunca ver os dados.",
+        body: "Envie o texto protegido para qualquer modelo. Ele entende o pedido — só nunca vê os dados.",
       },
       {
         title: "Restaurar",
-        body: "O Privyl coloca os valores reais de volta na resposta, mesmo se a IA escrever o substituto um pouco diferente.",
+        body: "O Privyl coloca os valores reais de volta na resposta, mesmo quando a IA escreve [cpf_1] ou CPF 1.",
       },
     ],
   },
@@ -266,11 +325,12 @@ const pt: Dictionary = {
     runtimes: "Ambientes",
     localModels: "Modelos locais",
     browsers: "Navegadores",
-    edge: "Edge",
+    open: "Abrir",
+    trademark: "Os logos são marcas de seus donos. O Privyl não tem vínculo com eles.",
   },
   coverage: {
     title: "Cobertura por país",
-    subtitle: "Os detectores são plugins por país. Brasil primeiro, outros a caminho.",
+    subtitle: "Os detectores são plugins, uma pasta por país. Brasil primeiro, outros a caminho.",
     country: "País",
     data: "O que é detectado",
     global: "Global",
@@ -282,15 +342,21 @@ const pt: Dictionary = {
       "Nomes, endereços e datas de nascimento (precisam de um modelo de linguagem), RG, dados dentro de imagens ou PDFs e dados codificados.",
   },
   trust: {
-    title: "Open source. Provar, não prometer.",
+    title: "Open source. Comprovado, não prometido.",
     items: [
       { title: "Licença MIT", body: "Leia cada linha, faça fork, use no trabalho." },
-      { title: "Sem chamadas de rede", body: "A biblioteca nunca fala com a internet." },
+      {
+        title: "Sem chamadas de rede",
+        body: "A biblioteca nunca fala com a internet. Confira no código.",
+      },
       {
         title: "Testado a cada commit",
-        body: "Testes de acertos e de falsos positivos por detector.",
+        body: "Testes de acertos e de falsos positivos para cada detector.",
       },
-      { title: "Zero dependências", body: "Roda em Node, Bun, Deno, navegadores e edge." },
+      {
+        title: "Site blindado",
+        body: "Uma política de segurança rígida impede esta página de enviar dados para qualquer outro site.",
+      },
     ],
     source: "Código-fonte",
     security: "Política de segurança",
@@ -304,7 +370,8 @@ const pt: Dictionary = {
   },
   playground: {
     title: "Playground",
-    subtitle: "Digite qualquer coisa. Mascarar e restaurar acontece ao vivo, no seu navegador.",
+    subtitle:
+      "Digite ou cole qualquer coisa. Mascarar e restaurar acontece ao vivo, no seu navegador.",
     input: "Seu texto",
     masked: "O que a IA recebe",
     vault: "Vault (fica na sua máquina)",

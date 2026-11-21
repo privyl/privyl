@@ -180,7 +180,7 @@ export function ScanDemo({ projects, t }: { projects: ExampleProject[]; t: Dicti
 
       <dl className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-5">
         {totals.map((card) => (
-          <div key={card.label} className="rounded-xl border border-line bg-surface px-4 py-3">
+          <div key={card.label} className="card px-4 py-3">
             <dt className="text-xs text-muted">{card.label}</dt>
             <dd
               className={`mt-1 text-2xl font-medium tabular-nums ${card.strong ? "text-alert" : "text-fg"}`}

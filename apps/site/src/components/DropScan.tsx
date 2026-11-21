@@ -9,11 +9,14 @@ import type { Dictionary } from "@/i18n/dictionaries";
 
 const MAX_BYTES = 5 * 1024 * 1024;
 const MAX_LINES_SHOWN = 300;
+// Limits keep a huge drop from freezing the tab. Files are only read in memory and then dropped.
+const MAX_FILES = 25;
 
 interface Result {
   findings: ScanFinding[];
   scanned: number;
   skipped: string[];
+  truncated: boolean;
 }
 
 export function DropScan({ t }: { t: Dictionary["drop"] }) {
@@ -26,7 +29,8 @@ export function DropScan({ t }: { t: Dictionary["drop"] }) {
     const findings: ScanFinding[] = [];
     const skipped: string[] = [];
     let scanned = 0;
-    for (const file of Array.from(list)) {
+    const files = Array.from(list);
+    for (const file of files.slice(0, MAX_FILES)) {
       if (file.size > MAX_BYTES) {
         skipped.push(file.name);
         continue;
@@ -39,7 +43,7 @@ export function DropScan({ t }: { t: Dictionary["drop"] }) {
       scanned++;
       findings.push(...scanText(text, { file: file.name }));
     }
-    setResult({ findings, scanned, skipped });
+    setResult({ findings, scanned, skipped, truncated: files.length > MAX_FILES });
   };
 
   const onDrop = (e: DragEvent) => {
@@ -59,8 +63,10 @@ export function DropScan({ t }: { t: Dictionary["drop"] }) {
         }}
         onDragLeave={() => setDragging(false)}
         onDrop={onDrop}
-        className={`flex min-h-64 flex-col items-center justify-center gap-3 rounded-xl border border-dashed p-8 text-center transition-colors ${
-          dragging ? "border-sky bg-sky/5" : "border-line-strong bg-surface/60"
+        className={`flex min-h-72 flex-col items-center justify-center gap-3 rounded-2xl border border-dashed p-8 text-center transition-colors ${
+          dragging
+            ? "scale-[1.01] border-sky bg-sky/5"
+            : "border-line-strong bg-surface/60 hover:border-sky/40"
         }`}
       >
         <svg
@@ -99,7 +105,7 @@ export function DropScan({ t }: { t: Dictionary["drop"] }) {
         />
       </div>
 
-      <div className="rounded-xl border border-line bg-surface p-4" aria-live="polite">
+      <div className="card p-5" aria-live="polite">
         <div className="mb-3 flex items-center justify-between">
           <h3 className="text-sm font-medium">{t.results}</h3>
           {result && (
@@ -112,7 +118,7 @@ export function DropScan({ t }: { t: Dictionary["drop"] }) {
             </button>
           )}
         </div>
-        {!result && <p className="text-sm text-muted">—</p>}
+        {!result && <p className="text-sm text-muted">{t.empty}</p>}
         {result && summary && (
           <>
             {summary.total === 0 ? (
@@ -149,6 +155,7 @@ export function DropScan({ t }: { t: Dictionary["drop"] }) {
                 </div>
               </>
             )}
+            {result.truncated && <p className="mt-2 text-xs text-muted">{t.tooMany}</p>}
             {result.skipped.map((name) => (
               <p key={name} className="mt-2 text-xs text-muted">
                 {name}: {t.skipped}
