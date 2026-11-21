@@ -5,6 +5,9 @@
 Privyl (say "PRI-vil", from _private_) is a privacy layer for AI. It masks personal data before
 your text reaches any LLM, and restores it in the response.
 
+**[Website](https://privyl.vercel.app)** · [Live demo](https://privyl.vercel.app/en#demo) ·
+[Playground](https://privyl.vercel.app/en/playground) · [Docs](https://privyl.vercel.app/en/docs)
+
 > **Status:** early development. Not published to npm yet.
 
 ## Why
@@ -147,6 +150,8 @@ O Privyl é uma camada de privacidade para IA. Ele esconde dados pessoais (e-mai
 cartão, CPF, CNPJ, chave Pix, chaves de API) antes de o texto chegar a qualquer modelo de IA e
 devolve os dados reais na resposta. A relação entre substitutos e dados reais fica num `vault`
 que não sai da sua máquina.
+
+Site em português: **[privyl.vercel.app/pt](https://privyl.vercel.app/pt)**
 
 O projeto está no início e ainda não foi publicado no npm. O Privyl reduz o risco de enviar dados
 pessoais para a IA, mas não garante que todos os dados sejam detectados. Nomes, endereços e datas
