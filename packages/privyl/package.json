@@ -43,6 +43,10 @@
       "import": "./dist/br/index.js",
       "require": "./dist/br/index.cjs"
     },
+    "./testing": {
+      "import": "./dist/testing/index.js",
+      "require": "./dist/testing/index.cjs"
+    },
     "./package.json": "./package.json"
   },
   "scripts": {
