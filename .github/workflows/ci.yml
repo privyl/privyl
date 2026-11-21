@@ -19,6 +19,8 @@ jobs:
           cache: pnpm
       - run: pnpm install --frozen-lockfile
       - run: pnpm lint
+      # The site imports the built library, so build it before type checking.
+      - run: pnpm --filter privyl build
       - run: pnpm typecheck
       - run: pnpm test
       - run: pnpm build
