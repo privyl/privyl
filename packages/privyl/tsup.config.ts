@@ -9,6 +9,8 @@ export default defineConfig([
       "br/index": "src/br/index.ts",
       "scan/index": "src/scan/index.ts",
       "testing/index": "src/testing/index.ts",
+      "anthropic/index": "src/anthropic/index.ts",
+      "openai/index": "src/openai/index.ts",
     },
     format: ["esm", "cjs"],
     // The library has no Node types, which also keeps the type build small and fast.

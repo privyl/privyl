@@ -40,6 +40,25 @@ const again = Vault.fromJSON(JSON.parse(saved));`,
   unmask: `shield.unmask("Done, [cpf_1]! Sent to [EMAIL 1].", vault);
 // → "Done, 529.982.247-25! Sent to joao@example.com."
 // Also accepted: [CPF-1], [ CPF_1 ], [CPF\\_1], CPF_1`,
+  adapters: `import Anthropic from "@anthropic-ai/sdk";
+import OpenAI from "openai";
+import { protectAnthropic } from "privyl/anthropic";
+import { protectOpenAI } from "privyl/openai";
+
+const claude = protectAnthropic(new Anthropic());
+const msg = await claude.messages.create({
+  model: "claude-sonnet-5-5",
+  max_tokens: 1024,
+  messages: [{ role: "user", content: "Meu CPF é 529.982.247-25" }],
+});
+// Sent to Anthropic: "Meu CPF é [CPF_1]". msg.content has the real CPF back.
+
+const gpt = protectOpenAI(new OpenAI());
+await gpt.chat.completions.create({ model: "gpt-5", messages });
+await gpt.responses.create({ model: "gpt-5", input: "..." });
+
+// Optional: your own shield, and a log of what was masked (never the real values)
+protectAnthropic(new Anthropic(), { shield, onFindings: (f) => console.log(f) });`,
   findings: `[
   {
     type: "br.cpf",
@@ -113,6 +132,16 @@ const en: DocSection[] = [
       "Models sometimes change placeholders a little. `unmask` accepts common variations and leaves unknown placeholders untouched.",
     ],
     code: code.unmask,
+  },
+  {
+    id: "adapters",
+    title: "Use with AI SDKs",
+    body: [
+      "Wrap the client you already use. Personal data in the request becomes placeholders, and the answer comes back with the real values. The SDKs are not dependencies of Privyl.",
+      "Anthropic: `messages.create`. OpenAI (and compatible APIs): `chat.completions.create` and `responses.create`. Text, tool inputs and tool results are protected. Images, files and thinking blocks are sent unchanged.",
+      "Streaming (`stream: true`) is not supported yet: the call fails instead of sending unprotected data.",
+    ],
+    code: code.adapters,
   },
   {
     id: "findings",
@@ -190,6 +219,16 @@ const pt: DocSection[] = [
       "Às vezes o modelo muda um pouco o substituto. O `unmask` aceita as variações comuns e não mexe em substitutos desconhecidos.",
     ],
     code: code.unmask,
+  },
+  {
+    id: "adapters",
+    title: "Usar com SDKs de IA",
+    body: [
+      "Envolva o cliente que você já usa. Os dados pessoais da requisição viram substitutos e a resposta volta com os valores reais. Os SDKs não são dependências do Privyl.",
+      "Anthropic: `messages.create`. OpenAI (e APIs compatíveis): `chat.completions.create` e `responses.create`. Textos, entradas e resultados de ferramentas são protegidos. Imagens, arquivos e blocos de raciocínio (thinking) vão sem alteração.",
+      "Streaming (`stream: true`) ainda não é suportado: a chamada falha em vez de enviar dados sem proteção.",
+    ],
+    code: code.adapters,
   },
   {
     id: "findings",
