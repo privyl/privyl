@@ -11,7 +11,9 @@ export function curpCheckDigit(base17: string): number {
   return (10 - (sum % 10)) % 10;
 }
 
-export function isValidCurp(value: string): boolean {
+/** Also accepts lowercase (people often type it that way): letters are compared in uppercase. */
+export function isValidCurp(input: string): boolean {
+  const value = input.toUpperCase();
   return CURP_RE.test(value) && curpCheckDigit(value.slice(0, 17)) === Number(value[17]);
 }
 
@@ -29,7 +31,8 @@ export function rfcCheckDigit(base: string): string {
 // Generic RFCs used on invoices for "the general public" and for foreigners: not personal data.
 const GENERIC_RFC = new Set(["XAXX010101000", "XEXX010101000"]);
 
-export function isValidRfc(value: string): boolean {
+export function isValidRfc(input: string): boolean {
+  const value = input.toUpperCase();
   if (!RFC_RE.test(value) || GENERIC_RFC.has(value)) return false;
   return rfcCheckDigit(value.slice(0, -1)) === value.at(-1);
 }
@@ -44,13 +47,16 @@ const RFC_BODY = `[A-ZÑ&]{3,4}${DATE}[A-Z\\d]{2}[\\dA]`;
 const CURP_RE = new RegExp(`^${CURP_BODY}$`);
 const RFC_RE = new RegExp(`^${RFC_BODY}$`);
 
-/** CURP: 18 characters, like GOMC800101HDFRRN09. Birth date, state and check digit validated. */
+/**
+ * CURP: 18 characters, like GOMC800101HDFRRN09 (any case). Birth date, state and check digit
+ * validated.
+ */
 export const curp: Detector = {
   id: "mx.curp",
   label: "CURP",
   token: "CURP",
   country: "mx",
-  pattern: new RegExp(`(?<![A-ZÑ\\d])${CURP_BODY}(?![A-Z\\d])`),
+  pattern: new RegExp(`(?<![A-ZÑ\\d])${CURP_BODY}(?![A-Z\\d])`, "i"),
   validate: isValidCurp,
   confidence: 0.97,
 };
@@ -61,7 +67,7 @@ export const rfc: Detector = {
   label: "RFC",
   token: "RFC",
   country: "mx",
-  pattern: new RegExp(`(?<![A-ZÑ&\\d])${RFC_BODY}(?![A-Z\\d])`),
+  pattern: new RegExp(`(?<![A-ZÑ&\\d])${RFC_BODY}(?![A-Z\\d])`, "i"),
   validate: isValidRfc,
   confidence: 0.93,
 };

@@ -27,6 +27,20 @@ describe("SSN", () => {
     expect(found(ssn, `SSN: ${digits}`)).toEqual([digits]);
     expect(found(ssn, `order ${digits}`)).toEqual([]);
     expect(found(ssn, "call 555-123-4567")).toEqual([]); // phone shape, not 3-2-4
+    expect(found(ssn, `Part number ${value} is back in stock`)).toEqual([]);
+    expect(found(ssn, `SKU #${value}`)).toEqual([]);
+    expect(found(ssn, `order ${value}, SSN ${value}`)).toEqual([value]); // only the second
+  });
+});
+
+describe("Phone (US)", () => {
+  const phone = us.find((d) => d.id === "us.phone") as Detector;
+  it("detects (202) 555-0123 anywhere and 202-555-0123 near call/phone", () => {
+    expect(found(phone, "Call me at (202) 555-0123 after 5pm")).toEqual(["(202) 555-0123"]);
+    expect(found(phone, "phone 202-555-0123")).toEqual(["202-555-0123"]);
+    expect(found(phone, "ref 202-555-0123")).toEqual([]);
+    expect(found(phone, "(911) 555-0123")).toEqual([]); // N11 service code
+    expect(found(phone, "(202) 155-0123")).toEqual([]); // exchange starts with 1
   });
 });
 

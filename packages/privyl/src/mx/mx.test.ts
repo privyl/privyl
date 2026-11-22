@@ -20,6 +20,11 @@ describe("CURP", () => {
     }
   });
 
+  it("accepts lowercase, as people often type it", () => {
+    const value = faker.curp().toLowerCase();
+    expect(found(curp, `curp: ${value}`)).toEqual([value]);
+  });
+
   it("rejects a wrong check digit, an impossible date or an unknown state", () => {
     const value = faker.curp();
     expect(found(curp, breakLast(value))).toEqual([]);

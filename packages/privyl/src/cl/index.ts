@@ -1,7 +1,7 @@
 // Chile: RUT/RUN (national id and tax id, the same number), with a mod 11 check digit.
 
 import type { Detector } from "../core/types.js";
-import { allSameChar, hasContextBefore } from "../core/utils.js";
+import { allSameChar, hasContextBefore, isAfterCodeLabel } from "../core/utils.js";
 
 /** The RUT check digit ("0"-"9" or "K") for the number before the dash. */
 export function rutCheckDigit(body: string): string {
@@ -24,7 +24,8 @@ export function isValidRut(value: string): boolean {
 
 /**
  * RUT/RUN: 12.345.678-5 or 12345678-5 (the check digit can be K).
- * Without the dots it looks like many other codes, so it needs "RUT" or "RUN" nearby.
+ * Without the dots it looks like other codes, so it is skipped right after labels such as "lote",
+ * "folio" or "pedido", and it is less confident without the word "RUT" or "RUN".
  */
 export const rut: Detector = {
   id: "cl.rut",
@@ -33,8 +34,9 @@ export const rut: Detector = {
   country: "cl",
   pattern: /(?<![\d.\-/])(?:\d{1,2}\.\d{3}\.\d{3}|\d{7,8})-[\dkK](?![\w-])/,
   validate: (value, { text, start }) =>
-    isValidRut(value) && (value.includes(".") || hasContextBefore(text, start, /\bru[tn]\b/i, 30)),
-  confidence: 0.95,
+    isValidRut(value) && (value.includes(".") || !isAfterCodeLabel(text, start)),
+  confidence: (value, { text, start }) =>
+    value.includes(".") || hasContextBefore(text, start, /\bru[tn]\b/i, 30) ? 0.95 : 0.75,
 };
 
 /** All Chilean detectors. */

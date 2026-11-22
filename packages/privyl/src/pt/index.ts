@@ -58,7 +58,7 @@ export function isValidNiss(value: string): boolean {
   return nissCheckDigit(d.slice(0, 10)) === Number(d[10]);
 }
 
-const NIF_CONTEXT = /\bnif\b|\bnipc\b|contribuinte|fiscal|\bvat\b|\biva\b/i;
+const NIF_CONTEXT = /\bnif\b|\bnipc\b|contribuinte|fiscal|\bvat\b|\biva\b|fatur|factur/i;
 
 /**
  * NIF: 123456789, 123 456 789 or PT123456789. Any 9-digit number could pass the check digit
@@ -99,5 +99,20 @@ export const niss: Detector = {
   confidence: 0.98,
 };
 
+/**
+ * Portuguese phone without "+351": 912 345 678 (mobile) or 213 456 789 (landline), near a word
+ * like "telemóvel" or "telefone". Numbers with "+351" are found by the global phone detector.
+ */
+export const phonePt: Detector = {
+  id: "pt.phone",
+  label: "Phone (PT)",
+  token: "PHONE",
+  country: "pt",
+  pattern: /(?<![\d+.-])(?:9[1236]\d|2\d{2})( ?)\d{3}\1\d{3}(?![\d.-])/,
+  validate: (_value, { text, start }) =>
+    hasContextBefore(text, start, /telem[óo]vel|telefone|\btel\b|\btlm\b|contacto|ligar|whats/i),
+  confidence: 0.9,
+};
+
 /** All Portuguese detectors. */
-export const pt: readonly Detector[] = [nif, citizenCard, niss];
+export const pt: readonly Detector[] = [nif, citizenCard, niss, phonePt];
