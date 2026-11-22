@@ -43,7 +43,8 @@ const restored = shield.unmask(aiResponse, vault);
   keep placeholders consistent across a whole conversation.
 - `findings` lists type, position and confidence, **never** the real value, so it is safe to log.
 - `unmask` also understands placeholders the AI changed slightly (`[cpf_1]`, `[CPF 1]`, `CPF_1`).
-- Privyl makes no network calls. The vault lives in memory unless you save it yourself
+- Privyl makes no network calls (the optional `privyl proxy` only forwards requests to the AI API
+  you point it at). The vault lives in memory unless you save it yourself
   (`vault.toJSON()` / `Vault.fromJSON()`); it contains the real data, so store it carefully.
 
 ## Use with AI SDKs
@@ -66,6 +67,32 @@ const msg = await claude.messages.create({
 `privyl/openai` works the same way with `protectOpenAI(new OpenAI())`, for
 `chat.completions.create` and `responses.create`. Streaming is not supported yet: the call fails
 instead of sending unprotected data.
+
+## Proxy (any language)
+
+Not using JavaScript? Run the proxy and point your SDK at it. It masks the request, forwards it to
+the AI API and restores the answer.
+
+```sh
+npx privyl proxy
+# ANTHROPIC_BASE_URL=http://127.0.0.1:8787/anthropic
+# OPENAI_BASE_URL=http://127.0.0.1:8787/openai/v1
+```
+
+Or with Docker:
+
+```sh
+docker build -t privyl-proxy https://github.com/privyl/privyl.git#main:proxy
+docker run --rm -p 127.0.0.1:8787:8787 privyl-proxy
+```
+
+- Protected: Anthropic `/v1/messages`, OpenAI (or compatible) `/v1/chat/completions` and
+  `/v1/responses`. Requests without a body (like listing models) pass through.
+- **Fails closed:** a request with a body to any other endpoint is refused, not sent unmasked.
+  Streaming (`stream: true`) is refused too, for now.
+- Listens on `127.0.0.1` by default. Nothing is written to disk; the log shows only types and
+  counts (`masked CPF×1, Email×1`), never values.
+- Your app keeps sending its own API key. The proxy passes it on and does not store it.
 
 ## Scan a project
 

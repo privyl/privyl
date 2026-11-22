@@ -1,0 +1,3 @@
+# Only the Dockerfile is needed: the image installs privyl from npm.
+*
+!Dockerfile

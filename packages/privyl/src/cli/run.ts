@@ -12,6 +12,7 @@ const MAX_FILE_BYTES = 10 * 1024 * 1024;
 const DEFAULT_OUT = "privyl-masked";
 
 const HELP = `Usage: privyl scan [path] [options]
+       privyl proxy [options]   (see privyl proxy --help)
 
 Finds personal data (CPF, emails, cards, API keys...) in text files.
 
