@@ -1,6 +1,11 @@
 import { createShield, type Detector } from "privyl";
+import { ar } from "privyl/ar";
 import { br } from "privyl/br";
+import { cl } from "privyl/cl";
 import { global } from "privyl/global";
+import { mx } from "privyl/mx";
+import { pt } from "privyl/pt";
+import { us } from "privyl/us";
 import type { ReactNode } from "react";
 import {
   siBun,
@@ -21,7 +26,7 @@ import { maskedSegments, rawSegments, type Segment } from "@/lib/highlight";
 import { BeforeAfterTabs, type Scenario } from "./BeforeAfter";
 import { BrandSvg, siOpenai, type BrandIcon } from "./brands";
 import { CopyCommand } from "./CopyCommand";
-import { FlagBR, FlagWorld } from "./Flags";
+import { FlagAR, FlagBR, FlagCL, FlagMX, FlagPT, FlagUS, FlagWorld } from "./Flags";
 import type { HeroPart } from "./HeroDemo";
 import { GitHubIcon } from "./Navbar";
 import { Reveal } from "./Reveal";
@@ -311,10 +316,15 @@ export function Coverage({ lang, t }: { lang: Locale; t: Dictionary["coverage"] 
       name: t.br,
       labels: labelsOf(br, t.secrets, lang),
     },
+    { code: "pt", flag: <FlagPT />, name: t.pt, labels: labelsOf(pt, t.secrets, lang) },
+    { code: "ar", flag: <FlagAR />, name: t.ar, labels: labelsOf(ar, t.secrets, lang) },
+    { code: "us", flag: <FlagUS />, name: t.us, labels: labelsOf(us, t.secrets, lang) },
+    { code: "mx", flag: <FlagMX />, name: t.mx, labels: labelsOf(mx, t.secrets, lang) },
+    { code: "cl", flag: <FlagCL />, name: t.cl, labels: labelsOf(cl, t.secrets, lang) },
   ];
   return (
     <Section title={t.title} subtitle={t.subtitle}>
-      <div className="grid gap-4 md:grid-cols-3">
+      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {countries.map((c) => (
           <div key={c.code} className="card flex flex-col p-6">
             <div className="flex items-center justify-between">

@@ -49,6 +49,26 @@
       "import": "./dist/br/index.js",
       "require": "./dist/br/index.cjs"
     },
+    "./pt": {
+      "import": "./dist/pt/index.js",
+      "require": "./dist/pt/index.cjs"
+    },
+    "./ar": {
+      "import": "./dist/ar/index.js",
+      "require": "./dist/ar/index.cjs"
+    },
+    "./us": {
+      "import": "./dist/us/index.js",
+      "require": "./dist/us/index.cjs"
+    },
+    "./mx": {
+      "import": "./dist/mx/index.js",
+      "require": "./dist/mx/index.cjs"
+    },
+    "./cl": {
+      "import": "./dist/cl/index.js",
+      "require": "./dist/cl/index.cjs"
+    },
     "./scan": {
       "import": "./dist/scan/index.js",
       "require": "./dist/scan/index.cjs"

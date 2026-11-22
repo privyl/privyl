@@ -23,6 +23,11 @@ const found = (detectors: Detector | readonly Detector[], text: string) =>
 const fake = (prefix: string, length: number, char = "A") => prefix + char.repeat(length);
 
 describe("email", () => {
+  it("detects addresses with accents", () => {
+    expect(found(email, "contato: joão.silva@example.com")).toEqual(["joão.silva@example.com"]);
+    expect(found(email, "inês@exemplo.pt, ok")).toEqual(["inês@exemplo.pt"]);
+  });
+
   it.each(["ana@example.com", "ana.souza+news@mail.example.com", "a_b-c@example.co.uk"])(
     "detects %s",
     (value) => expect(found(email, `write to ${value}.`)).toEqual([value]),
@@ -94,6 +99,13 @@ describe("IP address", () => {
     expect(found(ipv4, "127.0.0.1")).toEqual([]);
     expect(found(ipv4, "0.0.0.0")).toEqual([]);
     expect(found(ipv4, "1.2.3.4.5")).toEqual([]);
+  });
+
+  it("ignores version numbers that look like IPv4", () => {
+    expect(found(ipv4, "app version 1.2.3.4 started")).toEqual([]);
+    expect(found(ipv4, "Firmware 10.0.0.19 instalado")).toEqual([]);
+    expect(found(ipv4, "v2.0.1.0")).toEqual([]);
+    expect(found(ipv4, "server 10.0.0.19 is up")).toEqual(["10.0.0.19"]);
   });
 
   it("detects IPv6", () => {

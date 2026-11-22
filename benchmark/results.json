@@ -1,35 +1,35 @@
 {
   "version": "0.1.0",
-  "records": 760,
-  "cleanRecords": 240,
-  "entities": 760,
+  "records": 1260,
+  "cleanRecords": 380,
+  "entities": 1300,
   "overall": {
-    "support": 760,
-    "truePositives": 700,
-    "falsePositives": 70,
-    "falseNegatives": 60,
-    "precision": 0.9091,
-    "recall": 0.9211,
-    "f1": 0.915
+    "support": 1300,
+    "truePositives": 1180,
+    "falsePositives": 23,
+    "falseNegatives": 120,
+    "precision": 0.9809,
+    "recall": 0.9077,
+    "f1": 0.9429
   },
   "byType": {
     "EMAIL": {
-      "support": 160,
-      "truePositives": 140,
-      "falsePositives": 19,
-      "falseNegatives": 20,
-      "precision": 0.8805,
-      "recall": 0.875,
-      "f1": 0.8777
-    },
-    "PHONE": {
-      "support": 140,
-      "truePositives": 120,
+      "support": 280,
+      "truePositives": 260,
       "falsePositives": 0,
       "falseNegatives": 20,
       "precision": 1,
-      "recall": 0.8571,
-      "f1": 0.9231
+      "recall": 0.9286,
+      "f1": 0.963
+    },
+    "PHONE": {
+      "support": 140,
+      "truePositives": 140,
+      "falsePositives": 0,
+      "falseNegatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1": 1
     },
     "CARD": {
       "support": 60,
@@ -43,11 +43,11 @@
     "IP": {
       "support": 40,
       "truePositives": 40,
-      "falsePositives": 4,
+      "falsePositives": 0,
       "falseNegatives": 0,
-      "precision": 0.9091,
+      "precision": 1,
       "recall": 1,
-      "f1": 0.9524
+      "f1": 1
     },
     "SECRET": {
       "support": 60,
@@ -59,13 +59,13 @@
       "f1": 1
     },
     "CPF": {
-      "support": 80,
+      "support": 100,
       "truePositives": 80,
-      "falsePositives": 5,
-      "falseNegatives": 0,
-      "precision": 0.9412,
-      "recall": 1,
-      "f1": 0.9697
+      "falsePositives": 2,
+      "falseNegatives": 20,
+      "precision": 0.9756,
+      "recall": 0.8,
+      "f1": 0.8791
     },
     "CNPJ": {
       "support": 60,
@@ -86,15 +86,24 @@
       "f1": 1
     },
     "CEP": {
-      "support": 40,
-      "truePositives": 40,
-      "falsePositives": 20,
-      "falseNegatives": 0,
-      "precision": 0.6667,
-      "recall": 1,
-      "f1": 0.8
+      "support": 80,
+      "truePositives": 60,
+      "falsePositives": 0,
+      "falseNegatives": 20,
+      "precision": 1,
+      "recall": 0.75,
+      "f1": 0.8571
     },
     "CNH": {
+      "support": 60,
+      "truePositives": 60,
+      "falsePositives": 0,
+      "falseNegatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1": 1
+    },
+    "PLATE": {
       "support": 60,
       "truePositives": 40,
       "falsePositives": 0,
@@ -103,17 +112,98 @@
       "recall": 0.6667,
       "f1": 0.8
     },
-    "PLATE": {
+    "NIF": {
+      "support": 60,
+      "truePositives": 40,
+      "falsePositives": 0,
+      "falseNegatives": 20,
+      "precision": 1,
+      "recall": 0.6667,
+      "f1": 0.8
+    },
+    "CC": {
+      "support": 20,
+      "truePositives": 20,
+      "falsePositives": 0,
+      "falseNegatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1": 1
+    },
+    "NISS": {
+      "support": 20,
+      "truePositives": 20,
+      "falsePositives": 0,
+      "falseNegatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1": 1
+    },
+    "CUIT": {
       "support": 40,
       "truePositives": 40,
-      "falsePositives": 20,
+      "falsePositives": 0,
       "falseNegatives": 0,
-      "precision": 0.6667,
+      "precision": 1,
       "recall": 1,
-      "f1": 0.8
+      "f1": 1
+    },
+    "DNI": {
+      "support": 40,
+      "truePositives": 20,
+      "falsePositives": 0,
+      "falseNegatives": 20,
+      "precision": 1,
+      "recall": 0.5,
+      "f1": 0.6667
+    },
+    "SSN": {
+      "support": 40,
+      "truePositives": 40,
+      "falsePositives": 17,
+      "falseNegatives": 0,
+      "precision": 0.7018,
+      "recall": 1,
+      "f1": 0.8247
+    },
+    "ITIN": {
+      "support": 20,
+      "truePositives": 20,
+      "falsePositives": 2,
+      "falseNegatives": 0,
+      "precision": 0.9091,
+      "recall": 1,
+      "f1": 0.9524
+    },
+    "CURP": {
+      "support": 20,
+      "truePositives": 20,
+      "falsePositives": 0,
+      "falseNegatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1": 1
+    },
+    "RFC": {
+      "support": 40,
+      "truePositives": 40,
+      "falsePositives": 0,
+      "falseNegatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1": 1
+    },
+    "RUT": {
+      "support": 40,
+      "truePositives": 40,
+      "falsePositives": 0,
+      "falseNegatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1": 1
     }
   },
-  "cleanRecordsWithFindings": 26,
+  "cleanRecordsWithFindings": 21,
   "errors": [
     {
       "kind": "false-positive",
@@ -126,122 +216,10 @@
     {
       "kind": "false-positive",
       "type": "CPF",
-      "recordId": "chat-10-00",
-      "text": "Carteira de motorista número 49278323411, categoria B.",
-      "start": 29,
-      "end": 40
-    },
-    {
-      "kind": "false-negative",
-      "type": "CNH",
-      "recordId": "chat-10-00",
-      "text": "Carteira de motorista número 49278323411, categoria B.",
-      "start": 29,
-      "end": 40
-    },
-    {
-      "kind": "false-negative",
-      "type": "CNH",
-      "recordId": "chat-10-01",
-      "text": "Carteira de motorista número 16298548921, categoria B.",
-      "start": 29,
-      "end": 40
-    },
-    {
-      "kind": "false-negative",
-      "type": "CNH",
-      "recordId": "chat-10-02",
-      "text": "Carteira de motorista número 56569530736, categoria B.",
-      "start": 29,
-      "end": 40
-    },
-    {
-      "kind": "false-positive",
-      "type": "CPF",
-      "recordId": "chat-10-17",
-      "text": "Carteira de motorista número 82680659155, categoria B.",
-      "start": 29,
-      "end": 40
-    },
-    {
-      "kind": "false-negative",
-      "type": "PHONE",
-      "recordId": "chat-11-00",
-      "text": "Me chama no 83907097072 depois das 18h.",
-      "start": 12,
-      "end": 23
-    },
-    {
-      "kind": "false-negative",
-      "type": "PHONE",
-      "recordId": "chat-11-01",
-      "text": "Me chama no 45959976823 depois das 18h.",
-      "start": 12,
-      "end": 23
-    },
-    {
-      "kind": "false-negative",
-      "type": "PHONE",
-      "recordId": "chat-11-02",
-      "text": "Me chama no 81932592017 depois das 18h.",
-      "start": 12,
-      "end": 23
-    },
-    {
-      "kind": "false-positive",
-      "type": "EMAIL",
-      "recordId": "form-12-00",
-      "text": "E-mail de contato: joão.1@example.com",
-      "start": 22,
-      "end": 37
-    },
-    {
-      "kind": "false-negative",
-      "type": "EMAIL",
-      "recordId": "form-12-00",
-      "text": "E-mail de contato: joão.1@example.com",
-      "start": 19,
-      "end": 37
-    },
-    {
-      "kind": "false-positive",
-      "type": "EMAIL",
-      "recordId": "form-12-01",
-      "text": "E-mail de contato: conceição.54@example.com",
-      "start": 27,
-      "end": 43
-    },
-    {
-      "kind": "false-negative",
-      "type": "EMAIL",
-      "recordId": "form-12-01",
-      "text": "E-mail de contato: conceição.54@example.com",
-      "start": 19,
-      "end": 43
-    },
-    {
-      "kind": "false-positive",
-      "type": "EMAIL",
-      "recordId": "form-12-02",
-      "text": "E-mail de contato: joão.60@example.com",
-      "start": 22,
-      "end": 38
-    },
-    {
-      "kind": "false-negative",
-      "type": "EMAIL",
-      "recordId": "form-12-02",
-      "text": "E-mail de contato: joão.60@example.com",
-      "start": 19,
-      "end": 38
-    },
-    {
-      "kind": "false-positive",
-      "type": "IP",
-      "recordId": "log-21-10",
-      "text": "10:32:50 INFO app version 5.9.9.136 started on 127.0.0.1",
-      "start": 26,
-      "end": 35
+      "recordId": "log-19-12",
+      "text": "23:40:59 WARN payment declined card=5555 5555 5555 4444 order=37476008839",
+      "start": 62,
+      "end": 73
     },
     {
       "kind": "false-positive",
@@ -260,68 +238,188 @@
       "end": 26
     },
     {
-      "kind": "false-positive",
-      "type": "PLATE",
-      "recordId": "trap-34-00",
-      "text": "Produto PYZ-2608 em estoque, lote 48211-932.",
-      "start": 8,
-      "end": 16
+      "kind": "false-negative",
+      "type": "CPF",
+      "recordId": "chat-39-00",
+      "text": "Meu CPF é 833 341 580 63, pode confirmar?",
+      "start": 10,
+      "end": 24
     },
     {
-      "kind": "false-positive",
+      "kind": "false-negative",
+      "type": "CPF",
+      "recordId": "chat-39-01",
+      "text": "Meu CPF é 707 451 323 75, pode confirmar?",
+      "start": 10,
+      "end": 24
+    },
+    {
+      "kind": "false-negative",
+      "type": "CPF",
+      "recordId": "chat-39-02",
+      "text": "Meu CPF é 227 509 904 24, pode confirmar?",
+      "start": 10,
+      "end": 24
+    },
+    {
+      "kind": "false-negative",
       "type": "CEP",
-      "recordId": "trap-34-00",
-      "text": "Produto PYZ-2608 em estoque, lote 48211-932.",
-      "start": 34,
-      "end": 43
-    },
-    {
-      "kind": "false-positive",
-      "type": "PLATE",
-      "recordId": "trap-34-01",
-      "text": "Produto OOW-6490 em estoque, lote 32622-655.",
-      "start": 8,
-      "end": 16
-    },
-    {
-      "kind": "false-positive",
-      "type": "CEP",
-      "recordId": "trap-34-01",
-      "text": "Produto OOW-6490 em estoque, lote 32622-655.",
-      "start": 34,
-      "end": 43
-    },
-    {
-      "kind": "false-positive",
-      "type": "PLATE",
-      "recordId": "trap-34-02",
-      "text": "Produto MLA-8241 em estoque, lote 28852-748.",
-      "start": 8,
-      "end": 16
-    },
-    {
-      "kind": "false-positive",
-      "type": "CEP",
-      "recordId": "trap-34-02",
-      "text": "Produto MLA-8241 em estoque, lote 28852-748.",
-      "start": 34,
-      "end": 43
-    },
-    {
-      "kind": "false-positive",
-      "type": "IP",
-      "recordId": "trap-35-00",
-      "text": "Firmware 8.0.1.140 instalado, build 7.15.3.",
+      "recordId": "chat-41-00",
+      "text": "Deixa no 28427-428 por favor.",
       "start": 9,
       "end": 18
     },
     {
-      "kind": "false-positive",
-      "type": "IP",
-      "recordId": "trap-35-02",
-      "text": "Firmware 6.17.7.100 instalado, build 1.15.6.",
+      "kind": "false-negative",
+      "type": "CEP",
+      "recordId": "chat-41-01",
+      "text": "Deixa no 43390-537 por favor.",
       "start": 9,
+      "end": 18
+    },
+    {
+      "kind": "false-negative",
+      "type": "CEP",
+      "recordId": "chat-41-02",
+      "text": "Deixa no 94956-241 por favor.",
+      "start": 9,
+      "end": 18
+    },
+    {
+      "kind": "false-negative",
+      "type": "PLATE",
+      "recordId": "chat-42-00",
+      "text": "Vi o ZFS-0034 parado na frente.",
+      "start": 5,
+      "end": 13
+    },
+    {
+      "kind": "false-negative",
+      "type": "PLATE",
+      "recordId": "chat-42-01",
+      "text": "Vi o ASN-8374 parado na frente.",
+      "start": 5,
+      "end": 13
+    },
+    {
+      "kind": "false-negative",
+      "type": "PLATE",
+      "recordId": "chat-42-02",
+      "text": "Vi o KBZ-4002 parado na frente.",
+      "start": 5,
+      "end": 13
+    },
+    {
+      "kind": "false-negative",
+      "type": "EMAIL",
+      "recordId": "chat-43-00",
+      "text": "Escreve para ana.amostra86 [at] example.com se precisar.",
+      "start": 13,
+      "end": 43
+    },
+    {
+      "kind": "false-negative",
+      "type": "EMAIL",
+      "recordId": "chat-43-01",
+      "text": "Escreve para ana.teste42 [at] example.com se precisar.",
+      "start": 13,
+      "end": 41
+    },
+    {
+      "kind": "false-negative",
+      "type": "EMAIL",
+      "recordId": "chat-43-02",
+      "text": "Escreve para carla.ficticio38 [at] example.com se precisar.",
+      "start": 13,
+      "end": 46
+    },
+    {
+      "kind": "false-negative",
+      "type": "NIF",
+      "recordId": "chat-47-00",
+      "text": "Faturar a 181102560, obrigado.",
+      "start": 10,
       "end": 19
+    },
+    {
+      "kind": "false-negative",
+      "type": "NIF",
+      "recordId": "chat-47-01",
+      "text": "Faturar a 286985390, obrigado.",
+      "start": 10,
+      "end": 19
+    },
+    {
+      "kind": "false-negative",
+      "type": "NIF",
+      "recordId": "chat-47-02",
+      "text": "Faturar a 360302777, obrigado.",
+      "start": 10,
+      "end": 19
+    },
+    {
+      "kind": "false-negative",
+      "type": "DNI",
+      "recordId": "chat-51-00",
+      "text": "Documento 31.660.332, nacido en 1990.",
+      "start": 10,
+      "end": 20
+    },
+    {
+      "kind": "false-negative",
+      "type": "DNI",
+      "recordId": "chat-51-01",
+      "text": "Documento 18.644.484, nacido en 1990.",
+      "start": 10,
+      "end": 20
+    },
+    {
+      "kind": "false-negative",
+      "type": "DNI",
+      "recordId": "chat-51-02",
+      "text": "Documento 14.496.270, nacido en 1990.",
+      "start": 10,
+      "end": 20
+    },
+    {
+      "kind": "false-positive",
+      "type": "SSN",
+      "recordId": "trap-55-00",
+      "text": "Part number 826-18-7178 is back in stock.",
+      "start": 12,
+      "end": 23
+    },
+    {
+      "kind": "false-positive",
+      "type": "SSN",
+      "recordId": "trap-55-01",
+      "text": "Part number 143-12-2819 is back in stock.",
+      "start": 12,
+      "end": 23
+    },
+    {
+      "kind": "false-positive",
+      "type": "SSN",
+      "recordId": "trap-55-02",
+      "text": "Part number 112-48-9140 is back in stock.",
+      "start": 12,
+      "end": 23
+    },
+    {
+      "kind": "false-positive",
+      "type": "ITIN",
+      "recordId": "trap-55-03",
+      "text": "Part number 970-85-8752 is back in stock.",
+      "start": 12,
+      "end": 23
+    },
+    {
+      "kind": "false-positive",
+      "type": "ITIN",
+      "recordId": "trap-55-07",
+      "text": "Part number 984-80-2357 is back in stock.",
+      "start": 12,
+      "end": 23
     }
   ]
 }

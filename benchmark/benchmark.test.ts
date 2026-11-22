@@ -32,7 +32,7 @@ describe("benchmark dataset", () => {
     for (const record of dataset) {
       for (const e of record.entities) {
         const value = record.text.slice(e.start, e.end);
-        if (e.type === "EMAIL") expect(value).toMatch(/@example\.com$/);
+        if (e.type === "EMAIL") expect(value).toMatch(/(?:@| \[at\] )example\.com$/);
         if (e.type === "IP")
           expect(value).toMatch(/^(192\.0\.2|198\.51\.100|203\.0\.113)\.|^2001:db8:/);
       }
