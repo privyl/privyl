@@ -1,5 +1,5 @@
 import type { Detector } from "../core/types.js";
-import { allSameChar, onlyDigits } from "../core/utils.js";
+import { allSameChar, hasContextBefore, onlyDigits } from "../core/utils.js";
 
 /** Luhn checksum, used by payment cards. */
 export function isValidLuhn(digits: string): boolean {
@@ -17,14 +17,15 @@ export function isValidLuhn(digits: string): boolean {
   return sum % 10 === 0;
 }
 
-/** Email address. ASCII only (addresses with accents are not detected yet). */
+/** Email address, including letters with accents (joão@example.com, inês@exemplo.pt). */
 export const email: Detector = {
   id: "global.email",
   label: "Email",
   token: "EMAIL",
   country: "global",
+  // \p{L} is any letter in any language, \p{N} any digit (needs the "u" flag).
   pattern:
-    /(?<![\w.%+-])[A-Za-z0-9][A-Za-z0-9._%+-]{0,63}@(?:[A-Za-z0-9](?:[A-Za-z0-9-]{0,61}[A-Za-z0-9])?\.)+[A-Za-z]{2,24}(?![\w-])/,
+    /(?<![\p{L}\p{N}_.%+-])[\p{L}\p{N}][\p{L}\p{N}._%+-]{0,63}@(?:[\p{L}\p{N}](?:[\p{L}\p{N}-]{0,61}[\p{L}\p{N}])?\.)+\p{L}{2,24}(?![\p{L}\p{N}_-])/u,
   validate: (value) => !value.includes(".."),
   confidence: 0.95,
 };
@@ -64,14 +65,21 @@ export const card: Detector = {
 const isIPv4 = (value: string) =>
   value.split(".").every((part) => /^(0|[1-9]\d{0,2})$/.test(part) && Number(part) <= 255);
 
-/** IPv4 address. Loopback (127.x) and 0.0.0.0 are ignored. */
+// "version 1.2.3.4", "v2.0.1.0", "build 10.0.0.19": version numbers, not addresses.
+const VERSION_BEFORE = /(?:\bv|vers(?:ion|[ãa]o)|firmware|build|release)\s*[:=]?\s*$/i;
+
+/** IPv4 address. Loopback (127.x), 0.0.0.0 and version numbers ("version 1.2.3.4") are ignored. */
 export const ipv4: Detector = {
   id: "global.ipv4",
   label: "IP address",
   token: "IP",
   country: "global",
   pattern: /(?<![\w.])\d{1,3}(?:\.\d{1,3}){3}(?![\w]|\.\d)/,
-  validate: (value) => isIPv4(value) && !value.startsWith("127.") && value !== "0.0.0.0",
+  validate: (value, { text, start }) =>
+    isIPv4(value) &&
+    !value.startsWith("127.") &&
+    value !== "0.0.0.0" &&
+    !hasContextBefore(text, start, VERSION_BEFORE, 20),
   confidence: 0.8,
 };
 

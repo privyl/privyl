@@ -53,19 +53,34 @@ export const pixKey: Detector = {
   confidence: 0.95,
 };
 
-/** CEP: 01310-100, or 01310100 right after the word "CEP". */
+// Without one of these nearby, "12345-678" is more often a lot, order or protocol number.
+const ADDRESS_WORDS =
+  /\bcep\b|endere[çc]o|\brua\b|\bav\.|avenida|alameda|travessa|rodovia|estrada|bairro|logradouro|postal|\bzip\b|\bmoro\b|resid|entrega/i;
+// State codes ("São Paulo/SP", "Recife - PE"), uppercase only so words like "se" or "to" don't count.
+const STATE_CODE =
+  /(?:^|[\s,/-])(?:AC|AL|AP|AM|BA|CE|DF|ES|GO|MA|MT|MS|MG|PA|PB|PR|PE|PI|RJ|RN|RS|RO|RR|SC|SP|SE|TO)\b/;
+
+/**
+ * CEP: 01310-100, or 01310100 right after the word "CEP".
+ * Only near an address word (CEP, rua, avenida, bairro...) or a state code like "SP".
+ */
 export const cep: Detector = {
   id: "br.cep",
   label: "CEP",
   token: "CEP",
   country: "br",
   pattern: /(?<![\d.\-/])\d{5}-\d{3}(?![\d\-/])|(?<=\bcep\s*:?\s*)\d{8}(?!\d)/i,
-  validate: (value) => onlyDigits(value) !== "00000000",
-  confidence: (_value, { text, start }) =>
-    hasContextBefore(text, start, /\bcep\b/i) ? 0.95 : 0.75,
+  validate: (value, { text, start }) =>
+    onlyDigits(value) !== "00000000" &&
+    (hasContextBefore(text, start, ADDRESS_WORDS, 60) ||
+      hasContextBefore(text, start, STATE_CODE, 30)),
+  confidence: (_value, { text, start }) => (hasContextBefore(text, start, /\bcep\b/i) ? 0.95 : 0.8),
 };
 
-/** CNH (driver's license): 11 digits with check digits, only near the word "CNH" or "habilitação". */
+/**
+ * CNH (driver's license): 11 digits with check digits, only near "CNH", "habilitação" or
+ * "carteira de motorista".
+ */
 export const cnh: Detector = {
   id: "br.cnh",
   label: "CNH",
@@ -73,21 +88,26 @@ export const cnh: Detector = {
   country: "br",
   pattern: /(?<!\d)\d{11}(?!\d)/,
   validate: (value, { text, start }) =>
-    isValidCnh(value) && hasContextBefore(text, start, /\bcnh\b|habilita/i, 40),
+    isValidCnh(value) && hasContextBefore(text, start, /\bcnh\b|habilita|motorista/i, 40),
   confidence: 0.97,
 };
 
-/** Vehicle plate: old format ABC-1234 or Mercosul ABC1D23. */
+const VEHICLE_CONTEXT = /placa|ve[íi]culo|carro|moto|caminh[ãa]o|[ôo]nibus|detran|renavam/i;
+
+/**
+ * Vehicle plate: Mercosul ABC1D23, or the old format ABC-1234.
+ * The old format looks like a product code (SKU), so it needs a word like "placa" or "carro" nearby.
+ */
 export const plate: Detector = {
   id: "br.plate",
   label: "Vehicle plate",
   token: "PLATE",
   country: "br",
   pattern: /(?<![\w-])[A-Z]{3}(?:-\d{4}|\d[A-Z]\d{2})(?![\w-])/,
-  confidence: (value, { text, start }) => {
-    if (hasContextBefore(text, start, /placa|ve[íi]culo|carro|moto/i)) return 0.95;
-    return value.includes("-") ? 0.7 : 0.8;
-  },
+  validate: (value, { text, start }) =>
+    !value.includes("-") || hasContextBefore(text, start, VEHICLE_CONTEXT, 40),
+  confidence: (_value, { text, start }) =>
+    hasContextBefore(text, start, VEHICLE_CONTEXT) ? 0.95 : 0.8,
 };
 
 /**
@@ -99,7 +119,8 @@ export const phoneBr: Detector = {
   label: "Phone (BR)",
   token: "PHONE",
   country: "br",
-  pattern: /(?<![\d+])(?:\+?55[ .-]?)?(?:\(\d{2}\)|\d{2})[ .-]?(?:9[ .-]?)?\d{4}[ .-]?\d{4}(?!\d)/,
+  pattern:
+    /(?<![\d+])(?:\+?55[ .-]?)?(?:\(\d{2}\)|\d{2})[ .-]?(?:9[ .-]?)?\d{4}[ .-]?\d{4}(?!-?\d)/,
   validate: (value, { text, start }) => {
     let digits = onlyDigits(value);
     if (digits.length >= 12 && digits.startsWith("55")) digits = digits.slice(2);
@@ -115,7 +136,8 @@ export const phoneBr: Detector = {
   confidence: (value) => (value.startsWith("+55") ? 0.95 : 0.9),
 };
 
-const PHONE_CONTEXT = /\btel|fone|celular|\bcel\b|whats|contato|ligar/i;
+const PHONE_CONTEXT =
+  /\btel|fone|celular|\bcel\b|whats|\bzap\b|\bwpp\b|contato|\blig[au]|\bchamar?\b/i;
 
 /** All Brazilian detectors. */
 export const br: readonly Detector[] = [cpf, cnpj, pixKey, cep, cnh, plate, phoneBr];

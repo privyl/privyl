@@ -28,7 +28,7 @@ describe("global + br", () => {
     for (let i = 0; i < 200; i++) {
       lines.push(
         `${faker.name()};${faker.cpf()};${faker.email()};${faker.phoneBr()};` +
-          `${faker.cep()};${faker.card()};${faker.ipv4()}`,
+          `CEP ${faker.cep()};${faker.card()};${faker.ipv4()}`,
       );
     }
     const input = lines.join("\n");
