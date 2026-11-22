@@ -1,5 +1,9 @@
 # Privyl
 
+[![npm](https://img.shields.io/npm/v/privyl)](https://www.npmjs.com/package/privyl)
+[![CI](https://github.com/privyl/privyl/actions/workflows/ci.yml/badge.svg)](https://github.com/privyl/privyl/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](https://github.com/privyl/privyl/blob/main/LICENSE)
+
 **Use any AI. Keep your data private.**
 
 Privyl (say "PRI-vil", from _private_) is a privacy layer for AI. It masks personal data before
