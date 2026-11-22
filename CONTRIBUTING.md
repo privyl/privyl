@@ -78,6 +78,18 @@ exports an array of detectors.
 6. **Update the coverage table** in `README.md`, including what is _not_ detected.
 7. **Add benchmark templates** for the new types in `benchmark/dataset.ts` and run `pnpm bench`.
 
+## Releasing (maintainers)
+
+Releases are published to npm by GitHub Actions (`.github/workflows/release.yml`), using npm
+Trusted Publishing: no npm token is stored in the repository, and every version gets a
+provenance statement linking it to the commit that built it.
+
+1. Open a pull request that bumps `version` in `packages/privyl/package.json` (for example
+   `0.2.0`), run `pnpm bench` if detectors changed, and merge it.
+2. On GitHub, create a release with the tag `v0.2.0` (same number, with a `v`) targeting `main`.
+3. The **Release** workflow runs lint, type checks and tests, checks that the tag matches the
+   version, and publishes to npm.
+
 ## Reporting security problems
 
 Please do not open a public issue. See [SECURITY.md](SECURITY.md).
