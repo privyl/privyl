@@ -70,6 +70,15 @@ import { cl } from "privyl/cl"; // RUT/RUN
 
 // Pick the countries your users come from: fewer detectors, fewer false alarms.
 const shield = createShield({ detectors: [...global, ...br, ...pt] });`,
+  proxy: `npx privyl proxy            # http://127.0.0.1:8787
+
+# Point any SDK, in any language, at it:
+ANTHROPIC_BASE_URL=http://127.0.0.1:8787/anthropic
+OPENAI_BASE_URL=http://127.0.0.1:8787/openai/v1
+
+# Or with Docker:
+docker build -t privyl-proxy https://github.com/privyl/privyl.git#main:proxy
+docker run --rm -p 127.0.0.1:8787:8787 privyl-proxy`,
   findings: `[
   {
     type: "br.cpf",
@@ -153,6 +162,16 @@ const en: DocSection[] = [
       "Streaming (`stream: true`) is not supported yet: the call fails instead of sending unprotected data.",
     ],
     code: code.adapters,
+  },
+  {
+    id: "proxy",
+    title: "Proxy (any language)",
+    body: [
+      "For Python, Go, Ruby or any other language: run the proxy and set the SDK base URL. It masks the request, forwards it and restores the answer.",
+      "Protected: Anthropic `/v1/messages`, OpenAI (or compatible) `/v1/chat/completions` and `/v1/responses`. A request with a body to any other endpoint is refused instead of being sent unmasked, and so is streaming.",
+      "It listens on `127.0.0.1` by default and writes nothing to disk. The log shows only types and counts, never values. Your API key goes from your app to the provider; the proxy does not store it.",
+    ],
+    code: code.proxy,
   },
   {
     id: "findings",
@@ -249,6 +268,16 @@ const pt: DocSection[] = [
       "Streaming (`stream: true`) ainda não é suportado: a chamada falha em vez de enviar dados sem proteção.",
     ],
     code: code.adapters,
+  },
+  {
+    id: "proxy",
+    title: "Proxy (qualquer linguagem)",
+    body: [
+      "Para Python, Go, Ruby ou qualquer outra linguagem: rode o proxy e mude a URL base do SDK. Ele mascara a requisição, repassa e restaura a resposta.",
+      "Protegidos: Anthropic `/v1/messages`, OpenAI (ou compatível) `/v1/chat/completions` e `/v1/responses`. Uma requisição com corpo para qualquer outro endpoint é recusada em vez de ir sem máscara, e o mesmo vale para streaming.",
+      "Por padrão ele escuta em `127.0.0.1` e não grava nada em disco. O log mostra só tipos e quantidades, nunca valores. Sua chave de API vai do seu app para o provedor; o proxy não a guarda.",
+    ],
+    code: code.proxy,
   },
   {
     id: "findings",
