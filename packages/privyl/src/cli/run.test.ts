@@ -1,4 +1,13 @@
-import { mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync, existsSync } from "node:fs";
+import {
+  existsSync,
+  mkdirSync,
+  mkdtempSync,
+  readdirSync,
+  readFileSync,
+  rmSync,
+  symlinkSync,
+  writeFileSync,
+} from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { afterEach, beforeEach, describe, expect, it } from "vitest";
@@ -90,6 +99,32 @@ describe("privyl scan", () => {
     expect(existsSync(join(dir, "privyl-masked/clean.md"))).toBe(false);
     // Running again does not scan its own output folder.
     expect(cli("scan", ".", "--json").out).not.toContain("privyl-masked");
+  });
+
+  it("--fix refuses to write through a symlinked output folder", () => {
+    // A malicious repo ships "privyl-masked" as a link to somewhere else on the disk.
+    const elsewhere = mkdtempSync(join(tmpdir(), "privyl-elsewhere-"));
+    try {
+      try {
+        symlinkSync(elsewhere, join(dir, "privyl-masked"), "junction");
+      } catch {
+        return; // this system does not allow links without admin rights
+      }
+      const { code, err } = cli("scan", ".", "--fix");
+      expect(code).toBe(2);
+      expect(err).toMatch(/symbolic link/);
+      expect(readdirSync(elsewhere)).toEqual([]);
+    } finally {
+      rmSync(elsewhere, { recursive: true, force: true });
+    }
+  });
+
+  it("does not print control characters from file names", () => {
+    if (process.platform === "win32") return; // Windows does not allow them in file names
+    write("evil\u001b[2J.log", "ana@example.com");
+    const { out } = cli("scan", ".");
+    expect(out).not.toContain("\u001b[2J");
+    expect(out).toContain("evil?[2J.log");
   });
 
   it("--fix --out uses another folder", () => {

@@ -107,6 +107,32 @@ describe("Pix key (random)", () => {
   });
 });
 
+describe("CPF: spaces and business codes", () => {
+  it("accepts a CPF with spaces only right after the word CPF", () => {
+    expect(found(cpf, "Meu CPF é 529 982 247 25")).toEqual(["529 982 247 25"]);
+    expect(found(cpf, "CPF: 529 982 247-25")).toEqual(["529 982 247-25"]);
+    expect(found(cpf, "529 982 247 25")).toEqual([]);
+    expect(found(cpf, "11 529 982 247 25")).toEqual([]); // part of a longer spaced number
+  });
+
+  it("skips bare digits right after pedido, nota fiscal, order...", () => {
+    expect(found(cpf, "pedido 52998224725")).toEqual([]);
+    expect(found(cpf, "order=52998224725")).toEqual([]);
+    expect(found(cpf, "Nota fiscal nº 52998224725")).toEqual([]);
+    expect(found(cpf, "pedido do CPF 52998224725")).toEqual(["52998224725"]);
+    expect(found(cpf, "pedido 529.982.247-25")).toEqual(["529.982.247-25"]); // formatted
+    expect(found(cnpj, "NF-e 11222333000181")).toEqual([]);
+  });
+
+  it("sees through non-breaking spaces and Unicode dashes from copy and paste", () => {
+    const shield = createShield({ detectors: br });
+    const text = "CPF 529.982.247\u201125, tel (11)\u00a098765\u20134321";
+    const { text: masked, vault } = shield.mask(text);
+    expect(masked).toBe("CPF [CPF_1], tel [PHONE_1]");
+    expect(shield.unmask(masked, vault)).toBe(text); // original characters come back
+  });
+});
+
 describe("CEP", () => {
   it("detects formatted CEPs and raw CEPs after the word CEP", () => {
     expect(found(cep, "Rua X, 01310-100, SP")).toEqual(["01310-100"]);
@@ -119,12 +145,20 @@ describe("CEP", () => {
     expect(found(cep, "00000-000")).toEqual([]);
   });
 
-  it("needs an address nearby: a lot or order number is not a CEP", () => {
+  it("skips lot, order and protocol numbers", () => {
     expect(found(cep, "Produto em estoque, lote 12345-678.")).toEqual([]);
+    expect(found(cep, "Protocolo nº 12345-678 aberto")).toEqual([]);
+    expect(found(cep, "Pedido #12345-678")).toEqual([]);
     expect(found(cep, "Av. Paulista, 1000, Bela Vista, 01310-100")).toEqual(["01310-100"]);
     expect(found(cep, "São Paulo/SP 01310-100")).toEqual(["01310-100"]);
-    expect(found(cep, "Entrega em 01310-100")).toEqual(["01310-100"]);
-    expect(found(cep, "se 12345-678")).toEqual([]); // lowercase "se" is a word, not Sergipe
+    expect(found(cep, "Deixa no 01310-100 por favor")).toEqual(["01310-100"]);
+  });
+
+  it("is more confident near an address word", () => {
+    const shield = createShield({ detectors: [cep] });
+    expect(shield.detect("CEP 01310-100")[0]?.confidence).toBe(0.95);
+    expect(shield.detect("Rua X, 01310-100")[0]?.confidence).toBe(0.85);
+    expect(shield.detect("no 01310-100")[0]?.confidence).toBe(0.7);
   });
 });
 
@@ -170,10 +204,14 @@ describe("Vehicle plate", () => {
     expect(found(plate, "ABC1234")).toEqual([]);
   });
 
-  it("needs a vehicle word for the old format (it looks like a product code)", () => {
+  it("skips the old format right after a product label (it looks like a SKU)", () => {
     expect(found(plate, "Produto ABC-1234 em estoque")).toEqual([]);
+    expect(found(plate, "SKU: ABC-1234")).toEqual([]);
+    expect(found(plate, "Use o cupom BRA2E19 no checkout")).toEqual([]);
+    expect(found(plate, "Vi o ABC-1234 parado na frente")).toEqual(["ABC-1234"]);
     expect(found(plate, "Veículo placa ABC-1234")).toEqual(["ABC-1234"]);
-    expect(found(plate, "Pedido BRA2E19")).toEqual(["BRA2E19"]); // Mercosul is distinctive
+    expect(found(plate, "Pedido BRA2E19")).toEqual([]); // right after a code label
+    expect(found(plate, "Vi o BRA2E19 na garagem")).toEqual(["BRA2E19"]);
   });
 });
 
@@ -205,7 +243,9 @@ describe("Phone (BR)", () => {
   });
 
   it("accepts digits-only numbers only near words like tel or WhatsApp", () => {
-    expect(found(phoneBr, "11987654321")).toEqual([]);
+    expect(found(phoneBr, "Cliente;11987654321")).toEqual(["11987654321"]); // mobile shape
+    expect(found(phoneBr, "pedido 11987654321")).toEqual([]);
+    expect(found(phoneBr, "1134567890")).toEqual([]); // landline digits need context
     expect(found(phoneBr, "WhatsApp 11987654321")).toEqual(["11987654321"]);
     expect(found(phoneBr, "Me chama no 11987654321")).toEqual(["11987654321"]);
     expect(found(phoneBr, "chamado 11987654321 aberto")).toEqual([]); // "chamado" = ticket

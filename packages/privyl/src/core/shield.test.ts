@@ -100,6 +100,14 @@ describe("mask", () => {
     expect(shield.unmask(text, vault)).toBe(input);
   });
 
+  it("also skips placeholders written the loose ways unmask accepts", () => {
+    // Before the fix, "EMAIL_1" in the input became the real email after unmask.
+    const input = "Ref EMAIL_1 and [email 2] in the doc; real one is ana@example.com";
+    const { text, vault } = shield.mask(input);
+    expect(text).toBe("Ref EMAIL_1 and [email 2] in the doc; real one is [EMAIL_3]");
+    expect(shield.unmask(text, vault)).toBe(input);
+  });
+
   it("does not reuse a regex lastIndex between calls", () => {
     const a = shield.mask("x a@example.com");
     const b = shield.mask("a@example.com");
@@ -190,6 +198,22 @@ describe("Vault", () => {
 
   it("rejects invalid data", () => {
     expect(() => Vault.fromJSON({ version: 1, entries: [["oops", "x"]] })).toThrow();
+    const bad = (data: unknown) => () => Vault.fromJSON(data as never);
+    expect(bad(null)).toThrow(/Invalid vault data/);
+    expect(bad({ version: 2, entries: [] })).toThrow(/Invalid vault data/);
+    expect(bad({ version: 1, entries: [["[CPF_1]", 123]] })).toThrow(/strings/);
+    expect(
+      bad({
+        version: 1,
+        entries: [
+          ["[CPF_1]", "a"],
+          ["[CPF_1]", "b"],
+        ],
+      }),
+    ).toThrow(/Duplicate/);
+    // "__proto__" is just a string to a Map: nothing global changes.
+    Vault.fromJSON({ version: 1, entries: [["[X_1]", "__proto__"]] });
+    expect(({} as Record<string, unknown>).polluted).toBeUndefined();
   });
 });
 

@@ -1,6 +1,14 @@
 // The `privyl` command line. Node only (uses the file system).
 
-import { existsSync, mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from "node:fs";
+import {
+  existsSync,
+  lstatSync,
+  mkdirSync,
+  readdirSync,
+  readFileSync,
+  statSync,
+  writeFileSync,
+} from "node:fs";
 import { basename, dirname, extname, join, relative, resolve } from "node:path";
 import { createShield } from "../core/shield.js";
 import { Vault } from "../core/vault.js";
@@ -94,6 +102,14 @@ export function run(argv: readonly string[], io: Io): number {
 
     if (options.fix && found.length > 0) {
       const target = options.inPlace ? file : join(outDir, rel);
+      if (!options.inPlace) {
+        try {
+          assertSafeTarget(outDir, target);
+        } catch (error) {
+          io.err((error as Error).message);
+          return 2;
+        }
+      }
       mkdirSync(dirname(target), { recursive: true });
       writeFileSync(target, shield.mask(text, { vault }).text);
       written.push(toPosix(relative(io.cwd, target)));
@@ -194,7 +210,7 @@ function formatReport(
   for (const f of findings) {
     if (f.file !== currentFile) {
       currentFile = f.file;
-      lines.push(`  ${bold(cyan(f.file ?? ""))}`);
+      lines.push(`  ${bold(cyan(printable(f.file ?? "")))}`);
     }
     const where = dim(`${f.line}:${f.column}`.padEnd(8));
     lines.push(`    ${where} ${yellow(f.label.padEnd(labelWidth))}  ${f.preview}`);
@@ -217,3 +233,24 @@ function formatReport(
   lines.push("");
   return lines.join("\n");
 }
+
+/**
+ * A scanned repository could ship a symlink named like the output folder (or a folder inside it)
+ * pointing somewhere else, so `--fix` would write files outside the project. Refuse any symlink
+ * on the way from the output folder to the file.
+ */
+function assertSafeTarget(outDir: string, target: string): void {
+  let current = target;
+  while (current.length >= outDir.length) {
+    if (existsSync(current) && lstatSync(current).isSymbolicLink()) {
+      throw new Error(`Refusing to write through a symbolic link: ${current}`);
+    }
+    if (current === outDir) break;
+    current = dirname(current);
+  }
+}
+
+// File names come from the scanned folder. Control characters are replaced so a crafted name
+// cannot move the cursor, change colors or fake lines in the terminal.
+// eslint-disable-next-line no-control-regex -- removing control characters is the point
+const printable = (s: string) => s.replace(/[\u0000-\u001f\u007f-\u009f]/g, "?");

@@ -1258,3 +1258,343 @@
 {"id":"trap-62-17","category":"trap","text":"Lote 20235377-0 despachado.","entities":[]}
 {"id":"trap-62-18","category":"trap","text":"Lote 14527647-0 despachado.","entities":[]}
 {"id":"trap-62-19","category":"trap","text":"Lote 11192901-7 despachado.","entities":[]}
+{"id":"chat-63-00","category":"chat","text":"Meu e-mail: diego.modelo88+loja@example.com e telefone (12) 9 3175-9464","entities":[{"type":"EMAIL","start":12,"end":43},{"type":"PHONE","start":55,"end":71}]}
+{"id":"chat-63-01","category":"chat","text":"Meu e-mail: diego.simulado40+loja@example.com e telefone (79) 9 6371-5893","entities":[{"type":"EMAIL","start":12,"end":45},{"type":"PHONE","start":57,"end":73}]}
+{"id":"chat-63-02","category":"chat","text":"Meu e-mail: diego.exemplo3+loja@example.com e telefone (27) 9 5177-5000","entities":[{"type":"EMAIL","start":12,"end":43},{"type":"PHONE","start":55,"end":71}]}
+{"id":"chat-63-03","category":"chat","text":"Meu e-mail: diego.amostra69+loja@example.com e telefone (32) 9 9708-1718","entities":[{"type":"EMAIL","start":12,"end":44},{"type":"PHONE","start":56,"end":72}]}
+{"id":"chat-63-04","category":"chat","text":"Meu e-mail: felipe.simulado61+loja@example.com e telefone (33) 9 5109-2986","entities":[{"type":"EMAIL","start":12,"end":46},{"type":"PHONE","start":58,"end":74}]}
+{"id":"chat-63-05","category":"chat","text":"Meu e-mail: heitor.simulado97+loja@example.com e telefone (22) 9 4563-7867","entities":[{"type":"EMAIL","start":12,"end":46},{"type":"PHONE","start":58,"end":74}]}
+{"id":"chat-63-06","category":"chat","text":"Meu e-mail: heitor.simulado20+loja@example.com e telefone (69) 9 8269-3873","entities":[{"type":"EMAIL","start":12,"end":46},{"type":"PHONE","start":58,"end":74}]}
+{"id":"chat-63-07","category":"chat","text":"Meu e-mail: bruno.amostra41+loja@example.com e telefone (79) 9 5382-4161","entities":[{"type":"EMAIL","start":12,"end":44},{"type":"PHONE","start":56,"end":72}]}
+{"id":"chat-63-08","category":"chat","text":"Meu e-mail: diego.exemplo74+loja@example.com e telefone (44) 9 0753-7990","entities":[{"type":"EMAIL","start":12,"end":44},{"type":"PHONE","start":56,"end":72}]}
+{"id":"chat-63-09","category":"chat","text":"Meu e-mail: gabi.exemplo33+loja@example.com e telefone (97) 9 7353-6501","entities":[{"type":"EMAIL","start":12,"end":43},{"type":"PHONE","start":55,"end":71}]}
+{"id":"chat-63-10","category":"chat","text":"Meu e-mail: felipe.amostra58+loja@example.com e telefone (51) 9 3586-2150","entities":[{"type":"EMAIL","start":12,"end":45},{"type":"PHONE","start":57,"end":73}]}
+{"id":"chat-63-11","category":"chat","text":"Meu e-mail: ana.teste24+loja@example.com e telefone (93) 9 2544-9871","entities":[{"type":"EMAIL","start":12,"end":40},{"type":"PHONE","start":52,"end":68}]}
+{"id":"chat-63-12","category":"chat","text":"Meu e-mail: carla.exemplo11+loja@example.com e telefone (62) 9 6290-0745","entities":[{"type":"EMAIL","start":12,"end":44},{"type":"PHONE","start":56,"end":72}]}
+{"id":"chat-63-13","category":"chat","text":"Meu e-mail: bruno.simulado17+loja@example.com e telefone (87) 9 6207-4588","entities":[{"type":"EMAIL","start":12,"end":45},{"type":"PHONE","start":57,"end":73}]}
+{"id":"chat-63-14","category":"chat","text":"Meu e-mail: elisa.ficticio34+loja@example.com e telefone (95) 9 1689-7370","entities":[{"type":"EMAIL","start":12,"end":45},{"type":"PHONE","start":57,"end":73}]}
+{"id":"chat-63-15","category":"chat","text":"Meu e-mail: diego.amostra83+loja@example.com e telefone (96) 9 8600-6614","entities":[{"type":"EMAIL","start":12,"end":44},{"type":"PHONE","start":56,"end":72}]}
+{"id":"chat-63-16","category":"chat","text":"Meu e-mail: bruno.amostra56+loja@example.com e telefone (99) 9 6043-9464","entities":[{"type":"EMAIL","start":12,"end":44},{"type":"PHONE","start":56,"end":72}]}
+{"id":"chat-63-17","category":"chat","text":"Meu e-mail: elisa.ficticio59+loja@example.com e telefone (85) 9 7779-2187","entities":[{"type":"EMAIL","start":12,"end":45},{"type":"PHONE","start":57,"end":73}]}
+{"id":"chat-63-18","category":"chat","text":"Meu e-mail: carla.exemplo36+loja@example.com e telefone (48) 9 3601-9961","entities":[{"type":"EMAIL","start":12,"end":44},{"type":"PHONE","start":56,"end":72}]}
+{"id":"chat-63-19","category":"chat","text":"Meu e-mail: elisa.ficticio85+loja@example.com e telefone (99) 9 3481-2559","entities":[{"type":"EMAIL","start":12,"end":45},{"type":"PHONE","start":57,"end":73}]}
+{"id":"log-64-00","category":"log","text":"{\"user\":{\"email\":\"diego.simulado37@example.com\",\"cpf\":\"22607894042\"},\"ip\":\"198.51.100.247\"}","entities":[{"type":"EMAIL","start":18,"end":46},{"type":"CPF","start":55,"end":66},{"type":"IP","start":75,"end":89}]}
+{"id":"log-64-01","category":"log","text":"{\"user\":{\"email\":\"carla.modelo4@example.com\",\"cpf\":\"62137255553\"},\"ip\":\"192.0.2.23\"}","entities":[{"type":"EMAIL","start":18,"end":43},{"type":"CPF","start":52,"end":63},{"type":"IP","start":72,"end":82}]}
+{"id":"log-64-02","category":"log","text":"{\"user\":{\"email\":\"ana.exemplo38@example.com\",\"cpf\":\"78596171703\"},\"ip\":\"198.51.100.217\"}","entities":[{"type":"EMAIL","start":18,"end":43},{"type":"CPF","start":52,"end":63},{"type":"IP","start":72,"end":86}]}
+{"id":"log-64-03","category":"log","text":"{\"user\":{\"email\":\"elisa.amostra59@example.com\",\"cpf\":\"13820829245\"},\"ip\":\"192.0.2.31\"}","entities":[{"type":"EMAIL","start":18,"end":45},{"type":"CPF","start":54,"end":65},{"type":"IP","start":74,"end":84}]}
+{"id":"log-64-04","category":"log","text":"{\"user\":{\"email\":\"carla.amostra15@example.com\",\"cpf\":\"37227869245\"},\"ip\":\"198.51.100.99\"}","entities":[{"type":"EMAIL","start":18,"end":45},{"type":"CPF","start":54,"end":65},{"type":"IP","start":74,"end":87}]}
+{"id":"log-64-05","category":"log","text":"{\"user\":{\"email\":\"heitor.amostra50@example.com\",\"cpf\":\"96006287935\"},\"ip\":\"192.0.2.206\"}","entities":[{"type":"EMAIL","start":18,"end":46},{"type":"CPF","start":55,"end":66},{"type":"IP","start":75,"end":86}]}
+{"id":"log-64-06","category":"log","text":"{\"user\":{\"email\":\"diego.modelo63@example.com\",\"cpf\":\"91144092086\"},\"ip\":\"203.0.113.81\"}","entities":[{"type":"EMAIL","start":18,"end":44},{"type":"CPF","start":53,"end":64},{"type":"IP","start":73,"end":85}]}
+{"id":"log-64-07","category":"log","text":"{\"user\":{\"email\":\"carla.simulado44@example.com\",\"cpf\":\"71018919260\"},\"ip\":\"198.51.100.195\"}","entities":[{"type":"EMAIL","start":18,"end":46},{"type":"CPF","start":55,"end":66},{"type":"IP","start":75,"end":89}]}
+{"id":"log-64-08","category":"log","text":"{\"user\":{\"email\":\"elisa.simulado43@example.com\",\"cpf\":\"86329381348\"},\"ip\":\"198.51.100.174\"}","entities":[{"type":"EMAIL","start":18,"end":46},{"type":"CPF","start":55,"end":66},{"type":"IP","start":75,"end":89}]}
+{"id":"log-64-09","category":"log","text":"{\"user\":{\"email\":\"felipe.amostra77@example.com\",\"cpf\":\"21487575980\"},\"ip\":\"203.0.113.254\"}","entities":[{"type":"EMAIL","start":18,"end":46},{"type":"CPF","start":55,"end":66},{"type":"IP","start":75,"end":88}]}
+{"id":"log-64-10","category":"log","text":"{\"user\":{\"email\":\"carla.simulado56@example.com\",\"cpf\":\"21667627600\"},\"ip\":\"203.0.113.70\"}","entities":[{"type":"EMAIL","start":18,"end":46},{"type":"CPF","start":55,"end":66},{"type":"IP","start":75,"end":87}]}
+{"id":"log-64-11","category":"log","text":"{\"user\":{\"email\":\"elisa.teste45@example.com\",\"cpf\":\"59227327819\"},\"ip\":\"203.0.113.221\"}","entities":[{"type":"EMAIL","start":18,"end":43},{"type":"CPF","start":52,"end":63},{"type":"IP","start":72,"end":85}]}
+{"id":"log-64-12","category":"log","text":"{\"user\":{\"email\":\"carla.amostra70@example.com\",\"cpf\":\"01737847710\"},\"ip\":\"192.0.2.183\"}","entities":[{"type":"EMAIL","start":18,"end":45},{"type":"CPF","start":54,"end":65},{"type":"IP","start":74,"end":85}]}
+{"id":"log-64-13","category":"log","text":"{\"user\":{\"email\":\"diego.simulado62@example.com\",\"cpf\":\"90528369067\"},\"ip\":\"203.0.113.226\"}","entities":[{"type":"EMAIL","start":18,"end":46},{"type":"CPF","start":55,"end":66},{"type":"IP","start":75,"end":88}]}
+{"id":"log-64-14","category":"log","text":"{\"user\":{\"email\":\"carla.amostra77@example.com\",\"cpf\":\"00236772449\"},\"ip\":\"192.0.2.94\"}","entities":[{"type":"EMAIL","start":18,"end":45},{"type":"CPF","start":54,"end":65},{"type":"IP","start":74,"end":84}]}
+{"id":"log-64-15","category":"log","text":"{\"user\":{\"email\":\"bruno.teste73@example.com\",\"cpf\":\"63622251042\"},\"ip\":\"198.51.100.5\"}","entities":[{"type":"EMAIL","start":18,"end":43},{"type":"CPF","start":52,"end":63},{"type":"IP","start":72,"end":84}]}
+{"id":"log-64-16","category":"log","text":"{\"user\":{\"email\":\"carla.simulado13@example.com\",\"cpf\":\"58636087651\"},\"ip\":\"203.0.113.101\"}","entities":[{"type":"EMAIL","start":18,"end":46},{"type":"CPF","start":55,"end":66},{"type":"IP","start":75,"end":88}]}
+{"id":"log-64-17","category":"log","text":"{\"user\":{\"email\":\"bruno.exemplo89@example.com\",\"cpf\":\"00379946033\"},\"ip\":\"203.0.113.124\"}","entities":[{"type":"EMAIL","start":18,"end":45},{"type":"CPF","start":54,"end":65},{"type":"IP","start":74,"end":87}]}
+{"id":"log-64-18","category":"log","text":"{\"user\":{\"email\":\"elisa.amostra87@example.com\",\"cpf\":\"20692587268\"},\"ip\":\"192.0.2.122\"}","entities":[{"type":"EMAIL","start":18,"end":45},{"type":"CPF","start":54,"end":65},{"type":"IP","start":74,"end":85}]}
+{"id":"log-64-19","category":"log","text":"{\"user\":{\"email\":\"bruno.ficticio6@example.com\",\"cpf\":\"07867355111\"},\"ip\":\"203.0.113.242\"}","entities":[{"type":"EMAIL","start":18,"end":45},{"type":"CPF","start":54,"end":65},{"type":"IP","start":74,"end":87}]}
+{"id":"form-65-00","category":"form","text":"Cliente Teste;73420231164;66934044514","entities":[{"type":"CPF","start":14,"end":25},{"type":"PHONE","start":26,"end":37}]}
+{"id":"form-65-01","category":"form","text":"Cliente Teste;04065175844;11983166292","entities":[{"type":"CPF","start":14,"end":25},{"type":"PHONE","start":26,"end":37}]}
+{"id":"form-65-02","category":"form","text":"Cliente Teste;64936105597;69968448647","entities":[{"type":"CPF","start":14,"end":25},{"type":"PHONE","start":26,"end":37}]}
+{"id":"form-65-03","category":"form","text":"Cliente Teste;38645050382;96921284910","entities":[{"type":"CPF","start":14,"end":25},{"type":"PHONE","start":26,"end":37}]}
+{"id":"form-65-04","category":"form","text":"Cliente Teste;18349996005;84974266465","entities":[{"type":"CPF","start":14,"end":25},{"type":"PHONE","start":26,"end":37}]}
+{"id":"form-65-05","category":"form","text":"Cliente Teste;92730336524;94960754557","entities":[{"type":"CPF","start":14,"end":25},{"type":"PHONE","start":26,"end":37}]}
+{"id":"form-65-06","category":"form","text":"Cliente Teste;31592213006;75968387485","entities":[{"type":"CPF","start":14,"end":25},{"type":"PHONE","start":26,"end":37}]}
+{"id":"form-65-07","category":"form","text":"Cliente Teste;39468757188;86957113990","entities":[{"type":"CPF","start":14,"end":25},{"type":"PHONE","start":26,"end":37}]}
+{"id":"form-65-08","category":"form","text":"Cliente Teste;72390789579;22906957404","entities":[{"type":"CPF","start":14,"end":25},{"type":"PHONE","start":26,"end":37}]}
+{"id":"form-65-09","category":"form","text":"Cliente Teste;96037008949;95998464455","entities":[{"type":"CPF","start":14,"end":25},{"type":"PHONE","start":26,"end":37}]}
+{"id":"form-65-10","category":"form","text":"Cliente Teste;83865465498;94919754205","entities":[{"type":"CPF","start":14,"end":25},{"type":"PHONE","start":26,"end":37}]}
+{"id":"form-65-11","category":"form","text":"Cliente Teste;36678877527;31900219344","entities":[{"type":"CPF","start":14,"end":25},{"type":"PHONE","start":26,"end":37}]}
+{"id":"form-65-12","category":"form","text":"Cliente Teste;26612004959;68916229866","entities":[{"type":"CPF","start":14,"end":25},{"type":"PHONE","start":26,"end":37}]}
+{"id":"form-65-13","category":"form","text":"Cliente Teste;90495879177;99956294269","entities":[{"type":"CPF","start":14,"end":25},{"type":"PHONE","start":26,"end":37}]}
+{"id":"form-65-14","category":"form","text":"Cliente Teste;36479730097;83961838574","entities":[{"type":"CPF","start":14,"end":25},{"type":"PHONE","start":26,"end":37}]}
+{"id":"form-65-15","category":"form","text":"Cliente Teste;78726064707;77955937415","entities":[{"type":"CPF","start":14,"end":25},{"type":"PHONE","start":26,"end":37}]}
+{"id":"form-65-16","category":"form","text":"Cliente Teste;42299690581;38999232624","entities":[{"type":"CPF","start":14,"end":25},{"type":"PHONE","start":26,"end":37}]}
+{"id":"form-65-17","category":"form","text":"Cliente Teste;61814142312;35911889973","entities":[{"type":"CPF","start":14,"end":25},{"type":"PHONE","start":26,"end":37}]}
+{"id":"form-65-18","category":"form","text":"Cliente Teste;32628485575;32944289833","entities":[{"type":"CPF","start":14,"end":25},{"type":"PHONE","start":26,"end":37}]}
+{"id":"form-65-19","category":"form","text":"Cliente Teste;71078668850;13931283318","entities":[{"type":"CPF","start":14,"end":25},{"type":"PHONE","start":26,"end":37}]}
+{"id":"chat-66-00","category":"chat","text":"Segue meu cartão 5105 1051 0510 5100, validade 08/30","entities":[{"type":"CARD","start":17,"end":36}]}
+{"id":"chat-66-01","category":"chat","text":"Segue meu cartão 5105 1051 0510 5100, validade 08/30","entities":[{"type":"CARD","start":17,"end":36}]}
+{"id":"chat-66-02","category":"chat","text":"Segue meu cartão 5105 1051 0510 5100, validade 08/30","entities":[{"type":"CARD","start":17,"end":36}]}
+{"id":"chat-66-03","category":"chat","text":"Segue meu cartão 3782 822463 10005, validade 08/30","entities":[{"type":"CARD","start":17,"end":34}]}
+{"id":"chat-66-04","category":"chat","text":"Segue meu cartão 4111 1111 1111 1111, validade 08/30","entities":[{"type":"CARD","start":17,"end":36}]}
+{"id":"chat-66-05","category":"chat","text":"Segue meu cartão 4242 4242 4242 4242, validade 08/30","entities":[{"type":"CARD","start":17,"end":36}]}
+{"id":"chat-66-06","category":"chat","text":"Segue meu cartão 3782 822463 10005, validade 08/30","entities":[{"type":"CARD","start":17,"end":34}]}
+{"id":"chat-66-07","category":"chat","text":"Segue meu cartão 5105 1051 0510 5100, validade 08/30","entities":[{"type":"CARD","start":17,"end":36}]}
+{"id":"chat-66-08","category":"chat","text":"Segue meu cartão 4111 1111 1111 1111, validade 08/30","entities":[{"type":"CARD","start":17,"end":36}]}
+{"id":"chat-66-09","category":"chat","text":"Segue meu cartão 5555 5555 5555 4444, validade 08/30","entities":[{"type":"CARD","start":17,"end":36}]}
+{"id":"chat-66-10","category":"chat","text":"Segue meu cartão 6011 1111 1111 1117, validade 08/30","entities":[{"type":"CARD","start":17,"end":36}]}
+{"id":"chat-66-11","category":"chat","text":"Segue meu cartão 3782 822463 10005, validade 08/30","entities":[{"type":"CARD","start":17,"end":34}]}
+{"id":"chat-66-12","category":"chat","text":"Segue meu cartão 5105 1051 0510 5100, validade 08/30","entities":[{"type":"CARD","start":17,"end":36}]}
+{"id":"chat-66-13","category":"chat","text":"Segue meu cartão 3782 822463 10005, validade 08/30","entities":[{"type":"CARD","start":17,"end":34}]}
+{"id":"chat-66-14","category":"chat","text":"Segue meu cartão 4111 1111 1111 1111, validade 08/30","entities":[{"type":"CARD","start":17,"end":36}]}
+{"id":"chat-66-15","category":"chat","text":"Segue meu cartão 4242 4242 4242 4242, validade 08/30","entities":[{"type":"CARD","start":17,"end":36}]}
+{"id":"chat-66-16","category":"chat","text":"Segue meu cartão 3782 822463 10005, validade 08/30","entities":[{"type":"CARD","start":17,"end":34}]}
+{"id":"chat-66-17","category":"chat","text":"Segue meu cartão 4242 4242 4242 4242, validade 08/30","entities":[{"type":"CARD","start":17,"end":36}]}
+{"id":"chat-66-18","category":"chat","text":"Segue meu cartão 6011 1111 1111 1117, validade 08/30","entities":[{"type":"CARD","start":17,"end":36}]}
+{"id":"chat-66-19","category":"chat","text":"Segue meu cartão 5105 1051 0510 5100, validade 08/30","entities":[{"type":"CARD","start":17,"end":36}]}
+{"id":"chat-67-00","category":"chat","text":"Pode ligar no (43) 93250–2101, CPF 844 774 660 72","entities":[{"type":"PHONE","start":14,"end":29},{"type":"CPF","start":35,"end":49}]}
+{"id":"chat-67-01","category":"chat","text":"Pode ligar no (28) 94205–7680, CPF 451 400 674 20","entities":[{"type":"PHONE","start":14,"end":29},{"type":"CPF","start":35,"end":49}]}
+{"id":"chat-67-02","category":"chat","text":"Pode ligar no (48) 99296–4291, CPF 514 266 179 68","entities":[{"type":"PHONE","start":14,"end":29},{"type":"CPF","start":35,"end":49}]}
+{"id":"chat-67-03","category":"chat","text":"Pode ligar no (66) 90203–6150, CPF 559 522 144 52","entities":[{"type":"PHONE","start":14,"end":29},{"type":"CPF","start":35,"end":49}]}
+{"id":"chat-67-04","category":"chat","text":"Pode ligar no (87) 99529–4039, CPF 462 045 134 78","entities":[{"type":"PHONE","start":14,"end":29},{"type":"CPF","start":35,"end":49}]}
+{"id":"chat-67-05","category":"chat","text":"Pode ligar no (22) 92544–4385, CPF 991 707 718 98","entities":[{"type":"PHONE","start":14,"end":29},{"type":"CPF","start":35,"end":49}]}
+{"id":"chat-67-06","category":"chat","text":"Pode ligar no (37) 93281–8000, CPF 095 503 046 39","entities":[{"type":"PHONE","start":14,"end":29},{"type":"CPF","start":35,"end":49}]}
+{"id":"chat-67-07","category":"chat","text":"Pode ligar no (71) 90100–5434, CPF 070 525 873 43","entities":[{"type":"PHONE","start":14,"end":29},{"type":"CPF","start":35,"end":49}]}
+{"id":"chat-67-08","category":"chat","text":"Pode ligar no (83) 93840–5318, CPF 092 941 660 07","entities":[{"type":"PHONE","start":14,"end":29},{"type":"CPF","start":35,"end":49}]}
+{"id":"chat-67-09","category":"chat","text":"Pode ligar no (37) 92145–5105, CPF 898 264 641 80","entities":[{"type":"PHONE","start":14,"end":29},{"type":"CPF","start":35,"end":49}]}
+{"id":"chat-67-10","category":"chat","text":"Pode ligar no (22) 97656–8079, CPF 461 180 559 04","entities":[{"type":"PHONE","start":14,"end":29},{"type":"CPF","start":35,"end":49}]}
+{"id":"chat-67-11","category":"chat","text":"Pode ligar no (68) 95655–2161, CPF 329 030 782 46","entities":[{"type":"PHONE","start":14,"end":29},{"type":"CPF","start":35,"end":49}]}
+{"id":"chat-67-12","category":"chat","text":"Pode ligar no (48) 91402–1666, CPF 426 927 465 46","entities":[{"type":"PHONE","start":14,"end":29},{"type":"CPF","start":35,"end":49}]}
+{"id":"chat-67-13","category":"chat","text":"Pode ligar no (49) 93480–7693, CPF 347 758 681 60","entities":[{"type":"PHONE","start":14,"end":29},{"type":"CPF","start":35,"end":49}]}
+{"id":"chat-67-14","category":"chat","text":"Pode ligar no (51) 96365–8155, CPF 499 754 888 03","entities":[{"type":"PHONE","start":14,"end":29},{"type":"CPF","start":35,"end":49}]}
+{"id":"chat-67-15","category":"chat","text":"Pode ligar no (53) 91355–3739, CPF 487 799 630 30","entities":[{"type":"PHONE","start":14,"end":29},{"type":"CPF","start":35,"end":49}]}
+{"id":"chat-67-16","category":"chat","text":"Pode ligar no (14) 98534–0453, CPF 738 462 564 55","entities":[{"type":"PHONE","start":14,"end":29},{"type":"CPF","start":35,"end":49}]}
+{"id":"chat-67-17","category":"chat","text":"Pode ligar no (95) 97127–1169, CPF 367 438 794 87","entities":[{"type":"PHONE","start":14,"end":29},{"type":"CPF","start":35,"end":49}]}
+{"id":"chat-67-18","category":"chat","text":"Pode ligar no (62) 94337–6011, CPF 647 691 841 90","entities":[{"type":"PHONE","start":14,"end":29},{"type":"CPF","start":35,"end":49}]}
+{"id":"chat-67-19","category":"chat","text":"Pode ligar no (31) 94660–1021, CPF 190 657 793 53","entities":[{"type":"PHONE","start":14,"end":29},{"type":"CPF","start":35,"end":49}]}
+{"id":"chat-68-00","category":"chat","text":"Telemóvel 912 704 610, obrigado.","entities":[{"type":"PHONE","start":10,"end":21}]}
+{"id":"chat-68-01","category":"chat","text":"Telemóvel 912 986 229, obrigado.","entities":[{"type":"PHONE","start":10,"end":21}]}
+{"id":"chat-68-02","category":"chat","text":"Telemóvel 912 732 908, obrigado.","entities":[{"type":"PHONE","start":10,"end":21}]}
+{"id":"chat-68-03","category":"chat","text":"Telemóvel 912 110 961, obrigado.","entities":[{"type":"PHONE","start":10,"end":21}]}
+{"id":"chat-68-04","category":"chat","text":"Telemóvel 912 051 368, obrigado.","entities":[{"type":"PHONE","start":10,"end":21}]}
+{"id":"chat-68-05","category":"chat","text":"Telemóvel 912 168 723, obrigado.","entities":[{"type":"PHONE","start":10,"end":21}]}
+{"id":"chat-68-06","category":"chat","text":"Telemóvel 912 991 012, obrigado.","entities":[{"type":"PHONE","start":10,"end":21}]}
+{"id":"chat-68-07","category":"chat","text":"Telemóvel 912 047 865, obrigado.","entities":[{"type":"PHONE","start":10,"end":21}]}
+{"id":"chat-68-08","category":"chat","text":"Telemóvel 912 316 608, obrigado.","entities":[{"type":"PHONE","start":10,"end":21}]}
+{"id":"chat-68-09","category":"chat","text":"Telemóvel 912 637 778, obrigado.","entities":[{"type":"PHONE","start":10,"end":21}]}
+{"id":"chat-68-10","category":"chat","text":"Telemóvel 912 114 025, obrigado.","entities":[{"type":"PHONE","start":10,"end":21}]}
+{"id":"chat-68-11","category":"chat","text":"Telemóvel 912 121 154, obrigado.","entities":[{"type":"PHONE","start":10,"end":21}]}
+{"id":"chat-68-12","category":"chat","text":"Telemóvel 912 798 167, obrigado.","entities":[{"type":"PHONE","start":10,"end":21}]}
+{"id":"chat-68-13","category":"chat","text":"Telemóvel 912 570 242, obrigado.","entities":[{"type":"PHONE","start":10,"end":21}]}
+{"id":"chat-68-14","category":"chat","text":"Telemóvel 912 807 565, obrigado.","entities":[{"type":"PHONE","start":10,"end":21}]}
+{"id":"chat-68-15","category":"chat","text":"Telemóvel 912 543 468, obrigado.","entities":[{"type":"PHONE","start":10,"end":21}]}
+{"id":"chat-68-16","category":"chat","text":"Telemóvel 912 219 754, obrigado.","entities":[{"type":"PHONE","start":10,"end":21}]}
+{"id":"chat-68-17","category":"chat","text":"Telemóvel 912 078 242, obrigado.","entities":[{"type":"PHONE","start":10,"end":21}]}
+{"id":"chat-68-18","category":"chat","text":"Telemóvel 912 180 491, obrigado.","entities":[{"type":"PHONE","start":10,"end":21}]}
+{"id":"chat-68-19","category":"chat","text":"Telemóvel 912 049 531, obrigado.","entities":[{"type":"PHONE","start":10,"end":21}]}
+{"id":"chat-69-00","category":"chat","text":"Call me at (202) 555-0162 after 5pm.","entities":[{"type":"PHONE","start":11,"end":25}]}
+{"id":"chat-69-01","category":"chat","text":"Call me at (202) 555-0125 after 5pm.","entities":[{"type":"PHONE","start":11,"end":25}]}
+{"id":"chat-69-02","category":"chat","text":"Call me at (202) 555-0194 after 5pm.","entities":[{"type":"PHONE","start":11,"end":25}]}
+{"id":"chat-69-03","category":"chat","text":"Call me at (202) 555-0174 after 5pm.","entities":[{"type":"PHONE","start":11,"end":25}]}
+{"id":"chat-69-04","category":"chat","text":"Call me at (202) 555-0139 after 5pm.","entities":[{"type":"PHONE","start":11,"end":25}]}
+{"id":"chat-69-05","category":"chat","text":"Call me at (202) 555-0184 after 5pm.","entities":[{"type":"PHONE","start":11,"end":25}]}
+{"id":"chat-69-06","category":"chat","text":"Call me at (202) 555-0164 after 5pm.","entities":[{"type":"PHONE","start":11,"end":25}]}
+{"id":"chat-69-07","category":"chat","text":"Call me at (202) 555-0127 after 5pm.","entities":[{"type":"PHONE","start":11,"end":25}]}
+{"id":"chat-69-08","category":"chat","text":"Call me at (202) 555-0102 after 5pm.","entities":[{"type":"PHONE","start":11,"end":25}]}
+{"id":"chat-69-09","category":"chat","text":"Call me at (202) 555-0194 after 5pm.","entities":[{"type":"PHONE","start":11,"end":25}]}
+{"id":"chat-69-10","category":"chat","text":"Call me at (202) 555-0163 after 5pm.","entities":[{"type":"PHONE","start":11,"end":25}]}
+{"id":"chat-69-11","category":"chat","text":"Call me at (202) 555-0111 after 5pm.","entities":[{"type":"PHONE","start":11,"end":25}]}
+{"id":"chat-69-12","category":"chat","text":"Call me at (202) 555-0174 after 5pm.","entities":[{"type":"PHONE","start":11,"end":25}]}
+{"id":"chat-69-13","category":"chat","text":"Call me at (202) 555-0168 after 5pm.","entities":[{"type":"PHONE","start":11,"end":25}]}
+{"id":"chat-69-14","category":"chat","text":"Call me at (202) 555-0166 after 5pm.","entities":[{"type":"PHONE","start":11,"end":25}]}
+{"id":"chat-69-15","category":"chat","text":"Call me at (202) 555-0159 after 5pm.","entities":[{"type":"PHONE","start":11,"end":25}]}
+{"id":"chat-69-16","category":"chat","text":"Call me at (202) 555-0169 after 5pm.","entities":[{"type":"PHONE","start":11,"end":25}]}
+{"id":"chat-69-17","category":"chat","text":"Call me at (202) 555-0102 after 5pm.","entities":[{"type":"PHONE","start":11,"end":25}]}
+{"id":"chat-69-18","category":"chat","text":"Call me at (202) 555-0104 after 5pm.","entities":[{"type":"PHONE","start":11,"end":25}]}
+{"id":"chat-69-19","category":"chat","text":"Call me at (202) 555-0175 after 5pm.","entities":[{"type":"PHONE","start":11,"end":25}]}
+{"id":"form-70-00","category":"form","text":"curp: aakn751105myngnw04","entities":[{"type":"CURP","start":6,"end":24}]}
+{"id":"form-70-01","category":"form","text":"curp: qatj670801mvzmwn76","entities":[{"type":"CURP","start":6,"end":24}]}
+{"id":"form-70-02","category":"form","text":"curp: reqi600918mynfnb52","entities":[{"type":"CURP","start":6,"end":24}]}
+{"id":"form-70-03","category":"form","text":"curp: paod540504mvzmdn81","entities":[{"type":"CURP","start":6,"end":24}]}
+{"id":"form-70-04","category":"form","text":"curp: gili631023hplfzy26","entities":[{"type":"CURP","start":6,"end":24}]}
+{"id":"form-70-05","category":"form","text":"curp: uats860217hynxkw70","entities":[{"type":"CURP","start":6,"end":24}]}
+{"id":"form-70-06","category":"form","text":"curp: ieiz990818hnlwqz61","entities":[{"type":"CURP","start":6,"end":24}]}
+{"id":"form-70-07","category":"form","text":"curp: cadw820603mnlmnv67","entities":[{"type":"CURP","start":6,"end":24}]}
+{"id":"form-70-08","category":"form","text":"curp: quqi580317hjchbb36","entities":[{"type":"CURP","start":6,"end":24}]}
+{"id":"form-70-09","category":"form","text":"curp: neaf640907mjcswt99","entities":[{"type":"CURP","start":6,"end":24}]}
+{"id":"form-70-10","category":"form","text":"curp: forp930315mvzhcr01","entities":[{"type":"CURP","start":6,"end":24}]}
+{"id":"form-70-11","category":"form","text":"curp: sukj981205hdflbs70","entities":[{"type":"CURP","start":6,"end":24}]}
+{"id":"form-70-12","category":"form","text":"curp: goml660610hjcysw27","entities":[{"type":"CURP","start":6,"end":24}]}
+{"id":"form-70-13","category":"form","text":"curp: qimx790214hnlczz90","entities":[{"type":"CURP","start":6,"end":24}]}
+{"id":"form-70-14","category":"form","text":"curp: deoa960901hynxld88","entities":[{"type":"CURP","start":6,"end":24}]}
+{"id":"form-70-15","category":"form","text":"curp: viyr580914mplqnj35","entities":[{"type":"CURP","start":6,"end":24}]}
+{"id":"form-70-16","category":"form","text":"curp: ioft850827hvzysl79","entities":[{"type":"CURP","start":6,"end":24}]}
+{"id":"form-70-17","category":"form","text":"curp: aovw800819hdfgfr72","entities":[{"type":"CURP","start":6,"end":24}]}
+{"id":"form-70-18","category":"form","text":"curp: berh610524mynjfm61","entities":[{"type":"CURP","start":6,"end":24}]}
+{"id":"form-70-19","category":"form","text":"curp: hiut911019hvzykz01","entities":[{"type":"CURP","start":6,"end":24}]}
+{"id":"chat-71-00","category":"chat","text":"Cliente 24225431-7 pidió la factura.","entities":[{"type":"RUT","start":8,"end":18}]}
+{"id":"chat-71-01","category":"chat","text":"Cliente 22444396-K pidió la factura.","entities":[{"type":"RUT","start":8,"end":18}]}
+{"id":"chat-71-02","category":"chat","text":"Cliente 10669970-4 pidió la factura.","entities":[{"type":"RUT","start":8,"end":18}]}
+{"id":"chat-71-03","category":"chat","text":"Cliente 16552062-9 pidió la factura.","entities":[{"type":"RUT","start":8,"end":18}]}
+{"id":"chat-71-04","category":"chat","text":"Cliente 22061805-6 pidió la factura.","entities":[{"type":"RUT","start":8,"end":18}]}
+{"id":"chat-71-05","category":"chat","text":"Cliente 5710923-8 pidió la factura.","entities":[{"type":"RUT","start":8,"end":17}]}
+{"id":"chat-71-06","category":"chat","text":"Cliente 22743414-7 pidió la factura.","entities":[{"type":"RUT","start":8,"end":18}]}
+{"id":"chat-71-07","category":"chat","text":"Cliente 5139380-5 pidió la factura.","entities":[{"type":"RUT","start":8,"end":17}]}
+{"id":"chat-71-08","category":"chat","text":"Cliente 23990141-7 pidió la factura.","entities":[{"type":"RUT","start":8,"end":18}]}
+{"id":"chat-71-09","category":"chat","text":"Cliente 14115516-4 pidió la factura.","entities":[{"type":"RUT","start":8,"end":18}]}
+{"id":"chat-71-10","category":"chat","text":"Cliente 14053357-2 pidió la factura.","entities":[{"type":"RUT","start":8,"end":18}]}
+{"id":"chat-71-11","category":"chat","text":"Cliente 20409622-8 pidió la factura.","entities":[{"type":"RUT","start":8,"end":18}]}
+{"id":"chat-71-12","category":"chat","text":"Cliente 18093535-5 pidió la factura.","entities":[{"type":"RUT","start":8,"end":18}]}
+{"id":"chat-71-13","category":"chat","text":"Cliente 6372660-5 pidió la factura.","entities":[{"type":"RUT","start":8,"end":17}]}
+{"id":"chat-71-14","category":"chat","text":"Cliente 21562369-6 pidió la factura.","entities":[{"type":"RUT","start":8,"end":18}]}
+{"id":"chat-71-15","category":"chat","text":"Cliente 19587849-8 pidió la factura.","entities":[{"type":"RUT","start":8,"end":18}]}
+{"id":"chat-71-16","category":"chat","text":"Cliente 23565956-5 pidió la factura.","entities":[{"type":"RUT","start":8,"end":18}]}
+{"id":"chat-71-17","category":"chat","text":"Cliente 20697645-4 pidió la factura.","entities":[{"type":"RUT","start":8,"end":18}]}
+{"id":"chat-71-18","category":"chat","text":"Cliente 22459537-9 pidió la factura.","entities":[{"type":"RUT","start":8,"end":18}]}
+{"id":"chat-71-19","category":"chat","text":"Cliente 10474595-4 pidió la factura.","entities":[{"type":"RUT","start":8,"end":18}]}
+{"id":"trap-72-00","category":"trap","text":"Linha digitável: 11906.52094 32258.439635 49794.978856 4 73242934269956","entities":[]}
+{"id":"trap-72-01","category":"trap","text":"Linha digitável: 04136.96164 52094.106061 35277.504625 6 17610316827900","entities":[]}
+{"id":"trap-72-02","category":"trap","text":"Linha digitável: 84153.50086 61324.831202 84255.918730 2 34444006897087","entities":[]}
+{"id":"trap-72-03","category":"trap","text":"Linha digitável: 14754.74483 33330.391587 24871.117021 3 20369055078166","entities":[]}
+{"id":"trap-72-04","category":"trap","text":"Linha digitável: 49697.87084 75833.926803 86117.679536 6 79509449809164","entities":[]}
+{"id":"trap-72-05","category":"trap","text":"Linha digitável: 38478.24986 12217.589797 40582.267629 3 84202813610709","entities":[]}
+{"id":"trap-72-06","category":"trap","text":"Linha digitável: 86158.30937 52359.711142 50275.543351 5 87104426257369","entities":[]}
+{"id":"trap-72-07","category":"trap","text":"Linha digitável: 94086.07019 49744.074329 19244.421329 5 20086019572361","entities":[]}
+{"id":"trap-72-08","category":"trap","text":"Linha digitável: 44790.36893 19337.201545 80482.752633 5 36680006097003","entities":[]}
+{"id":"trap-72-09","category":"trap","text":"Linha digitável: 95645.28845 49265.151788 32621.480031 7 11263797257777","entities":[]}
+{"id":"trap-72-10","category":"trap","text":"Linha digitável: 23076.49692 77534.947659 75116.228668 6 68143210817208","entities":[]}
+{"id":"trap-72-11","category":"trap","text":"Linha digitável: 24013.74398 41088.676456 45453.535412 2 15387922973625","entities":[]}
+{"id":"trap-72-12","category":"trap","text":"Linha digitável: 95140.43752 78701.986112 58152.490952 7 74788647549664","entities":[]}
+{"id":"trap-72-13","category":"trap","text":"Linha digitável: 62489.89024 31330.696846 75075.328869 8 68361958538780","entities":[]}
+{"id":"trap-72-14","category":"trap","text":"Linha digitável: 49022.41909 43601.054428 89153.909116 7 34370305176116","entities":[]}
+{"id":"trap-72-15","category":"trap","text":"Linha digitável: 81299.50118 26573.906922 04691.534407 9 15528874346827","entities":[]}
+{"id":"trap-72-16","category":"trap","text":"Linha digitável: 71708.18728 87897.443069 21173.542684 4 61259286304375","entities":[]}
+{"id":"trap-72-17","category":"trap","text":"Linha digitável: 87121.21647 27522.860131 91250.942812 1 16188209211252","entities":[]}
+{"id":"trap-72-18","category":"trap","text":"Linha digitável: 04360.76835 16685.601676 04895.888061 7 18391403033701","entities":[]}
+{"id":"trap-72-19","category":"trap","text":"Linha digitável: 85562.73567 93537.210050 54165.111864 4 01040852883385","entities":[]}
+{"id":"trap-73-00","category":"trap","text":"Entrega perto de -23.4802, -46.0016.","entities":[]}
+{"id":"trap-73-01","category":"trap","text":"Entrega perto de -23.8687, -46.9371.","entities":[]}
+{"id":"trap-73-02","category":"trap","text":"Entrega perto de -23.2635, -46.8381.","entities":[]}
+{"id":"trap-73-03","category":"trap","text":"Entrega perto de -23.5262, -46.6163.","entities":[]}
+{"id":"trap-73-04","category":"trap","text":"Entrega perto de -23.1480, -46.7585.","entities":[]}
+{"id":"trap-73-05","category":"trap","text":"Entrega perto de -23.8871, -46.2899.","entities":[]}
+{"id":"trap-73-06","category":"trap","text":"Entrega perto de -23.5066, -46.1368.","entities":[]}
+{"id":"trap-73-07","category":"trap","text":"Entrega perto de -23.2420, -46.2116.","entities":[]}
+{"id":"trap-73-08","category":"trap","text":"Entrega perto de -23.8893, -46.6347.","entities":[]}
+{"id":"trap-73-09","category":"trap","text":"Entrega perto de -23.1530, -46.1913.","entities":[]}
+{"id":"trap-73-10","category":"trap","text":"Entrega perto de -23.8894, -46.3716.","entities":[]}
+{"id":"trap-73-11","category":"trap","text":"Entrega perto de -23.2298, -46.1197.","entities":[]}
+{"id":"trap-73-12","category":"trap","text":"Entrega perto de -23.3603, -46.1841.","entities":[]}
+{"id":"trap-73-13","category":"trap","text":"Entrega perto de -23.0800, -46.6181.","entities":[]}
+{"id":"trap-73-14","category":"trap","text":"Entrega perto de -23.0474, -46.5427.","entities":[]}
+{"id":"trap-73-15","category":"trap","text":"Entrega perto de -23.8897, -46.0199.","entities":[]}
+{"id":"trap-73-16","category":"trap","text":"Entrega perto de -23.9950, -46.5846.","entities":[]}
+{"id":"trap-73-17","category":"trap","text":"Entrega perto de -23.6690, -46.2716.","entities":[]}
+{"id":"trap-73-18","category":"trap","text":"Entrega perto de -23.8323, -46.9413.","entities":[]}
+{"id":"trap-73-19","category":"trap","text":"Entrega perto de -23.0527, -46.4344.","entities":[]}
+{"id":"trap-74-00","category":"trap","text":"ISBN 978-85-202-6470-5, segunda edição.","entities":[]}
+{"id":"trap-74-01","category":"trap","text":"ISBN 978-85-777-8772-6, segunda edição.","entities":[]}
+{"id":"trap-74-02","category":"trap","text":"ISBN 978-85-349-0766-6, segunda edição.","entities":[]}
+{"id":"trap-74-03","category":"trap","text":"ISBN 978-85-682-3740-3, segunda edição.","entities":[]}
+{"id":"trap-74-04","category":"trap","text":"ISBN 978-85-833-6580-3, segunda edição.","entities":[]}
+{"id":"trap-74-05","category":"trap","text":"ISBN 978-85-938-0132-2, segunda edição.","entities":[]}
+{"id":"trap-74-06","category":"trap","text":"ISBN 978-85-717-1762-3, segunda edição.","entities":[]}
+{"id":"trap-74-07","category":"trap","text":"ISBN 978-85-647-9847-8, segunda edição.","entities":[]}
+{"id":"trap-74-08","category":"trap","text":"ISBN 978-85-521-3542-4, segunda edição.","entities":[]}
+{"id":"trap-74-09","category":"trap","text":"ISBN 978-85-950-8152-6, segunda edição.","entities":[]}
+{"id":"trap-74-10","category":"trap","text":"ISBN 978-85-070-8171-9, segunda edição.","entities":[]}
+{"id":"trap-74-11","category":"trap","text":"ISBN 978-85-108-7805-4, segunda edição.","entities":[]}
+{"id":"trap-74-12","category":"trap","text":"ISBN 978-85-244-1718-9, segunda edição.","entities":[]}
+{"id":"trap-74-13","category":"trap","text":"ISBN 978-85-583-6934-6, segunda edição.","entities":[]}
+{"id":"trap-74-14","category":"trap","text":"ISBN 978-85-723-1478-9, segunda edição.","entities":[]}
+{"id":"trap-74-15","category":"trap","text":"ISBN 978-85-040-2019-4, segunda edição.","entities":[]}
+{"id":"trap-74-16","category":"trap","text":"ISBN 978-85-574-9828-2, segunda edição.","entities":[]}
+{"id":"trap-74-17","category":"trap","text":"ISBN 978-85-667-3884-4, segunda edição.","entities":[]}
+{"id":"trap-74-18","category":"trap","text":"ISBN 978-85-713-3333-6, segunda edição.","entities":[]}
+{"id":"trap-74-19","category":"trap","text":"ISBN 978-85-446-0018-6, segunda edição.","entities":[]}
+{"id":"trap-75-00","category":"trap","text":"Processo nº 0894095-41.2023.8.26.4119 em andamento.","entities":[]}
+{"id":"trap-75-01","category":"trap","text":"Processo nº 3420826-59.2017.8.26.6426 em andamento.","entities":[]}
+{"id":"trap-75-02","category":"trap","text":"Processo nº 6894040-34.2022.8.26.0468 em andamento.","entities":[]}
+{"id":"trap-75-03","category":"trap","text":"Processo nº 4909155-48.2023.8.26.4122 em andamento.","entities":[]}
+{"id":"trap-75-04","category":"trap","text":"Processo nº 0594027-87.2020.8.26.6555 em andamento.","entities":[]}
+{"id":"trap-75-05","category":"trap","text":"Processo nº 8641811-45.2026.8.26.4929 em andamento.","entities":[]}
+{"id":"trap-75-06","category":"trap","text":"Processo nº 9247220-11.2023.8.26.8130 em andamento.","entities":[]}
+{"id":"trap-75-07","category":"trap","text":"Processo nº 6800206-35.2026.8.26.2169 em andamento.","entities":[]}
+{"id":"trap-75-08","category":"trap","text":"Processo nº 3708017-51.2021.8.26.9638 em andamento.","entities":[]}
+{"id":"trap-75-09","category":"trap","text":"Processo nº 4023580-55.2025.8.26.8709 em andamento.","entities":[]}
+{"id":"trap-75-10","category":"trap","text":"Processo nº 8098370-27.2019.8.26.8076 em andamento.","entities":[]}
+{"id":"trap-75-11","category":"trap","text":"Processo nº 6846745-70.2011.8.26.2962 em andamento.","entities":[]}
+{"id":"trap-75-12","category":"trap","text":"Processo nº 0343719-40.2011.8.26.8529 em andamento.","entities":[]}
+{"id":"trap-75-13","category":"trap","text":"Processo nº 5136869-26.2022.8.26.2782 em andamento.","entities":[]}
+{"id":"trap-75-14","category":"trap","text":"Processo nº 2708666-00.2017.8.26.8075 em andamento.","entities":[]}
+{"id":"trap-75-15","category":"trap","text":"Processo nº 2725694-88.2026.8.26.3700 em andamento.","entities":[]}
+{"id":"trap-75-16","category":"trap","text":"Processo nº 7627763-92.2023.8.26.3853 em andamento.","entities":[]}
+{"id":"trap-75-17","category":"trap","text":"Processo nº 3355342-56.2012.8.26.6521 em andamento.","entities":[]}
+{"id":"trap-75-18","category":"trap","text":"Processo nº 4640341-57.2012.8.26.6002 em andamento.","entities":[]}
+{"id":"trap-75-19","category":"trap","text":"Processo nº 1867940-31.2026.8.26.4144 em andamento.","entities":[]}
+{"id":"trap-76-00","category":"trap","text":"Use o cupom WDR4B73 no checkout!","entities":[]}
+{"id":"trap-76-01","category":"trap","text":"Use o cupom HNL7J39 no checkout!","entities":[]}
+{"id":"trap-76-02","category":"trap","text":"Use o cupom HYH2H71 no checkout!","entities":[]}
+{"id":"trap-76-03","category":"trap","text":"Use o cupom SLX7I41 no checkout!","entities":[]}
+{"id":"trap-76-04","category":"trap","text":"Use o cupom LNL3U93 no checkout!","entities":[]}
+{"id":"trap-76-05","category":"trap","text":"Use o cupom WAP4Y28 no checkout!","entities":[]}
+{"id":"trap-76-06","category":"trap","text":"Use o cupom TAA6T08 no checkout!","entities":[]}
+{"id":"trap-76-07","category":"trap","text":"Use o cupom ERI0V56 no checkout!","entities":[]}
+{"id":"trap-76-08","category":"trap","text":"Use o cupom ESG0O25 no checkout!","entities":[]}
+{"id":"trap-76-09","category":"trap","text":"Use o cupom OES5A42 no checkout!","entities":[]}
+{"id":"trap-76-10","category":"trap","text":"Use o cupom WRK1P70 no checkout!","entities":[]}
+{"id":"trap-76-11","category":"trap","text":"Use o cupom JHQ4N71 no checkout!","entities":[]}
+{"id":"trap-76-12","category":"trap","text":"Use o cupom ZGZ6N78 no checkout!","entities":[]}
+{"id":"trap-76-13","category":"trap","text":"Use o cupom EDO1P07 no checkout!","entities":[]}
+{"id":"trap-76-14","category":"trap","text":"Use o cupom TKG7Y18 no checkout!","entities":[]}
+{"id":"trap-76-15","category":"trap","text":"Use o cupom YHK6N42 no checkout!","entities":[]}
+{"id":"trap-76-16","category":"trap","text":"Use o cupom KJV0L70 no checkout!","entities":[]}
+{"id":"trap-76-17","category":"trap","text":"Use o cupom JIR4M45 no checkout!","entities":[]}
+{"id":"trap-76-18","category":"trap","text":"Use o cupom BRG4E40 no checkout!","entities":[]}
+{"id":"trap-76-19","category":"trap","text":"Use o cupom UBR0V00 no checkout!","entities":[]}
+{"id":"trap-77-00","category":"trap","text":"Backup de 2013-10-28 concluído, MAC 60:23:3C:98:39:AD.","entities":[]}
+{"id":"trap-77-01","category":"trap","text":"Backup de 2017-11-16 concluído, MAC CA:08:5F:2A:16:34.","entities":[]}
+{"id":"trap-77-02","category":"trap","text":"Backup de 2022-10-25 concluído, MAC C2:A4:8B:69:CC:05.","entities":[]}
+{"id":"trap-77-03","category":"trap","text":"Backup de 2016-11-28 concluído, MAC AD:E8:9D:C3:CE:BF.","entities":[]}
+{"id":"trap-77-04","category":"trap","text":"Backup de 2020-12-23 concluído, MAC 25:CB:36:15:CA:D4.","entities":[]}
+{"id":"trap-77-05","category":"trap","text":"Backup de 2017-10-16 concluído, MAC 6A:72:40:80:9F:BF.","entities":[]}
+{"id":"trap-77-06","category":"trap","text":"Backup de 2017-10-11 concluído, MAC 8B:46:22:4B:B4:D7.","entities":[]}
+{"id":"trap-77-07","category":"trap","text":"Backup de 2011-10-20 concluído, MAC FE:17:84:71:AE:F6.","entities":[]}
+{"id":"trap-77-08","category":"trap","text":"Backup de 2022-10-25 concluído, MAC EC:9A:45:8F:DF:2A.","entities":[]}
+{"id":"trap-77-09","category":"trap","text":"Backup de 2010-11-27 concluído, MAC 83:8F:68:61:CB:15.","entities":[]}
+{"id":"trap-77-10","category":"trap","text":"Backup de 2025-11-18 concluído, MAC C4:F2:43:43:77:AC.","entities":[]}
+{"id":"trap-77-11","category":"trap","text":"Backup de 2010-10-20 concluído, MAC E0:10:3D:00:85:F1.","entities":[]}
+{"id":"trap-77-12","category":"trap","text":"Backup de 2026-11-17 concluído, MAC A4:E0:FC:35:AB:63.","entities":[]}
+{"id":"trap-77-13","category":"trap","text":"Backup de 2016-10-26 concluído, MAC 2E:7C:0B:64:66:46.","entities":[]}
+{"id":"trap-77-14","category":"trap","text":"Backup de 2019-12-12 concluído, MAC 5F:96:91:A7:C3:FC.","entities":[]}
+{"id":"trap-77-15","category":"trap","text":"Backup de 2021-12-26 concluído, MAC 78:A4:E7:8A:A8:09.","entities":[]}
+{"id":"trap-77-16","category":"trap","text":"Backup de 2013-10-15 concluído, MAC A9:7E:D7:FE:1D:2B.","entities":[]}
+{"id":"trap-77-17","category":"trap","text":"Backup de 2020-11-12 concluído, MAC B7:F7:6B:59:A3:7A.","entities":[]}
+{"id":"trap-77-18","category":"trap","text":"Backup de 2014-10-21 concluído, MAC 4D:58:B2:46:3B:97.","entities":[]}
+{"id":"trap-77-19","category":"trap","text":"Backup de 2010-10-23 concluído, MAC F2:65:CF:F5:3A:49.","entities":[]}
+{"id":"trap-78-00","category":"trap","text":"Equipamento SN-4781-6999-3652 em garantia.","entities":[]}
+{"id":"trap-78-01","category":"trap","text":"Equipamento SN-0676-8284-2516 em garantia.","entities":[]}
+{"id":"trap-78-02","category":"trap","text":"Equipamento SN-8532-1315-8812 em garantia.","entities":[]}
+{"id":"trap-78-03","category":"trap","text":"Equipamento SN-8406-9207-0822 em garantia.","entities":[]}
+{"id":"trap-78-04","category":"trap","text":"Equipamento SN-3951-5801-3961 em garantia.","entities":[]}
+{"id":"trap-78-05","category":"trap","text":"Equipamento SN-0127-7599-6189 em garantia.","entities":[]}
+{"id":"trap-78-06","category":"trap","text":"Equipamento SN-7057-5226-3132 em garantia.","entities":[]}
+{"id":"trap-78-07","category":"trap","text":"Equipamento SN-3624-9702-4592 em garantia.","entities":[]}
+{"id":"trap-78-08","category":"trap","text":"Equipamento SN-6488-1197-5388 em garantia.","entities":[]}
+{"id":"trap-78-09","category":"trap","text":"Equipamento SN-7667-5472-8753 em garantia.","entities":[]}
+{"id":"trap-78-10","category":"trap","text":"Equipamento SN-4934-5200-8975 em garantia.","entities":[]}
+{"id":"trap-78-11","category":"trap","text":"Equipamento SN-0131-0858-5167 em garantia.","entities":[]}
+{"id":"trap-78-12","category":"trap","text":"Equipamento SN-3204-5772-5326 em garantia.","entities":[]}
+{"id":"trap-78-13","category":"trap","text":"Equipamento SN-7505-7687-2337 em garantia.","entities":[]}
+{"id":"trap-78-14","category":"trap","text":"Equipamento SN-2951-8986-5635 em garantia.","entities":[]}
+{"id":"trap-78-15","category":"trap","text":"Equipamento SN-2771-6676-8137 em garantia.","entities":[]}
+{"id":"trap-78-16","category":"trap","text":"Equipamento SN-4869-6837-8249 em garantia.","entities":[]}
+{"id":"trap-78-17","category":"trap","text":"Equipamento SN-1322-3450-2619 em garantia.","entities":[]}
+{"id":"trap-78-18","category":"trap","text":"Equipamento SN-2344-3398-1952 em garantia.","entities":[]}
+{"id":"trap-78-19","category":"trap","text":"Equipamento SN-9736-8977-6637 em garantia.","entities":[]}
+{"id":"trap-79-00","category":"trap","text":"Total: US$ 8,818,276.99","entities":[]}
+{"id":"trap-79-01","category":"trap","text":"Total: US$ 4,917,134.11","entities":[]}
+{"id":"trap-79-02","category":"trap","text":"Total: US$ 4,914,017.77","entities":[]}
+{"id":"trap-79-03","category":"trap","text":"Total: US$ 5,522,021.87","entities":[]}
+{"id":"trap-79-04","category":"trap","text":"Total: US$ 6,254,841.13","entities":[]}
+{"id":"trap-79-05","category":"trap","text":"Total: US$ 3,135,388.87","entities":[]}
+{"id":"trap-79-06","category":"trap","text":"Total: US$ 8,200,916.21","entities":[]}
+{"id":"trap-79-07","category":"trap","text":"Total: US$ 2,350,547.69","entities":[]}
+{"id":"trap-79-08","category":"trap","text":"Total: US$ 1,765,270.05","entities":[]}
+{"id":"trap-79-09","category":"trap","text":"Total: US$ 6,848,750.92","entities":[]}
+{"id":"trap-79-10","category":"trap","text":"Total: US$ 5,899,881.89","entities":[]}
+{"id":"trap-79-11","category":"trap","text":"Total: US$ 1,153,446.12","entities":[]}
+{"id":"trap-79-12","category":"trap","text":"Total: US$ 4,697,055.12","entities":[]}
+{"id":"trap-79-13","category":"trap","text":"Total: US$ 9,941,721.94","entities":[]}
+{"id":"trap-79-14","category":"trap","text":"Total: US$ 9,025,257.35","entities":[]}
+{"id":"trap-79-15","category":"trap","text":"Total: US$ 1,499,856.82","entities":[]}
+{"id":"trap-79-16","category":"trap","text":"Total: US$ 6,809,154.33","entities":[]}
+{"id":"trap-79-17","category":"trap","text":"Total: US$ 1,612,636.33","entities":[]}
+{"id":"trap-79-18","category":"trap","text":"Total: US$ 6,026,515.77","entities":[]}
+{"id":"trap-79-19","category":"trap","text":"Total: US$ 7,716,152.24","entities":[]}

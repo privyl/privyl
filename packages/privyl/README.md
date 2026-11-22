@@ -125,31 +125,33 @@ npx privyl scan ./my-project
 
 ## What is detected
 
-| Country       | Data                 | Notes                                                         |
-| ------------- | -------------------- | ------------------------------------------------------------- |
-| Global        | Email                | Including accented addresses (`joão@example.com`)             |
-| Global        | Phone                | International format starting with `+` (8–15 digits)          |
-| Global        | Payment card         | 13–19 digits, Luhn checksum                                   |
-| Global        | IP address           | IPv4 and IPv6 (loopback and `version 1.2.3.4` ignored)        |
-| Global        | API keys and secrets | AWS, GitHub, Anthropic, OpenAI, Stripe, Slack, Google, JWT,   |
-|               |                      | private keys, and values of `password=`, `api_key=`, etc.     |
-| Brazil        | CPF                  | Check digits validated                                        |
-| Brazil        | CNPJ                 | Check digits validated, including the new alphanumeric CNPJ   |
-| Brazil        | Pix key (random)     | UUID right after the word "Pix"                               |
-| Brazil        | CEP                  | `01310-100` near an address word (rua, CEP, bairro, "SP"...)  |
-| Brazil        | CNH                  | Check digits, near "CNH", "habilitação" or "motorista"        |
-| Brazil        | Vehicle plate        | Mercosul `ABC1D23`; old `ABC-1234` only near "placa", "carro" |
-| Brazil        | Phone                | `+55`, `(11) 98765-4321`; area code and format validated      |
-| Portugal      | NIF                  | Check digit, near "NIF"/"contribuinte" or with `PT` prefix    |
-| Portugal      | Cartão de Cidadão    | `12345678 9 ZZ1`, check digit validated                       |
-| Portugal      | NISS                 | Check digit, near "NISS"/"Segurança Social"                   |
-| Argentina     | CUIT/CUIL            | Check digit; digits-only form needs the word "CUIT"/"CUIL"    |
-| Argentina     | DNI                  | Right after the word "DNI" (it has no check digit)            |
-| United States | SSN                  | `123-45-6789`, never-issued numbers rejected                  |
-| United States | ITIN                 | `9XX-7X-XXXX`, valid ranges only                              |
-| Mexico        | CURP                 | Birth date, state and check digit validated                   |
-| Mexico        | RFC                  | People and companies, check character validated               |
-| Chile         | RUT/RUN              | `12.345.678-5`, check digit (including K)                     |
+| Country       | Data                 | Notes                                                              |
+| ------------- | -------------------- | ------------------------------------------------------------------ |
+| Global        | Email                | Accented addresses (`joão@example.com`) and `ana [at] example.com` |
+| Global        | Phone                | International format starting with `+` (8–15 digits)               |
+| Global        | Payment card         | 13–19 digits, Luhn checksum                                        |
+| Global        | IP address           | IPv4 and IPv6 (loopback and `version 1.2.3.4` ignored)             |
+| Global        | API keys and secrets | AWS, GitHub, Anthropic, OpenAI, Stripe, Slack, Google, JWT,        |
+|               |                      | private keys, and values of `password=`, `api_key=`, etc.          |
+| Brazil        | CPF                  | Check digits; `529 982 247 25` with spaces after the word CPF      |
+| Brazil        | CNPJ                 | Check digits validated, including the new alphanumeric CNPJ        |
+| Brazil        | Pix key (random)     | UUID right after the word "Pix"                                    |
+| Brazil        | CEP                  | `01310-100`, except right after "lote", "pedido", "protocolo"      |
+| Brazil        | CNH                  | Check digits, near "CNH", "habilitação" or "motorista"             |
+| Brazil        | Vehicle plate        | `ABC1D23`, `ABC-1234`; except right after "SKU", "cupom"...        |
+| Brazil        | Phone                | `+55`, `(11) 98765-4321`, `11987654321`; area code validated       |
+| Portugal      | NIF                  | Check digit, near "NIF"/"contribuinte" or with `PT` prefix         |
+| Portugal      | Cartão de Cidadão    | `12345678 9 ZZ1`, check digit validated                            |
+| Portugal      | NISS                 | Check digit, near "NISS"/"Segurança Social"                        |
+| Portugal      | Phone                | `912 345 678` near "telemóvel"/"telefone"                          |
+| Argentina     | CUIT/CUIL            | Check digit; digits-only form needs the word "CUIT"/"CUIL"         |
+| Argentina     | DNI                  | Right after the word "DNI" (it has no check digit)                 |
+| United States | SSN                  | `123-45-6789`, never-issued numbers rejected                       |
+| United States | ITIN                 | `9XX-7X-XXXX`, valid ranges only                                   |
+| United States | Phone                | `(202) 555-0123`; `202-555-0123` near "call"/"phone"               |
+| Mexico        | CURP                 | Birth date, state and check digit validated (any case)             |
+| Mexico        | RFC                  | People and companies, check character validated                    |
+| Chile         | RUT/RUN              | `12.345.678-5`, check digit (including K)                          |
 
 Import each country from its own path: `privyl/br`, `privyl/pt`, `privyl/ar`, `privyl/us`,
 `privyl/mx`, `privyl/cl`. The `scan` command uses all of them.
@@ -159,12 +161,15 @@ Import each country from its own path: `privyl/br`, `privyl/pt`, `privyl/ar`, `p
 - **Names, addresses, dates of birth** and other free-form data. These need a language model.
 - Documents from other countries (contributions welcome, see [CONTRIBUTING.md](https://github.com/privyl/privyl/blob/main/CONTRIBUTING.md)).
 - RG (Brazilian ID card): its format varies by state and has no national check digit.
-- A CEP or an old plate (`ABC-1234`) with no address or vehicle word nearby, a DNI without the
-  word "DNI", a CPF written with spaces, and emails written as `name [at] example.com`.
-- Phone numbers without `+` outside Brazil, and secrets from providers not listed above.
+- A DNI without the word "DNI" or "documento", a landline written only as digits with no word
+  like "tel" nearby, and phone numbers without `+` from countries not listed above.
+- Secrets from providers not listed above.
+- Characters hidden inside a value (zero-width spaces). Look-alike characters from copy and
+  paste (non-breaking spaces, Unicode dashes, full-width digits) are handled.
 - Data split across lines, encoded (base64, URL encoding) or inside images and PDFs.
 
-An SSN has no check digit, so a part number shaped like `123-45-6789` is masked too.
+Numbers right after labels like "pedido", "nota fiscal", "lote", "SKU" or "order" are treated as
+business codes and not masked (unless the document's own word is there too, like "CPF").
 
 Validation by check digit means a random number _can_ still match by chance (about 1 in 100 for
 CPF). Ambiguous formats, like a raw 11-digit number, need nearby context words to count as a CNH

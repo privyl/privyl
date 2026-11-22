@@ -1,6 +1,6 @@
 {
   "name": "privyl",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Privacy layer for AI. Mask personal data before it reaches any LLM, restore it after.",
   "license": "MIT",
   "author": "Nycolas Inowe",

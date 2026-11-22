@@ -1,5 +1,5 @@
 import type { Detector } from "../core/types.js";
-import { allSameChar, hasContextBefore, onlyDigits } from "../core/utils.js";
+import { allSameChar, hasContextBefore, isAfterCodeLabel, onlyDigits } from "../core/utils.js";
 
 /** Luhn checksum, used by payment cards. */
 export function isValidLuhn(digits: string): boolean {
@@ -30,6 +30,20 @@ export const email: Detector = {
   confidence: 0.95,
 };
 
+/**
+ * Email written to fool scrapers: `ana [at] example.com`, `ana(at)example(dot)com`.
+ * Only the bracketed forms count, so plain words like "at" never trigger it.
+ */
+export const emailObfuscated: Detector = {
+  id: "global.email.obfuscated",
+  label: "Email",
+  token: "EMAIL",
+  country: "global",
+  pattern:
+    /(?<![\p{L}\p{N}_.%+-])[\p{L}\p{N}][\p{L}\p{N}._%+-]{0,63} ?[[({] ?at ?[\])}] ?(?:[\p{L}\p{N}][\p{L}\p{N}-]{0,62}(?:\.| ?[[({] ?dot ?[\])}] ?)){1,8}\p{L}{2,24}(?![\p{L}\p{N}_-])/iu,
+  confidence: 0.9,
+};
+
 /** International phone number that starts with "+" (E.164: 8 to 15 digits). */
 export const phone: Detector = {
   id: "global.phone",
@@ -50,13 +64,17 @@ export const card: Detector = {
   label: "Payment card",
   token: "CARD",
   country: "global",
-  pattern: /(?<![\d.-])\d(?:[ -]?\d){12,18}(?![\d-]|\.\d)/,
-  validate: (value) => {
+  // Not right after another number and a space or dash: that is the tail of a longer code, like
+  // the last block of a boleto "linha digitável".
+  pattern: /(?<![\d.-])(?<!\d[ -])\d(?:[ -]?\d){12,18}(?![\d-]|\.\d)/,
+  validate: (value, { text, start }) => {
     const digits = onlyDigits(value);
     // Major networks start with 2-6 (Mastercard, Visa, Amex, Diners, Discover, JCB, Elo...).
     if (!/^[2-6]/.test(digits) || allSameChar(digits)) return false;
     // Separators, if any, must be all spaces or all dashes.
     if (/ /.test(value) && /-/.test(value)) return false;
+    // About 1 in 10 random numbers pass Luhn: skip digits right after "nota fiscal", "pedido"...
+    if (digits === value && isAfterCodeLabel(text, start)) return false;
     return isValidLuhn(digits);
   },
   confidence: 0.9,
@@ -138,8 +156,10 @@ export const secretAssignment: Detector = {
   label: "Password or secret",
   token: "SECRET",
   country: "global",
+  // The lookbehind has fixed limits ({0,40}, {0,8}): with unbounded `\w*` and `\s*` a long run of
+  // spaces made it take seconds (ReDoS). Real assignments never need more than that.
   pattern:
-    /(?<=(?:password|passwd|pwd|secret|token|api[_-]?key|access[_-]?key|private[_-]?key)\w*["']?\s*[:=]\s*["']?)[^\s"'`#,;]{8,}/i,
+    /(?<=(?:password|passwd|pwd|secret|token|api[_-]?key|access[_-]?key|private[_-]?key)\w{0,40}["']?[ \t]{0,8}[:=][ \t]{0,8}["']?)[^\s"'`#,;]{8,}/i,
   validate: (value) =>
     // Skip references and templates, not secrets: process.env.X, ${X}, <your-key>, {{x}}, [SECRET_1]
     !/^(?:process\.env|import\.meta|os\.environ|\$|<|\{|%|\[[A-Z]+_\d+\])/.test(value) &&
@@ -153,6 +173,7 @@ export const secretAssignment: Detector = {
 /** All global detectors. */
 export const global: readonly Detector[] = [
   email,
+  emailObfuscated,
   card,
   phone,
   ipv4,

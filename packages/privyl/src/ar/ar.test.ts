@@ -44,6 +44,8 @@ describe("DNI", () => {
     expect(found(dni, "DNI 12.345.678")).toEqual(["12.345.678"]);
     expect(found(dni, "D.N.I.: 7654321")).toEqual(["7654321"]);
     expect(found(dni, "Pedido 12.345.678")).toEqual([]);
+    expect(found(dni, "Documento 12.345.678, nacido en 1990")).toEqual(["12.345.678"]);
+    expect(found(dni, "Documento 12345678")).toEqual([]); // only the dotted form after "documento"
     expect(found(dni, "mi DNI 12.345.678.")).toEqual(["12.345.678"]); // end of sentence
   });
 

@@ -1,20 +1,30 @@
 import type { Detector } from "../core/types.js";
-import { allSameChar, hasContextBefore, onlyDigits } from "../core/utils.js";
+import { allSameChar, hasContextBefore, isAfterCodeLabel, onlyDigits } from "../core/utils.js";
 import { BR_AREA_CODES, isValidCnh, isValidCnpj, isValidCpf } from "./checksums.js";
 
 export { cnhCheckDigits, cnpjCheckDigits, cpfCheckDigits } from "./checksums.js";
 export { isValidCnh, isValidCnpj, isValidCpf } from "./checksums.js";
 
-/** CPF: 529.982.247-25 or 52998224725. Check digits are validated. */
+const CPF_WORD = /\bcpf\b/i;
+
+/**
+ * CPF: 529.982.247-25 or 52998224725, and 529 982 247 25 right after the word "CPF".
+ * Check digits are validated. Digits right after "pedido", "nota fiscal" and similar are skipped.
+ */
 export const cpf: Detector = {
   id: "br.cpf",
   label: "CPF",
   token: "CPF",
   country: "br",
-  pattern: /(?<![\d.\-/])(?:\d{3}\.\d{3}\.\d{3}-\d{2}|\d{9}-?\d{2})(?![\d\-/]|\.\d)/,
-  validate: isValidCpf,
+  pattern:
+    /(?<![\d.\-/])(?<!\d )(?:\d{3}\.\d{3}\.\d{3}-\d{2}|\d{9}-?\d{2}|\d{3} \d{3} \d{3}[ -]\d{2})(?![\d\-/]|\.\d| \d)/,
+  validate: (value, { text, start }) => {
+    if (!isValidCpf(value)) return false;
+    if (value.includes(" ")) return hasContextBefore(text, start, CPF_WORD); // spaces: ambiguous
+    return /[.-]/.test(value) || !isAfterCodeLabel(text, start);
+  },
   confidence: (value, { text, start }) => {
-    if (hasContextBefore(text, start, /\bcpf\b/i)) return 0.99;
+    if (hasContextBefore(text, start, CPF_WORD)) return 0.99;
     return /[.-]/.test(value) ? 0.95 : 0.85;
   },
 };
@@ -30,7 +40,8 @@ export const cnpj: Detector = {
   country: "br",
   pattern:
     /(?<![\w.\-/])(?:[0-9A-Z]{2}\.[0-9A-Z]{3}\.[0-9A-Z]{3}\/[0-9A-Z]{4}-\d{2}|\d{14})(?![\w\-/]|\.\d)/,
-  validate: isValidCnpj,
+  validate: (value, { text, start }) =>
+    isValidCnpj(value) && (/[./-]/.test(value) || !isAfterCodeLabel(text, start)),
   confidence: (value, { text, start }) => {
     if (hasContextBefore(text, start, /\bcnpj\b/i)) return 0.99;
     return /[./-]/.test(value) ? 0.95 : 0.85;
@@ -53,7 +64,7 @@ export const pixKey: Detector = {
   confidence: 0.95,
 };
 
-// Without one of these nearby, "12345-678" is more often a lot, order or protocol number.
+// These make a CEP more likely.
 const ADDRESS_WORDS =
   /\bcep\b|endere[çc]o|\brua\b|\bav\.|avenida|alameda|travessa|rodovia|estrada|bairro|logradouro|postal|\bzip\b|\bmoro\b|resid|entrega/i;
 // State codes ("São Paulo/SP", "Recife - PE"), uppercase only so words like "se" or "to" don't count.
@@ -62,19 +73,24 @@ const STATE_CODE =
 
 /**
  * CEP: 01310-100, or 01310100 right after the word "CEP".
- * Only near an address word (CEP, rua, avenida, bairro...) or a state code like "SP".
+ * Skipped right after a label like "lote", "pedido" or "protocolo" (those are business codes).
+ * An address word (CEP, rua, avenida, bairro...) or a state code like "SP" raises the confidence.
  */
 export const cep: Detector = {
   id: "br.cep",
   label: "CEP",
   token: "CEP",
   country: "br",
-  pattern: /(?<![\d.\-/])\d{5}-\d{3}(?![\d\-/])|(?<=\bcep\s*:?\s*)\d{8}(?!\d)/i,
+  pattern: /(?<![\d.\-/])\d{5}-\d{3}(?![\d\-/])|(?<=\bcep\s{0,3}:?\s{0,3})\d{8}(?!\d)/i,
   validate: (value, { text, start }) =>
-    onlyDigits(value) !== "00000000" &&
-    (hasContextBefore(text, start, ADDRESS_WORDS, 60) ||
-      hasContextBefore(text, start, STATE_CODE, 30)),
-  confidence: (_value, { text, start }) => (hasContextBefore(text, start, /\bcep\b/i) ? 0.95 : 0.8),
+    onlyDigits(value) !== "00000000" && !isAfterCodeLabel(text, start),
+  confidence: (_value, { text, start }) => {
+    if (hasContextBefore(text, start, /\bcep\b/i)) return 0.95;
+    const address =
+      hasContextBefore(text, start, ADDRESS_WORDS, 60) ||
+      hasContextBefore(text, start, STATE_CODE, 30);
+    return address ? 0.85 : 0.7;
+  },
 };
 
 /**
@@ -96,7 +112,8 @@ const VEHICLE_CONTEXT = /placa|ve[íi]culo|carro|moto|caminh[ãa]o|[ôo]nibus|de
 
 /**
  * Vehicle plate: Mercosul ABC1D23, or the old format ABC-1234.
- * The old format looks like a product code (SKU), so it needs a word like "placa" or "carro" nearby.
+ * The old format looks like a product code, so it is skipped right after "produto", "SKU",
+ * "código", "item" and similar labels.
  */
 export const plate: Detector = {
   id: "br.plate",
@@ -104,10 +121,12 @@ export const plate: Detector = {
   token: "PLATE",
   country: "br",
   pattern: /(?<![\w-])[A-Z]{3}(?:-\d{4}|\d[A-Z]\d{2})(?![\w-])/,
-  validate: (value, { text, start }) =>
-    !value.includes("-") || hasContextBefore(text, start, VEHICLE_CONTEXT, 40),
-  confidence: (_value, { text, start }) =>
-    hasContextBefore(text, start, VEHICLE_CONTEXT) ? 0.95 : 0.8,
+  // Both formats are skipped right after a label such as "cupom" or "SKU".
+  validate: (_value, { text, start }) => !isAfterCodeLabel(text, start),
+  confidence: (value, { text, start }) => {
+    if (hasContextBefore(text, start, VEHICLE_CONTEXT, 40)) return 0.95;
+    return value.includes("-") ? 0.7 : 0.8;
+  },
 };
 
 /**
@@ -131,9 +150,16 @@ export const phoneBr: Detector = {
     if (!validLocal || allSameChar(digits.slice(2))) return false;
 
     const formatted = /[^\d]/.test(value);
-    return formatted || hasContextBefore(text, start, PHONE_CONTEXT);
+    if (formatted || hasContextBefore(text, start, PHONE_CONTEXT)) return true;
+    // Digits only, no context word: accept a mobile (DDD + 9 + 8 digits) unless it comes right
+    // after a label like "pedido". A landline (10 digits) is too ambiguous without context.
+    return digits.length === 11 && !isAfterCodeLabel(text, start);
   },
-  confidence: (value) => (value.startsWith("+55") ? 0.95 : 0.9),
+  confidence: (value, { text, start }) => {
+    if (value.startsWith("+55")) return 0.95;
+    if (/[^\d]/.test(value) || hasContextBefore(text, start, PHONE_CONTEXT)) return 0.9;
+    return 0.75; // lower than a bare CPF, so an 11-digit number valid as both stays a CPF
+  },
 };
 
 const PHONE_CONTEXT =

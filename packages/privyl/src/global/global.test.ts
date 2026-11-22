@@ -22,6 +22,21 @@ const found = (detectors: Detector | readonly Detector[], text: string) =>
 // never contains anything that looks like a real key.
 const fake = (prefix: string, length: number, char = "A") => prefix + char.repeat(length);
 
+describe("email written to fool scrapers", () => {
+  it.each([
+    "ana [at] example.com",
+    "ana(at)example(dot)com",
+    "ana.souza [AT] mail [dot] example [dot] com",
+    "joão{at}example.com",
+  ])("detects %s", (value) => {
+    expect(found(global, `escreve para ${value} se precisar`)).toEqual([value]);
+  });
+
+  it("ignores the plain word at", () => {
+    expect(found(global, "meet me at example.com tomorrow")).toEqual([]);
+  });
+});
+
 describe("email", () => {
   it("detects addresses with accents", () => {
     expect(found(email, "contato: joão.silva@example.com")).toEqual(["joão.silva@example.com"]);
@@ -99,6 +114,14 @@ describe("IP address", () => {
     expect(found(ipv4, "127.0.0.1")).toEqual([]);
     expect(found(ipv4, "0.0.0.0")).toEqual([]);
     expect(found(ipv4, "1.2.3.4.5")).toEqual([]);
+  });
+
+  it("skips Luhn-valid digits right after nota fiscal, pedido or invoice", () => {
+    expect(found(card, "Nota fiscal 4111111111111111")).toEqual([]);
+    expect(found(card, "invoice #4111111111111111")).toEqual([]);
+    expect(found(card, "card 4111111111111111")).toEqual(["4111111111111111"]);
+    // The last block of a boleto "linha digitável" is not a card.
+    expect(found(card, "34191.79001 01043.510047 91020.150008 1 41111111111111")).toEqual([]);
   });
 
   it("ignores version numbers that look like IPv4", () => {

@@ -72,11 +72,23 @@ export class Vault {
     return { version: 1, entries: this.entries() };
   }
 
+  /** Rebuilds a vault from `toJSON()`. Throws on anything malformed instead of guessing. */
   static fromJSON(data: VaultData): Vault {
+    if (!data || data.version !== 1 || !Array.isArray(data.entries)) {
+      throw new Error("Invalid vault data: expected { version: 1, entries: [...] }");
+    }
     const vault = new Vault();
-    for (const [placeholder, value] of data.entries) {
+    for (const entry of data.entries as unknown[]) {
+      if (!Array.isArray(entry) || entry.length !== 2) throw new Error("Invalid vault entry");
+      const [placeholder, value] = entry as unknown[];
+      if (typeof placeholder !== "string" || typeof value !== "string") {
+        throw new Error("Invalid vault entry: placeholder and value must be strings");
+      }
       const parsed = PLACEHOLDER_RE.exec(placeholder);
       if (!parsed) throw new Error(`Invalid placeholder in vault data: ${placeholder}`);
+      if (vault.#placeholderToValue.has(placeholder) || vault.#valueToPlaceholder.has(value)) {
+        throw new Error(`Duplicate entry in vault data: ${placeholder}`);
+      }
       const token = parsed[1] as string;
       const n = Number(parsed[2]);
       vault.#valueToPlaceholder.set(value, placeholder);

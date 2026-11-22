@@ -33,6 +33,7 @@ describe("NIF", () => {
     expect(found(nif, "Contribuinte n.º 123 456 789")).toEqual(["123 456 789"]);
     expect(found(nif, "VAT PT123456789")).toEqual(["PT123456789"]);
     expect(found(nif, "Fatura para PT123456789")).toEqual(["PT123456789"]);
+    expect(found(nif, "Faturar a 123456789, obrigado")).toEqual(["123456789"]);
   });
 
   it("ignores 9-digit numbers without context and wrong check digits", () => {
@@ -73,6 +74,16 @@ describe("NISS", () => {
     const value = faker.niss();
     expect(found(niss, value)).toEqual([]);
     expect(found(niss, `NISS ${breakLast(value)}`)).toEqual([]);
+  });
+});
+
+describe("Phone (PT)", () => {
+  const phone = pt.find((d) => d.id === "pt.phone") as Detector;
+  it("detects local numbers near telemóvel or telefone", () => {
+    expect(found(phone, "Telemóvel 912 345 678")).toEqual(["912 345 678"]);
+    expect(found(phone, "telefone: 213456789")).toEqual(["213456789"]);
+    expect(found(phone, "Encomenda 912 345 678")).toEqual([]);
+    expect(found(phone, "Telemóvel 912 345678")).toEqual([]); // mixed spacing
   });
 });
 

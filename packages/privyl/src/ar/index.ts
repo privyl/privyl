@@ -45,7 +45,7 @@ export const cuit: Detector = {
 
 /**
  * DNI: 12.345.678 or 12345678 (7 or 8 digits). It has no check digit, so it is only detected
- * right after the word "DNI".
+ * right after the word "DNI" (or "documento", for the dotted form).
  */
 export const dni: Detector = {
   id: "ar.dni",
@@ -54,7 +54,11 @@ export const dni: Detector = {
   country: "ar",
   pattern: /(?<![\d.-])(?:\d{1,2}\.\d{3}\.\d{3}|\d{7,8})(?![\w\-/]|\.\d)/,
   validate: (value, { text, start }) =>
-    !allSameChar(onlyDigits(value)) && hasContextBefore(text, start, /\bd\.?n\.?i\b/i, 25),
+    !allSameChar(onlyDigits(value)) &&
+    (hasContextBefore(text, start, /\bd\.?n\.?i\b/i, 25) ||
+      // "Documento 12.345.678": only the dotted form, the usual way to write a DNI.
+      (value.includes(".") &&
+        hasContextBefore(text, start, /\bdocumento\b|\bdoc\.|\bnro\. de doc/i, 25))),
   confidence: 0.9,
 };
 

@@ -21,10 +21,12 @@ describe("RUT/RUN", () => {
     for (let i = 0; i < 100; i++) expect(isValidRut(faker.rut())).toBe(true);
   });
 
-  it("detects the dotted form anywhere and the plain form near RUT/RUN", () => {
+  it("detects the dotted form anywhere and the plain form unless a code label comes first", () => {
     expect(found(rut, "Cliente 12.345.678-5")).toEqual(["12.345.678-5"]);
     expect(found(rut, "RUT: 12345678-5")).toEqual(["12345678-5"]);
     expect(found(rut, "Lote 12345678-5")).toEqual([]);
+    expect(found(rut, "Folio 12345678-5")).toEqual([]);
+    expect(found(rut, "Cliente 12345678-5 pidió la factura")).toEqual(["12345678-5"]);
     expect(found(rut, "RUT 11.111.111-1")).toEqual([]);
   });
 
