@@ -6,8 +6,7 @@
 // (personal data that was missed or only partly hidden).
 
 import { createShield } from "../packages/privyl/src/core/index.js";
-import { br } from "../packages/privyl/src/br/index.js";
-import { global } from "../packages/privyl/src/global/index.js";
+import { allDetectors } from "../packages/privyl/src/scan/index.js";
 import { ENTITY_TYPES, type BenchmarkRecord, type EntityType } from "./dataset.js";
 
 export interface Score {
@@ -70,7 +69,7 @@ const covers = (finding: { start: number; end: number }, label: { start: number;
   finding.start <= label.start && finding.end >= label.end;
 
 export function evaluate(dataset: BenchmarkRecord[], version: string): BenchmarkResults {
-  const detectors = [...global, ...br];
+  const detectors = allDetectors;
   const shield = createShield({ detectors });
   // A finding carries the detector id ("br.cpf"); its token ("CPF") is the type we compare.
   const tokenOf = new Map(detectors.map((d) => [d.id, d.token]));

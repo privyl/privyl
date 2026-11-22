@@ -22,6 +22,21 @@ export const ENTITY_TYPES = [
   "CEP",
   "CNH",
   "PLATE",
+  // Portugal
+  "NIF",
+  "CC",
+  "NISS",
+  // Argentina
+  "CUIT",
+  "DNI",
+  // United States
+  "SSN",
+  "ITIN",
+  // Mexico
+  "CURP",
+  "RFC",
+  // Chile
+  "RUT",
 ] as const;
 export type EntityType = (typeof ENTITY_TYPES)[number];
 
@@ -100,6 +115,27 @@ const SLOTS: Record<string, Slot> = {
       `${b64url('{"alg":"HS256","typ":"JWT"}')}.${b64url(`{"sub":"fake-${digits(f, 6)}"}`)}.${hex(f, 32)}`,
   ),
 
+  // Spaces instead of dots: still a CPF, but Privyl does not detect it (known gap).
+  cpfSpaced: pii("CPF", (f) => f.cpf().replace(/[.-]/g, " ")),
+  // Written to fool scrapers: still an email, not detected (known gap).
+  emailAt: pii("EMAIL", (f) => f.email().replace("@", " [at] ")),
+  // ---- other countries ----
+  nif: pii("NIF", (f) => f.nif()),
+  nifSpaced: pii("NIF", (f) => f.nif({ formatted: true })),
+  citizenCard: pii("CC", (f) => f.citizenCard()),
+  niss: pii("NISS", (f) => f.niss()),
+  cuit: pii("CUIT", (f) => f.cuit()),
+  cuitDigits: pii("CUIT", (f) => f.cuit({ formatted: false })),
+  dni: pii("DNI", (f) => f.dni()),
+  ssn: pii("SSN", (f) => f.ssn()),
+  ssnDigits: pii("SSN", (f) => f.ssn().replace(/-/g, "")),
+  itin: pii("ITIN", (f) => f.itin()),
+  curp: pii("CURP", (f) => f.curp()),
+  rfc: pii("RFC", (f) => f.rfc()),
+  rfcCompany: pii("RFC", (f) => f.rfc({ company: true })),
+  rut: pii("RUT", (f) => f.rut()),
+  rutPlain: pii("RUT", (f) => f.rut({ dots: false })),
+
   // ---- traps: look like personal data, but are not ----
   orderId: trap((f) => `${f.int(1, 9)}${digits(f, 10)}`),
   invoice: trap((f) => `${f.int(1, 9)}${digits(f, 13)}`),
@@ -118,6 +154,13 @@ const SLOTS: Record<string, Slot> = {
   placeholder: trap((f) => `[${f.pick(["CPF", "EMAIL", "PHONE"])}_${f.int(1, 9)}]`),
   envRef: trap(() => "process.env.DB_PASSWORD"),
   shortNumber: trap((f) => digits(f, 6)),
+  protocol: trap((f) => `${digits(f, 5)}-${digits(f, 3)}`),
+  nineDigits: trap((f) => `${f.int(1, 9)}${digits(f, 8)}`),
+  // Part numbers shaped like an SSN (3-2-4). Some pass the SSN rules by chance.
+  partNumber: trap((f) => `${digits(f, 3)}-${digits(f, 2)}-${digits(f, 4)}`),
+  cuitBadDigit: trap((f) => breakCheckDigit(f.cuit())),
+  rfcGeneric: trap((f) => f.pick(["XAXX010101000", "XEXX010101000"])),
+  rutNoContext: trap((f) => f.rut({ dots: false })),
 };
 
 interface Template {
@@ -171,6 +214,39 @@ const TEMPLATES: Template[] = [
   { category: "trap", text: "Firmware {version4} instalado, build {semver}." },
   { category: "trap", text: "Resposta da IA: obrigado, {placeholder}!" },
   { category: "trap", text: "Código de verificação {shortNumber} enviado." },
+
+  // ---- Added in 0.2.0. New cases, written after the detectors were improved ----
+  { category: "form", text: "Endereço: Rua das Flores, 100 - Recife/PE {cep}" },
+  { category: "chat", text: "Meu CPF é {cpfSpaced}, pode confirmar?" },
+  { category: "trap", text: "Protocolo {protocol} aberto no suporte." },
+  // Known gaps: stricter rules for CEP and old plates miss them without context
+  { category: "chat", text: "Deixa no {cep} por favor." },
+  { category: "chat", text: "Vi o {plateOld} parado na frente." },
+  { category: "chat", text: "Escreve para {emailAt} se precisar." },
+  // Portugal
+  { category: "chat", text: "Olá, o meu NIF é {nif} e o email {email}." },
+  { category: "form", text: "Contribuinte n.º {nifSpaced}; Cartão de Cidadão {citizenCard}" },
+  { category: "form", text: "NISS {niss}, inscrito na Segurança Social." },
+  { category: "chat", text: "Faturar a {nif}, obrigado." },
+  { category: "trap", text: "Encomenda {nineDigits} enviada." },
+  // Argentina
+  { category: "chat", text: "Hola, mi CUIT es {cuit} y mi DNI {dni}." },
+  { category: "form", text: "CUIL {cuitDigits}; email {email}" },
+  { category: "chat", text: "Documento {dni}, nacido en 1990." },
+  { category: "trap", text: "CUIT con un dígito mal: {cuitBadDigit}" },
+  // United States
+  { category: "chat", text: "My SSN is {ssn}, email {email}." },
+  { category: "form", text: "ssn={ssnDigits};itin={itin}" },
+  { category: "trap", text: "Part number {partNumber} is back in stock." },
+  { category: "trap", text: "Order {nineDigits} shipped." },
+  // Mexico
+  { category: "chat", text: "Mi CURP es {curp} y mi RFC {rfc}." },
+  { category: "form", text: "Proveedor RFC {rfcCompany}, contacto {email}" },
+  { category: "trap", text: "Factura al público en general, RFC {rfcGeneric}." },
+  // Chile
+  { category: "chat", text: "Mi RUT es {rut}, correo {email}." },
+  { category: "form", text: "RUN {rutPlain}" },
+  { category: "trap", text: "Lote {rutNoContext} despachado." },
 ];
 
 /** How many records each template produces. */

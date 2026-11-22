@@ -758,3 +758,503 @@
 {"id":"trap-37-17","category":"trap","text":"Código de verificação 190258 enviado.","entities":[]}
 {"id":"trap-37-18","category":"trap","text":"Código de verificação 710256 enviado.","entities":[]}
 {"id":"trap-37-19","category":"trap","text":"Código de verificação 946984 enviado.","entities":[]}
+{"id":"form-38-00","category":"form","text":"Endereço: Rua das Flores, 100 - Recife/PE 41811-579","entities":[{"type":"CEP","start":42,"end":51}]}
+{"id":"form-38-01","category":"form","text":"Endereço: Rua das Flores, 100 - Recife/PE 63876-880","entities":[{"type":"CEP","start":42,"end":51}]}
+{"id":"form-38-02","category":"form","text":"Endereço: Rua das Flores, 100 - Recife/PE 94797-289","entities":[{"type":"CEP","start":42,"end":51}]}
+{"id":"form-38-03","category":"form","text":"Endereço: Rua das Flores, 100 - Recife/PE 18016-888","entities":[{"type":"CEP","start":42,"end":51}]}
+{"id":"form-38-04","category":"form","text":"Endereço: Rua das Flores, 100 - Recife/PE 46627-069","entities":[{"type":"CEP","start":42,"end":51}]}
+{"id":"form-38-05","category":"form","text":"Endereço: Rua das Flores, 100 - Recife/PE 77009-273","entities":[{"type":"CEP","start":42,"end":51}]}
+{"id":"form-38-06","category":"form","text":"Endereço: Rua das Flores, 100 - Recife/PE 84528-938","entities":[{"type":"CEP","start":42,"end":51}]}
+{"id":"form-38-07","category":"form","text":"Endereço: Rua das Flores, 100 - Recife/PE 80364-852","entities":[{"type":"CEP","start":42,"end":51}]}
+{"id":"form-38-08","category":"form","text":"Endereço: Rua das Flores, 100 - Recife/PE 49486-236","entities":[{"type":"CEP","start":42,"end":51}]}
+{"id":"form-38-09","category":"form","text":"Endereço: Rua das Flores, 100 - Recife/PE 15443-369","entities":[{"type":"CEP","start":42,"end":51}]}
+{"id":"form-38-10","category":"form","text":"Endereço: Rua das Flores, 100 - Recife/PE 53382-988","entities":[{"type":"CEP","start":42,"end":51}]}
+{"id":"form-38-11","category":"form","text":"Endereço: Rua das Flores, 100 - Recife/PE 59183-780","entities":[{"type":"CEP","start":42,"end":51}]}
+{"id":"form-38-12","category":"form","text":"Endereço: Rua das Flores, 100 - Recife/PE 77794-234","entities":[{"type":"CEP","start":42,"end":51}]}
+{"id":"form-38-13","category":"form","text":"Endereço: Rua das Flores, 100 - Recife/PE 50011-709","entities":[{"type":"CEP","start":42,"end":51}]}
+{"id":"form-38-14","category":"form","text":"Endereço: Rua das Flores, 100 - Recife/PE 68900-851","entities":[{"type":"CEP","start":42,"end":51}]}
+{"id":"form-38-15","category":"form","text":"Endereço: Rua das Flores, 100 - Recife/PE 13160-683","entities":[{"type":"CEP","start":42,"end":51}]}
+{"id":"form-38-16","category":"form","text":"Endereço: Rua das Flores, 100 - Recife/PE 98525-830","entities":[{"type":"CEP","start":42,"end":51}]}
+{"id":"form-38-17","category":"form","text":"Endereço: Rua das Flores, 100 - Recife/PE 31280-260","entities":[{"type":"CEP","start":42,"end":51}]}
+{"id":"form-38-18","category":"form","text":"Endereço: Rua das Flores, 100 - Recife/PE 41176-219","entities":[{"type":"CEP","start":42,"end":51}]}
+{"id":"form-38-19","category":"form","text":"Endereço: Rua das Flores, 100 - Recife/PE 95257-989","entities":[{"type":"CEP","start":42,"end":51}]}
+{"id":"chat-39-00","category":"chat","text":"Meu CPF é 833 341 580 63, pode confirmar?","entities":[{"type":"CPF","start":10,"end":24}]}
+{"id":"chat-39-01","category":"chat","text":"Meu CPF é 707 451 323 75, pode confirmar?","entities":[{"type":"CPF","start":10,"end":24}]}
+{"id":"chat-39-02","category":"chat","text":"Meu CPF é 227 509 904 24, pode confirmar?","entities":[{"type":"CPF","start":10,"end":24}]}
+{"id":"chat-39-03","category":"chat","text":"Meu CPF é 761 854 212 08, pode confirmar?","entities":[{"type":"CPF","start":10,"end":24}]}
+{"id":"chat-39-04","category":"chat","text":"Meu CPF é 916 410 622 58, pode confirmar?","entities":[{"type":"CPF","start":10,"end":24}]}
+{"id":"chat-39-05","category":"chat","text":"Meu CPF é 671 439 510 80, pode confirmar?","entities":[{"type":"CPF","start":10,"end":24}]}
+{"id":"chat-39-06","category":"chat","text":"Meu CPF é 816 717 333 04, pode confirmar?","entities":[{"type":"CPF","start":10,"end":24}]}
+{"id":"chat-39-07","category":"chat","text":"Meu CPF é 260 319 486 05, pode confirmar?","entities":[{"type":"CPF","start":10,"end":24}]}
+{"id":"chat-39-08","category":"chat","text":"Meu CPF é 684 101 470 76, pode confirmar?","entities":[{"type":"CPF","start":10,"end":24}]}
+{"id":"chat-39-09","category":"chat","text":"Meu CPF é 090 825 818 68, pode confirmar?","entities":[{"type":"CPF","start":10,"end":24}]}
+{"id":"chat-39-10","category":"chat","text":"Meu CPF é 594 249 109 75, pode confirmar?","entities":[{"type":"CPF","start":10,"end":24}]}
+{"id":"chat-39-11","category":"chat","text":"Meu CPF é 288 882 812 07, pode confirmar?","entities":[{"type":"CPF","start":10,"end":24}]}
+{"id":"chat-39-12","category":"chat","text":"Meu CPF é 671 064 083 36, pode confirmar?","entities":[{"type":"CPF","start":10,"end":24}]}
+{"id":"chat-39-13","category":"chat","text":"Meu CPF é 619 853 801 02, pode confirmar?","entities":[{"type":"CPF","start":10,"end":24}]}
+{"id":"chat-39-14","category":"chat","text":"Meu CPF é 011 727 785 15, pode confirmar?","entities":[{"type":"CPF","start":10,"end":24}]}
+{"id":"chat-39-15","category":"chat","text":"Meu CPF é 375 773 357 62, pode confirmar?","entities":[{"type":"CPF","start":10,"end":24}]}
+{"id":"chat-39-16","category":"chat","text":"Meu CPF é 941 175 297 73, pode confirmar?","entities":[{"type":"CPF","start":10,"end":24}]}
+{"id":"chat-39-17","category":"chat","text":"Meu CPF é 491 747 194 08, pode confirmar?","entities":[{"type":"CPF","start":10,"end":24}]}
+{"id":"chat-39-18","category":"chat","text":"Meu CPF é 177 498 111 41, pode confirmar?","entities":[{"type":"CPF","start":10,"end":24}]}
+{"id":"chat-39-19","category":"chat","text":"Meu CPF é 462 954 716 92, pode confirmar?","entities":[{"type":"CPF","start":10,"end":24}]}
+{"id":"trap-40-00","category":"trap","text":"Protocolo 32826-657 aberto no suporte.","entities":[]}
+{"id":"trap-40-01","category":"trap","text":"Protocolo 57675-340 aberto no suporte.","entities":[]}
+{"id":"trap-40-02","category":"trap","text":"Protocolo 78572-850 aberto no suporte.","entities":[]}
+{"id":"trap-40-03","category":"trap","text":"Protocolo 70232-291 aberto no suporte.","entities":[]}
+{"id":"trap-40-04","category":"trap","text":"Protocolo 05626-834 aberto no suporte.","entities":[]}
+{"id":"trap-40-05","category":"trap","text":"Protocolo 63517-064 aberto no suporte.","entities":[]}
+{"id":"trap-40-06","category":"trap","text":"Protocolo 83796-492 aberto no suporte.","entities":[]}
+{"id":"trap-40-07","category":"trap","text":"Protocolo 05099-820 aberto no suporte.","entities":[]}
+{"id":"trap-40-08","category":"trap","text":"Protocolo 88120-111 aberto no suporte.","entities":[]}
+{"id":"trap-40-09","category":"trap","text":"Protocolo 01196-069 aberto no suporte.","entities":[]}
+{"id":"trap-40-10","category":"trap","text":"Protocolo 79363-697 aberto no suporte.","entities":[]}
+{"id":"trap-40-11","category":"trap","text":"Protocolo 13194-334 aberto no suporte.","entities":[]}
+{"id":"trap-40-12","category":"trap","text":"Protocolo 68577-368 aberto no suporte.","entities":[]}
+{"id":"trap-40-13","category":"trap","text":"Protocolo 02199-602 aberto no suporte.","entities":[]}
+{"id":"trap-40-14","category":"trap","text":"Protocolo 31899-787 aberto no suporte.","entities":[]}
+{"id":"trap-40-15","category":"trap","text":"Protocolo 31265-639 aberto no suporte.","entities":[]}
+{"id":"trap-40-16","category":"trap","text":"Protocolo 01873-327 aberto no suporte.","entities":[]}
+{"id":"trap-40-17","category":"trap","text":"Protocolo 48617-577 aberto no suporte.","entities":[]}
+{"id":"trap-40-18","category":"trap","text":"Protocolo 67715-808 aberto no suporte.","entities":[]}
+{"id":"trap-40-19","category":"trap","text":"Protocolo 22978-883 aberto no suporte.","entities":[]}
+{"id":"chat-41-00","category":"chat","text":"Deixa no 28427-428 por favor.","entities":[{"type":"CEP","start":9,"end":18}]}
+{"id":"chat-41-01","category":"chat","text":"Deixa no 43390-537 por favor.","entities":[{"type":"CEP","start":9,"end":18}]}
+{"id":"chat-41-02","category":"chat","text":"Deixa no 94956-241 por favor.","entities":[{"type":"CEP","start":9,"end":18}]}
+{"id":"chat-41-03","category":"chat","text":"Deixa no 11001-171 por favor.","entities":[{"type":"CEP","start":9,"end":18}]}
+{"id":"chat-41-04","category":"chat","text":"Deixa no 22542-727 por favor.","entities":[{"type":"CEP","start":9,"end":18}]}
+{"id":"chat-41-05","category":"chat","text":"Deixa no 34151-065 por favor.","entities":[{"type":"CEP","start":9,"end":18}]}
+{"id":"chat-41-06","category":"chat","text":"Deixa no 52490-043 por favor.","entities":[{"type":"CEP","start":9,"end":18}]}
+{"id":"chat-41-07","category":"chat","text":"Deixa no 60880-442 por favor.","entities":[{"type":"CEP","start":9,"end":18}]}
+{"id":"chat-41-08","category":"chat","text":"Deixa no 30581-342 por favor.","entities":[{"type":"CEP","start":9,"end":18}]}
+{"id":"chat-41-09","category":"chat","text":"Deixa no 77344-277 por favor.","entities":[{"type":"CEP","start":9,"end":18}]}
+{"id":"chat-41-10","category":"chat","text":"Deixa no 21571-263 por favor.","entities":[{"type":"CEP","start":9,"end":18}]}
+{"id":"chat-41-11","category":"chat","text":"Deixa no 23698-586 por favor.","entities":[{"type":"CEP","start":9,"end":18}]}
+{"id":"chat-41-12","category":"chat","text":"Deixa no 24750-077 por favor.","entities":[{"type":"CEP","start":9,"end":18}]}
+{"id":"chat-41-13","category":"chat","text":"Deixa no 78876-959 por favor.","entities":[{"type":"CEP","start":9,"end":18}]}
+{"id":"chat-41-14","category":"chat","text":"Deixa no 22971-103 por favor.","entities":[{"type":"CEP","start":9,"end":18}]}
+{"id":"chat-41-15","category":"chat","text":"Deixa no 73201-283 por favor.","entities":[{"type":"CEP","start":9,"end":18}]}
+{"id":"chat-41-16","category":"chat","text":"Deixa no 14122-599 por favor.","entities":[{"type":"CEP","start":9,"end":18}]}
+{"id":"chat-41-17","category":"chat","text":"Deixa no 18851-388 por favor.","entities":[{"type":"CEP","start":9,"end":18}]}
+{"id":"chat-41-18","category":"chat","text":"Deixa no 47942-097 por favor.","entities":[{"type":"CEP","start":9,"end":18}]}
+{"id":"chat-41-19","category":"chat","text":"Deixa no 74180-922 por favor.","entities":[{"type":"CEP","start":9,"end":18}]}
+{"id":"chat-42-00","category":"chat","text":"Vi o ZFS-0034 parado na frente.","entities":[{"type":"PLATE","start":5,"end":13}]}
+{"id":"chat-42-01","category":"chat","text":"Vi o ASN-8374 parado na frente.","entities":[{"type":"PLATE","start":5,"end":13}]}
+{"id":"chat-42-02","category":"chat","text":"Vi o KBZ-4002 parado na frente.","entities":[{"type":"PLATE","start":5,"end":13}]}
+{"id":"chat-42-03","category":"chat","text":"Vi o WPI-6653 parado na frente.","entities":[{"type":"PLATE","start":5,"end":13}]}
+{"id":"chat-42-04","category":"chat","text":"Vi o PYH-1457 parado na frente.","entities":[{"type":"PLATE","start":5,"end":13}]}
+{"id":"chat-42-05","category":"chat","text":"Vi o YVU-7141 parado na frente.","entities":[{"type":"PLATE","start":5,"end":13}]}
+{"id":"chat-42-06","category":"chat","text":"Vi o AEM-1764 parado na frente.","entities":[{"type":"PLATE","start":5,"end":13}]}
+{"id":"chat-42-07","category":"chat","text":"Vi o PSU-6394 parado na frente.","entities":[{"type":"PLATE","start":5,"end":13}]}
+{"id":"chat-42-08","category":"chat","text":"Vi o CVQ-6949 parado na frente.","entities":[{"type":"PLATE","start":5,"end":13}]}
+{"id":"chat-42-09","category":"chat","text":"Vi o NUW-6763 parado na frente.","entities":[{"type":"PLATE","start":5,"end":13}]}
+{"id":"chat-42-10","category":"chat","text":"Vi o PNG-6469 parado na frente.","entities":[{"type":"PLATE","start":5,"end":13}]}
+{"id":"chat-42-11","category":"chat","text":"Vi o WCP-6273 parado na frente.","entities":[{"type":"PLATE","start":5,"end":13}]}
+{"id":"chat-42-12","category":"chat","text":"Vi o KMB-3015 parado na frente.","entities":[{"type":"PLATE","start":5,"end":13}]}
+{"id":"chat-42-13","category":"chat","text":"Vi o WKR-4275 parado na frente.","entities":[{"type":"PLATE","start":5,"end":13}]}
+{"id":"chat-42-14","category":"chat","text":"Vi o TFF-6732 parado na frente.","entities":[{"type":"PLATE","start":5,"end":13}]}
+{"id":"chat-42-15","category":"chat","text":"Vi o AEZ-3127 parado na frente.","entities":[{"type":"PLATE","start":5,"end":13}]}
+{"id":"chat-42-16","category":"chat","text":"Vi o KUE-5895 parado na frente.","entities":[{"type":"PLATE","start":5,"end":13}]}
+{"id":"chat-42-17","category":"chat","text":"Vi o LFG-7979 parado na frente.","entities":[{"type":"PLATE","start":5,"end":13}]}
+{"id":"chat-42-18","category":"chat","text":"Vi o KCT-9443 parado na frente.","entities":[{"type":"PLATE","start":5,"end":13}]}
+{"id":"chat-42-19","category":"chat","text":"Vi o MYH-6177 parado na frente.","entities":[{"type":"PLATE","start":5,"end":13}]}
+{"id":"chat-43-00","category":"chat","text":"Escreve para ana.amostra86 [at] example.com se precisar.","entities":[{"type":"EMAIL","start":13,"end":43}]}
+{"id":"chat-43-01","category":"chat","text":"Escreve para ana.teste42 [at] example.com se precisar.","entities":[{"type":"EMAIL","start":13,"end":41}]}
+{"id":"chat-43-02","category":"chat","text":"Escreve para carla.ficticio38 [at] example.com se precisar.","entities":[{"type":"EMAIL","start":13,"end":46}]}
+{"id":"chat-43-03","category":"chat","text":"Escreve para felipe.ficticio53 [at] example.com se precisar.","entities":[{"type":"EMAIL","start":13,"end":47}]}
+{"id":"chat-43-04","category":"chat","text":"Escreve para carla.amostra68 [at] example.com se precisar.","entities":[{"type":"EMAIL","start":13,"end":45}]}
+{"id":"chat-43-05","category":"chat","text":"Escreve para gabi.amostra1 [at] example.com se precisar.","entities":[{"type":"EMAIL","start":13,"end":43}]}
+{"id":"chat-43-06","category":"chat","text":"Escreve para elisa.modelo87 [at] example.com se precisar.","entities":[{"type":"EMAIL","start":13,"end":44}]}
+{"id":"chat-43-07","category":"chat","text":"Escreve para gabi.teste9 [at] example.com se precisar.","entities":[{"type":"EMAIL","start":13,"end":41}]}
+{"id":"chat-43-08","category":"chat","text":"Escreve para bruno.amostra89 [at] example.com se precisar.","entities":[{"type":"EMAIL","start":13,"end":45}]}
+{"id":"chat-43-09","category":"chat","text":"Escreve para felipe.teste23 [at] example.com se precisar.","entities":[{"type":"EMAIL","start":13,"end":44}]}
+{"id":"chat-43-10","category":"chat","text":"Escreve para elisa.exemplo86 [at] example.com se precisar.","entities":[{"type":"EMAIL","start":13,"end":45}]}
+{"id":"chat-43-11","category":"chat","text":"Escreve para gabi.teste19 [at] example.com se precisar.","entities":[{"type":"EMAIL","start":13,"end":42}]}
+{"id":"chat-43-12","category":"chat","text":"Escreve para bruno.exemplo96 [at] example.com se precisar.","entities":[{"type":"EMAIL","start":13,"end":45}]}
+{"id":"chat-43-13","category":"chat","text":"Escreve para heitor.exemplo33 [at] example.com se precisar.","entities":[{"type":"EMAIL","start":13,"end":46}]}
+{"id":"chat-43-14","category":"chat","text":"Escreve para elisa.ficticio22 [at] example.com se precisar.","entities":[{"type":"EMAIL","start":13,"end":46}]}
+{"id":"chat-43-15","category":"chat","text":"Escreve para heitor.simulado21 [at] example.com se precisar.","entities":[{"type":"EMAIL","start":13,"end":47}]}
+{"id":"chat-43-16","category":"chat","text":"Escreve para diego.simulado22 [at] example.com se precisar.","entities":[{"type":"EMAIL","start":13,"end":46}]}
+{"id":"chat-43-17","category":"chat","text":"Escreve para ana.modelo81 [at] example.com se precisar.","entities":[{"type":"EMAIL","start":13,"end":42}]}
+{"id":"chat-43-18","category":"chat","text":"Escreve para carla.teste19 [at] example.com se precisar.","entities":[{"type":"EMAIL","start":13,"end":43}]}
+{"id":"chat-43-19","category":"chat","text":"Escreve para heitor.simulado51 [at] example.com se precisar.","entities":[{"type":"EMAIL","start":13,"end":47}]}
+{"id":"chat-44-00","category":"chat","text":"Olá, o meu NIF é 175992738 e o email carla.simulado76@example.com.","entities":[{"type":"NIF","start":17,"end":26},{"type":"EMAIL","start":37,"end":65}]}
+{"id":"chat-44-01","category":"chat","text":"Olá, o meu NIF é 297564870 e o email elisa.exemplo22@example.com.","entities":[{"type":"NIF","start":17,"end":26},{"type":"EMAIL","start":37,"end":64}]}
+{"id":"chat-44-02","category":"chat","text":"Olá, o meu NIF é 112181287 e o email diego.amostra45@example.com.","entities":[{"type":"NIF","start":17,"end":26},{"type":"EMAIL","start":37,"end":64}]}
+{"id":"chat-44-03","category":"chat","text":"Olá, o meu NIF é 186624166 e o email elisa.amostra23@example.com.","entities":[{"type":"NIF","start":17,"end":26},{"type":"EMAIL","start":37,"end":64}]}
+{"id":"chat-44-04","category":"chat","text":"Olá, o meu NIF é 376859610 e o email felipe.simulado38@example.com.","entities":[{"type":"NIF","start":17,"end":26},{"type":"EMAIL","start":37,"end":66}]}
+{"id":"chat-44-05","category":"chat","text":"Olá, o meu NIF é 380516918 e o email felipe.teste78@example.com.","entities":[{"type":"NIF","start":17,"end":26},{"type":"EMAIL","start":37,"end":63}]}
+{"id":"chat-44-06","category":"chat","text":"Olá, o meu NIF é 142793620 e o email carla.simulado82@example.com.","entities":[{"type":"NIF","start":17,"end":26},{"type":"EMAIL","start":37,"end":65}]}
+{"id":"chat-44-07","category":"chat","text":"Olá, o meu NIF é 397796935 e o email bruno.amostra32@example.com.","entities":[{"type":"NIF","start":17,"end":26},{"type":"EMAIL","start":37,"end":64}]}
+{"id":"chat-44-08","category":"chat","text":"Olá, o meu NIF é 245083170 e o email elisa.ficticio80@example.com.","entities":[{"type":"NIF","start":17,"end":26},{"type":"EMAIL","start":37,"end":65}]}
+{"id":"chat-44-09","category":"chat","text":"Olá, o meu NIF é 397497849 e o email heitor.modelo99@example.com.","entities":[{"type":"NIF","start":17,"end":26},{"type":"EMAIL","start":37,"end":64}]}
+{"id":"chat-44-10","category":"chat","text":"Olá, o meu NIF é 363950516 e o email elisa.ficticio41@example.com.","entities":[{"type":"NIF","start":17,"end":26},{"type":"EMAIL","start":37,"end":65}]}
+{"id":"chat-44-11","category":"chat","text":"Olá, o meu NIF é 315944919 e o email bruno.simulado29@example.com.","entities":[{"type":"NIF","start":17,"end":26},{"type":"EMAIL","start":37,"end":65}]}
+{"id":"chat-44-12","category":"chat","text":"Olá, o meu NIF é 237425165 e o email elisa.exemplo22@example.com.","entities":[{"type":"NIF","start":17,"end":26},{"type":"EMAIL","start":37,"end":64}]}
+{"id":"chat-44-13","category":"chat","text":"Olá, o meu NIF é 103219579 e o email heitor.teste73@example.com.","entities":[{"type":"NIF","start":17,"end":26},{"type":"EMAIL","start":37,"end":63}]}
+{"id":"chat-44-14","category":"chat","text":"Olá, o meu NIF é 258759240 e o email elisa.ficticio27@example.com.","entities":[{"type":"NIF","start":17,"end":26},{"type":"EMAIL","start":37,"end":65}]}
+{"id":"chat-44-15","category":"chat","text":"Olá, o meu NIF é 309493234 e o email ana.ficticio66@example.com.","entities":[{"type":"NIF","start":17,"end":26},{"type":"EMAIL","start":37,"end":63}]}
+{"id":"chat-44-16","category":"chat","text":"Olá, o meu NIF é 304370967 e o email diego.modelo40@example.com.","entities":[{"type":"NIF","start":17,"end":26},{"type":"EMAIL","start":37,"end":63}]}
+{"id":"chat-44-17","category":"chat","text":"Olá, o meu NIF é 178459291 e o email elisa.amostra94@example.com.","entities":[{"type":"NIF","start":17,"end":26},{"type":"EMAIL","start":37,"end":64}]}
+{"id":"chat-44-18","category":"chat","text":"Olá, o meu NIF é 304927210 e o email felipe.amostra1@example.com.","entities":[{"type":"NIF","start":17,"end":26},{"type":"EMAIL","start":37,"end":64}]}
+{"id":"chat-44-19","category":"chat","text":"Olá, o meu NIF é 223188786 e o email gabi.modelo58@example.com.","entities":[{"type":"NIF","start":17,"end":26},{"type":"EMAIL","start":37,"end":62}]}
+{"id":"form-45-00","category":"form","text":"Contribuinte n.º 318 054 159; Cartão de Cidadão 16398719 0 ZY8","entities":[{"type":"NIF","start":17,"end":28},{"type":"CC","start":48,"end":62}]}
+{"id":"form-45-01","category":"form","text":"Contribuinte n.º 140 218 572; Cartão de Cidadão 10721823 2 ZY6","entities":[{"type":"NIF","start":17,"end":28},{"type":"CC","start":48,"end":62}]}
+{"id":"form-45-02","category":"form","text":"Contribuinte n.º 333 876 695; Cartão de Cidadão 49695562 4 ZX0","entities":[{"type":"NIF","start":17,"end":28},{"type":"CC","start":48,"end":62}]}
+{"id":"form-45-03","category":"form","text":"Contribuinte n.º 216 805 147; Cartão de Cidadão 00098578 3 ZX8","entities":[{"type":"NIF","start":17,"end":28},{"type":"CC","start":48,"end":62}]}
+{"id":"form-45-04","category":"form","text":"Contribuinte n.º 313 730 644; Cartão de Cidadão 37963150 4 ZY2","entities":[{"type":"NIF","start":17,"end":28},{"type":"CC","start":48,"end":62}]}
+{"id":"form-45-05","category":"form","text":"Contribuinte n.º 102 822 948; Cartão de Cidadão 64650814 8 ZY0","entities":[{"type":"NIF","start":17,"end":28},{"type":"CC","start":48,"end":62}]}
+{"id":"form-45-06","category":"form","text":"Contribuinte n.º 132 231 778; Cartão de Cidadão 96342477 7 ZZ4","entities":[{"type":"NIF","start":17,"end":28},{"type":"CC","start":48,"end":62}]}
+{"id":"form-45-07","category":"form","text":"Contribuinte n.º 105 563 897; Cartão de Cidadão 32801385 4 ZX8","entities":[{"type":"NIF","start":17,"end":28},{"type":"CC","start":48,"end":62}]}
+{"id":"form-45-08","category":"form","text":"Contribuinte n.º 231 014 112; Cartão de Cidadão 83346994 0 ZY1","entities":[{"type":"NIF","start":17,"end":28},{"type":"CC","start":48,"end":62}]}
+{"id":"form-45-09","category":"form","text":"Contribuinte n.º 359 515 576; Cartão de Cidadão 37746788 0 ZY9","entities":[{"type":"NIF","start":17,"end":28},{"type":"CC","start":48,"end":62}]}
+{"id":"form-45-10","category":"form","text":"Contribuinte n.º 357 178 238; Cartão de Cidadão 21148349 4 ZY0","entities":[{"type":"NIF","start":17,"end":28},{"type":"CC","start":48,"end":62}]}
+{"id":"form-45-11","category":"form","text":"Contribuinte n.º 179 664 980; Cartão de Cidadão 40058533 2 ZX0","entities":[{"type":"NIF","start":17,"end":28},{"type":"CC","start":48,"end":62}]}
+{"id":"form-45-12","category":"form","text":"Contribuinte n.º 298 040 352; Cartão de Cidadão 96977975 5 ZZ8","entities":[{"type":"NIF","start":17,"end":28},{"type":"CC","start":48,"end":62}]}
+{"id":"form-45-13","category":"form","text":"Contribuinte n.º 290 738 490; Cartão de Cidadão 32688916 7 ZZ6","entities":[{"type":"NIF","start":17,"end":28},{"type":"CC","start":48,"end":62}]}
+{"id":"form-45-14","category":"form","text":"Contribuinte n.º 318 152 827; Cartão de Cidadão 35271681 9 ZY9","entities":[{"type":"NIF","start":17,"end":28},{"type":"CC","start":48,"end":62}]}
+{"id":"form-45-15","category":"form","text":"Contribuinte n.º 234 612 533; Cartão de Cidadão 48158173 1 ZY5","entities":[{"type":"NIF","start":17,"end":28},{"type":"CC","start":48,"end":62}]}
+{"id":"form-45-16","category":"form","text":"Contribuinte n.º 331 520 311; Cartão de Cidadão 05349545 4 ZY6","entities":[{"type":"NIF","start":17,"end":28},{"type":"CC","start":48,"end":62}]}
+{"id":"form-45-17","category":"form","text":"Contribuinte n.º 202 573 524; Cartão de Cidadão 21736860 3 ZZ1","entities":[{"type":"NIF","start":17,"end":28},{"type":"CC","start":48,"end":62}]}
+{"id":"form-45-18","category":"form","text":"Contribuinte n.º 178 622 915; Cartão de Cidadão 10272414 8 ZX4","entities":[{"type":"NIF","start":17,"end":28},{"type":"CC","start":48,"end":62}]}
+{"id":"form-45-19","category":"form","text":"Contribuinte n.º 277 361 095; Cartão de Cidadão 73721473 2 ZZ1","entities":[{"type":"NIF","start":17,"end":28},{"type":"CC","start":48,"end":62}]}
+{"id":"form-46-00","category":"form","text":"NISS 12103342110, inscrito na Segurança Social.","entities":[{"type":"NISS","start":5,"end":16}]}
+{"id":"form-46-01","category":"form","text":"NISS 19100163349, inscrito na Segurança Social.","entities":[{"type":"NISS","start":5,"end":16}]}
+{"id":"form-46-02","category":"form","text":"NISS 14641952562, inscrito na Segurança Social.","entities":[{"type":"NISS","start":5,"end":16}]}
+{"id":"form-46-03","category":"form","text":"NISS 11267946114, inscrito na Segurança Social.","entities":[{"type":"NISS","start":5,"end":16}]}
+{"id":"form-46-04","category":"form","text":"NISS 12696430371, inscrito na Segurança Social.","entities":[{"type":"NISS","start":5,"end":16}]}
+{"id":"form-46-05","category":"form","text":"NISS 16074803391, inscrito na Segurança Social.","entities":[{"type":"NISS","start":5,"end":16}]}
+{"id":"form-46-06","category":"form","text":"NISS 12804797932, inscrito na Segurança Social.","entities":[{"type":"NISS","start":5,"end":16}]}
+{"id":"form-46-07","category":"form","text":"NISS 15867679783, inscrito na Segurança Social.","entities":[{"type":"NISS","start":5,"end":16}]}
+{"id":"form-46-08","category":"form","text":"NISS 18769668048, inscrito na Segurança Social.","entities":[{"type":"NISS","start":5,"end":16}]}
+{"id":"form-46-09","category":"form","text":"NISS 12833045122, inscrito na Segurança Social.","entities":[{"type":"NISS","start":5,"end":16}]}
+{"id":"form-46-10","category":"form","text":"NISS 19718647856, inscrito na Segurança Social.","entities":[{"type":"NISS","start":5,"end":16}]}
+{"id":"form-46-11","category":"form","text":"NISS 15380299125, inscrito na Segurança Social.","entities":[{"type":"NISS","start":5,"end":16}]}
+{"id":"form-46-12","category":"form","text":"NISS 10161952248, inscrito na Segurança Social.","entities":[{"type":"NISS","start":5,"end":16}]}
+{"id":"form-46-13","category":"form","text":"NISS 14914596458, inscrito na Segurança Social.","entities":[{"type":"NISS","start":5,"end":16}]}
+{"id":"form-46-14","category":"form","text":"NISS 17062755240, inscrito na Segurança Social.","entities":[{"type":"NISS","start":5,"end":16}]}
+{"id":"form-46-15","category":"form","text":"NISS 15746863190, inscrito na Segurança Social.","entities":[{"type":"NISS","start":5,"end":16}]}
+{"id":"form-46-16","category":"form","text":"NISS 12872549164, inscrito na Segurança Social.","entities":[{"type":"NISS","start":5,"end":16}]}
+{"id":"form-46-17","category":"form","text":"NISS 16835967252, inscrito na Segurança Social.","entities":[{"type":"NISS","start":5,"end":16}]}
+{"id":"form-46-18","category":"form","text":"NISS 10171229723, inscrito na Segurança Social.","entities":[{"type":"NISS","start":5,"end":16}]}
+{"id":"form-46-19","category":"form","text":"NISS 11093243767, inscrito na Segurança Social.","entities":[{"type":"NISS","start":5,"end":16}]}
+{"id":"chat-47-00","category":"chat","text":"Faturar a 181102560, obrigado.","entities":[{"type":"NIF","start":10,"end":19}]}
+{"id":"chat-47-01","category":"chat","text":"Faturar a 286985390, obrigado.","entities":[{"type":"NIF","start":10,"end":19}]}
+{"id":"chat-47-02","category":"chat","text":"Faturar a 360302777, obrigado.","entities":[{"type":"NIF","start":10,"end":19}]}
+{"id":"chat-47-03","category":"chat","text":"Faturar a 107452243, obrigado.","entities":[{"type":"NIF","start":10,"end":19}]}
+{"id":"chat-47-04","category":"chat","text":"Faturar a 280400780, obrigado.","entities":[{"type":"NIF","start":10,"end":19}]}
+{"id":"chat-47-05","category":"chat","text":"Faturar a 275415600, obrigado.","entities":[{"type":"NIF","start":10,"end":19}]}
+{"id":"chat-47-06","category":"chat","text":"Faturar a 160677220, obrigado.","entities":[{"type":"NIF","start":10,"end":19}]}
+{"id":"chat-47-07","category":"chat","text":"Faturar a 304128953, obrigado.","entities":[{"type":"NIF","start":10,"end":19}]}
+{"id":"chat-47-08","category":"chat","text":"Faturar a 231610580, obrigado.","entities":[{"type":"NIF","start":10,"end":19}]}
+{"id":"chat-47-09","category":"chat","text":"Faturar a 218392508, obrigado.","entities":[{"type":"NIF","start":10,"end":19}]}
+{"id":"chat-47-10","category":"chat","text":"Faturar a 282287205, obrigado.","entities":[{"type":"NIF","start":10,"end":19}]}
+{"id":"chat-47-11","category":"chat","text":"Faturar a 154315001, obrigado.","entities":[{"type":"NIF","start":10,"end":19}]}
+{"id":"chat-47-12","category":"chat","text":"Faturar a 183730631, obrigado.","entities":[{"type":"NIF","start":10,"end":19}]}
+{"id":"chat-47-13","category":"chat","text":"Faturar a 195317050, obrigado.","entities":[{"type":"NIF","start":10,"end":19}]}
+{"id":"chat-47-14","category":"chat","text":"Faturar a 166722413, obrigado.","entities":[{"type":"NIF","start":10,"end":19}]}
+{"id":"chat-47-15","category":"chat","text":"Faturar a 149567871, obrigado.","entities":[{"type":"NIF","start":10,"end":19}]}
+{"id":"chat-47-16","category":"chat","text":"Faturar a 342368052, obrigado.","entities":[{"type":"NIF","start":10,"end":19}]}
+{"id":"chat-47-17","category":"chat","text":"Faturar a 238446751, obrigado.","entities":[{"type":"NIF","start":10,"end":19}]}
+{"id":"chat-47-18","category":"chat","text":"Faturar a 323104479, obrigado.","entities":[{"type":"NIF","start":10,"end":19}]}
+{"id":"chat-47-19","category":"chat","text":"Faturar a 228117607, obrigado.","entities":[{"type":"NIF","start":10,"end":19}]}
+{"id":"trap-48-00","category":"trap","text":"Encomenda 357186978 enviada.","entities":[]}
+{"id":"trap-48-01","category":"trap","text":"Encomenda 391635780 enviada.","entities":[]}
+{"id":"trap-48-02","category":"trap","text":"Encomenda 264654146 enviada.","entities":[]}
+{"id":"trap-48-03","category":"trap","text":"Encomenda 416295105 enviada.","entities":[]}
+{"id":"trap-48-04","category":"trap","text":"Encomenda 851748797 enviada.","entities":[]}
+{"id":"trap-48-05","category":"trap","text":"Encomenda 146908211 enviada.","entities":[]}
+{"id":"trap-48-06","category":"trap","text":"Encomenda 515166971 enviada.","entities":[]}
+{"id":"trap-48-07","category":"trap","text":"Encomenda 854095122 enviada.","entities":[]}
+{"id":"trap-48-08","category":"trap","text":"Encomenda 513018956 enviada.","entities":[]}
+{"id":"trap-48-09","category":"trap","text":"Encomenda 732362351 enviada.","entities":[]}
+{"id":"trap-48-10","category":"trap","text":"Encomenda 352545016 enviada.","entities":[]}
+{"id":"trap-48-11","category":"trap","text":"Encomenda 158061444 enviada.","entities":[]}
+{"id":"trap-48-12","category":"trap","text":"Encomenda 526903887 enviada.","entities":[]}
+{"id":"trap-48-13","category":"trap","text":"Encomenda 378203450 enviada.","entities":[]}
+{"id":"trap-48-14","category":"trap","text":"Encomenda 596992471 enviada.","entities":[]}
+{"id":"trap-48-15","category":"trap","text":"Encomenda 487997130 enviada.","entities":[]}
+{"id":"trap-48-16","category":"trap","text":"Encomenda 987991516 enviada.","entities":[]}
+{"id":"trap-48-17","category":"trap","text":"Encomenda 165361366 enviada.","entities":[]}
+{"id":"trap-48-18","category":"trap","text":"Encomenda 603334942 enviada.","entities":[]}
+{"id":"trap-48-19","category":"trap","text":"Encomenda 286730730 enviada.","entities":[]}
+{"id":"chat-49-00","category":"chat","text":"Hola, mi CUIT es 30-44146820-9 y mi DNI 18.737.407.","entities":[{"type":"CUIT","start":17,"end":30},{"type":"DNI","start":40,"end":50}]}
+{"id":"chat-49-01","category":"chat","text":"Hola, mi CUIT es 27-35311164-2 y mi DNI 25.091.569.","entities":[{"type":"CUIT","start":17,"end":30},{"type":"DNI","start":40,"end":50}]}
+{"id":"chat-49-02","category":"chat","text":"Hola, mi CUIT es 20-31778940-9 y mi DNI 27.978.250.","entities":[{"type":"CUIT","start":17,"end":30},{"type":"DNI","start":40,"end":50}]}
+{"id":"chat-49-03","category":"chat","text":"Hola, mi CUIT es 23-86369871-5 y mi DNI 36.089.247.","entities":[{"type":"CUIT","start":17,"end":30},{"type":"DNI","start":40,"end":50}]}
+{"id":"chat-49-04","category":"chat","text":"Hola, mi CUIT es 20-49211419-8 y mi DNI 18.642.869.","entities":[{"type":"CUIT","start":17,"end":30},{"type":"DNI","start":40,"end":50}]}
+{"id":"chat-49-05","category":"chat","text":"Hola, mi CUIT es 23-54073666-9 y mi DNI 32.232.374.","entities":[{"type":"CUIT","start":17,"end":30},{"type":"DNI","start":40,"end":50}]}
+{"id":"chat-49-06","category":"chat","text":"Hola, mi CUIT es 30-39127301-0 y mi DNI 25.329.286.","entities":[{"type":"CUIT","start":17,"end":30},{"type":"DNI","start":40,"end":50}]}
+{"id":"chat-49-07","category":"chat","text":"Hola, mi CUIT es 27-31403311-1 y mi DNI 25.841.487.","entities":[{"type":"CUIT","start":17,"end":30},{"type":"DNI","start":40,"end":50}]}
+{"id":"chat-49-08","category":"chat","text":"Hola, mi CUIT es 30-22927330-9 y mi DNI 42.711.817.","entities":[{"type":"CUIT","start":17,"end":30},{"type":"DNI","start":40,"end":50}]}
+{"id":"chat-49-09","category":"chat","text":"Hola, mi CUIT es 27-77701102-8 y mi DNI 41.058.774.","entities":[{"type":"CUIT","start":17,"end":30},{"type":"DNI","start":40,"end":50}]}
+{"id":"chat-49-10","category":"chat","text":"Hola, mi CUIT es 27-98959746-4 y mi DNI 35.880.795.","entities":[{"type":"CUIT","start":17,"end":30},{"type":"DNI","start":40,"end":50}]}
+{"id":"chat-49-11","category":"chat","text":"Hola, mi CUIT es 27-89481730-0 y mi DNI 24.994.913.","entities":[{"type":"CUIT","start":17,"end":30},{"type":"DNI","start":40,"end":50}]}
+{"id":"chat-49-12","category":"chat","text":"Hola, mi CUIT es 30-63712161-4 y mi DNI 14.414.098.","entities":[{"type":"CUIT","start":17,"end":30},{"type":"DNI","start":40,"end":50}]}
+{"id":"chat-49-13","category":"chat","text":"Hola, mi CUIT es 20-43222443-1 y mi DNI 35.780.030.","entities":[{"type":"CUIT","start":17,"end":30},{"type":"DNI","start":40,"end":50}]}
+{"id":"chat-49-14","category":"chat","text":"Hola, mi CUIT es 23-35046356-9 y mi DNI 19.534.993.","entities":[{"type":"CUIT","start":17,"end":30},{"type":"DNI","start":40,"end":50}]}
+{"id":"chat-49-15","category":"chat","text":"Hola, mi CUIT es 23-10340619-6 y mi DNI 14.719.973.","entities":[{"type":"CUIT","start":17,"end":30},{"type":"DNI","start":40,"end":50}]}
+{"id":"chat-49-16","category":"chat","text":"Hola, mi CUIT es 23-46936509-3 y mi DNI 32.945.550.","entities":[{"type":"CUIT","start":17,"end":30},{"type":"DNI","start":40,"end":50}]}
+{"id":"chat-49-17","category":"chat","text":"Hola, mi CUIT es 20-12509293-5 y mi DNI 18.697.060.","entities":[{"type":"CUIT","start":17,"end":30},{"type":"DNI","start":40,"end":50}]}
+{"id":"chat-49-18","category":"chat","text":"Hola, mi CUIT es 23-45394253-8 y mi DNI 27.232.021.","entities":[{"type":"CUIT","start":17,"end":30},{"type":"DNI","start":40,"end":50}]}
+{"id":"chat-49-19","category":"chat","text":"Hola, mi CUIT es 30-90005765-9 y mi DNI 35.422.526.","entities":[{"type":"CUIT","start":17,"end":30},{"type":"DNI","start":40,"end":50}]}
+{"id":"form-50-00","category":"form","text":"CUIL 27025556033; email elisa.simulado52@example.com","entities":[{"type":"CUIT","start":5,"end":16},{"type":"EMAIL","start":24,"end":52}]}
+{"id":"form-50-01","category":"form","text":"CUIL 23451535099; email carla.simulado12@example.com","entities":[{"type":"CUIT","start":5,"end":16},{"type":"EMAIL","start":24,"end":52}]}
+{"id":"form-50-02","category":"form","text":"CUIL 20475199120; email carla.amostra11@example.com","entities":[{"type":"CUIT","start":5,"end":16},{"type":"EMAIL","start":24,"end":51}]}
+{"id":"form-50-03","category":"form","text":"CUIL 23876139936; email carla.modelo24@example.com","entities":[{"type":"CUIT","start":5,"end":16},{"type":"EMAIL","start":24,"end":50}]}
+{"id":"form-50-04","category":"form","text":"CUIL 30540015771; email bruno.amostra62@example.com","entities":[{"type":"CUIT","start":5,"end":16},{"type":"EMAIL","start":24,"end":51}]}
+{"id":"form-50-05","category":"form","text":"CUIL 27662260717; email carla.simulado32@example.com","entities":[{"type":"CUIT","start":5,"end":16},{"type":"EMAIL","start":24,"end":52}]}
+{"id":"form-50-06","category":"form","text":"CUIL 30073965892; email felipe.exemplo40@example.com","entities":[{"type":"CUIT","start":5,"end":16},{"type":"EMAIL","start":24,"end":52}]}
+{"id":"form-50-07","category":"form","text":"CUIL 20801464239; email felipe.ficticio59@example.com","entities":[{"type":"CUIT","start":5,"end":16},{"type":"EMAIL","start":24,"end":53}]}
+{"id":"form-50-08","category":"form","text":"CUIL 23282445913; email ana.teste58@example.com","entities":[{"type":"CUIT","start":5,"end":16},{"type":"EMAIL","start":24,"end":47}]}
+{"id":"form-50-09","category":"form","text":"CUIL 27494915427; email felipe.teste63@example.com","entities":[{"type":"CUIT","start":5,"end":16},{"type":"EMAIL","start":24,"end":50}]}
+{"id":"form-50-10","category":"form","text":"CUIL 23379979629; email ana.simulado82@example.com","entities":[{"type":"CUIT","start":5,"end":16},{"type":"EMAIL","start":24,"end":50}]}
+{"id":"form-50-11","category":"form","text":"CUIL 30456677912; email felipe.simulado6@example.com","entities":[{"type":"CUIT","start":5,"end":16},{"type":"EMAIL","start":24,"end":52}]}
+{"id":"form-50-12","category":"form","text":"CUIL 23131644531; email bruno.modelo34@example.com","entities":[{"type":"CUIT","start":5,"end":16},{"type":"EMAIL","start":24,"end":50}]}
+{"id":"form-50-13","category":"form","text":"CUIL 23734069477; email elisa.modelo46@example.com","entities":[{"type":"CUIT","start":5,"end":16},{"type":"EMAIL","start":24,"end":50}]}
+{"id":"form-50-14","category":"form","text":"CUIL 20277706688; email heitor.simulado96@example.com","entities":[{"type":"CUIT","start":5,"end":16},{"type":"EMAIL","start":24,"end":53}]}
+{"id":"form-50-15","category":"form","text":"CUIL 23386567719; email ana.simulado69@example.com","entities":[{"type":"CUIT","start":5,"end":16},{"type":"EMAIL","start":24,"end":50}]}
+{"id":"form-50-16","category":"form","text":"CUIL 27528155036; email ana.amostra50@example.com","entities":[{"type":"CUIT","start":5,"end":16},{"type":"EMAIL","start":24,"end":49}]}
+{"id":"form-50-17","category":"form","text":"CUIL 27842982370; email gabi.exemplo3@example.com","entities":[{"type":"CUIT","start":5,"end":16},{"type":"EMAIL","start":24,"end":49}]}
+{"id":"form-50-18","category":"form","text":"CUIL 30012316824; email elisa.ficticio48@example.com","entities":[{"type":"CUIT","start":5,"end":16},{"type":"EMAIL","start":24,"end":52}]}
+{"id":"form-50-19","category":"form","text":"CUIL 30853022655; email ana.ficticio5@example.com","entities":[{"type":"CUIT","start":5,"end":16},{"type":"EMAIL","start":24,"end":49}]}
+{"id":"chat-51-00","category":"chat","text":"Documento 31.660.332, nacido en 1990.","entities":[{"type":"DNI","start":10,"end":20}]}
+{"id":"chat-51-01","category":"chat","text":"Documento 18.644.484, nacido en 1990.","entities":[{"type":"DNI","start":10,"end":20}]}
+{"id":"chat-51-02","category":"chat","text":"Documento 14.496.270, nacido en 1990.","entities":[{"type":"DNI","start":10,"end":20}]}
+{"id":"chat-51-03","category":"chat","text":"Documento 27.099.353, nacido en 1990.","entities":[{"type":"DNI","start":10,"end":20}]}
+{"id":"chat-51-04","category":"chat","text":"Documento 37.119.873, nacido en 1990.","entities":[{"type":"DNI","start":10,"end":20}]}
+{"id":"chat-51-05","category":"chat","text":"Documento 31.789.661, nacido en 1990.","entities":[{"type":"DNI","start":10,"end":20}]}
+{"id":"chat-51-06","category":"chat","text":"Documento 21.508.211, nacido en 1990.","entities":[{"type":"DNI","start":10,"end":20}]}
+{"id":"chat-51-07","category":"chat","text":"Documento 19.928.451, nacido en 1990.","entities":[{"type":"DNI","start":10,"end":20}]}
+{"id":"chat-51-08","category":"chat","text":"Documento 43.994.818, nacido en 1990.","entities":[{"type":"DNI","start":10,"end":20}]}
+{"id":"chat-51-09","category":"chat","text":"Documento 29.596.865, nacido en 1990.","entities":[{"type":"DNI","start":10,"end":20}]}
+{"id":"chat-51-10","category":"chat","text":"Documento 26.013.777, nacido en 1990.","entities":[{"type":"DNI","start":10,"end":20}]}
+{"id":"chat-51-11","category":"chat","text":"Documento 25.245.424, nacido en 1990.","entities":[{"type":"DNI","start":10,"end":20}]}
+{"id":"chat-51-12","category":"chat","text":"Documento 36.645.992, nacido en 1990.","entities":[{"type":"DNI","start":10,"end":20}]}
+{"id":"chat-51-13","category":"chat","text":"Documento 14.334.929, nacido en 1990.","entities":[{"type":"DNI","start":10,"end":20}]}
+{"id":"chat-51-14","category":"chat","text":"Documento 31.901.460, nacido en 1990.","entities":[{"type":"DNI","start":10,"end":20}]}
+{"id":"chat-51-15","category":"chat","text":"Documento 15.607.556, nacido en 1990.","entities":[{"type":"DNI","start":10,"end":20}]}
+{"id":"chat-51-16","category":"chat","text":"Documento 26.772.522, nacido en 1990.","entities":[{"type":"DNI","start":10,"end":20}]}
+{"id":"chat-51-17","category":"chat","text":"Documento 43.086.829, nacido en 1990.","entities":[{"type":"DNI","start":10,"end":20}]}
+{"id":"chat-51-18","category":"chat","text":"Documento 12.181.501, nacido en 1990.","entities":[{"type":"DNI","start":10,"end":20}]}
+{"id":"chat-51-19","category":"chat","text":"Documento 36.934.906, nacido en 1990.","entities":[{"type":"DNI","start":10,"end":20}]}
+{"id":"trap-52-00","category":"trap","text":"CUIT con un dígito mal: 23-75990235-2","entities":[]}
+{"id":"trap-52-01","category":"trap","text":"CUIT con un dígito mal: 30-71402342-7","entities":[]}
+{"id":"trap-52-02","category":"trap","text":"CUIT con un dígito mal: 30-66812130-3","entities":[]}
+{"id":"trap-52-03","category":"trap","text":"CUIT con un dígito mal: 23-26662051-0","entities":[]}
+{"id":"trap-52-04","category":"trap","text":"CUIT con un dígito mal: 23-66238147-1","entities":[]}
+{"id":"trap-52-05","category":"trap","text":"CUIT con un dígito mal: 27-15789551-2","entities":[]}
+{"id":"trap-52-06","category":"trap","text":"CUIT con un dígito mal: 30-64364979-6","entities":[]}
+{"id":"trap-52-07","category":"trap","text":"CUIT con un dígito mal: 20-21705028-8","entities":[]}
+{"id":"trap-52-08","category":"trap","text":"CUIT con un dígito mal: 30-01016156-5","entities":[]}
+{"id":"trap-52-09","category":"trap","text":"CUIT con un dígito mal: 23-64485702-7","entities":[]}
+{"id":"trap-52-10","category":"trap","text":"CUIT con un dígito mal: 20-03225514-2","entities":[]}
+{"id":"trap-52-11","category":"trap","text":"CUIT con un dígito mal: 27-07231279-8","entities":[]}
+{"id":"trap-52-12","category":"trap","text":"CUIT con un dígito mal: 23-82434956-9","entities":[]}
+{"id":"trap-52-13","category":"trap","text":"CUIT con un dígito mal: 27-46349774-1","entities":[]}
+{"id":"trap-52-14","category":"trap","text":"CUIT con un dígito mal: 23-31894518-8","entities":[]}
+{"id":"trap-52-15","category":"trap","text":"CUIT con un dígito mal: 30-49505682-9","entities":[]}
+{"id":"trap-52-16","category":"trap","text":"CUIT con un dígito mal: 20-25504307-4","entities":[]}
+{"id":"trap-52-17","category":"trap","text":"CUIT con un dígito mal: 30-56983387-3","entities":[]}
+{"id":"trap-52-18","category":"trap","text":"CUIT con un dígito mal: 23-36587599-6","entities":[]}
+{"id":"trap-52-19","category":"trap","text":"CUIT con un dígito mal: 27-27495402-3","entities":[]}
+{"id":"chat-53-00","category":"chat","text":"My SSN is 011-76-0134, email diego.teste21@example.com.","entities":[{"type":"SSN","start":10,"end":21},{"type":"EMAIL","start":29,"end":54}]}
+{"id":"chat-53-01","category":"chat","text":"My SSN is 878-14-2259, email diego.ficticio46@example.com.","entities":[{"type":"SSN","start":10,"end":21},{"type":"EMAIL","start":29,"end":57}]}
+{"id":"chat-53-02","category":"chat","text":"My SSN is 060-99-7204, email elisa.simulado71@example.com.","entities":[{"type":"SSN","start":10,"end":21},{"type":"EMAIL","start":29,"end":57}]}
+{"id":"chat-53-03","category":"chat","text":"My SSN is 731-17-7027, email felipe.modelo61@example.com.","entities":[{"type":"SSN","start":10,"end":21},{"type":"EMAIL","start":29,"end":56}]}
+{"id":"chat-53-04","category":"chat","text":"My SSN is 165-57-1448, email ana.modelo1@example.com.","entities":[{"type":"SSN","start":10,"end":21},{"type":"EMAIL","start":29,"end":52}]}
+{"id":"chat-53-05","category":"chat","text":"My SSN is 382-28-7148, email bruno.modelo58@example.com.","entities":[{"type":"SSN","start":10,"end":21},{"type":"EMAIL","start":29,"end":55}]}
+{"id":"chat-53-06","category":"chat","text":"My SSN is 622-97-6406, email felipe.exemplo27@example.com.","entities":[{"type":"SSN","start":10,"end":21},{"type":"EMAIL","start":29,"end":57}]}
+{"id":"chat-53-07","category":"chat","text":"My SSN is 006-88-7500, email ana.ficticio73@example.com.","entities":[{"type":"SSN","start":10,"end":21},{"type":"EMAIL","start":29,"end":55}]}
+{"id":"chat-53-08","category":"chat","text":"My SSN is 412-02-5423, email diego.modelo9@example.com.","entities":[{"type":"SSN","start":10,"end":21},{"type":"EMAIL","start":29,"end":54}]}
+{"id":"chat-53-09","category":"chat","text":"My SSN is 887-49-6771, email felipe.teste48@example.com.","entities":[{"type":"SSN","start":10,"end":21},{"type":"EMAIL","start":29,"end":55}]}
+{"id":"chat-53-10","category":"chat","text":"My SSN is 761-57-0296, email gabi.amostra58@example.com.","entities":[{"type":"SSN","start":10,"end":21},{"type":"EMAIL","start":29,"end":55}]}
+{"id":"chat-53-11","category":"chat","text":"My SSN is 841-26-1401, email gabi.exemplo96@example.com.","entities":[{"type":"SSN","start":10,"end":21},{"type":"EMAIL","start":29,"end":55}]}
+{"id":"chat-53-12","category":"chat","text":"My SSN is 132-64-7131, email ana.amostra37@example.com.","entities":[{"type":"SSN","start":10,"end":21},{"type":"EMAIL","start":29,"end":54}]}
+{"id":"chat-53-13","category":"chat","text":"My SSN is 084-60-1186, email diego.modelo48@example.com.","entities":[{"type":"SSN","start":10,"end":21},{"type":"EMAIL","start":29,"end":55}]}
+{"id":"chat-53-14","category":"chat","text":"My SSN is 147-09-4519, email heitor.amostra62@example.com.","entities":[{"type":"SSN","start":10,"end":21},{"type":"EMAIL","start":29,"end":57}]}
+{"id":"chat-53-15","category":"chat","text":"My SSN is 495-88-3585, email bruno.simulado85@example.com.","entities":[{"type":"SSN","start":10,"end":21},{"type":"EMAIL","start":29,"end":57}]}
+{"id":"chat-53-16","category":"chat","text":"My SSN is 754-35-5770, email heitor.amostra67@example.com.","entities":[{"type":"SSN","start":10,"end":21},{"type":"EMAIL","start":29,"end":57}]}
+{"id":"chat-53-17","category":"chat","text":"My SSN is 801-91-2112, email diego.teste41@example.com.","entities":[{"type":"SSN","start":10,"end":21},{"type":"EMAIL","start":29,"end":54}]}
+{"id":"chat-53-18","category":"chat","text":"My SSN is 182-88-1378, email diego.simulado23@example.com.","entities":[{"type":"SSN","start":10,"end":21},{"type":"EMAIL","start":29,"end":57}]}
+{"id":"chat-53-19","category":"chat","text":"My SSN is 221-05-5201, email carla.teste68@example.com.","entities":[{"type":"SSN","start":10,"end":21},{"type":"EMAIL","start":29,"end":54}]}
+{"id":"form-54-00","category":"form","text":"ssn=071964638;itin=948-70-6271","entities":[{"type":"SSN","start":4,"end":13},{"type":"ITIN","start":19,"end":30}]}
+{"id":"form-54-01","category":"form","text":"ssn=273515010;itin=902-75-3734","entities":[{"type":"SSN","start":4,"end":13},{"type":"ITIN","start":19,"end":30}]}
+{"id":"form-54-02","category":"form","text":"ssn=264558492;itin=953-82-2050","entities":[{"type":"SSN","start":4,"end":13},{"type":"ITIN","start":19,"end":30}]}
+{"id":"form-54-03","category":"form","text":"ssn=460156734;itin=923-85-2681","entities":[{"type":"SSN","start":4,"end":13},{"type":"ITIN","start":19,"end":30}]}
+{"id":"form-54-04","category":"form","text":"ssn=607087159;itin=941-83-0420","entities":[{"type":"SSN","start":4,"end":13},{"type":"ITIN","start":19,"end":30}]}
+{"id":"form-54-05","category":"form","text":"ssn=114649409;itin=992-88-5916","entities":[{"type":"SSN","start":4,"end":13},{"type":"ITIN","start":19,"end":30}]}
+{"id":"form-54-06","category":"form","text":"ssn=778012784;itin=939-71-3867","entities":[{"type":"SSN","start":4,"end":13},{"type":"ITIN","start":19,"end":30}]}
+{"id":"form-54-07","category":"form","text":"ssn=148627048;itin=977-82-0259","entities":[{"type":"SSN","start":4,"end":13},{"type":"ITIN","start":19,"end":30}]}
+{"id":"form-54-08","category":"form","text":"ssn=697773027;itin=945-80-0259","entities":[{"type":"SSN","start":4,"end":13},{"type":"ITIN","start":19,"end":30}]}
+{"id":"form-54-09","category":"form","text":"ssn=682091991;itin=931-75-5377","entities":[{"type":"SSN","start":4,"end":13},{"type":"ITIN","start":19,"end":30}]}
+{"id":"form-54-10","category":"form","text":"ssn=336697739;itin=976-81-4168","entities":[{"type":"SSN","start":4,"end":13},{"type":"ITIN","start":19,"end":30}]}
+{"id":"form-54-11","category":"form","text":"ssn=583052130;itin=962-84-6396","entities":[{"type":"SSN","start":4,"end":13},{"type":"ITIN","start":19,"end":30}]}
+{"id":"form-54-12","category":"form","text":"ssn=526491910;itin=913-75-4890","entities":[{"type":"SSN","start":4,"end":13},{"type":"ITIN","start":19,"end":30}]}
+{"id":"form-54-13","category":"form","text":"ssn=106972877;itin=919-77-9354","entities":[{"type":"SSN","start":4,"end":13},{"type":"ITIN","start":19,"end":30}]}
+{"id":"form-54-14","category":"form","text":"ssn=072228417;itin=940-78-1051","entities":[{"type":"SSN","start":4,"end":13},{"type":"ITIN","start":19,"end":30}]}
+{"id":"form-54-15","category":"form","text":"ssn=778980347;itin=917-71-4383","entities":[{"type":"SSN","start":4,"end":13},{"type":"ITIN","start":19,"end":30}]}
+{"id":"form-54-16","category":"form","text":"ssn=096608198;itin=928-85-9078","entities":[{"type":"SSN","start":4,"end":13},{"type":"ITIN","start":19,"end":30}]}
+{"id":"form-54-17","category":"form","text":"ssn=726584207;itin=925-87-0236","entities":[{"type":"SSN","start":4,"end":13},{"type":"ITIN","start":19,"end":30}]}
+{"id":"form-54-18","category":"form","text":"ssn=774507851;itin=993-85-0051","entities":[{"type":"SSN","start":4,"end":13},{"type":"ITIN","start":19,"end":30}]}
+{"id":"form-54-19","category":"form","text":"ssn=399416733;itin=933-70-8817","entities":[{"type":"SSN","start":4,"end":13},{"type":"ITIN","start":19,"end":30}]}
+{"id":"trap-55-00","category":"trap","text":"Part number 826-18-7178 is back in stock.","entities":[]}
+{"id":"trap-55-01","category":"trap","text":"Part number 143-12-2819 is back in stock.","entities":[]}
+{"id":"trap-55-02","category":"trap","text":"Part number 112-48-9140 is back in stock.","entities":[]}
+{"id":"trap-55-03","category":"trap","text":"Part number 970-85-8752 is back in stock.","entities":[]}
+{"id":"trap-55-04","category":"trap","text":"Part number 161-42-0636 is back in stock.","entities":[]}
+{"id":"trap-55-05","category":"trap","text":"Part number 667-96-7431 is back in stock.","entities":[]}
+{"id":"trap-55-06","category":"trap","text":"Part number 324-43-2579 is back in stock.","entities":[]}
+{"id":"trap-55-07","category":"trap","text":"Part number 984-80-2357 is back in stock.","entities":[]}
+{"id":"trap-55-08","category":"trap","text":"Part number 557-22-1611 is back in stock.","entities":[]}
+{"id":"trap-55-09","category":"trap","text":"Part number 815-19-6298 is back in stock.","entities":[]}
+{"id":"trap-55-10","category":"trap","text":"Part number 188-72-8745 is back in stock.","entities":[]}
+{"id":"trap-55-11","category":"trap","text":"Part number 343-41-9058 is back in stock.","entities":[]}
+{"id":"trap-55-12","category":"trap","text":"Part number 294-88-0534 is back in stock.","entities":[]}
+{"id":"trap-55-13","category":"trap","text":"Part number 224-79-9577 is back in stock.","entities":[]}
+{"id":"trap-55-14","category":"trap","text":"Part number 913-09-7946 is back in stock.","entities":[]}
+{"id":"trap-55-15","category":"trap","text":"Part number 289-44-6591 is back in stock.","entities":[]}
+{"id":"trap-55-16","category":"trap","text":"Part number 605-32-0504 is back in stock.","entities":[]}
+{"id":"trap-55-17","category":"trap","text":"Part number 496-79-2266 is back in stock.","entities":[]}
+{"id":"trap-55-18","category":"trap","text":"Part number 659-91-1124 is back in stock.","entities":[]}
+{"id":"trap-55-19","category":"trap","text":"Part number 303-16-9734 is back in stock.","entities":[]}
+{"id":"trap-56-00","category":"trap","text":"Order 872265746 shipped.","entities":[]}
+{"id":"trap-56-01","category":"trap","text":"Order 696212288 shipped.","entities":[]}
+{"id":"trap-56-02","category":"trap","text":"Order 214753220 shipped.","entities":[]}
+{"id":"trap-56-03","category":"trap","text":"Order 145493672 shipped.","entities":[]}
+{"id":"trap-56-04","category":"trap","text":"Order 515170155 shipped.","entities":[]}
+{"id":"trap-56-05","category":"trap","text":"Order 806337115 shipped.","entities":[]}
+{"id":"trap-56-06","category":"trap","text":"Order 585141734 shipped.","entities":[]}
+{"id":"trap-56-07","category":"trap","text":"Order 352518125 shipped.","entities":[]}
+{"id":"trap-56-08","category":"trap","text":"Order 920738830 shipped.","entities":[]}
+{"id":"trap-56-09","category":"trap","text":"Order 380494240 shipped.","entities":[]}
+{"id":"trap-56-10","category":"trap","text":"Order 141112956 shipped.","entities":[]}
+{"id":"trap-56-11","category":"trap","text":"Order 181760005 shipped.","entities":[]}
+{"id":"trap-56-12","category":"trap","text":"Order 670398886 shipped.","entities":[]}
+{"id":"trap-56-13","category":"trap","text":"Order 770429053 shipped.","entities":[]}
+{"id":"trap-56-14","category":"trap","text":"Order 235606161 shipped.","entities":[]}
+{"id":"trap-56-15","category":"trap","text":"Order 158647357 shipped.","entities":[]}
+{"id":"trap-56-16","category":"trap","text":"Order 458375721 shipped.","entities":[]}
+{"id":"trap-56-17","category":"trap","text":"Order 163121225 shipped.","entities":[]}
+{"id":"trap-56-18","category":"trap","text":"Order 498007097 shipped.","entities":[]}
+{"id":"trap-56-19","category":"trap","text":"Order 595239964 shipped.","entities":[]}
+{"id":"chat-57-00","category":"chat","text":"Mi CURP es BELE920105MJCMLQ54 y mi RFC OZXQ790423I97.","entities":[{"type":"CURP","start":11,"end":29},{"type":"RFC","start":39,"end":52}]}
+{"id":"chat-57-01","category":"chat","text":"Mi CURP es UUET800816HDFQQT73 y mi RFC FIOC630310Y6A.","entities":[{"type":"CURP","start":11,"end":29},{"type":"RFC","start":39,"end":52}]}
+{"id":"chat-57-02","category":"chat","text":"Mi CURP es JUHH621214HVZJQV83 y mi RFC EITQ790805Q21.","entities":[{"type":"CURP","start":11,"end":29},{"type":"RFC","start":39,"end":52}]}
+{"id":"chat-57-03","category":"chat","text":"Mi CURP es XOXI801225MJCQTD45 y mi RFC MUXY980504P18.","entities":[{"type":"CURP","start":11,"end":29},{"type":"RFC","start":39,"end":52}]}
+{"id":"chat-57-04","category":"chat","text":"Mi CURP es TEDB660420MYNLRJ68 y mi RFC VGIM540206B99.","entities":[{"type":"CURP","start":11,"end":29},{"type":"RFC","start":39,"end":52}]}
+{"id":"chat-57-05","category":"chat","text":"Mi CURP es TETO610410HPLBTN16 y mi RFC FRHP600105B41.","entities":[{"type":"CURP","start":11,"end":29},{"type":"RFC","start":39,"end":52}]}
+{"id":"chat-57-06","category":"chat","text":"Mi CURP es YIBW621128MDFNXB99 y mi RFC AYYS871111T09.","entities":[{"type":"CURP","start":11,"end":29},{"type":"RFC","start":39,"end":52}]}
+{"id":"chat-57-07","category":"chat","text":"Mi CURP es GUVE610825MJCJWQ46 y mi RFC LQLH710417R51.","entities":[{"type":"CURP","start":11,"end":29},{"type":"RFC","start":39,"end":52}]}
+{"id":"chat-57-08","category":"chat","text":"Mi CURP es VUUS930819HDFYFF47 y mi RFC DUXG970822H96.","entities":[{"type":"CURP","start":11,"end":29},{"type":"RFC","start":39,"end":52}]}
+{"id":"chat-57-09","category":"chat","text":"Mi CURP es ZUJP681115HDFMFR62 y mi RFC GNHJ831218X82.","entities":[{"type":"CURP","start":11,"end":29},{"type":"RFC","start":39,"end":52}]}
+{"id":"chat-57-10","category":"chat","text":"Mi CURP es FEVJ970718HDFJMD42 y mi RFC BIFN880905P03.","entities":[{"type":"CURP","start":11,"end":29},{"type":"RFC","start":39,"end":52}]}
+{"id":"chat-57-11","category":"chat","text":"Mi CURP es LAJF650325HVZHRV73 y mi RFC UOQM890818E21.","entities":[{"type":"CURP","start":11,"end":29},{"type":"RFC","start":39,"end":52}]}
+{"id":"chat-57-12","category":"chat","text":"Mi CURP es YEDQ940309MDFRGX62 y mi RFC PPNR520304O19.","entities":[{"type":"CURP","start":11,"end":29},{"type":"RFC","start":39,"end":52}]}
+{"id":"chat-57-13","category":"chat","text":"Mi CURP es IOPW930607HNLZCZ65 y mi RFC NCWG850202Y66.","entities":[{"type":"CURP","start":11,"end":29},{"type":"RFC","start":39,"end":52}]}
+{"id":"chat-57-14","category":"chat","text":"Mi CURP es ZOMA990126MJCPJL65 y mi RFC RATS680727M58.","entities":[{"type":"CURP","start":11,"end":29},{"type":"RFC","start":39,"end":52}]}
+{"id":"chat-57-15","category":"chat","text":"Mi CURP es HORO620105HJCBXL05 y mi RFC MASK791219S70.","entities":[{"type":"CURP","start":11,"end":29},{"type":"RFC","start":39,"end":52}]}
+{"id":"chat-57-16","category":"chat","text":"Mi CURP es XICZ741104HJCBWM23 y mi RFC BIOY920825B90.","entities":[{"type":"CURP","start":11,"end":29},{"type":"RFC","start":39,"end":52}]}
+{"id":"chat-57-17","category":"chat","text":"Mi CURP es LAZP660704HDFHWR61 y mi RFC EQZH780621E90.","entities":[{"type":"CURP","start":11,"end":29},{"type":"RFC","start":39,"end":52}]}
+{"id":"chat-57-18","category":"chat","text":"Mi CURP es FOTY960505MJCLBW65 y mi RFC BCHT750310Z04.","entities":[{"type":"CURP","start":11,"end":29},{"type":"RFC","start":39,"end":52}]}
+{"id":"chat-57-19","category":"chat","text":"Mi CURP es RODX910907MJCCNF54 y mi RFC EGRV540926Q65.","entities":[{"type":"CURP","start":11,"end":29},{"type":"RFC","start":39,"end":52}]}
+{"id":"form-58-00","category":"form","text":"Proveedor RFC IAI910115Y17, contacto ana.ficticio29@example.com","entities":[{"type":"RFC","start":14,"end":26},{"type":"EMAIL","start":37,"end":63}]}
+{"id":"form-58-01","category":"form","text":"Proveedor RFC UON790814E45, contacto felipe.amostra91@example.com","entities":[{"type":"RFC","start":14,"end":26},{"type":"EMAIL","start":37,"end":65}]}
+{"id":"form-58-02","category":"form","text":"Proveedor RFC SWO870202E82, contacto carla.ficticio42@example.com","entities":[{"type":"RFC","start":14,"end":26},{"type":"EMAIL","start":37,"end":65}]}
+{"id":"form-58-03","category":"form","text":"Proveedor RFC EHN930422A78, contacto bruno.modelo11@example.com","entities":[{"type":"RFC","start":14,"end":26},{"type":"EMAIL","start":37,"end":63}]}
+{"id":"form-58-04","category":"form","text":"Proveedor RFC QJG700108U58, contacto carla.ficticio5@example.com","entities":[{"type":"RFC","start":14,"end":26},{"type":"EMAIL","start":37,"end":64}]}
+{"id":"form-58-05","category":"form","text":"Proveedor RFC LFI870319K49, contacto carla.simulado62@example.com","entities":[{"type":"RFC","start":14,"end":26},{"type":"EMAIL","start":37,"end":65}]}
+{"id":"form-58-06","category":"form","text":"Proveedor RFC ZAA880412H22, contacto carla.exemplo63@example.com","entities":[{"type":"RFC","start":14,"end":26},{"type":"EMAIL","start":37,"end":64}]}
+{"id":"form-58-07","category":"form","text":"Proveedor RFC MOE590107E6A, contacto ana.ficticio81@example.com","entities":[{"type":"RFC","start":14,"end":26},{"type":"EMAIL","start":37,"end":63}]}
+{"id":"form-58-08","category":"form","text":"Proveedor RFC SEA510414S24, contacto ana.modelo47@example.com","entities":[{"type":"RFC","start":14,"end":26},{"type":"EMAIL","start":37,"end":61}]}
+{"id":"form-58-09","category":"form","text":"Proveedor RFC AVO540120D66, contacto felipe.teste13@example.com","entities":[{"type":"RFC","start":14,"end":26},{"type":"EMAIL","start":37,"end":63}]}
+{"id":"form-58-10","category":"form","text":"Proveedor RFC GIY950205M52, contacto heitor.amostra28@example.com","entities":[{"type":"RFC","start":14,"end":26},{"type":"EMAIL","start":37,"end":65}]}
+{"id":"form-58-11","category":"form","text":"Proveedor RFC SOQ570824S11, contacto carla.exemplo93@example.com","entities":[{"type":"RFC","start":14,"end":26},{"type":"EMAIL","start":37,"end":64}]}
+{"id":"form-58-12","category":"form","text":"Proveedor RFC SHI730906W03, contacto diego.ficticio73@example.com","entities":[{"type":"RFC","start":14,"end":26},{"type":"EMAIL","start":37,"end":65}]}
+{"id":"form-58-13","category":"form","text":"Proveedor RFC TTI911113A23, contacto bruno.teste55@example.com","entities":[{"type":"RFC","start":14,"end":26},{"type":"EMAIL","start":37,"end":62}]}
+{"id":"form-58-14","category":"form","text":"Proveedor RFC QXF510904D80, contacto felipe.simulado18@example.com","entities":[{"type":"RFC","start":14,"end":26},{"type":"EMAIL","start":37,"end":66}]}
+{"id":"form-58-15","category":"form","text":"Proveedor RFC VUY950104L33, contacto felipe.exemplo83@example.com","entities":[{"type":"RFC","start":14,"end":26},{"type":"EMAIL","start":37,"end":65}]}
+{"id":"form-58-16","category":"form","text":"Proveedor RFC ODD770212N76, contacto ana.amostra81@example.com","entities":[{"type":"RFC","start":14,"end":26},{"type":"EMAIL","start":37,"end":62}]}
+{"id":"form-58-17","category":"form","text":"Proveedor RFC BHR520205F38, contacto diego.amostra73@example.com","entities":[{"type":"RFC","start":14,"end":26},{"type":"EMAIL","start":37,"end":64}]}
+{"id":"form-58-18","category":"form","text":"Proveedor RFC PSI760907F34, contacto carla.ficticio41@example.com","entities":[{"type":"RFC","start":14,"end":26},{"type":"EMAIL","start":37,"end":65}]}
+{"id":"form-58-19","category":"form","text":"Proveedor RFC YLP980904C4A, contacto heitor.amostra51@example.com","entities":[{"type":"RFC","start":14,"end":26},{"type":"EMAIL","start":37,"end":65}]}
+{"id":"trap-59-00","category":"trap","text":"Factura al público en general, RFC XEXX010101000.","entities":[]}
+{"id":"trap-59-01","category":"trap","text":"Factura al público en general, RFC XEXX010101000.","entities":[]}
+{"id":"trap-59-02","category":"trap","text":"Factura al público en general, RFC XAXX010101000.","entities":[]}
+{"id":"trap-59-03","category":"trap","text":"Factura al público en general, RFC XEXX010101000.","entities":[]}
+{"id":"trap-59-04","category":"trap","text":"Factura al público en general, RFC XAXX010101000.","entities":[]}
+{"id":"trap-59-05","category":"trap","text":"Factura al público en general, RFC XEXX010101000.","entities":[]}
+{"id":"trap-59-06","category":"trap","text":"Factura al público en general, RFC XEXX010101000.","entities":[]}
+{"id":"trap-59-07","category":"trap","text":"Factura al público en general, RFC XAXX010101000.","entities":[]}
+{"id":"trap-59-08","category":"trap","text":"Factura al público en general, RFC XEXX010101000.","entities":[]}
+{"id":"trap-59-09","category":"trap","text":"Factura al público en general, RFC XEXX010101000.","entities":[]}
+{"id":"trap-59-10","category":"trap","text":"Factura al público en general, RFC XEXX010101000.","entities":[]}
+{"id":"trap-59-11","category":"trap","text":"Factura al público en general, RFC XEXX010101000.","entities":[]}
+{"id":"trap-59-12","category":"trap","text":"Factura al público en general, RFC XEXX010101000.","entities":[]}
+{"id":"trap-59-13","category":"trap","text":"Factura al público en general, RFC XAXX010101000.","entities":[]}
+{"id":"trap-59-14","category":"trap","text":"Factura al público en general, RFC XAXX010101000.","entities":[]}
+{"id":"trap-59-15","category":"trap","text":"Factura al público en general, RFC XAXX010101000.","entities":[]}
+{"id":"trap-59-16","category":"trap","text":"Factura al público en general, RFC XEXX010101000.","entities":[]}
+{"id":"trap-59-17","category":"trap","text":"Factura al público en general, RFC XAXX010101000.","entities":[]}
+{"id":"trap-59-18","category":"trap","text":"Factura al público en general, RFC XEXX010101000.","entities":[]}
+{"id":"trap-59-19","category":"trap","text":"Factura al público en general, RFC XAXX010101000.","entities":[]}
+{"id":"chat-60-00","category":"chat","text":"Mi RUT es 15.683.977-9, correo felipe.amostra51@example.com.","entities":[{"type":"RUT","start":10,"end":22},{"type":"EMAIL","start":31,"end":59}]}
+{"id":"chat-60-01","category":"chat","text":"Mi RUT es 5.087.903-8, correo carla.modelo27@example.com.","entities":[{"type":"RUT","start":10,"end":21},{"type":"EMAIL","start":30,"end":56}]}
+{"id":"chat-60-02","category":"chat","text":"Mi RUT es 13.173.640-1, correo diego.modelo99@example.com.","entities":[{"type":"RUT","start":10,"end":22},{"type":"EMAIL","start":31,"end":57}]}
+{"id":"chat-60-03","category":"chat","text":"Mi RUT es 22.114.188-1, correo gabi.modelo36@example.com.","entities":[{"type":"RUT","start":10,"end":22},{"type":"EMAIL","start":31,"end":56}]}
+{"id":"chat-60-04","category":"chat","text":"Mi RUT es 19.037.051-8, correo bruno.teste60@example.com.","entities":[{"type":"RUT","start":10,"end":22},{"type":"EMAIL","start":31,"end":56}]}
+{"id":"chat-60-05","category":"chat","text":"Mi RUT es 11.575.049-6, correo elisa.teste35@example.com.","entities":[{"type":"RUT","start":10,"end":22},{"type":"EMAIL","start":31,"end":56}]}
+{"id":"chat-60-06","category":"chat","text":"Mi RUT es 16.416.395-4, correo gabi.simulado46@example.com.","entities":[{"type":"RUT","start":10,"end":22},{"type":"EMAIL","start":31,"end":58}]}
+{"id":"chat-60-07","category":"chat","text":"Mi RUT es 10.346.090-5, correo carla.teste92@example.com.","entities":[{"type":"RUT","start":10,"end":22},{"type":"EMAIL","start":31,"end":56}]}
+{"id":"chat-60-08","category":"chat","text":"Mi RUT es 6.523.038-0, correo diego.ficticio77@example.com.","entities":[{"type":"RUT","start":10,"end":21},{"type":"EMAIL","start":30,"end":58}]}
+{"id":"chat-60-09","category":"chat","text":"Mi RUT es 10.336.545-7, correo elisa.teste81@example.com.","entities":[{"type":"RUT","start":10,"end":22},{"type":"EMAIL","start":31,"end":56}]}
+{"id":"chat-60-10","category":"chat","text":"Mi RUT es 24.536.180-7, correo heitor.exemplo63@example.com.","entities":[{"type":"RUT","start":10,"end":22},{"type":"EMAIL","start":31,"end":59}]}
+{"id":"chat-60-11","category":"chat","text":"Mi RUT es 17.837.159-2, correo bruno.amostra51@example.com.","entities":[{"type":"RUT","start":10,"end":22},{"type":"EMAIL","start":31,"end":58}]}
+{"id":"chat-60-12","category":"chat","text":"Mi RUT es 6.233.390-1, correo bruno.ficticio68@example.com.","entities":[{"type":"RUT","start":10,"end":21},{"type":"EMAIL","start":30,"end":58}]}
+{"id":"chat-60-13","category":"chat","text":"Mi RUT es 17.021.641-5, correo bruno.ficticio70@example.com.","entities":[{"type":"RUT","start":10,"end":22},{"type":"EMAIL","start":31,"end":59}]}
+{"id":"chat-60-14","category":"chat","text":"Mi RUT es 13.811.091-5, correo ana.teste10@example.com.","entities":[{"type":"RUT","start":10,"end":22},{"type":"EMAIL","start":31,"end":54}]}
+{"id":"chat-60-15","category":"chat","text":"Mi RUT es 8.308.102-3, correo heitor.ficticio35@example.com.","entities":[{"type":"RUT","start":10,"end":21},{"type":"EMAIL","start":30,"end":59}]}
+{"id":"chat-60-16","category":"chat","text":"Mi RUT es 5.954.125-0, correo gabi.modelo21@example.com.","entities":[{"type":"RUT","start":10,"end":21},{"type":"EMAIL","start":30,"end":55}]}
+{"id":"chat-60-17","category":"chat","text":"Mi RUT es 22.002.370-2, correo elisa.simulado98@example.com.","entities":[{"type":"RUT","start":10,"end":22},{"type":"EMAIL","start":31,"end":59}]}
+{"id":"chat-60-18","category":"chat","text":"Mi RUT es 21.964.379-9, correo carla.amostra18@example.com.","entities":[{"type":"RUT","start":10,"end":22},{"type":"EMAIL","start":31,"end":58}]}
+{"id":"chat-60-19","category":"chat","text":"Mi RUT es 17.627.102-7, correo diego.ficticio73@example.com.","entities":[{"type":"RUT","start":10,"end":22},{"type":"EMAIL","start":31,"end":59}]}
+{"id":"form-61-00","category":"form","text":"RUN 18417012-4","entities":[{"type":"RUT","start":4,"end":14}]}
+{"id":"form-61-01","category":"form","text":"RUN 19098136-3","entities":[{"type":"RUT","start":4,"end":14}]}
+{"id":"form-61-02","category":"form","text":"RUN 16675913-7","entities":[{"type":"RUT","start":4,"end":14}]}
+{"id":"form-61-03","category":"form","text":"RUN 9632447-2","entities":[{"type":"RUT","start":4,"end":13}]}
+{"id":"form-61-04","category":"form","text":"RUN 5835436-8","entities":[{"type":"RUT","start":4,"end":13}]}
+{"id":"form-61-05","category":"form","text":"RUN 11854458-7","entities":[{"type":"RUT","start":4,"end":14}]}
+{"id":"form-61-06","category":"form","text":"RUN 15931310-7","entities":[{"type":"RUT","start":4,"end":14}]}
+{"id":"form-61-07","category":"form","text":"RUN 16128172-7","entities":[{"type":"RUT","start":4,"end":14}]}
+{"id":"form-61-08","category":"form","text":"RUN 19408419-6","entities":[{"type":"RUT","start":4,"end":14}]}
+{"id":"form-61-09","category":"form","text":"RUN 9678273-K","entities":[{"type":"RUT","start":4,"end":13}]}
+{"id":"form-61-10","category":"form","text":"RUN 12828159-2","entities":[{"type":"RUT","start":4,"end":14}]}
+{"id":"form-61-11","category":"form","text":"RUN 15824370-9","entities":[{"type":"RUT","start":4,"end":14}]}
+{"id":"form-61-12","category":"form","text":"RUN 10928818-7","entities":[{"type":"RUT","start":4,"end":14}]}
+{"id":"form-61-13","category":"form","text":"RUN 13832866-K","entities":[{"type":"RUT","start":4,"end":14}]}
+{"id":"form-61-14","category":"form","text":"RUN 5187786-1","entities":[{"type":"RUT","start":4,"end":13}]}
+{"id":"form-61-15","category":"form","text":"RUN 23373348-2","entities":[{"type":"RUT","start":4,"end":14}]}
+{"id":"form-61-16","category":"form","text":"RUN 11546657-7","entities":[{"type":"RUT","start":4,"end":14}]}
+{"id":"form-61-17","category":"form","text":"RUN 8917670-0","entities":[{"type":"RUT","start":4,"end":13}]}
+{"id":"form-61-18","category":"form","text":"RUN 6282766-1","entities":[{"type":"RUT","start":4,"end":13}]}
+{"id":"form-61-19","category":"form","text":"RUN 7486798-7","entities":[{"type":"RUT","start":4,"end":13}]}
+{"id":"trap-62-00","category":"trap","text":"Lote 20720302-5 despachado.","entities":[]}
+{"id":"trap-62-01","category":"trap","text":"Lote 7677400-5 despachado.","entities":[]}
+{"id":"trap-62-02","category":"trap","text":"Lote 7977817-6 despachado.","entities":[]}
+{"id":"trap-62-03","category":"trap","text":"Lote 23011328-9 despachado.","entities":[]}
+{"id":"trap-62-04","category":"trap","text":"Lote 19728129-4 despachado.","entities":[]}
+{"id":"trap-62-05","category":"trap","text":"Lote 7799156-5 despachado.","entities":[]}
+{"id":"trap-62-06","category":"trap","text":"Lote 13588874-5 despachado.","entities":[]}
+{"id":"trap-62-07","category":"trap","text":"Lote 13214603-9 despachado.","entities":[]}
+{"id":"trap-62-08","category":"trap","text":"Lote 23011481-1 despachado.","entities":[]}
+{"id":"trap-62-09","category":"trap","text":"Lote 14589356-9 despachado.","entities":[]}
+{"id":"trap-62-10","category":"trap","text":"Lote 5096534-1 despachado.","entities":[]}
+{"id":"trap-62-11","category":"trap","text":"Lote 9772124-6 despachado.","entities":[]}
+{"id":"trap-62-12","category":"trap","text":"Lote 21446345-8 despachado.","entities":[]}
+{"id":"trap-62-13","category":"trap","text":"Lote 19622853-5 despachado.","entities":[]}
+{"id":"trap-62-14","category":"trap","text":"Lote 14218150-9 despachado.","entities":[]}
+{"id":"trap-62-15","category":"trap","text":"Lote 22260583-0 despachado.","entities":[]}
+{"id":"trap-62-16","category":"trap","text":"Lote 8836740-5 despachado.","entities":[]}
+{"id":"trap-62-17","category":"trap","text":"Lote 20235377-0 despachado.","entities":[]}
+{"id":"trap-62-18","category":"trap","text":"Lote 14527647-0 despachado.","entities":[]}
+{"id":"trap-62-19","category":"trap","text":"Lote 11192901-7 despachado.","entities":[]}
