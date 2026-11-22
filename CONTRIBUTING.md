@@ -41,7 +41,8 @@ on it (shown at [privyl.vercel.app/en/benchmark](https://privyl.vercel.app/en/be
 Each country is a folder in `packages/privyl/src/<code>/` (ISO 3166 code in lowercase) that
 exports an array of detectors.
 
-1. **Create the folder**, for example `packages/privyl/src/pt/index.ts` for Portugal.
+1. **Create the folder**, for example `packages/privyl/src/es/index.ts` for Spain. The existing
+   countries (`br`, `pt`, `ar`, `us`, `mx`, `cl`) are complete examples to copy from.
 2. **Write the detectors.** A detector is a plain object:
 
    ```ts

@@ -59,6 +59,17 @@ await gpt.responses.create({ model: "gpt-5", input: "..." });
 
 // Optional: your own shield, and a log of what was masked (never the real values)
 protectAnthropic(new Anthropic(), { shield, onFindings: (f) => console.log(f) });`,
+  countries: `import { createShield } from "privyl";
+import { global } from "privyl/global"; // email, phone, card, IP, API keys
+import { br } from "privyl/br"; // CPF, CNPJ, Pix, CEP, CNH, plate, phone
+import { pt } from "privyl/pt"; // NIF, Cartão de Cidadão, NISS
+import { ar } from "privyl/ar"; // CUIT/CUIL, DNI
+import { us } from "privyl/us"; // SSN, ITIN
+import { mx } from "privyl/mx"; // CURP, RFC
+import { cl } from "privyl/cl"; // RUT/RUN
+
+// Pick the countries your users come from: fewer detectors, fewer false alarms.
+const shield = createShield({ detectors: [...global, ...br, ...pt] });`,
   findings: `[
   {
     type: "br.cpf",
@@ -161,6 +172,15 @@ const en: DocSection[] = [
     code: code.cli,
   },
   {
+    id: "countries",
+    title: "Countries",
+    body: [
+      "Each country is its own import, so you only load what you need. Check digits are validated wherever the document has them (CPF, CNPJ, CNH, NIF, CUIT, CURP, RFC, RUT and more).",
+      "Formats that are just a few digits (a DNI, a NISS, a CPF without dots) need a context word nearby, like `DNI` or `CPF`. This avoids masking order numbers and invoices.",
+    ],
+    code: code.countries,
+  },
+  {
     id: "custom-detectors",
     title: "Custom detectors",
     body: [
@@ -246,6 +266,15 @@ const pt: DocSection[] = [
       "Analisa: `.log .json .jsonl .csv .ts .js .md .env` e `.env.*`. Ignora: `node_modules`, `.git`, `dist`, binários e arquivos acima de 10 MB.",
     ],
     code: code.cli,
+  },
+  {
+    id: "countries",
+    title: "Países",
+    body: [
+      "Cada país é um import separado, então você só carrega o que precisa. O dígito verificador é validado sempre que o documento tem um (CPF, CNPJ, CNH, NIF, CUIT, CURP, RFC, RUT e outros).",
+      "Formatos que são só alguns dígitos (DNI, NISS, CPF sem pontos) precisam de uma palavra de contexto por perto, como `DNI` ou `CPF`. Isso evita mascarar números de pedido e notas fiscais.",
+    ],
+    code: code.countries,
   },
   {
     id: "custom-detectors",

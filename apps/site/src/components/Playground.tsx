@@ -3,8 +3,13 @@
 // Live mask/unmask, 100% in the browser.
 
 import { createShield, type Detector } from "privyl";
+import { ar } from "privyl/ar";
 import { br } from "privyl/br";
+import { cl } from "privyl/cl";
 import { global } from "privyl/global";
+import { mx } from "privyl/mx";
+import { pt } from "privyl/pt";
+import { us } from "privyl/us";
 import { useMemo, useState } from "react";
 import type { Dictionary, Locale } from "@/i18n/dictionaries";
 import { localizeSegments } from "@/i18n/labels";
@@ -14,12 +19,19 @@ import { Highlighted } from "./Highlighted";
 const GROUPS: { id: string; label: Record<Locale, string>; detectors: readonly Detector[] }[] = [
   { id: "global", label: { en: "🌐 Global", pt: "🌐 Global" }, detectors: global },
   { id: "br", label: { en: "🇧🇷 Brazil", pt: "🇧🇷 Brasil" }, detectors: br },
+  { id: "pt", label: { en: "🇵🇹 Portugal", pt: "🇵🇹 Portugal" }, detectors: pt },
+  { id: "ar", label: { en: "🇦🇷 Argentina", pt: "🇦🇷 Argentina" }, detectors: ar },
+  { id: "us", label: { en: "🇺🇸 United States", pt: "🇺🇸 Estados Unidos" }, detectors: us },
+  { id: "mx", label: { en: "🇲🇽 Mexico", pt: "🇲🇽 México" }, detectors: mx },
+  { id: "cl", label: { en: "🇨🇱 Chile", pt: "🇨🇱 Chile" }, detectors: cl },
 ];
 
 export function Playground({ lang, t }: { lang: Locale; t: Dictionary["playground"] }) {
   const [input, setInput] = useState(t.sample);
   const [response, setResponse] = useState(t.response1);
-  const [enabled, setEnabled] = useState<Record<string, boolean>>({ global: true, br: true });
+  const [enabled, setEnabled] = useState<Record<string, boolean>>(() =>
+    Object.fromEntries(GROUPS.map((g) => [g.id, true])),
+  );
 
   const shield = useMemo(
     () =>
