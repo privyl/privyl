@@ -105,6 +105,9 @@ export function createProxyServer(options: ProxyOptions = {}): Server {
     openai: trimSlash(options.openaiUrl ?? "https://api.openai.com"),
   };
   const maxBody = options.maxBodyBytes ?? 10 * 1024 * 1024;
+  // On this machine only, accept requests addressed to it. A web page could otherwise point its
+  // own domain at 127.0.0.1 (DNS rebinding) and use the proxy from your browser.
+  const localOnly = LOOPBACK.has(options.host ?? "127.0.0.1");
 
   return createServer((req, res) => {
     const started = Date.now();
@@ -129,8 +132,24 @@ export function createProxyServer(options: ProxyOptions = {}): Server {
     res: ServerResponse,
     report: (findings: Finding[]) => void,
   ): Promise<void> {
+    if (localOnly && !LOOPBACK.has(hostnameOf(req.headers.host))) {
+      throw new HttpError(403, "This proxy only accepts requests to 127.0.0.1 or localhost.");
+    }
     const url = new URL(req.url ?? "/", "http://proxy");
     if (url.pathname === "/health") return sendJson(res, 200, { ok: true });
+    if (url.pathname === "/") {
+      // Opened in a browser: say how to use it instead of a bare 404.
+      return sendJson(res, 200, {
+        name: "privyl proxy",
+        usage: {
+          ANTHROPIC_BASE_URL: "<this address>/anthropic",
+          OPENAI_BASE_URL: "<this address>/openai/v1",
+        },
+        protected: Object.fromEntries(
+          Object.entries(ROUTES).map(([provider, routes]) => [provider, Object.keys(routes)]),
+        ),
+      });
+    }
 
     const [, provider = "", ...parts] = url.pathname.split("/");
     const base = upstreams[provider];
@@ -143,6 +162,8 @@ export function createProxyServer(options: ProxyOptions = {}): Server {
     const path = `/${parts.join("/")}`;
     const route = ROUTES[provider]?.[path];
     const target = `${base}${path}${url.search}`;
+    // Defense in depth: whatever the path, the request goes only to the configured API.
+    if (new URL(target).origin !== new URL(base).origin) throw new HttpError(400, "Invalid path.");
     const headers = forwardHeaders(req);
     const method = req.method ?? "GET";
 
@@ -247,5 +268,11 @@ function summarizeFindings(findings: Finding[]): string {
 }
 
 const trimSlash = (url: string) => url.replace(/\/+$/, "");
-// Query strings can hold ids or keys, so the log shows only the path.
-const pathOnly = (url = "/") => url.split("?")[0];
+// Query strings can hold ids or keys, so the log shows only the path. Control characters are
+// replaced so a request cannot write fake lines or terminal codes into the log.
+// eslint-disable-next-line no-control-regex -- removing control characters is the point
+const pathOnly = (url = "/") => (url.split("?")[0] ?? "").replace(/[\u0000-\u001f\u007f]/g, "?");
+
+const LOOPBACK = new Set(["127.0.0.1", "localhost", "::1", "[::1]"]);
+/** "localhost:8787" → "localhost", "[::1]:8787" → "[::1]". */
+const hostnameOf = (host = "") => host.replace(/:\d+$/, "").toLowerCase();

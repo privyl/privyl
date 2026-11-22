@@ -1,4 +1,4 @@
-import { createServer, type IncomingHttpHeaders, type Server } from "node:http";
+import { createServer, request, type IncomingHttpHeaders, type Server } from "node:http";
 import type { AddressInfo } from "node:net";
 import { afterAll, beforeAll, beforeEach, describe, expect, it } from "vitest";
 import { parseProxyArgs } from "./proxy.js";
@@ -160,6 +160,49 @@ describe("privyl proxy", () => {
     expect(received).toHaveLength(0);
     const health = await fetch(`${proxyUrl}/health`);
     expect(await health.json()).toEqual({ ok: true });
+  });
+
+  it("blocks requests addressed to another host (DNS rebinding from a web page)", async () => {
+    const { port } = new URL(proxyUrl);
+    const status = await new Promise<number>((resolve, reject) => {
+      const req = request(
+        {
+          host: "127.0.0.1",
+          port,
+          path: "/openai/v1/models",
+          headers: { host: "evil.example:8787" },
+        },
+        (res) => {
+          res.resume();
+          resolve(res.statusCode ?? 0);
+        },
+      );
+      req.on("error", reject);
+      req.end();
+    });
+    expect(status).toBe(403);
+    expect(received).toHaveLength(0);
+  });
+
+  it("never sends a request to another host, whatever the path", async () => {
+    for (const path of [
+      "/openai//evil.example/v1/models",
+      "/openai/@evil.example/v1/models",
+      "/openai/%2F%2Fevil.example/v1/models",
+      "/openai/..%2F..%2Fevil.example",
+    ]) {
+      await fetch(`${proxyUrl}${path}`);
+    }
+    const upstreamHost = new URL(upstreamUrl).host;
+    for (const r of received) expect(r.headers.host).toBe(upstreamHost);
+  });
+
+  it("explains itself when opened in a browser", async () => {
+    const res = await fetch(`${proxyUrl}/`);
+    const json = (await res.json()) as { name: string; protected: Record<string, string[]> };
+    expect(json.name).toBe("privyl proxy");
+    expect(json.protected.anthropic).toContain("/v1/messages");
+    expect(received).toHaveLength(0);
   });
 
   it("answers 502 when the AI API cannot be reached", async () => {
