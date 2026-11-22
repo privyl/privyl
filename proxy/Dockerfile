@@ -12,7 +12,7 @@
 FROM node:22-alpine
 
 # The proxy ships in the privyl npm package (0.2.0 or newer).
-ARG PRIVYL_VERSION=0.2.0
+ARG PRIVYL_VERSION=0.3.0
 RUN npm install --global "privyl@${PRIVYL_VERSION}" && npm cache clean --force
 
 USER node
