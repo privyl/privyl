@@ -19,12 +19,16 @@ jobs:
       contents: read
       id-token: write # lets npm verify this workflow (Trusted Publishing + provenance)
     steps:
-      - uses: actions/checkout@v7
-      - uses: pnpm/action-setup@v6
-      - uses: actions/setup-node@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          fetch-depth: 0 # full history, to check that the tag is on main
+      - uses: pnpm/action-setup@73e46992e05b19abd31f2f3c20e0e7370d762115 # v6.1.1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version-file: .nvmrc
-          cache: pnpm
+          # No dependency cache here: a cache could carry files from another run into the
+          # package that gets published. A clean install is slower but safer.
           registry-url: https://registry.npmjs.org
       - run: pnpm install --frozen-lockfile
 
@@ -34,6 +38,15 @@ jobs:
           version=$(node -p "require('./packages/privyl/package.json').version")
           if [ "v$version" != "$GITHUB_REF_NAME" ]; then
             echo "::error::Release tag $GITHUB_REF_NAME does not match package version $version"
+            exit 1
+          fi
+
+      # Only code that went through a pull request into main gets published.
+      - name: Check that the tag is on main
+        run: |
+          git fetch origin main
+          if ! git merge-base --is-ancestor "$GITHUB_SHA" origin/main; then
+            echo "::error::The release tag points to a commit that is not on main"
             exit 1
           fi
 
