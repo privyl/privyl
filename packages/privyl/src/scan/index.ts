@@ -1,9 +1,14 @@
 // Scanning helpers shared by the CLI and the website (runs in browsers too: no Node APIs).
 
+import { ar } from "../ar/index.js";
 import { br } from "../br/index.js";
+import { cl } from "../cl/index.js";
 import type { Detector } from "../core/types.js";
 import { createShield, type Shield } from "../core/shield.js";
 import { global } from "../global/index.js";
+import { mx } from "../mx/index.js";
+import { pt } from "../pt/index.js";
+import { us } from "../us/index.js";
 
 export interface ScanFinding {
   /** Detector id, for example `"br.cpf"`. */
@@ -29,7 +34,15 @@ export interface ScanSummary {
 }
 
 /** All built-in detectors (global + every country). */
-export const allDetectors: readonly Detector[] = [...global, ...br];
+export const allDetectors: readonly Detector[] = [
+  ...global,
+  ...br,
+  ...pt,
+  ...ar,
+  ...us,
+  ...mx,
+  ...cl,
+];
 
 let defaultShield: Shield | undefined;
 
