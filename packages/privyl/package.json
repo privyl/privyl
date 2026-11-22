@@ -1,7 +1,7 @@
 {
   "name": "privyl",
-  "version": "0.0.0",
-  "description": "Privyl — privacy layer for AI. Mask personal data before it reaches any LLM, restore it after.",
+  "version": "0.1.0",
+  "description": "Privacy layer for AI. Mask personal data before it reaches any LLM, restore it after.",
   "license": "MIT",
   "author": "Nycolas Inowe",
   "repository": {
@@ -23,8 +23,11 @@
     "anonymization"
   ],
   "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
   "bin": {
-    "privyl": "./dist/cli/index.js"
+    "privyl": "dist/cli/index.js"
   },
   "sideEffects": false,
   "files": [
@@ -58,6 +61,7 @@
   },
   "scripts": {
     "build": "tsup",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "pnpm build"
   }
 }
