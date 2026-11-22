@@ -24,6 +24,18 @@ pnpm build     # build the package
   (what it must ignore).
 - Keep pull requests small and focused, with clear commit messages in English.
 
+## Benchmark
+
+`benchmark/` holds an open dataset of fictional texts, labeled by hand, and the scores Privyl gets
+on it (shown at [privyl.vercel.app/en/benchmark](https://privyl.vercel.app/en/benchmark)).
+
+- `pnpm test` fails if `benchmark/results.json` no longer matches the code.
+- After changing a detector, run `pnpm bench` to regenerate the dataset and results, and commit
+  both files. If a number goes down, say why in the pull request.
+- Labels come from the templates in `benchmark/dataset.ts`, never from Privyl itself. When you add
+  a detector, add templates with real cases **and** traps (values that look similar but are not
+  personal data). Keep known gaps in the dataset: hiding them would make the numbers dishonest.
+
 ## How to add a country
 
 Each country is a folder in `packages/privyl/src/<code>/` (ISO 3166 code in lowercase) that
@@ -63,6 +75,7 @@ exports an array of detectors.
    `global`.
 5. **Add test data** to `packages/privyl/src/testing/index.ts` if the format has check digits.
 6. **Update the coverage table** in `README.md`, including what is _not_ detected.
+7. **Add benchmark templates** for the new types in `benchmark/dataset.ts` and run `pnpm bench`.
 
 ## Reporting security problems
 

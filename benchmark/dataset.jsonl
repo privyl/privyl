@@ -1,0 +1,760 @@
+{"id":"chat-00-00","category":"chat","text":"Oi, sou cliente. Meu CPF é 436.612.682-60 e meu e-mail é ana.exemplo62@example.com.","entities":[{"type":"CPF","start":27,"end":41},{"type":"EMAIL","start":57,"end":82}]}
+{"id":"chat-00-01","category":"chat","text":"Oi, sou cliente. Meu CPF é 311.349.502-41 e meu e-mail é carla.amostra95@example.com.","entities":[{"type":"CPF","start":27,"end":41},{"type":"EMAIL","start":57,"end":84}]}
+{"id":"chat-00-02","category":"chat","text":"Oi, sou cliente. Meu CPF é 972.242.683-48 e meu e-mail é heitor.exemplo5@example.com.","entities":[{"type":"CPF","start":27,"end":41},{"type":"EMAIL","start":57,"end":84}]}
+{"id":"chat-00-03","category":"chat","text":"Oi, sou cliente. Meu CPF é 377.396.630-00 e meu e-mail é heitor.ficticio96@example.com.","entities":[{"type":"CPF","start":27,"end":41},{"type":"EMAIL","start":57,"end":86}]}
+{"id":"chat-00-04","category":"chat","text":"Oi, sou cliente. Meu CPF é 824.196.875-23 e meu e-mail é diego.modelo79@example.com.","entities":[{"type":"CPF","start":27,"end":41},{"type":"EMAIL","start":57,"end":83}]}
+{"id":"chat-00-05","category":"chat","text":"Oi, sou cliente. Meu CPF é 756.930.109-96 e meu e-mail é heitor.ficticio17@example.com.","entities":[{"type":"CPF","start":27,"end":41},{"type":"EMAIL","start":57,"end":86}]}
+{"id":"chat-00-06","category":"chat","text":"Oi, sou cliente. Meu CPF é 452.980.968-40 e meu e-mail é bruno.modelo55@example.com.","entities":[{"type":"CPF","start":27,"end":41},{"type":"EMAIL","start":57,"end":83}]}
+{"id":"chat-00-07","category":"chat","text":"Oi, sou cliente. Meu CPF é 098.970.994-92 e meu e-mail é diego.exemplo25@example.com.","entities":[{"type":"CPF","start":27,"end":41},{"type":"EMAIL","start":57,"end":84}]}
+{"id":"chat-00-08","category":"chat","text":"Oi, sou cliente. Meu CPF é 895.104.982-54 e meu e-mail é carla.amostra85@example.com.","entities":[{"type":"CPF","start":27,"end":41},{"type":"EMAIL","start":57,"end":84}]}
+{"id":"chat-00-09","category":"chat","text":"Oi, sou cliente. Meu CPF é 169.051.662-35 e meu e-mail é bruno.ficticio17@example.com.","entities":[{"type":"CPF","start":27,"end":41},{"type":"EMAIL","start":57,"end":85}]}
+{"id":"chat-00-10","category":"chat","text":"Oi, sou cliente. Meu CPF é 930.339.867-06 e meu e-mail é carla.ficticio48@example.com.","entities":[{"type":"CPF","start":27,"end":41},{"type":"EMAIL","start":57,"end":85}]}
+{"id":"chat-00-11","category":"chat","text":"Oi, sou cliente. Meu CPF é 201.918.911-93 e meu e-mail é bruno.ficticio90@example.com.","entities":[{"type":"CPF","start":27,"end":41},{"type":"EMAIL","start":57,"end":85}]}
+{"id":"chat-00-12","category":"chat","text":"Oi, sou cliente. Meu CPF é 020.559.355-00 e meu e-mail é felipe.simulado51@example.com.","entities":[{"type":"CPF","start":27,"end":41},{"type":"EMAIL","start":57,"end":86}]}
+{"id":"chat-00-13","category":"chat","text":"Oi, sou cliente. Meu CPF é 467.134.411-49 e meu e-mail é carla.exemplo45@example.com.","entities":[{"type":"CPF","start":27,"end":41},{"type":"EMAIL","start":57,"end":84}]}
+{"id":"chat-00-14","category":"chat","text":"Oi, sou cliente. Meu CPF é 412.266.312-15 e meu e-mail é gabi.simulado88@example.com.","entities":[{"type":"CPF","start":27,"end":41},{"type":"EMAIL","start":57,"end":84}]}
+{"id":"chat-00-15","category":"chat","text":"Oi, sou cliente. Meu CPF é 712.395.394-01 e meu e-mail é diego.modelo78@example.com.","entities":[{"type":"CPF","start":27,"end":41},{"type":"EMAIL","start":57,"end":83}]}
+{"id":"chat-00-16","category":"chat","text":"Oi, sou cliente. Meu CPF é 719.103.110-73 e meu e-mail é carla.exemplo67@example.com.","entities":[{"type":"CPF","start":27,"end":41},{"type":"EMAIL","start":57,"end":84}]}
+{"id":"chat-00-17","category":"chat","text":"Oi, sou cliente. Meu CPF é 405.030.434-19 e meu e-mail é elisa.modelo85@example.com.","entities":[{"type":"CPF","start":27,"end":41},{"type":"EMAIL","start":57,"end":83}]}
+{"id":"chat-00-18","category":"chat","text":"Oi, sou cliente. Meu CPF é 341.778.637-18 e meu e-mail é felipe.exemplo71@example.com.","entities":[{"type":"CPF","start":27,"end":41},{"type":"EMAIL","start":57,"end":85}]}
+{"id":"chat-00-19","category":"chat","text":"Oi, sou cliente. Meu CPF é 651.955.557-61 e meu e-mail é heitor.teste39@example.com.","entities":[{"type":"CPF","start":27,"end":41},{"type":"EMAIL","start":57,"end":83}]}
+{"id":"chat-01-00","category":"chat","text":"Hi! My card 3782 822463 10005 was declined, please call me at +1 202 555 0180.","entities":[{"type":"CARD","start":12,"end":29},{"type":"PHONE","start":62,"end":77}]}
+{"id":"chat-01-01","category":"chat","text":"Hi! My card 6011 1111 1111 1117 was declined, please call me at +1 202 555 0151.","entities":[{"type":"CARD","start":12,"end":31},{"type":"PHONE","start":64,"end":79}]}
+{"id":"chat-01-02","category":"chat","text":"Hi! My card 4242 4242 4242 4242 was declined, please call me at +1 202 555 0195.","entities":[{"type":"CARD","start":12,"end":31},{"type":"PHONE","start":64,"end":79}]}
+{"id":"chat-01-03","category":"chat","text":"Hi! My card 6011 1111 1111 1117 was declined, please call me at +1 202 555 0189.","entities":[{"type":"CARD","start":12,"end":31},{"type":"PHONE","start":64,"end":79}]}
+{"id":"chat-01-04","category":"chat","text":"Hi! My card 6011 1111 1111 1117 was declined, please call me at +1 202 555 0123.","entities":[{"type":"CARD","start":12,"end":31},{"type":"PHONE","start":64,"end":79}]}
+{"id":"chat-01-05","category":"chat","text":"Hi! My card 3782 822463 10005 was declined, please call me at +1 202 555 0113.","entities":[{"type":"CARD","start":12,"end":29},{"type":"PHONE","start":62,"end":77}]}
+{"id":"chat-01-06","category":"chat","text":"Hi! My card 3782 822463 10005 was declined, please call me at +1 202 555 0148.","entities":[{"type":"CARD","start":12,"end":29},{"type":"PHONE","start":62,"end":77}]}
+{"id":"chat-01-07","category":"chat","text":"Hi! My card 4242 4242 4242 4242 was declined, please call me at +1 202 555 0116.","entities":[{"type":"CARD","start":12,"end":31},{"type":"PHONE","start":64,"end":79}]}
+{"id":"chat-01-08","category":"chat","text":"Hi! My card 6011 1111 1111 1117 was declined, please call me at +1 202 555 0172.","entities":[{"type":"CARD","start":12,"end":31},{"type":"PHONE","start":64,"end":79}]}
+{"id":"chat-01-09","category":"chat","text":"Hi! My card 5105 1051 0510 5100 was declined, please call me at +1 202 555 0105.","entities":[{"type":"CARD","start":12,"end":31},{"type":"PHONE","start":64,"end":79}]}
+{"id":"chat-01-10","category":"chat","text":"Hi! My card 4111 1111 1111 1111 was declined, please call me at +1 202 555 0185.","entities":[{"type":"CARD","start":12,"end":31},{"type":"PHONE","start":64,"end":79}]}
+{"id":"chat-01-11","category":"chat","text":"Hi! My card 5105 1051 0510 5100 was declined, please call me at +1 202 555 0159.","entities":[{"type":"CARD","start":12,"end":31},{"type":"PHONE","start":64,"end":79}]}
+{"id":"chat-01-12","category":"chat","text":"Hi! My card 5555 5555 5555 4444 was declined, please call me at +1 202 555 0149.","entities":[{"type":"CARD","start":12,"end":31},{"type":"PHONE","start":64,"end":79}]}
+{"id":"chat-01-13","category":"chat","text":"Hi! My card 6011 1111 1111 1117 was declined, please call me at +1 202 555 0185.","entities":[{"type":"CARD","start":12,"end":31},{"type":"PHONE","start":64,"end":79}]}
+{"id":"chat-01-14","category":"chat","text":"Hi! My card 6011 1111 1111 1117 was declined, please call me at +1 202 555 0199.","entities":[{"type":"CARD","start":12,"end":31},{"type":"PHONE","start":64,"end":79}]}
+{"id":"chat-01-15","category":"chat","text":"Hi! My card 4111 1111 1111 1111 was declined, please call me at +1 202 555 0115.","entities":[{"type":"CARD","start":12,"end":31},{"type":"PHONE","start":64,"end":79}]}
+{"id":"chat-01-16","category":"chat","text":"Hi! My card 4242 4242 4242 4242 was declined, please call me at +1 202 555 0114.","entities":[{"type":"CARD","start":12,"end":31},{"type":"PHONE","start":64,"end":79}]}
+{"id":"chat-01-17","category":"chat","text":"Hi! My card 4111 1111 1111 1111 was declined, please call me at +1 202 555 0151.","entities":[{"type":"CARD","start":12,"end":31},{"type":"PHONE","start":64,"end":79}]}
+{"id":"chat-01-18","category":"chat","text":"Hi! My card 6011 1111 1111 1117 was declined, please call me at +1 202 555 0153.","entities":[{"type":"CARD","start":12,"end":31},{"type":"PHONE","start":64,"end":79}]}
+{"id":"chat-01-19","category":"chat","text":"Hi! My card 5105 1051 0510 5100 was declined, please call me at +1 202 555 0111.","entities":[{"type":"CARD","start":12,"end":31},{"type":"PHONE","start":64,"end":79}]}
+{"id":"chat-02-00","category":"chat","text":"Pode me ligar no (66) 95883-4923? Meu CPF: 34163005560","entities":[{"type":"PHONE","start":17,"end":32},{"type":"CPF","start":43,"end":54}]}
+{"id":"chat-02-01","category":"chat","text":"Pode me ligar no (35) 92967-0661? Meu CPF: 14874077854","entities":[{"type":"PHONE","start":17,"end":32},{"type":"CPF","start":43,"end":54}]}
+{"id":"chat-02-02","category":"chat","text":"Pode me ligar no (81) 98712-2169? Meu CPF: 25540834445","entities":[{"type":"PHONE","start":17,"end":32},{"type":"CPF","start":43,"end":54}]}
+{"id":"chat-02-03","category":"chat","text":"Pode me ligar no (45) 92546-1489? Meu CPF: 41983640441","entities":[{"type":"PHONE","start":17,"end":32},{"type":"CPF","start":43,"end":54}]}
+{"id":"chat-02-04","category":"chat","text":"Pode me ligar no (79) 97739-3331? Meu CPF: 54877304401","entities":[{"type":"PHONE","start":17,"end":32},{"type":"CPF","start":43,"end":54}]}
+{"id":"chat-02-05","category":"chat","text":"Pode me ligar no (41) 95704-2823? Meu CPF: 00207819971","entities":[{"type":"PHONE","start":17,"end":32},{"type":"CPF","start":43,"end":54}]}
+{"id":"chat-02-06","category":"chat","text":"Pode me ligar no (15) 93017-7709? Meu CPF: 20479548439","entities":[{"type":"PHONE","start":17,"end":32},{"type":"CPF","start":43,"end":54}]}
+{"id":"chat-02-07","category":"chat","text":"Pode me ligar no (82) 94853-0683? Meu CPF: 58308310400","entities":[{"type":"PHONE","start":17,"end":32},{"type":"CPF","start":43,"end":54}]}
+{"id":"chat-02-08","category":"chat","text":"Pode me ligar no (11) 97288-9733? Meu CPF: 75739923352","entities":[{"type":"PHONE","start":17,"end":32},{"type":"CPF","start":43,"end":54}]}
+{"id":"chat-02-09","category":"chat","text":"Pode me ligar no (94) 99330-9822? Meu CPF: 14434428527","entities":[{"type":"PHONE","start":17,"end":32},{"type":"CPF","start":43,"end":54}]}
+{"id":"chat-02-10","category":"chat","text":"Pode me ligar no (46) 93167-5985? Meu CPF: 15209041859","entities":[{"type":"PHONE","start":17,"end":32},{"type":"CPF","start":43,"end":54}]}
+{"id":"chat-02-11","category":"chat","text":"Pode me ligar no (18) 91874-4864? Meu CPF: 77465646405","entities":[{"type":"PHONE","start":17,"end":32},{"type":"CPF","start":43,"end":54}]}
+{"id":"chat-02-12","category":"chat","text":"Pode me ligar no (81) 99747-7605? Meu CPF: 26936043038","entities":[{"type":"PHONE","start":17,"end":32},{"type":"CPF","start":43,"end":54}]}
+{"id":"chat-02-13","category":"chat","text":"Pode me ligar no (35) 98564-8923? Meu CPF: 59740246800","entities":[{"type":"PHONE","start":17,"end":32},{"type":"CPF","start":43,"end":54}]}
+{"id":"chat-02-14","category":"chat","text":"Pode me ligar no (92) 99719-4923? Meu CPF: 29595310514","entities":[{"type":"PHONE","start":17,"end":32},{"type":"CPF","start":43,"end":54}]}
+{"id":"chat-02-15","category":"chat","text":"Pode me ligar no (37) 99919-6317? Meu CPF: 92043412205","entities":[{"type":"PHONE","start":17,"end":32},{"type":"CPF","start":43,"end":54}]}
+{"id":"chat-02-16","category":"chat","text":"Pode me ligar no (82) 90896-3779? Meu CPF: 12961342538","entities":[{"type":"PHONE","start":17,"end":32},{"type":"CPF","start":43,"end":54}]}
+{"id":"chat-02-17","category":"chat","text":"Pode me ligar no (79) 92260-9722? Meu CPF: 23610191082","entities":[{"type":"PHONE","start":17,"end":32},{"type":"CPF","start":43,"end":54}]}
+{"id":"chat-02-18","category":"chat","text":"Pode me ligar no (74) 90947-4896? Meu CPF: 36203669695","entities":[{"type":"PHONE","start":17,"end":32},{"type":"CPF","start":43,"end":54}]}
+{"id":"chat-02-19","category":"chat","text":"Pode me ligar no (66) 96538-5954? Meu CPF: 69014826800","entities":[{"type":"PHONE","start":17,"end":32},{"type":"CPF","start":43,"end":54}]}
+{"id":"chat-03-00","category":"chat","text":"Paguei pela chave Pix f4854eb4-fd3b-416c-9e15-d2c300388064 e ainda não caiu.","entities":[{"type":"PIX","start":22,"end":58}]}
+{"id":"chat-03-01","category":"chat","text":"Paguei pela chave Pix 62692ac3-b02f-415c-98df-f35cb74930f2 e ainda não caiu.","entities":[{"type":"PIX","start":22,"end":58}]}
+{"id":"chat-03-02","category":"chat","text":"Paguei pela chave Pix 68deec03-e62f-4074-a4a8-8e85be02235b e ainda não caiu.","entities":[{"type":"PIX","start":22,"end":58}]}
+{"id":"chat-03-03","category":"chat","text":"Paguei pela chave Pix f693890a-e62c-4eab-a8db-9b13bf93de36 e ainda não caiu.","entities":[{"type":"PIX","start":22,"end":58}]}
+{"id":"chat-03-04","category":"chat","text":"Paguei pela chave Pix 436e7563-f696-4806-8c13-7ca91a8e03d6 e ainda não caiu.","entities":[{"type":"PIX","start":22,"end":58}]}
+{"id":"chat-03-05","category":"chat","text":"Paguei pela chave Pix 09690938-0798-4686-9ecd-7e30dfa334fa e ainda não caiu.","entities":[{"type":"PIX","start":22,"end":58}]}
+{"id":"chat-03-06","category":"chat","text":"Paguei pela chave Pix c68fbe8b-8672-4a10-aa9c-795e23a82876 e ainda não caiu.","entities":[{"type":"PIX","start":22,"end":58}]}
+{"id":"chat-03-07","category":"chat","text":"Paguei pela chave Pix e0c4b9d8-55cd-43e8-aff8-e15821d193fb e ainda não caiu.","entities":[{"type":"PIX","start":22,"end":58}]}
+{"id":"chat-03-08","category":"chat","text":"Paguei pela chave Pix 326b2edc-ee64-4608-9440-9c5babda096f e ainda não caiu.","entities":[{"type":"PIX","start":22,"end":58}]}
+{"id":"chat-03-09","category":"chat","text":"Paguei pela chave Pix 8e301881-11f7-42eb-9ea3-624cf5ef69a7 e ainda não caiu.","entities":[{"type":"PIX","start":22,"end":58}]}
+{"id":"chat-03-10","category":"chat","text":"Paguei pela chave Pix 93fd7378-de21-401f-bb75-a94a9eb46308 e ainda não caiu.","entities":[{"type":"PIX","start":22,"end":58}]}
+{"id":"chat-03-11","category":"chat","text":"Paguei pela chave Pix b3ee2276-bf0a-4e43-8c54-cb58938ec931 e ainda não caiu.","entities":[{"type":"PIX","start":22,"end":58}]}
+{"id":"chat-03-12","category":"chat","text":"Paguei pela chave Pix 301ad5ce-144c-43ee-a033-24757019d72e e ainda não caiu.","entities":[{"type":"PIX","start":22,"end":58}]}
+{"id":"chat-03-13","category":"chat","text":"Paguei pela chave Pix bb557274-970a-4395-82db-e7d41cc2e32b e ainda não caiu.","entities":[{"type":"PIX","start":22,"end":58}]}
+{"id":"chat-03-14","category":"chat","text":"Paguei pela chave Pix 184ca91a-7a10-4e12-ad5f-119697fef16e e ainda não caiu.","entities":[{"type":"PIX","start":22,"end":58}]}
+{"id":"chat-03-15","category":"chat","text":"Paguei pela chave Pix b6dd32f3-d350-43ad-a0c3-2f23e9a04ba9 e ainda não caiu.","entities":[{"type":"PIX","start":22,"end":58}]}
+{"id":"chat-03-16","category":"chat","text":"Paguei pela chave Pix 37d27c7e-1bab-41b2-840f-a4bf4c8c5373 e ainda não caiu.","entities":[{"type":"PIX","start":22,"end":58}]}
+{"id":"chat-03-17","category":"chat","text":"Paguei pela chave Pix d6d81356-84f5-4efc-a3a9-0468b8e1c5ad e ainda não caiu.","entities":[{"type":"PIX","start":22,"end":58}]}
+{"id":"chat-03-18","category":"chat","text":"Paguei pela chave Pix 7fe7a4d2-44b3-4699-85e3-a71ce949cc9f e ainda não caiu.","entities":[{"type":"PIX","start":22,"end":58}]}
+{"id":"chat-03-19","category":"chat","text":"Paguei pela chave Pix 87a48ed5-b385-409a-a006-fdd1106924ca e ainda não caiu.","entities":[{"type":"PIX","start":22,"end":58}]}
+{"id":"chat-04-00","category":"chat","text":"Meu WhatsApp é 47903958314, pode chamar a qualquer hora.","entities":[{"type":"PHONE","start":15,"end":26}]}
+{"id":"chat-04-01","category":"chat","text":"Meu WhatsApp é 98978437681, pode chamar a qualquer hora.","entities":[{"type":"PHONE","start":15,"end":26}]}
+{"id":"chat-04-02","category":"chat","text":"Meu WhatsApp é 34942234431, pode chamar a qualquer hora.","entities":[{"type":"PHONE","start":15,"end":26}]}
+{"id":"chat-04-03","category":"chat","text":"Meu WhatsApp é 87940011559, pode chamar a qualquer hora.","entities":[{"type":"PHONE","start":15,"end":26}]}
+{"id":"chat-04-04","category":"chat","text":"Meu WhatsApp é 62957823665, pode chamar a qualquer hora.","entities":[{"type":"PHONE","start":15,"end":26}]}
+{"id":"chat-04-05","category":"chat","text":"Meu WhatsApp é 47939053579, pode chamar a qualquer hora.","entities":[{"type":"PHONE","start":15,"end":26}]}
+{"id":"chat-04-06","category":"chat","text":"Meu WhatsApp é 66960192332, pode chamar a qualquer hora.","entities":[{"type":"PHONE","start":15,"end":26}]}
+{"id":"chat-04-07","category":"chat","text":"Meu WhatsApp é 12991915048, pode chamar a qualquer hora.","entities":[{"type":"PHONE","start":15,"end":26}]}
+{"id":"chat-04-08","category":"chat","text":"Meu WhatsApp é 34944311329, pode chamar a qualquer hora.","entities":[{"type":"PHONE","start":15,"end":26}]}
+{"id":"chat-04-09","category":"chat","text":"Meu WhatsApp é 19976574420, pode chamar a qualquer hora.","entities":[{"type":"PHONE","start":15,"end":26}]}
+{"id":"chat-04-10","category":"chat","text":"Meu WhatsApp é 91911215835, pode chamar a qualquer hora.","entities":[{"type":"PHONE","start":15,"end":26}]}
+{"id":"chat-04-11","category":"chat","text":"Meu WhatsApp é 74948896605, pode chamar a qualquer hora.","entities":[{"type":"PHONE","start":15,"end":26}]}
+{"id":"chat-04-12","category":"chat","text":"Meu WhatsApp é 71957386449, pode chamar a qualquer hora.","entities":[{"type":"PHONE","start":15,"end":26}]}
+{"id":"chat-04-13","category":"chat","text":"Meu WhatsApp é 34964214002, pode chamar a qualquer hora.","entities":[{"type":"PHONE","start":15,"end":26}]}
+{"id":"chat-04-14","category":"chat","text":"Meu WhatsApp é 63962560487, pode chamar a qualquer hora.","entities":[{"type":"PHONE","start":15,"end":26}]}
+{"id":"chat-04-15","category":"chat","text":"Meu WhatsApp é 84918815106, pode chamar a qualquer hora.","entities":[{"type":"PHONE","start":15,"end":26}]}
+{"id":"chat-04-16","category":"chat","text":"Meu WhatsApp é 98901846804, pode chamar a qualquer hora.","entities":[{"type":"PHONE","start":15,"end":26}]}
+{"id":"chat-04-17","category":"chat","text":"Meu WhatsApp é 18938437778, pode chamar a qualquer hora.","entities":[{"type":"PHONE","start":15,"end":26}]}
+{"id":"chat-04-18","category":"chat","text":"Meu WhatsApp é 15927573174, pode chamar a qualquer hora.","entities":[{"type":"PHONE","start":15,"end":26}]}
+{"id":"chat-04-19","category":"chat","text":"Meu WhatsApp é 21921583234, pode chamar a qualquer hora.","entities":[{"type":"PHONE","start":15,"end":26}]}
+{"id":"chat-05-00","category":"chat","text":"Moro no CEP 59468-699, entrega para diego.modelo31@example.com por favor.","entities":[{"type":"CEP","start":12,"end":21},{"type":"EMAIL","start":36,"end":62}]}
+{"id":"chat-05-01","category":"chat","text":"Moro no CEP 45777-406, entrega para gabi.exemplo8@example.com por favor.","entities":[{"type":"CEP","start":12,"end":21},{"type":"EMAIL","start":36,"end":61}]}
+{"id":"chat-05-02","category":"chat","text":"Moro no CEP 10511-622, entrega para heitor.simulado17@example.com por favor.","entities":[{"type":"CEP","start":12,"end":21},{"type":"EMAIL","start":36,"end":65}]}
+{"id":"chat-05-03","category":"chat","text":"Moro no CEP 70610-678, entrega para gabi.exemplo99@example.com por favor.","entities":[{"type":"CEP","start":12,"end":21},{"type":"EMAIL","start":36,"end":62}]}
+{"id":"chat-05-04","category":"chat","text":"Moro no CEP 23920-396, entrega para elisa.ficticio53@example.com por favor.","entities":[{"type":"CEP","start":12,"end":21},{"type":"EMAIL","start":36,"end":64}]}
+{"id":"chat-05-05","category":"chat","text":"Moro no CEP 64123-210, entrega para ana.ficticio50@example.com por favor.","entities":[{"type":"CEP","start":12,"end":21},{"type":"EMAIL","start":36,"end":62}]}
+{"id":"chat-05-06","category":"chat","text":"Moro no CEP 71471-197, entrega para felipe.simulado42@example.com por favor.","entities":[{"type":"CEP","start":12,"end":21},{"type":"EMAIL","start":36,"end":65}]}
+{"id":"chat-05-07","category":"chat","text":"Moro no CEP 90498-375, entrega para felipe.simulado18@example.com por favor.","entities":[{"type":"CEP","start":12,"end":21},{"type":"EMAIL","start":36,"end":65}]}
+{"id":"chat-05-08","category":"chat","text":"Moro no CEP 89295-735, entrega para ana.exemplo34@example.com por favor.","entities":[{"type":"CEP","start":12,"end":21},{"type":"EMAIL","start":36,"end":61}]}
+{"id":"chat-05-09","category":"chat","text":"Moro no CEP 77731-153, entrega para bruno.ficticio40@example.com por favor.","entities":[{"type":"CEP","start":12,"end":21},{"type":"EMAIL","start":36,"end":64}]}
+{"id":"chat-05-10","category":"chat","text":"Moro no CEP 39404-625, entrega para diego.amostra71@example.com por favor.","entities":[{"type":"CEP","start":12,"end":21},{"type":"EMAIL","start":36,"end":63}]}
+{"id":"chat-05-11","category":"chat","text":"Moro no CEP 75632-124, entrega para heitor.modelo77@example.com por favor.","entities":[{"type":"CEP","start":12,"end":21},{"type":"EMAIL","start":36,"end":63}]}
+{"id":"chat-05-12","category":"chat","text":"Moro no CEP 16771-540, entrega para gabi.exemplo82@example.com por favor.","entities":[{"type":"CEP","start":12,"end":21},{"type":"EMAIL","start":36,"end":62}]}
+{"id":"chat-05-13","category":"chat","text":"Moro no CEP 93798-937, entrega para diego.simulado15@example.com por favor.","entities":[{"type":"CEP","start":12,"end":21},{"type":"EMAIL","start":36,"end":64}]}
+{"id":"chat-05-14","category":"chat","text":"Moro no CEP 30797-912, entrega para gabi.amostra98@example.com por favor.","entities":[{"type":"CEP","start":12,"end":21},{"type":"EMAIL","start":36,"end":62}]}
+{"id":"chat-05-15","category":"chat","text":"Moro no CEP 97583-560, entrega para carla.ficticio89@example.com por favor.","entities":[{"type":"CEP","start":12,"end":21},{"type":"EMAIL","start":36,"end":64}]}
+{"id":"chat-05-16","category":"chat","text":"Moro no CEP 74791-889, entrega para bruno.exemplo71@example.com por favor.","entities":[{"type":"CEP","start":12,"end":21},{"type":"EMAIL","start":36,"end":63}]}
+{"id":"chat-05-17","category":"chat","text":"Moro no CEP 29262-770, entrega para felipe.teste75@example.com por favor.","entities":[{"type":"CEP","start":12,"end":21},{"type":"EMAIL","start":36,"end":62}]}
+{"id":"chat-05-18","category":"chat","text":"Moro no CEP 29049-287, entrega para ana.teste23@example.com por favor.","entities":[{"type":"CEP","start":12,"end":21},{"type":"EMAIL","start":36,"end":59}]}
+{"id":"chat-05-19","category":"chat","text":"Moro no CEP 83661-073, entrega para bruno.teste63@example.com por favor.","entities":[{"type":"CEP","start":12,"end":21},{"type":"EMAIL","start":36,"end":61}]}
+{"id":"chat-06-00","category":"chat","text":"Sou da empresa CNPJ 29.248.259/0001-38, contato (67) 2167-5838.","entities":[{"type":"CNPJ","start":20,"end":38},{"type":"PHONE","start":48,"end":62}]}
+{"id":"chat-06-01","category":"chat","text":"Sou da empresa CNPJ 30.826.151/0001-64, contato (83) 2575-2872.","entities":[{"type":"CNPJ","start":20,"end":38},{"type":"PHONE","start":48,"end":62}]}
+{"id":"chat-06-02","category":"chat","text":"Sou da empresa CNPJ 55.251.706/0001-18, contato (68) 2288-5732.","entities":[{"type":"CNPJ","start":20,"end":38},{"type":"PHONE","start":48,"end":62}]}
+{"id":"chat-06-03","category":"chat","text":"Sou da empresa CNPJ 60.871.411/0001-84, contato (87) 4378-1840.","entities":[{"type":"CNPJ","start":20,"end":38},{"type":"PHONE","start":48,"end":62}]}
+{"id":"chat-06-04","category":"chat","text":"Sou da empresa CNPJ 38.254.506/0001-08, contato (43) 4909-8930.","entities":[{"type":"CNPJ","start":20,"end":38},{"type":"PHONE","start":48,"end":62}]}
+{"id":"chat-06-05","category":"chat","text":"Sou da empresa CNPJ 39.274.486/0001-91, contato (61) 3095-5044.","entities":[{"type":"CNPJ","start":20,"end":38},{"type":"PHONE","start":48,"end":62}]}
+{"id":"chat-06-06","category":"chat","text":"Sou da empresa CNPJ 67.974.539/0001-12, contato (85) 3948-4354.","entities":[{"type":"CNPJ","start":20,"end":38},{"type":"PHONE","start":48,"end":62}]}
+{"id":"chat-06-07","category":"chat","text":"Sou da empresa CNPJ 10.218.903/0001-05, contato (68) 3830-7504.","entities":[{"type":"CNPJ","start":20,"end":38},{"type":"PHONE","start":48,"end":62}]}
+{"id":"chat-06-08","category":"chat","text":"Sou da empresa CNPJ 98.582.792/0001-54, contato (33) 4103-1928.","entities":[{"type":"CNPJ","start":20,"end":38},{"type":"PHONE","start":48,"end":62}]}
+{"id":"chat-06-09","category":"chat","text":"Sou da empresa CNPJ 73.071.683/0001-41, contato (55) 5192-6296.","entities":[{"type":"CNPJ","start":20,"end":38},{"type":"PHONE","start":48,"end":62}]}
+{"id":"chat-06-10","category":"chat","text":"Sou da empresa CNPJ 41.937.528/0001-79, contato (74) 2217-0420.","entities":[{"type":"CNPJ","start":20,"end":38},{"type":"PHONE","start":48,"end":62}]}
+{"id":"chat-06-11","category":"chat","text":"Sou da empresa CNPJ 58.516.107/0001-77, contato (74) 5790-9075.","entities":[{"type":"CNPJ","start":20,"end":38},{"type":"PHONE","start":48,"end":62}]}
+{"id":"chat-06-12","category":"chat","text":"Sou da empresa CNPJ 83.103.807/0001-87, contato (33) 5884-6246.","entities":[{"type":"CNPJ","start":20,"end":38},{"type":"PHONE","start":48,"end":62}]}
+{"id":"chat-06-13","category":"chat","text":"Sou da empresa CNPJ 69.341.189/0001-82, contato (54) 4682-1844.","entities":[{"type":"CNPJ","start":20,"end":38},{"type":"PHONE","start":48,"end":62}]}
+{"id":"chat-06-14","category":"chat","text":"Sou da empresa CNPJ 37.885.154/0001-18, contato (49) 5119-5278.","entities":[{"type":"CNPJ","start":20,"end":38},{"type":"PHONE","start":48,"end":62}]}
+{"id":"chat-06-15","category":"chat","text":"Sou da empresa CNPJ 34.328.425/0001-46, contato (38) 3024-8667.","entities":[{"type":"CNPJ","start":20,"end":38},{"type":"PHONE","start":48,"end":62}]}
+{"id":"chat-06-16","category":"chat","text":"Sou da empresa CNPJ 49.620.026/0001-21, contato (12) 4771-3114.","entities":[{"type":"CNPJ","start":20,"end":38},{"type":"PHONE","start":48,"end":62}]}
+{"id":"chat-06-17","category":"chat","text":"Sou da empresa CNPJ 18.390.764/0001-04, contato (44) 3376-6174.","entities":[{"type":"CNPJ","start":20,"end":38},{"type":"PHONE","start":48,"end":62}]}
+{"id":"chat-06-18","category":"chat","text":"Sou da empresa CNPJ 83.580.365/0001-60, contato (45) 3459-2552.","entities":[{"type":"CNPJ","start":20,"end":38},{"type":"PHONE","start":48,"end":62}]}
+{"id":"chat-06-19","category":"chat","text":"Sou da empresa CNPJ 82.432.380/0001-06, contato (38) 3123-1706.","entities":[{"type":"CNPJ","start":20,"end":38},{"type":"PHONE","start":48,"end":62}]}
+{"id":"chat-07-00","category":"chat","text":"Meu número da CNH é 21107386619, venceu mês passado.","entities":[{"type":"CNH","start":20,"end":31}]}
+{"id":"chat-07-01","category":"chat","text":"Meu número da CNH é 37342031280, venceu mês passado.","entities":[{"type":"CNH","start":20,"end":31}]}
+{"id":"chat-07-02","category":"chat","text":"Meu número da CNH é 35917039331, venceu mês passado.","entities":[{"type":"CNH","start":20,"end":31}]}
+{"id":"chat-07-03","category":"chat","text":"Meu número da CNH é 30530728203, venceu mês passado.","entities":[{"type":"CNH","start":20,"end":31}]}
+{"id":"chat-07-04","category":"chat","text":"Meu número da CNH é 32324961095, venceu mês passado.","entities":[{"type":"CNH","start":20,"end":31}]}
+{"id":"chat-07-05","category":"chat","text":"Meu número da CNH é 14581009592, venceu mês passado.","entities":[{"type":"CNH","start":20,"end":31}]}
+{"id":"chat-07-06","category":"chat","text":"Meu número da CNH é 11750938702, venceu mês passado.","entities":[{"type":"CNH","start":20,"end":31}]}
+{"id":"chat-07-07","category":"chat","text":"Meu número da CNH é 06068056850, venceu mês passado.","entities":[{"type":"CNH","start":20,"end":31}]}
+{"id":"chat-07-08","category":"chat","text":"Meu número da CNH é 17748898338, venceu mês passado.","entities":[{"type":"CNH","start":20,"end":31}]}
+{"id":"chat-07-09","category":"chat","text":"Meu número da CNH é 75699369831, venceu mês passado.","entities":[{"type":"CNH","start":20,"end":31}]}
+{"id":"chat-07-10","category":"chat","text":"Meu número da CNH é 06049779969, venceu mês passado.","entities":[{"type":"CNH","start":20,"end":31}]}
+{"id":"chat-07-11","category":"chat","text":"Meu número da CNH é 98241783706, venceu mês passado.","entities":[{"type":"CNH","start":20,"end":31}]}
+{"id":"chat-07-12","category":"chat","text":"Meu número da CNH é 11544905546, venceu mês passado.","entities":[{"type":"CNH","start":20,"end":31}]}
+{"id":"chat-07-13","category":"chat","text":"Meu número da CNH é 64552914982, venceu mês passado.","entities":[{"type":"CNH","start":20,"end":31}]}
+{"id":"chat-07-14","category":"chat","text":"Meu número da CNH é 23475600296, venceu mês passado.","entities":[{"type":"CNH","start":20,"end":31}]}
+{"id":"chat-07-15","category":"chat","text":"Meu número da CNH é 40428483308, venceu mês passado.","entities":[{"type":"CNH","start":20,"end":31}]}
+{"id":"chat-07-16","category":"chat","text":"Meu número da CNH é 42831351179, venceu mês passado.","entities":[{"type":"CNH","start":20,"end":31}]}
+{"id":"chat-07-17","category":"chat","text":"Meu número da CNH é 22159964240, venceu mês passado.","entities":[{"type":"CNH","start":20,"end":31}]}
+{"id":"chat-07-18","category":"chat","text":"Meu número da CNH é 88358580514, venceu mês passado.","entities":[{"type":"CNH","start":20,"end":31}]}
+{"id":"chat-07-19","category":"chat","text":"Meu número da CNH é 40116774266, venceu mês passado.","entities":[{"type":"CNH","start":20,"end":31}]}
+{"id":"chat-08-00","category":"chat","text":"O carro de placa MMW5U54 foi multado no pedido 46170011919.","entities":[{"type":"PLATE","start":17,"end":24}]}
+{"id":"chat-08-01","category":"chat","text":"O carro de placa REZ4L11 foi multado no pedido 31149306379.","entities":[{"type":"PLATE","start":17,"end":24}]}
+{"id":"chat-08-02","category":"chat","text":"O carro de placa ARI6C96 foi multado no pedido 87507904334.","entities":[{"type":"PLATE","start":17,"end":24}]}
+{"id":"chat-08-03","category":"chat","text":"O carro de placa RPG6F02 foi multado no pedido 37567638146.","entities":[{"type":"PLATE","start":17,"end":24}]}
+{"id":"chat-08-04","category":"chat","text":"O carro de placa KJJ7Y14 foi multado no pedido 95193819661.","entities":[{"type":"PLATE","start":17,"end":24}]}
+{"id":"chat-08-05","category":"chat","text":"O carro de placa VBX5Z10 foi multado no pedido 73228597237.","entities":[{"type":"PLATE","start":17,"end":24}]}
+{"id":"chat-08-06","category":"chat","text":"O carro de placa HOZ2Q12 foi multado no pedido 72589310994.","entities":[{"type":"PLATE","start":17,"end":24}]}
+{"id":"chat-08-07","category":"chat","text":"O carro de placa QGO5J63 foi multado no pedido 20615414628.","entities":[{"type":"PLATE","start":17,"end":24}]}
+{"id":"chat-08-08","category":"chat","text":"O carro de placa ORG1U50 foi multado no pedido 76933915278.","entities":[{"type":"PLATE","start":17,"end":24}]}
+{"id":"chat-08-09","category":"chat","text":"O carro de placa WRV7H91 foi multado no pedido 74491439472.","entities":[{"type":"PLATE","start":17,"end":24}]}
+{"id":"chat-08-10","category":"chat","text":"O carro de placa HSD5B01 foi multado no pedido 81801179400.","entities":[{"type":"PLATE","start":17,"end":24}]}
+{"id":"chat-08-11","category":"chat","text":"O carro de placa CCQ9R37 foi multado no pedido 22781507316.","entities":[{"type":"PLATE","start":17,"end":24}]}
+{"id":"chat-08-12","category":"chat","text":"O carro de placa DIG9V94 foi multado no pedido 49585336640.","entities":[{"type":"PLATE","start":17,"end":24}]}
+{"id":"chat-08-13","category":"chat","text":"O carro de placa DQD9M38 foi multado no pedido 37309147471.","entities":[{"type":"PLATE","start":17,"end":24}]}
+{"id":"chat-08-14","category":"chat","text":"O carro de placa QDD1U87 foi multado no pedido 91248808714.","entities":[{"type":"PLATE","start":17,"end":24}]}
+{"id":"chat-08-15","category":"chat","text":"O carro de placa VYH1U78 foi multado no pedido 81081480720.","entities":[{"type":"PLATE","start":17,"end":24}]}
+{"id":"chat-08-16","category":"chat","text":"O carro de placa CXT6Y10 foi multado no pedido 71363331142.","entities":[{"type":"PLATE","start":17,"end":24}]}
+{"id":"chat-08-17","category":"chat","text":"O carro de placa MRI4V31 foi multado no pedido 53814887362.","entities":[{"type":"PLATE","start":17,"end":24}]}
+{"id":"chat-08-18","category":"chat","text":"O carro de placa OAC5L17 foi multado no pedido 93256129897.","entities":[{"type":"PLATE","start":17,"end":24}]}
+{"id":"chat-08-19","category":"chat","text":"O carro de placa SUC1V65 foi multado no pedido 39232337944.","entities":[{"type":"PLATE","start":17,"end":24}]}
+{"id":"chat-09-00","category":"chat","text":"Hello, reach me on +44 20 7946 0136 or ana.amostra73@example.com.","entities":[{"type":"PHONE","start":19,"end":35},{"type":"EMAIL","start":39,"end":64}]}
+{"id":"chat-09-01","category":"chat","text":"Hello, reach me on +44 20 7946 0260 or elisa.exemplo88@example.com.","entities":[{"type":"PHONE","start":19,"end":35},{"type":"EMAIL","start":39,"end":66}]}
+{"id":"chat-09-02","category":"chat","text":"Hello, reach me on +44 20 7946 0838 or felipe.ficticio83@example.com.","entities":[{"type":"PHONE","start":19,"end":35},{"type":"EMAIL","start":39,"end":68}]}
+{"id":"chat-09-03","category":"chat","text":"Hello, reach me on +44 20 7946 0159 or diego.modelo85@example.com.","entities":[{"type":"PHONE","start":19,"end":35},{"type":"EMAIL","start":39,"end":65}]}
+{"id":"chat-09-04","category":"chat","text":"Hello, reach me on +44 20 7946 0077 or ana.ficticio39@example.com.","entities":[{"type":"PHONE","start":19,"end":35},{"type":"EMAIL","start":39,"end":65}]}
+{"id":"chat-09-05","category":"chat","text":"Hello, reach me on +44 20 7946 0418 or gabi.amostra71@example.com.","entities":[{"type":"PHONE","start":19,"end":35},{"type":"EMAIL","start":39,"end":65}]}
+{"id":"chat-09-06","category":"chat","text":"Hello, reach me on +44 20 7946 0111 or felipe.amostra34@example.com.","entities":[{"type":"PHONE","start":19,"end":35},{"type":"EMAIL","start":39,"end":67}]}
+{"id":"chat-09-07","category":"chat","text":"Hello, reach me on +44 20 7946 0021 or elisa.simulado80@example.com.","entities":[{"type":"PHONE","start":19,"end":35},{"type":"EMAIL","start":39,"end":67}]}
+{"id":"chat-09-08","category":"chat","text":"Hello, reach me on +44 20 7946 0141 or elisa.ficticio5@example.com.","entities":[{"type":"PHONE","start":19,"end":35},{"type":"EMAIL","start":39,"end":66}]}
+{"id":"chat-09-09","category":"chat","text":"Hello, reach me on +44 20 7946 0560 or bruno.modelo93@example.com.","entities":[{"type":"PHONE","start":19,"end":35},{"type":"EMAIL","start":39,"end":65}]}
+{"id":"chat-09-10","category":"chat","text":"Hello, reach me on +44 20 7946 0000 or diego.exemplo78@example.com.","entities":[{"type":"PHONE","start":19,"end":35},{"type":"EMAIL","start":39,"end":66}]}
+{"id":"chat-09-11","category":"chat","text":"Hello, reach me on +44 20 7946 0108 or ana.ficticio94@example.com.","entities":[{"type":"PHONE","start":19,"end":35},{"type":"EMAIL","start":39,"end":65}]}
+{"id":"chat-09-12","category":"chat","text":"Hello, reach me on +44 20 7946 0488 or heitor.modelo51@example.com.","entities":[{"type":"PHONE","start":19,"end":35},{"type":"EMAIL","start":39,"end":66}]}
+{"id":"chat-09-13","category":"chat","text":"Hello, reach me on +44 20 7946 0970 or heitor.exemplo57@example.com.","entities":[{"type":"PHONE","start":19,"end":35},{"type":"EMAIL","start":39,"end":67}]}
+{"id":"chat-09-14","category":"chat","text":"Hello, reach me on +44 20 7946 0702 or gabi.amostra85@example.com.","entities":[{"type":"PHONE","start":19,"end":35},{"type":"EMAIL","start":39,"end":65}]}
+{"id":"chat-09-15","category":"chat","text":"Hello, reach me on +44 20 7946 0983 or carla.amostra26@example.com.","entities":[{"type":"PHONE","start":19,"end":35},{"type":"EMAIL","start":39,"end":66}]}
+{"id":"chat-09-16","category":"chat","text":"Hello, reach me on +44 20 7946 0421 or carla.ficticio12@example.com.","entities":[{"type":"PHONE","start":19,"end":35},{"type":"EMAIL","start":39,"end":67}]}
+{"id":"chat-09-17","category":"chat","text":"Hello, reach me on +44 20 7946 0440 or diego.teste62@example.com.","entities":[{"type":"PHONE","start":19,"end":35},{"type":"EMAIL","start":39,"end":64}]}
+{"id":"chat-09-18","category":"chat","text":"Hello, reach me on +44 20 7946 0871 or ana.modelo68@example.com.","entities":[{"type":"PHONE","start":19,"end":35},{"type":"EMAIL","start":39,"end":63}]}
+{"id":"chat-09-19","category":"chat","text":"Hello, reach me on +44 20 7946 0373 or elisa.amostra21@example.com.","entities":[{"type":"PHONE","start":19,"end":35},{"type":"EMAIL","start":39,"end":66}]}
+{"id":"chat-10-00","category":"chat","text":"Carteira de motorista número 49278323411, categoria B.","entities":[{"type":"CNH","start":29,"end":40}]}
+{"id":"chat-10-01","category":"chat","text":"Carteira de motorista número 16298548921, categoria B.","entities":[{"type":"CNH","start":29,"end":40}]}
+{"id":"chat-10-02","category":"chat","text":"Carteira de motorista número 56569530736, categoria B.","entities":[{"type":"CNH","start":29,"end":40}]}
+{"id":"chat-10-03","category":"chat","text":"Carteira de motorista número 84304242700, categoria B.","entities":[{"type":"CNH","start":29,"end":40}]}
+{"id":"chat-10-04","category":"chat","text":"Carteira de motorista número 64540937060, categoria B.","entities":[{"type":"CNH","start":29,"end":40}]}
+{"id":"chat-10-05","category":"chat","text":"Carteira de motorista número 28573568416, categoria B.","entities":[{"type":"CNH","start":29,"end":40}]}
+{"id":"chat-10-06","category":"chat","text":"Carteira de motorista número 98539877136, categoria B.","entities":[{"type":"CNH","start":29,"end":40}]}
+{"id":"chat-10-07","category":"chat","text":"Carteira de motorista número 47179295886, categoria B.","entities":[{"type":"CNH","start":29,"end":40}]}
+{"id":"chat-10-08","category":"chat","text":"Carteira de motorista número 12501759608, categoria B.","entities":[{"type":"CNH","start":29,"end":40}]}
+{"id":"chat-10-09","category":"chat","text":"Carteira de motorista número 97227670564, categoria B.","entities":[{"type":"CNH","start":29,"end":40}]}
+{"id":"chat-10-10","category":"chat","text":"Carteira de motorista número 99187201440, categoria B.","entities":[{"type":"CNH","start":29,"end":40}]}
+{"id":"chat-10-11","category":"chat","text":"Carteira de motorista número 22668399226, categoria B.","entities":[{"type":"CNH","start":29,"end":40}]}
+{"id":"chat-10-12","category":"chat","text":"Carteira de motorista número 29397484171, categoria B.","entities":[{"type":"CNH","start":29,"end":40}]}
+{"id":"chat-10-13","category":"chat","text":"Carteira de motorista número 49977847209, categoria B.","entities":[{"type":"CNH","start":29,"end":40}]}
+{"id":"chat-10-14","category":"chat","text":"Carteira de motorista número 93585555163, categoria B.","entities":[{"type":"CNH","start":29,"end":40}]}
+{"id":"chat-10-15","category":"chat","text":"Carteira de motorista número 90402994142, categoria B.","entities":[{"type":"CNH","start":29,"end":40}]}
+{"id":"chat-10-16","category":"chat","text":"Carteira de motorista número 85887229089, categoria B.","entities":[{"type":"CNH","start":29,"end":40}]}
+{"id":"chat-10-17","category":"chat","text":"Carteira de motorista número 82680659155, categoria B.","entities":[{"type":"CNH","start":29,"end":40}]}
+{"id":"chat-10-18","category":"chat","text":"Carteira de motorista número 98056398620, categoria B.","entities":[{"type":"CNH","start":29,"end":40}]}
+{"id":"chat-10-19","category":"chat","text":"Carteira de motorista número 42986953522, categoria B.","entities":[{"type":"CNH","start":29,"end":40}]}
+{"id":"chat-11-00","category":"chat","text":"Me chama no 83907097072 depois das 18h.","entities":[{"type":"PHONE","start":12,"end":23}]}
+{"id":"chat-11-01","category":"chat","text":"Me chama no 45959976823 depois das 18h.","entities":[{"type":"PHONE","start":12,"end":23}]}
+{"id":"chat-11-02","category":"chat","text":"Me chama no 81932592017 depois das 18h.","entities":[{"type":"PHONE","start":12,"end":23}]}
+{"id":"chat-11-03","category":"chat","text":"Me chama no 95926075482 depois das 18h.","entities":[{"type":"PHONE","start":12,"end":23}]}
+{"id":"chat-11-04","category":"chat","text":"Me chama no 27957047105 depois das 18h.","entities":[{"type":"PHONE","start":12,"end":23}]}
+{"id":"chat-11-05","category":"chat","text":"Me chama no 74956616369 depois das 18h.","entities":[{"type":"PHONE","start":12,"end":23}]}
+{"id":"chat-11-06","category":"chat","text":"Me chama no 98995356892 depois das 18h.","entities":[{"type":"PHONE","start":12,"end":23}]}
+{"id":"chat-11-07","category":"chat","text":"Me chama no 16949398500 depois das 18h.","entities":[{"type":"PHONE","start":12,"end":23}]}
+{"id":"chat-11-08","category":"chat","text":"Me chama no 98974957923 depois das 18h.","entities":[{"type":"PHONE","start":12,"end":23}]}
+{"id":"chat-11-09","category":"chat","text":"Me chama no 73991160644 depois das 18h.","entities":[{"type":"PHONE","start":12,"end":23}]}
+{"id":"chat-11-10","category":"chat","text":"Me chama no 81967506365 depois das 18h.","entities":[{"type":"PHONE","start":12,"end":23}]}
+{"id":"chat-11-11","category":"chat","text":"Me chama no 16970164497 depois das 18h.","entities":[{"type":"PHONE","start":12,"end":23}]}
+{"id":"chat-11-12","category":"chat","text":"Me chama no 43922684928 depois das 18h.","entities":[{"type":"PHONE","start":12,"end":23}]}
+{"id":"chat-11-13","category":"chat","text":"Me chama no 73993602423 depois das 18h.","entities":[{"type":"PHONE","start":12,"end":23}]}
+{"id":"chat-11-14","category":"chat","text":"Me chama no 69960490735 depois das 18h.","entities":[{"type":"PHONE","start":12,"end":23}]}
+{"id":"chat-11-15","category":"chat","text":"Me chama no 35965430707 depois das 18h.","entities":[{"type":"PHONE","start":12,"end":23}]}
+{"id":"chat-11-16","category":"chat","text":"Me chama no 66975351376 depois das 18h.","entities":[{"type":"PHONE","start":12,"end":23}]}
+{"id":"chat-11-17","category":"chat","text":"Me chama no 42901549162 depois das 18h.","entities":[{"type":"PHONE","start":12,"end":23}]}
+{"id":"chat-11-18","category":"chat","text":"Me chama no 69913029359 depois das 18h.","entities":[{"type":"PHONE","start":12,"end":23}]}
+{"id":"chat-11-19","category":"chat","text":"Me chama no 19996970471 depois das 18h.","entities":[{"type":"PHONE","start":12,"end":23}]}
+{"id":"form-12-00","category":"form","text":"E-mail de contato: joão.1@example.com","entities":[{"type":"EMAIL","start":19,"end":37}]}
+{"id":"form-12-01","category":"form","text":"E-mail de contato: conceição.54@example.com","entities":[{"type":"EMAIL","start":19,"end":43}]}
+{"id":"form-12-02","category":"form","text":"E-mail de contato: joão.60@example.com","entities":[{"type":"EMAIL","start":19,"end":38}]}
+{"id":"form-12-03","category":"form","text":"E-mail de contato: conceição.39@example.com","entities":[{"type":"EMAIL","start":19,"end":43}]}
+{"id":"form-12-04","category":"form","text":"E-mail de contato: inês.65@example.com","entities":[{"type":"EMAIL","start":19,"end":38}]}
+{"id":"form-12-05","category":"form","text":"E-mail de contato: conceição.68@example.com","entities":[{"type":"EMAIL","start":19,"end":43}]}
+{"id":"form-12-06","category":"form","text":"E-mail de contato: inês.82@example.com","entities":[{"type":"EMAIL","start":19,"end":38}]}
+{"id":"form-12-07","category":"form","text":"E-mail de contato: joão.71@example.com","entities":[{"type":"EMAIL","start":19,"end":38}]}
+{"id":"form-12-08","category":"form","text":"E-mail de contato: inês.43@example.com","entities":[{"type":"EMAIL","start":19,"end":38}]}
+{"id":"form-12-09","category":"form","text":"E-mail de contato: joão.77@example.com","entities":[{"type":"EMAIL","start":19,"end":38}]}
+{"id":"form-12-10","category":"form","text":"E-mail de contato: inês.95@example.com","entities":[{"type":"EMAIL","start":19,"end":38}]}
+{"id":"form-12-11","category":"form","text":"E-mail de contato: andré.92@example.com","entities":[{"type":"EMAIL","start":19,"end":39}]}
+{"id":"form-12-12","category":"form","text":"E-mail de contato: joão.89@example.com","entities":[{"type":"EMAIL","start":19,"end":38}]}
+{"id":"form-12-13","category":"form","text":"E-mail de contato: inês.46@example.com","entities":[{"type":"EMAIL","start":19,"end":38}]}
+{"id":"form-12-14","category":"form","text":"E-mail de contato: conceição.76@example.com","entities":[{"type":"EMAIL","start":19,"end":43}]}
+{"id":"form-12-15","category":"form","text":"E-mail de contato: joão.21@example.com","entities":[{"type":"EMAIL","start":19,"end":38}]}
+{"id":"form-12-16","category":"form","text":"E-mail de contato: conceição.72@example.com","entities":[{"type":"EMAIL","start":19,"end":43}]}
+{"id":"form-12-17","category":"form","text":"E-mail de contato: joão.24@example.com","entities":[{"type":"EMAIL","start":19,"end":38}]}
+{"id":"form-12-18","category":"form","text":"E-mail de contato: joão.46@example.com","entities":[{"type":"EMAIL","start":19,"end":38}]}
+{"id":"form-12-19","category":"form","text":"E-mail de contato: inês.63@example.com","entities":[{"type":"EMAIL","start":19,"end":38}]}
+{"id":"form-13-00","category":"form","text":"nome=Cliente Teste;cpf=76392074287;email=bruno.exemplo78@example.com;cep=77053-459","entities":[{"type":"CPF","start":23,"end":34},{"type":"EMAIL","start":41,"end":68},{"type":"CEP","start":73,"end":82}]}
+{"id":"form-13-01","category":"form","text":"nome=Cliente Teste;cpf=36071922780;email=heitor.amostra67@example.com;cep=73168-598","entities":[{"type":"CPF","start":23,"end":34},{"type":"EMAIL","start":41,"end":69},{"type":"CEP","start":74,"end":83}]}
+{"id":"form-13-02","category":"form","text":"nome=Cliente Teste;cpf=75652191503;email=bruno.teste60@example.com;cep=84676-637","entities":[{"type":"CPF","start":23,"end":34},{"type":"EMAIL","start":41,"end":66},{"type":"CEP","start":71,"end":80}]}
+{"id":"form-13-03","category":"form","text":"nome=Cliente Teste;cpf=19083000354;email=elisa.exemplo47@example.com;cep=86249-773","entities":[{"type":"CPF","start":23,"end":34},{"type":"EMAIL","start":41,"end":68},{"type":"CEP","start":73,"end":82}]}
+{"id":"form-13-04","category":"form","text":"nome=Cliente Teste;cpf=28099157176;email=gabi.exemplo6@example.com;cep=55666-590","entities":[{"type":"CPF","start":23,"end":34},{"type":"EMAIL","start":41,"end":66},{"type":"CEP","start":71,"end":80}]}
+{"id":"form-13-05","category":"form","text":"nome=Cliente Teste;cpf=91804579246;email=carla.ficticio75@example.com;cep=31390-425","entities":[{"type":"CPF","start":23,"end":34},{"type":"EMAIL","start":41,"end":69},{"type":"CEP","start":74,"end":83}]}
+{"id":"form-13-06","category":"form","text":"nome=Cliente Teste;cpf=44440500390;email=gabi.simulado81@example.com;cep=15665-374","entities":[{"type":"CPF","start":23,"end":34},{"type":"EMAIL","start":41,"end":68},{"type":"CEP","start":73,"end":82}]}
+{"id":"form-13-07","category":"form","text":"nome=Cliente Teste;cpf=51690812192;email=diego.amostra5@example.com;cep=41538-934","entities":[{"type":"CPF","start":23,"end":34},{"type":"EMAIL","start":41,"end":67},{"type":"CEP","start":72,"end":81}]}
+{"id":"form-13-08","category":"form","text":"nome=Cliente Teste;cpf=90411690914;email=bruno.simulado35@example.com;cep=16385-497","entities":[{"type":"CPF","start":23,"end":34},{"type":"EMAIL","start":41,"end":69},{"type":"CEP","start":74,"end":83}]}
+{"id":"form-13-09","category":"form","text":"nome=Cliente Teste;cpf=27286932004;email=ana.amostra80@example.com;cep=26528-902","entities":[{"type":"CPF","start":23,"end":34},{"type":"EMAIL","start":41,"end":66},{"type":"CEP","start":71,"end":80}]}
+{"id":"form-13-10","category":"form","text":"nome=Cliente Teste;cpf=34797174200;email=elisa.amostra30@example.com;cep=39701-483","entities":[{"type":"CPF","start":23,"end":34},{"type":"EMAIL","start":41,"end":68},{"type":"CEP","start":73,"end":82}]}
+{"id":"form-13-11","category":"form","text":"nome=Cliente Teste;cpf=67516260290;email=bruno.exemplo5@example.com;cep=20502-892","entities":[{"type":"CPF","start":23,"end":34},{"type":"EMAIL","start":41,"end":67},{"type":"CEP","start":72,"end":81}]}
+{"id":"form-13-12","category":"form","text":"nome=Cliente Teste;cpf=48878708763;email=carla.modelo61@example.com;cep=69715-358","entities":[{"type":"CPF","start":23,"end":34},{"type":"EMAIL","start":41,"end":67},{"type":"CEP","start":72,"end":81}]}
+{"id":"form-13-13","category":"form","text":"nome=Cliente Teste;cpf=39808662110;email=felipe.modelo67@example.com;cep=59380-381","entities":[{"type":"CPF","start":23,"end":34},{"type":"EMAIL","start":41,"end":68},{"type":"CEP","start":73,"end":82}]}
+{"id":"form-13-14","category":"form","text":"nome=Cliente Teste;cpf=65715640415;email=heitor.ficticio85@example.com;cep=44824-385","entities":[{"type":"CPF","start":23,"end":34},{"type":"EMAIL","start":41,"end":70},{"type":"CEP","start":75,"end":84}]}
+{"id":"form-13-15","category":"form","text":"nome=Cliente Teste;cpf=63656386390;email=ana.simulado34@example.com;cep=93066-231","entities":[{"type":"CPF","start":23,"end":34},{"type":"EMAIL","start":41,"end":67},{"type":"CEP","start":72,"end":81}]}
+{"id":"form-13-16","category":"form","text":"nome=Cliente Teste;cpf=42698295678;email=elisa.simulado90@example.com;cep=70222-604","entities":[{"type":"CPF","start":23,"end":34},{"type":"EMAIL","start":41,"end":69},{"type":"CEP","start":74,"end":83}]}
+{"id":"form-13-17","category":"form","text":"nome=Cliente Teste;cpf=78761573272;email=gabi.amostra88@example.com;cep=53261-721","entities":[{"type":"CPF","start":23,"end":34},{"type":"EMAIL","start":41,"end":67},{"type":"CEP","start":72,"end":81}]}
+{"id":"form-13-18","category":"form","text":"nome=Cliente Teste;cpf=36460768447;email=carla.modelo64@example.com;cep=72491-422","entities":[{"type":"CPF","start":23,"end":34},{"type":"EMAIL","start":41,"end":67},{"type":"CEP","start":72,"end":81}]}
+{"id":"form-13-19","category":"form","text":"nome=Cliente Teste;cpf=73042774678;email=carla.ficticio83@example.com;cep=69831-011","entities":[{"type":"CPF","start":23,"end":34},{"type":"EMAIL","start":41,"end":69},{"type":"CEP","start":74,"end":83}]}
+{"id":"form-14-00","category":"form","text":"Empresa: CNPJ 97134290000106 | Telefone: +55 17 95933-4955","entities":[{"type":"CNPJ","start":14,"end":28},{"type":"PHONE","start":41,"end":58}]}
+{"id":"form-14-01","category":"form","text":"Empresa: CNPJ 94615265000148 | Telefone: +55 89 95507-0152","entities":[{"type":"CNPJ","start":14,"end":28},{"type":"PHONE","start":41,"end":58}]}
+{"id":"form-14-02","category":"form","text":"Empresa: CNPJ 41167916000118 | Telefone: +55 13 90087-9552","entities":[{"type":"CNPJ","start":14,"end":28},{"type":"PHONE","start":41,"end":58}]}
+{"id":"form-14-03","category":"form","text":"Empresa: CNPJ 40452665000150 | Telefone: +55 34 95701-1601","entities":[{"type":"CNPJ","start":14,"end":28},{"type":"PHONE","start":41,"end":58}]}
+{"id":"form-14-04","category":"form","text":"Empresa: CNPJ 59551663000147 | Telefone: +55 96 97329-9602","entities":[{"type":"CNPJ","start":14,"end":28},{"type":"PHONE","start":41,"end":58}]}
+{"id":"form-14-05","category":"form","text":"Empresa: CNPJ 49019592000182 | Telefone: +55 18 92338-0412","entities":[{"type":"CNPJ","start":14,"end":28},{"type":"PHONE","start":41,"end":58}]}
+{"id":"form-14-06","category":"form","text":"Empresa: CNPJ 44307085000120 | Telefone: +55 12 98535-9096","entities":[{"type":"CNPJ","start":14,"end":28},{"type":"PHONE","start":41,"end":58}]}
+{"id":"form-14-07","category":"form","text":"Empresa: CNPJ 84036485000163 | Telefone: +55 84 92789-3808","entities":[{"type":"CNPJ","start":14,"end":28},{"type":"PHONE","start":41,"end":58}]}
+{"id":"form-14-08","category":"form","text":"Empresa: CNPJ 69992903000100 | Telefone: +55 48 99749-2052","entities":[{"type":"CNPJ","start":14,"end":28},{"type":"PHONE","start":41,"end":58}]}
+{"id":"form-14-09","category":"form","text":"Empresa: CNPJ 06651068000117 | Telefone: +55 75 95655-3022","entities":[{"type":"CNPJ","start":14,"end":28},{"type":"PHONE","start":41,"end":58}]}
+{"id":"form-14-10","category":"form","text":"Empresa: CNPJ 01037004000107 | Telefone: +55 55 91043-0876","entities":[{"type":"CNPJ","start":14,"end":28},{"type":"PHONE","start":41,"end":58}]}
+{"id":"form-14-11","category":"form","text":"Empresa: CNPJ 21838250000175 | Telefone: +55 88 98139-9121","entities":[{"type":"CNPJ","start":14,"end":28},{"type":"PHONE","start":41,"end":58}]}
+{"id":"form-14-12","category":"form","text":"Empresa: CNPJ 66016829000190 | Telefone: +55 38 91026-3323","entities":[{"type":"CNPJ","start":14,"end":28},{"type":"PHONE","start":41,"end":58}]}
+{"id":"form-14-13","category":"form","text":"Empresa: CNPJ 17459576000114 | Telefone: +55 99 90173-3788","entities":[{"type":"CNPJ","start":14,"end":28},{"type":"PHONE","start":41,"end":58}]}
+{"id":"form-14-14","category":"form","text":"Empresa: CNPJ 24724927000132 | Telefone: +55 88 96129-9258","entities":[{"type":"CNPJ","start":14,"end":28},{"type":"PHONE","start":41,"end":58}]}
+{"id":"form-14-15","category":"form","text":"Empresa: CNPJ 83737864000118 | Telefone: +55 64 99185-9233","entities":[{"type":"CNPJ","start":14,"end":28},{"type":"PHONE","start":41,"end":58}]}
+{"id":"form-14-16","category":"form","text":"Empresa: CNPJ 37942376000125 | Telefone: +55 79 92230-2553","entities":[{"type":"CNPJ","start":14,"end":28},{"type":"PHONE","start":41,"end":58}]}
+{"id":"form-14-17","category":"form","text":"Empresa: CNPJ 48004077000166 | Telefone: +55 88 97002-7255","entities":[{"type":"CNPJ","start":14,"end":28},{"type":"PHONE","start":41,"end":58}]}
+{"id":"form-14-18","category":"form","text":"Empresa: CNPJ 83625078000129 | Telefone: +55 98 90610-5403","entities":[{"type":"CNPJ","start":14,"end":28},{"type":"PHONE","start":41,"end":58}]}
+{"id":"form-14-19","category":"form","text":"Empresa: CNPJ 81685511000196 | Telefone: +55 14 92785-6097","entities":[{"type":"CNPJ","start":14,"end":28},{"type":"PHONE","start":41,"end":58}]}
+{"id":"form-15-00","category":"form","text":"Fornecedor CNPJ QJ.8VW.K03/0001-14, e-mail heitor.simulado87@example.com","entities":[{"type":"CNPJ","start":16,"end":34},{"type":"EMAIL","start":43,"end":72}]}
+{"id":"form-15-01","category":"form","text":"Fornecedor CNPJ Q5.F6S.KA5/0001-17, e-mail bruno.modelo5@example.com","entities":[{"type":"CNPJ","start":16,"end":34},{"type":"EMAIL","start":43,"end":68}]}
+{"id":"form-15-02","category":"form","text":"Fornecedor CNPJ AI.39O.IQ9/0001-16, e-mail bruno.amostra71@example.com","entities":[{"type":"CNPJ","start":16,"end":34},{"type":"EMAIL","start":43,"end":70}]}
+{"id":"form-15-03","category":"form","text":"Fornecedor CNPJ 8F.4HV.9N3/0001-47, e-mail ana.simulado5@example.com","entities":[{"type":"CNPJ","start":16,"end":34},{"type":"EMAIL","start":43,"end":68}]}
+{"id":"form-15-04","category":"form","text":"Fornecedor CNPJ EE.J50.0M3/0001-69, e-mail ana.teste33@example.com","entities":[{"type":"CNPJ","start":16,"end":34},{"type":"EMAIL","start":43,"end":66}]}
+{"id":"form-15-05","category":"form","text":"Fornecedor CNPJ SF.3Z4.A0T/0001-22, e-mail heitor.exemplo98@example.com","entities":[{"type":"CNPJ","start":16,"end":34},{"type":"EMAIL","start":43,"end":71}]}
+{"id":"form-15-06","category":"form","text":"Fornecedor CNPJ W6.IE4.TOA/0001-98, e-mail gabi.amostra81@example.com","entities":[{"type":"CNPJ","start":16,"end":34},{"type":"EMAIL","start":43,"end":69}]}
+{"id":"form-15-07","category":"form","text":"Fornecedor CNPJ Z9.48Z.2ZH/0001-35, e-mail diego.simulado9@example.com","entities":[{"type":"CNPJ","start":16,"end":34},{"type":"EMAIL","start":43,"end":70}]}
+{"id":"form-15-08","category":"form","text":"Fornecedor CNPJ H0.YR8.AIO/0001-96, e-mail heitor.modelo41@example.com","entities":[{"type":"CNPJ","start":16,"end":34},{"type":"EMAIL","start":43,"end":70}]}
+{"id":"form-15-09","category":"form","text":"Fornecedor CNPJ DK.99U.61O/0001-75, e-mail bruno.exemplo90@example.com","entities":[{"type":"CNPJ","start":16,"end":34},{"type":"EMAIL","start":43,"end":70}]}
+{"id":"form-15-10","category":"form","text":"Fornecedor CNPJ 4U.137.0HD/0001-95, e-mail heitor.teste98@example.com","entities":[{"type":"CNPJ","start":16,"end":34},{"type":"EMAIL","start":43,"end":69}]}
+{"id":"form-15-11","category":"form","text":"Fornecedor CNPJ HC.TWB.9VG/0001-12, e-mail bruno.exemplo98@example.com","entities":[{"type":"CNPJ","start":16,"end":34},{"type":"EMAIL","start":43,"end":70}]}
+{"id":"form-15-12","category":"form","text":"Fornecedor CNPJ 14.OYD.4J0/0001-28, e-mail felipe.teste54@example.com","entities":[{"type":"CNPJ","start":16,"end":34},{"type":"EMAIL","start":43,"end":69}]}
+{"id":"form-15-13","category":"form","text":"Fornecedor CNPJ M8.YXH.958/0001-60, e-mail gabi.exemplo57@example.com","entities":[{"type":"CNPJ","start":16,"end":34},{"type":"EMAIL","start":43,"end":69}]}
+{"id":"form-15-14","category":"form","text":"Fornecedor CNPJ SD.YYQ.7F3/0001-33, e-mail elisa.simulado28@example.com","entities":[{"type":"CNPJ","start":16,"end":34},{"type":"EMAIL","start":43,"end":71}]}
+{"id":"form-15-15","category":"form","text":"Fornecedor CNPJ V7.A7H.EN1/0001-67, e-mail felipe.ficticio98@example.com","entities":[{"type":"CNPJ","start":16,"end":34},{"type":"EMAIL","start":43,"end":72}]}
+{"id":"form-15-16","category":"form","text":"Fornecedor CNPJ QN.A7Q.G7M/0001-07, e-mail diego.teste13@example.com","entities":[{"type":"CNPJ","start":16,"end":34},{"type":"EMAIL","start":43,"end":68}]}
+{"id":"form-15-17","category":"form","text":"Fornecedor CNPJ 39.O5Q.G10/0001-50, e-mail diego.ficticio38@example.com","entities":[{"type":"CNPJ","start":16,"end":34},{"type":"EMAIL","start":43,"end":71}]}
+{"id":"form-15-18","category":"form","text":"Fornecedor CNPJ A7.271.9SF/0001-15, e-mail ana.exemplo36@example.com","entities":[{"type":"CNPJ","start":16,"end":34},{"type":"EMAIL","start":43,"end":68}]}
+{"id":"form-15-19","category":"form","text":"Fornecedor CNPJ D6.5S2.9R9/0001-14, e-mail gabi.modelo56@example.com","entities":[{"type":"CNPJ","start":16,"end":34},{"type":"EMAIL","start":43,"end":68}]}
+{"id":"form-16-00","category":"form","text":"Veículo placa IZA-3311, habilitação 75644576000","entities":[{"type":"PLATE","start":14,"end":22},{"type":"CNH","start":36,"end":47}]}
+{"id":"form-16-01","category":"form","text":"Veículo placa ZFE-7244, habilitação 63667020437","entities":[{"type":"PLATE","start":14,"end":22},{"type":"CNH","start":36,"end":47}]}
+{"id":"form-16-02","category":"form","text":"Veículo placa JMI-7694, habilitação 27658180387","entities":[{"type":"PLATE","start":14,"end":22},{"type":"CNH","start":36,"end":47}]}
+{"id":"form-16-03","category":"form","text":"Veículo placa JOY-2579, habilitação 55806372766","entities":[{"type":"PLATE","start":14,"end":22},{"type":"CNH","start":36,"end":47}]}
+{"id":"form-16-04","category":"form","text":"Veículo placa KOG-1254, habilitação 19819710215","entities":[{"type":"PLATE","start":14,"end":22},{"type":"CNH","start":36,"end":47}]}
+{"id":"form-16-05","category":"form","text":"Veículo placa LDN-9417, habilitação 18137071466","entities":[{"type":"PLATE","start":14,"end":22},{"type":"CNH","start":36,"end":47}]}
+{"id":"form-16-06","category":"form","text":"Veículo placa KYB-8652, habilitação 71490161013","entities":[{"type":"PLATE","start":14,"end":22},{"type":"CNH","start":36,"end":47}]}
+{"id":"form-16-07","category":"form","text":"Veículo placa PSC-5384, habilitação 09303294960","entities":[{"type":"PLATE","start":14,"end":22},{"type":"CNH","start":36,"end":47}]}
+{"id":"form-16-08","category":"form","text":"Veículo placa GBN-7422, habilitação 63365974165","entities":[{"type":"PLATE","start":14,"end":22},{"type":"CNH","start":36,"end":47}]}
+{"id":"form-16-09","category":"form","text":"Veículo placa DTN-8789, habilitação 29571861376","entities":[{"type":"PLATE","start":14,"end":22},{"type":"CNH","start":36,"end":47}]}
+{"id":"form-16-10","category":"form","text":"Veículo placa EFZ-7442, habilitação 76082019146","entities":[{"type":"PLATE","start":14,"end":22},{"type":"CNH","start":36,"end":47}]}
+{"id":"form-16-11","category":"form","text":"Veículo placa FFK-7345, habilitação 80519568472","entities":[{"type":"PLATE","start":14,"end":22},{"type":"CNH","start":36,"end":47}]}
+{"id":"form-16-12","category":"form","text":"Veículo placa OMC-1740, habilitação 71629236125","entities":[{"type":"PLATE","start":14,"end":22},{"type":"CNH","start":36,"end":47}]}
+{"id":"form-16-13","category":"form","text":"Veículo placa DRV-0228, habilitação 24662566783","entities":[{"type":"PLATE","start":14,"end":22},{"type":"CNH","start":36,"end":47}]}
+{"id":"form-16-14","category":"form","text":"Veículo placa BNJ-4648, habilitação 54783414512","entities":[{"type":"PLATE","start":14,"end":22},{"type":"CNH","start":36,"end":47}]}
+{"id":"form-16-15","category":"form","text":"Veículo placa VIP-9425, habilitação 02350467278","entities":[{"type":"PLATE","start":14,"end":22},{"type":"CNH","start":36,"end":47}]}
+{"id":"form-16-16","category":"form","text":"Veículo placa SKM-8092, habilitação 72908327160","entities":[{"type":"PLATE","start":14,"end":22},{"type":"CNH","start":36,"end":47}]}
+{"id":"form-16-17","category":"form","text":"Veículo placa RWR-6088, habilitação 64119945709","entities":[{"type":"PLATE","start":14,"end":22},{"type":"CNH","start":36,"end":47}]}
+{"id":"form-16-18","category":"form","text":"Veículo placa YZS-2089, habilitação 16160305895","entities":[{"type":"PLATE","start":14,"end":22},{"type":"CNH","start":36,"end":47}]}
+{"id":"form-16-19","category":"form","text":"Veículo placa EON-7130, habilitação 67932015930","entities":[{"type":"PLATE","start":14,"end":22},{"type":"CNH","start":36,"end":47}]}
+{"id":"form-17-00","category":"form","text":"Cartão: 4242424242424242, validade 12/29","entities":[{"type":"CARD","start":8,"end":24}]}
+{"id":"form-17-01","category":"form","text":"Cartão: 5555555555554444, validade 12/29","entities":[{"type":"CARD","start":8,"end":24}]}
+{"id":"form-17-02","category":"form","text":"Cartão: 4242424242424242, validade 12/29","entities":[{"type":"CARD","start":8,"end":24}]}
+{"id":"form-17-03","category":"form","text":"Cartão: 5555555555554444, validade 12/29","entities":[{"type":"CARD","start":8,"end":24}]}
+{"id":"form-17-04","category":"form","text":"Cartão: 378282246310005, validade 12/29","entities":[{"type":"CARD","start":8,"end":23}]}
+{"id":"form-17-05","category":"form","text":"Cartão: 5555555555554444, validade 12/29","entities":[{"type":"CARD","start":8,"end":24}]}
+{"id":"form-17-06","category":"form","text":"Cartão: 5555555555554444, validade 12/29","entities":[{"type":"CARD","start":8,"end":24}]}
+{"id":"form-17-07","category":"form","text":"Cartão: 5555555555554444, validade 12/29","entities":[{"type":"CARD","start":8,"end":24}]}
+{"id":"form-17-08","category":"form","text":"Cartão: 5105105105105100, validade 12/29","entities":[{"type":"CARD","start":8,"end":24}]}
+{"id":"form-17-09","category":"form","text":"Cartão: 5555555555554444, validade 12/29","entities":[{"type":"CARD","start":8,"end":24}]}
+{"id":"form-17-10","category":"form","text":"Cartão: 5555555555554444, validade 12/29","entities":[{"type":"CARD","start":8,"end":24}]}
+{"id":"form-17-11","category":"form","text":"Cartão: 4242424242424242, validade 12/29","entities":[{"type":"CARD","start":8,"end":24}]}
+{"id":"form-17-12","category":"form","text":"Cartão: 5105105105105100, validade 12/29","entities":[{"type":"CARD","start":8,"end":24}]}
+{"id":"form-17-13","category":"form","text":"Cartão: 4242424242424242, validade 12/29","entities":[{"type":"CARD","start":8,"end":24}]}
+{"id":"form-17-14","category":"form","text":"Cartão: 378282246310005, validade 12/29","entities":[{"type":"CARD","start":8,"end":23}]}
+{"id":"form-17-15","category":"form","text":"Cartão: 5555555555554444, validade 12/29","entities":[{"type":"CARD","start":8,"end":24}]}
+{"id":"form-17-16","category":"form","text":"Cartão: 4111111111111111, validade 12/29","entities":[{"type":"CARD","start":8,"end":24}]}
+{"id":"form-17-17","category":"form","text":"Cartão: 6011111111111117, validade 12/29","entities":[{"type":"CARD","start":8,"end":24}]}
+{"id":"form-17-18","category":"form","text":"Cartão: 5105105105105100, validade 12/29","entities":[{"type":"CARD","start":8,"end":24}]}
+{"id":"form-17-19","category":"form","text":"Cartão: 5105105105105100, validade 12/29","entities":[{"type":"CARD","start":8,"end":24}]}
+{"id":"log-18-00","category":"log","text":"21:16:23 INFO login ok user=bruno.ficticio60@example.com ip=192.0.2.79","entities":[{"type":"EMAIL","start":28,"end":56},{"type":"IP","start":60,"end":70}]}
+{"id":"log-18-01","category":"log","text":"12:16:20 INFO login ok user=heitor.ficticio85@example.com ip=192.0.2.207","entities":[{"type":"EMAIL","start":28,"end":57},{"type":"IP","start":61,"end":72}]}
+{"id":"log-18-02","category":"log","text":"13:18:33 INFO login ok user=bruno.exemplo80@example.com ip=203.0.113.71","entities":[{"type":"EMAIL","start":28,"end":55},{"type":"IP","start":59,"end":71}]}
+{"id":"log-18-03","category":"log","text":"12:54:21 INFO login ok user=bruno.teste61@example.com ip=203.0.113.245","entities":[{"type":"EMAIL","start":28,"end":53},{"type":"IP","start":57,"end":70}]}
+{"id":"log-18-04","category":"log","text":"19:11:18 INFO login ok user=heitor.amostra47@example.com ip=192.0.2.86","entities":[{"type":"EMAIL","start":28,"end":56},{"type":"IP","start":60,"end":70}]}
+{"id":"log-18-05","category":"log","text":"17:49:42 INFO login ok user=carla.simulado34@example.com ip=203.0.113.183","entities":[{"type":"EMAIL","start":28,"end":56},{"type":"IP","start":60,"end":73}]}
+{"id":"log-18-06","category":"log","text":"10:57:15 INFO login ok user=ana.simulado15@example.com ip=203.0.113.215","entities":[{"type":"EMAIL","start":28,"end":54},{"type":"IP","start":58,"end":71}]}
+{"id":"log-18-07","category":"log","text":"11:39:17 INFO login ok user=elisa.ficticio11@example.com ip=203.0.113.227","entities":[{"type":"EMAIL","start":28,"end":56},{"type":"IP","start":60,"end":73}]}
+{"id":"log-18-08","category":"log","text":"14:45:35 INFO login ok user=carla.modelo21@example.com ip=203.0.113.19","entities":[{"type":"EMAIL","start":28,"end":54},{"type":"IP","start":58,"end":70}]}
+{"id":"log-18-09","category":"log","text":"19:56:34 INFO login ok user=bruno.exemplo94@example.com ip=192.0.2.66","entities":[{"type":"EMAIL","start":28,"end":55},{"type":"IP","start":59,"end":69}]}
+{"id":"log-18-10","category":"log","text":"15:48:43 INFO login ok user=carla.teste11@example.com ip=203.0.113.147","entities":[{"type":"EMAIL","start":28,"end":53},{"type":"IP","start":57,"end":70}]}
+{"id":"log-18-11","category":"log","text":"17:52:54 INFO login ok user=felipe.amostra84@example.com ip=203.0.113.64","entities":[{"type":"EMAIL","start":28,"end":56},{"type":"IP","start":60,"end":72}]}
+{"id":"log-18-12","category":"log","text":"15:28:18 INFO login ok user=diego.amostra50@example.com ip=203.0.113.22","entities":[{"type":"EMAIL","start":28,"end":55},{"type":"IP","start":59,"end":71}]}
+{"id":"log-18-13","category":"log","text":"14:50:29 INFO login ok user=diego.teste1@example.com ip=192.0.2.110","entities":[{"type":"EMAIL","start":28,"end":52},{"type":"IP","start":56,"end":67}]}
+{"id":"log-18-14","category":"log","text":"23:46:24 INFO login ok user=elisa.amostra43@example.com ip=203.0.113.125","entities":[{"type":"EMAIL","start":28,"end":55},{"type":"IP","start":59,"end":72}]}
+{"id":"log-18-15","category":"log","text":"20:50:21 INFO login ok user=diego.simulado74@example.com ip=203.0.113.174","entities":[{"type":"EMAIL","start":28,"end":56},{"type":"IP","start":60,"end":73}]}
+{"id":"log-18-16","category":"log","text":"23:51:41 INFO login ok user=heitor.ficticio74@example.com ip=198.51.100.118","entities":[{"type":"EMAIL","start":28,"end":57},{"type":"IP","start":61,"end":75}]}
+{"id":"log-18-17","category":"log","text":"15:17:53 INFO login ok user=carla.modelo67@example.com ip=192.0.2.83","entities":[{"type":"EMAIL","start":28,"end":54},{"type":"IP","start":58,"end":68}]}
+{"id":"log-18-18","category":"log","text":"12:54:25 INFO login ok user=carla.simulado85@example.com ip=203.0.113.214","entities":[{"type":"EMAIL","start":28,"end":56},{"type":"IP","start":60,"end":73}]}
+{"id":"log-18-19","category":"log","text":"23:50:23 INFO login ok user=gabi.simulado12@example.com ip=192.0.2.167","entities":[{"type":"EMAIL","start":28,"end":55},{"type":"IP","start":59,"end":70}]}
+{"id":"log-19-00","category":"log","text":"12:54:55 WARN payment declined card=5555 5555 5555 4444 order=94807174247","entities":[{"type":"CARD","start":36,"end":55}]}
+{"id":"log-19-01","category":"log","text":"10:53:57 WARN payment declined card=5555 5555 5555 4444 order=50143278944","entities":[{"type":"CARD","start":36,"end":55}]}
+{"id":"log-19-02","category":"log","text":"20:49:23 WARN payment declined card=4111 1111 1111 1111 order=66882816258","entities":[{"type":"CARD","start":36,"end":55}]}
+{"id":"log-19-03","category":"log","text":"16:43:41 WARN payment declined card=5105 1051 0510 5100 order=31216190975","entities":[{"type":"CARD","start":36,"end":55}]}
+{"id":"log-19-04","category":"log","text":"23:16:19 WARN payment declined card=3782 822463 10005 order=26984814529","entities":[{"type":"CARD","start":36,"end":53}]}
+{"id":"log-19-05","category":"log","text":"13:25:32 WARN payment declined card=5555 5555 5555 4444 order=61953222440","entities":[{"type":"CARD","start":36,"end":55}]}
+{"id":"log-19-06","category":"log","text":"17:45:18 WARN payment declined card=4242 4242 4242 4242 order=25233024921","entities":[{"type":"CARD","start":36,"end":55}]}
+{"id":"log-19-07","category":"log","text":"11:31:34 WARN payment declined card=4242 4242 4242 4242 order=85059480402","entities":[{"type":"CARD","start":36,"end":55}]}
+{"id":"log-19-08","category":"log","text":"10:11:28 WARN payment declined card=6011 1111 1111 1117 order=64553051021","entities":[{"type":"CARD","start":36,"end":55}]}
+{"id":"log-19-09","category":"log","text":"20:10:26 WARN payment declined card=5555 5555 5555 4444 order=74555364078","entities":[{"type":"CARD","start":36,"end":55}]}
+{"id":"log-19-10","category":"log","text":"15:38:37 WARN payment declined card=5105 1051 0510 5100 order=90720473654","entities":[{"type":"CARD","start":36,"end":55}]}
+{"id":"log-19-11","category":"log","text":"10:30:55 WARN payment declined card=4111 1111 1111 1111 order=62967286883","entities":[{"type":"CARD","start":36,"end":55}]}
+{"id":"log-19-12","category":"log","text":"23:40:59 WARN payment declined card=5555 5555 5555 4444 order=37476008839","entities":[{"type":"CARD","start":36,"end":55}]}
+{"id":"log-19-13","category":"log","text":"20:15:33 WARN payment declined card=5105 1051 0510 5100 order=69748207735","entities":[{"type":"CARD","start":36,"end":55}]}
+{"id":"log-19-14","category":"log","text":"12:42:46 WARN payment declined card=6011 1111 1111 1117 order=81956513084","entities":[{"type":"CARD","start":36,"end":55}]}
+{"id":"log-19-15","category":"log","text":"20:56:34 WARN payment declined card=5105 1051 0510 5100 order=90272649971","entities":[{"type":"CARD","start":36,"end":55}]}
+{"id":"log-19-16","category":"log","text":"19:55:38 WARN payment declined card=3782 822463 10005 order=82187010507","entities":[{"type":"CARD","start":36,"end":53}]}
+{"id":"log-19-17","category":"log","text":"17:43:49 WARN payment declined card=5105 1051 0510 5100 order=87512680838","entities":[{"type":"CARD","start":36,"end":55}]}
+{"id":"log-19-18","category":"log","text":"16:54:52 WARN payment declined card=5105 1051 0510 5100 order=49682970688","entities":[{"type":"CARD","start":36,"end":55}]}
+{"id":"log-19-19","category":"log","text":"20:31:25 WARN payment declined card=4242 4242 4242 4242 order=13098350790","entities":[{"type":"CARD","start":36,"end":55}]}
+{"id":"log-20-00","category":"log","text":"20:10:53 ERROR request from 2001:db8::313e:fcdb failed, request_id=82fbcfd8-81be-42d2-adfd-e9e8e56332b6","entities":[{"type":"IP","start":28,"end":47}]}
+{"id":"log-20-01","category":"log","text":"10:30:53 ERROR request from 2001:db8::705c:e6a9 failed, request_id=a4a97fef-ef55-4d2a-a335-63dba325b67e","entities":[{"type":"IP","start":28,"end":47}]}
+{"id":"log-20-02","category":"log","text":"10:52:40 ERROR request from 2001:db8::31ca:87db failed, request_id=21653af5-4a17-47b5-a44e-76811c5803df","entities":[{"type":"IP","start":28,"end":47}]}
+{"id":"log-20-03","category":"log","text":"15:20:37 ERROR request from 2001:db8::1fad:67eb failed, request_id=908a0817-db79-41f4-a81e-120a52f62ea7","entities":[{"type":"IP","start":28,"end":47}]}
+{"id":"log-20-04","category":"log","text":"13:38:27 ERROR request from 2001:db8::8d8d:3ba6 failed, request_id=f8c3e7e7-331b-42dc-a095-1a79f0207b0e","entities":[{"type":"IP","start":28,"end":47}]}
+{"id":"log-20-05","category":"log","text":"10:52:42 ERROR request from 2001:db8::61b8:4a26 failed, request_id=6db640ad-75fa-4b4d-aa1b-1cafe43e4164","entities":[{"type":"IP","start":28,"end":47}]}
+{"id":"log-20-06","category":"log","text":"23:10:59 ERROR request from 2001:db8::1d03:95e4 failed, request_id=a33794d7-e969-4669-aa47-bfe984c7fb80","entities":[{"type":"IP","start":28,"end":47}]}
+{"id":"log-20-07","category":"log","text":"19:51:54 ERROR request from 2001:db8::8111:9ded failed, request_id=17b2699b-8f43-47a5-aed1-f7ff1b448d88","entities":[{"type":"IP","start":28,"end":47}]}
+{"id":"log-20-08","category":"log","text":"21:34:49 ERROR request from 2001:db8::7ca0:963e failed, request_id=37cc1edb-866a-4dfe-ac45-d19fe217cf01","entities":[{"type":"IP","start":28,"end":47}]}
+{"id":"log-20-09","category":"log","text":"13:55:17 ERROR request from 2001:db8::6baa:0ecc failed, request_id=4202dce0-cec7-4bc3-a3b1-a5ba058a63ac","entities":[{"type":"IP","start":28,"end":47}]}
+{"id":"log-20-10","category":"log","text":"13:38:58 ERROR request from 2001:db8::18a4:35b2 failed, request_id=1cdb7d79-59fb-4a89-a5bf-b53affb50ec0","entities":[{"type":"IP","start":28,"end":47}]}
+{"id":"log-20-11","category":"log","text":"19:45:59 ERROR request from 2001:db8::7b5c:933d failed, request_id=6d6bd637-7f1d-4766-a018-2b72b419c334","entities":[{"type":"IP","start":28,"end":47}]}
+{"id":"log-20-12","category":"log","text":"18:31:29 ERROR request from 2001:db8::56f8:8e21 failed, request_id=fed24041-25f2-47ae-aaa5-a51ad49b1e4f","entities":[{"type":"IP","start":28,"end":47}]}
+{"id":"log-20-13","category":"log","text":"15:16:55 ERROR request from 2001:db8::4e4f:1a3b failed, request_id=c7e13493-b885-452b-ab8b-07abc2f203c6","entities":[{"type":"IP","start":28,"end":47}]}
+{"id":"log-20-14","category":"log","text":"12:33:31 ERROR request from 2001:db8::e55b:01da failed, request_id=14fe47b0-1cdb-4206-a296-9d187b1a3bc5","entities":[{"type":"IP","start":28,"end":47}]}
+{"id":"log-20-15","category":"log","text":"14:50:50 ERROR request from 2001:db8::9f0b:0ccc failed, request_id=1ceecaa7-bca2-411e-a90f-fde1f93381c3","entities":[{"type":"IP","start":28,"end":47}]}
+{"id":"log-20-16","category":"log","text":"13:50:38 ERROR request from 2001:db8::9752:d178 failed, request_id=c0ec8b26-5909-430b-ab13-4e5ce5553368","entities":[{"type":"IP","start":28,"end":47}]}
+{"id":"log-20-17","category":"log","text":"12:46:19 ERROR request from 2001:db8::c486:efe6 failed, request_id=be29101b-ca51-499e-a2b0-259db6596672","entities":[{"type":"IP","start":28,"end":47}]}
+{"id":"log-20-18","category":"log","text":"15:10:33 ERROR request from 2001:db8::10fd:0800 failed, request_id=8596c2c4-107a-4250-a5de-c4c394d28fdd","entities":[{"type":"IP","start":28,"end":47}]}
+{"id":"log-20-19","category":"log","text":"11:23:56 ERROR request from 2001:db8::ebc5:ce49 failed, request_id=4e8f2c92-e95e-4f19-ac43-61fb4028af1b","entities":[{"type":"IP","start":28,"end":47}]}
+{"id":"log-21-00","category":"log","text":"14:15:39 INFO app version 8.12.2.566 started on 127.0.0.1","entities":[]}
+{"id":"log-21-01","category":"log","text":"23:22:51 INFO app version 2.13.5.393 started on 127.0.0.1","entities":[]}
+{"id":"log-21-02","category":"log","text":"15:33:38 INFO app version 2.12.1.693 started on 127.0.0.1","entities":[]}
+{"id":"log-21-03","category":"log","text":"14:59:15 INFO app version 5.14.6.404 started on 127.0.0.1","entities":[]}
+{"id":"log-21-04","category":"log","text":"21:30:35 INFO app version 2.18.5.833 started on 127.0.0.1","entities":[]}
+{"id":"log-21-05","category":"log","text":"16:20:22 INFO app version 6.13.0.287 started on 127.0.0.1","entities":[]}
+{"id":"log-21-06","category":"log","text":"19:37:15 INFO app version 7.17.3.584 started on 127.0.0.1","entities":[]}
+{"id":"log-21-07","category":"log","text":"17:21:47 INFO app version 4.2.8.374 started on 127.0.0.1","entities":[]}
+{"id":"log-21-08","category":"log","text":"11:19:15 INFO app version 1.13.0.327 started on 127.0.0.1","entities":[]}
+{"id":"log-21-09","category":"log","text":"13:50:57 INFO app version 7.4.7.919 started on 127.0.0.1","entities":[]}
+{"id":"log-21-10","category":"log","text":"10:32:50 INFO app version 5.9.9.136 started on 127.0.0.1","entities":[]}
+{"id":"log-21-11","category":"log","text":"17:42:21 INFO app version 3.11.5.385 started on 127.0.0.1","entities":[]}
+{"id":"log-21-12","category":"log","text":"14:45:26 INFO app version 1.17.0.766 started on 127.0.0.1","entities":[]}
+{"id":"log-21-13","category":"log","text":"19:50:25 INFO app version 7.11.5.922 started on 127.0.0.1","entities":[]}
+{"id":"log-21-14","category":"log","text":"16:15:16 INFO app version 6.19.3.851 started on 127.0.0.1","entities":[]}
+{"id":"log-21-15","category":"log","text":"16:46:26 INFO app version 7.7.0.595 started on 127.0.0.1","entities":[]}
+{"id":"log-21-16","category":"log","text":"11:29:36 INFO app version 2.17.5.733 started on 127.0.0.1","entities":[]}
+{"id":"log-21-17","category":"log","text":"16:48:34 INFO app version 1.14.9.289 started on 127.0.0.1","entities":[]}
+{"id":"log-21-18","category":"log","text":"16:49:41 INFO app version 2.15.2.698 started on 127.0.0.1","entities":[]}
+{"id":"log-21-19","category":"log","text":"19:48:12 INFO app version 7.17.4.355 started on 127.0.0.1","entities":[]}
+{"id":"log-22-00","category":"log","text":"15:37:20 DEBUG cpf=414.906.406-73 amount=R$ 8.747,26","entities":[{"type":"CPF","start":19,"end":33}]}
+{"id":"log-22-01","category":"log","text":"18:59:43 DEBUG cpf=098.325.186-01 amount=R$ 8.094,04","entities":[{"type":"CPF","start":19,"end":33}]}
+{"id":"log-22-02","category":"log","text":"18:42:46 DEBUG cpf=116.009.426-87 amount=R$ 2.918,66","entities":[{"type":"CPF","start":19,"end":33}]}
+{"id":"log-22-03","category":"log","text":"20:35:56 DEBUG cpf=325.454.684-95 amount=R$ 5.979,39","entities":[{"type":"CPF","start":19,"end":33}]}
+{"id":"log-22-04","category":"log","text":"20:47:19 DEBUG cpf=036.662.167-06 amount=R$ 4.068,49","entities":[{"type":"CPF","start":19,"end":33}]}
+{"id":"log-22-05","category":"log","text":"13:16:37 DEBUG cpf=115.780.412-87 amount=R$ 4.324,57","entities":[{"type":"CPF","start":19,"end":33}]}
+{"id":"log-22-06","category":"log","text":"23:13:15 DEBUG cpf=938.724.141-60 amount=R$ 8.585,64","entities":[{"type":"CPF","start":19,"end":33}]}
+{"id":"log-22-07","category":"log","text":"13:47:50 DEBUG cpf=509.234.601-95 amount=R$ 2.826,08","entities":[{"type":"CPF","start":19,"end":33}]}
+{"id":"log-22-08","category":"log","text":"15:44:17 DEBUG cpf=090.311.723-16 amount=R$ 8.537,01","entities":[{"type":"CPF","start":19,"end":33}]}
+{"id":"log-22-09","category":"log","text":"14:40:16 DEBUG cpf=597.039.148-45 amount=R$ 9.921,44","entities":[{"type":"CPF","start":19,"end":33}]}
+{"id":"log-22-10","category":"log","text":"21:56:10 DEBUG cpf=472.492.165-03 amount=R$ 7.130,08","entities":[{"type":"CPF","start":19,"end":33}]}
+{"id":"log-22-11","category":"log","text":"23:40:29 DEBUG cpf=386.849.177-58 amount=R$ 3.447,93","entities":[{"type":"CPF","start":19,"end":33}]}
+{"id":"log-22-12","category":"log","text":"15:43:13 DEBUG cpf=419.561.417-15 amount=R$ 4.475,08","entities":[{"type":"CPF","start":19,"end":33}]}
+{"id":"log-22-13","category":"log","text":"21:53:54 DEBUG cpf=356.489.261-38 amount=R$ 5.241,49","entities":[{"type":"CPF","start":19,"end":33}]}
+{"id":"log-22-14","category":"log","text":"13:45:20 DEBUG cpf=695.070.683-92 amount=R$ 7.569,65","entities":[{"type":"CPF","start":19,"end":33}]}
+{"id":"log-22-15","category":"log","text":"10:52:26 DEBUG cpf=493.454.164-04 amount=R$ 7.478,85","entities":[{"type":"CPF","start":19,"end":33}]}
+{"id":"log-22-16","category":"log","text":"23:51:56 DEBUG cpf=201.547.410-27 amount=R$ 5.191,91","entities":[{"type":"CPF","start":19,"end":33}]}
+{"id":"log-22-17","category":"log","text":"16:18:55 DEBUG cpf=083.447.307-08 amount=R$ 2.465,49","entities":[{"type":"CPF","start":19,"end":33}]}
+{"id":"log-22-18","category":"log","text":"14:26:40 DEBUG cpf=741.779.818-77 amount=R$ 9.782,76","entities":[{"type":"CPF","start":19,"end":33}]}
+{"id":"log-22-19","category":"log","text":"17:13:31 DEBUG cpf=491.914.679-50 amount=R$ 1.227,74","entities":[{"type":"CPF","start":19,"end":33}]}
+{"id":"code-23-00","category":"code","text":"AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE","entities":[{"type":"SECRET","start":18,"end":38}]}
+{"id":"code-23-01","category":"code","text":"AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE","entities":[{"type":"SECRET","start":18,"end":38}]}
+{"id":"code-23-02","category":"code","text":"AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE","entities":[{"type":"SECRET","start":18,"end":38}]}
+{"id":"code-23-03","category":"code","text":"AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE","entities":[{"type":"SECRET","start":18,"end":38}]}
+{"id":"code-23-04","category":"code","text":"AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE","entities":[{"type":"SECRET","start":18,"end":38}]}
+{"id":"code-23-05","category":"code","text":"AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE","entities":[{"type":"SECRET","start":18,"end":38}]}
+{"id":"code-23-06","category":"code","text":"AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE","entities":[{"type":"SECRET","start":18,"end":38}]}
+{"id":"code-23-07","category":"code","text":"AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE","entities":[{"type":"SECRET","start":18,"end":38}]}
+{"id":"code-23-08","category":"code","text":"AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE","entities":[{"type":"SECRET","start":18,"end":38}]}
+{"id":"code-23-09","category":"code","text":"AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE","entities":[{"type":"SECRET","start":18,"end":38}]}
+{"id":"code-23-10","category":"code","text":"AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE","entities":[{"type":"SECRET","start":18,"end":38}]}
+{"id":"code-23-11","category":"code","text":"AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE","entities":[{"type":"SECRET","start":18,"end":38}]}
+{"id":"code-23-12","category":"code","text":"AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE","entities":[{"type":"SECRET","start":18,"end":38}]}
+{"id":"code-23-13","category":"code","text":"AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE","entities":[{"type":"SECRET","start":18,"end":38}]}
+{"id":"code-23-14","category":"code","text":"AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE","entities":[{"type":"SECRET","start":18,"end":38}]}
+{"id":"code-23-15","category":"code","text":"AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE","entities":[{"type":"SECRET","start":18,"end":38}]}
+{"id":"code-23-16","category":"code","text":"AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE","entities":[{"type":"SECRET","start":18,"end":38}]}
+{"id":"code-23-17","category":"code","text":"AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE","entities":[{"type":"SECRET","start":18,"end":38}]}
+{"id":"code-23-18","category":"code","text":"AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE","entities":[{"type":"SECRET","start":18,"end":38}]}
+{"id":"code-23-19","category":"code","text":"AWS_ACCESS_KEY_ID=AKIAIOSFODNN7EXAMPLE","entities":[{"type":"SECRET","start":18,"end":38}]}
+{"id":"code-24-00","category":"code","text":"const db = { user: \"app\", password: \"FakePOU4658!x\" };","entities":[{"type":"SECRET","start":37,"end":50}]}
+{"id":"code-24-01","category":"code","text":"const db = { user: \"app\", password: \"FakeOMV2496!x\" };","entities":[{"type":"SECRET","start":37,"end":50}]}
+{"id":"code-24-02","category":"code","text":"const db = { user: \"app\", password: \"FakeCAC7546!x\" };","entities":[{"type":"SECRET","start":37,"end":50}]}
+{"id":"code-24-03","category":"code","text":"const db = { user: \"app\", password: \"FakeAGU4232!x\" };","entities":[{"type":"SECRET","start":37,"end":50}]}
+{"id":"code-24-04","category":"code","text":"const db = { user: \"app\", password: \"FakeDLD9524!x\" };","entities":[{"type":"SECRET","start":37,"end":50}]}
+{"id":"code-24-05","category":"code","text":"const db = { user: \"app\", password: \"FakeBOQ3127!x\" };","entities":[{"type":"SECRET","start":37,"end":50}]}
+{"id":"code-24-06","category":"code","text":"const db = { user: \"app\", password: \"FakeFRI3861!x\" };","entities":[{"type":"SECRET","start":37,"end":50}]}
+{"id":"code-24-07","category":"code","text":"const db = { user: \"app\", password: \"FakeRUI1960!x\" };","entities":[{"type":"SECRET","start":37,"end":50}]}
+{"id":"code-24-08","category":"code","text":"const db = { user: \"app\", password: \"FakeGZD1631!x\" };","entities":[{"type":"SECRET","start":37,"end":50}]}
+{"id":"code-24-09","category":"code","text":"const db = { user: \"app\", password: \"FakeHGO1447!x\" };","entities":[{"type":"SECRET","start":37,"end":50}]}
+{"id":"code-24-10","category":"code","text":"const db = { user: \"app\", password: \"FakeVKD3251!x\" };","entities":[{"type":"SECRET","start":37,"end":50}]}
+{"id":"code-24-11","category":"code","text":"const db = { user: \"app\", password: \"FakeVWE5065!x\" };","entities":[{"type":"SECRET","start":37,"end":50}]}
+{"id":"code-24-12","category":"code","text":"const db = { user: \"app\", password: \"FakeTFT0097!x\" };","entities":[{"type":"SECRET","start":37,"end":50}]}
+{"id":"code-24-13","category":"code","text":"const db = { user: \"app\", password: \"FakeHQD7382!x\" };","entities":[{"type":"SECRET","start":37,"end":50}]}
+{"id":"code-24-14","category":"code","text":"const db = { user: \"app\", password: \"FakeVPE7944!x\" };","entities":[{"type":"SECRET","start":37,"end":50}]}
+{"id":"code-24-15","category":"code","text":"const db = { user: \"app\", password: \"FakeSOZ2516!x\" };","entities":[{"type":"SECRET","start":37,"end":50}]}
+{"id":"code-24-16","category":"code","text":"const db = { user: \"app\", password: \"FakeYAX6170!x\" };","entities":[{"type":"SECRET","start":37,"end":50}]}
+{"id":"code-24-17","category":"code","text":"const db = { user: \"app\", password: \"FakeJTU8002!x\" };","entities":[{"type":"SECRET","start":37,"end":50}]}
+{"id":"code-24-18","category":"code","text":"const db = { user: \"app\", password: \"FakeOBX4214!x\" };","entities":[{"type":"SECRET","start":37,"end":50}]}
+{"id":"code-24-19","category":"code","text":"const db = { user: \"app\", password: \"FakeJFA0311!x\" };","entities":[{"type":"SECRET","start":37,"end":50}]}
+{"id":"code-25-00","category":"code","text":"Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmYWtlLTU1OTg2MSJ9.b04b54c6157f0637842d7491c7029aaa","entities":[{"type":"SECRET","start":22,"end":120}]}
+{"id":"code-25-01","category":"code","text":"Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmYWtlLTQyMzg4NSJ9.0e21dcb67ee1f5c2ebbe1dbeb60282fc","entities":[{"type":"SECRET","start":22,"end":120}]}
+{"id":"code-25-02","category":"code","text":"Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmYWtlLTIzODg3OSJ9.933b1fb0d460796a7ee990f150cd94cd","entities":[{"type":"SECRET","start":22,"end":120}]}
+{"id":"code-25-03","category":"code","text":"Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmYWtlLTk2MjczMCJ9.647c57c44dfa2f581f209393f89df5e2","entities":[{"type":"SECRET","start":22,"end":120}]}
+{"id":"code-25-04","category":"code","text":"Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmYWtlLTMzMDE4MCJ9.caa0c9c920c4e4bcef9ecd3a243d06c1","entities":[{"type":"SECRET","start":22,"end":120}]}
+{"id":"code-25-05","category":"code","text":"Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmYWtlLTU1NzU0MSJ9.baf1f815b863c243153e6c904efc3edb","entities":[{"type":"SECRET","start":22,"end":120}]}
+{"id":"code-25-06","category":"code","text":"Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmYWtlLTI3MjQ0NyJ9.67115812ce5b5db58fc99aa3105bbba7","entities":[{"type":"SECRET","start":22,"end":120}]}
+{"id":"code-25-07","category":"code","text":"Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmYWtlLTk4ODk5MCJ9.9181e189859fd769c12952e1d64942ba","entities":[{"type":"SECRET","start":22,"end":120}]}
+{"id":"code-25-08","category":"code","text":"Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmYWtlLTY5Mzk3OSJ9.60a424b916d466a47632906eeeb07135","entities":[{"type":"SECRET","start":22,"end":120}]}
+{"id":"code-25-09","category":"code","text":"Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmYWtlLTQ3NzQ4OSJ9.09c4d8f0c0ceceaef05ffbe2b047d2d4","entities":[{"type":"SECRET","start":22,"end":120}]}
+{"id":"code-25-10","category":"code","text":"Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmYWtlLTQ3ODY5MyJ9.9441e4533d6d44d524b17b51041f5730","entities":[{"type":"SECRET","start":22,"end":120}]}
+{"id":"code-25-11","category":"code","text":"Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmYWtlLTY2NDM1OSJ9.fe533552915a80732acd1ee1f4feed2d","entities":[{"type":"SECRET","start":22,"end":120}]}
+{"id":"code-25-12","category":"code","text":"Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmYWtlLTE5NzQ2MCJ9.eb228182edd74512dc57b9041ce5b805","entities":[{"type":"SECRET","start":22,"end":120}]}
+{"id":"code-25-13","category":"code","text":"Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmYWtlLTk0OTYwNSJ9.815d930f1105a21f8bc4c2268530b6e2","entities":[{"type":"SECRET","start":22,"end":120}]}
+{"id":"code-25-14","category":"code","text":"Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmYWtlLTA5ODM2NCJ9.808b342913721267c8d7da482d1431d0","entities":[{"type":"SECRET","start":22,"end":120}]}
+{"id":"code-25-15","category":"code","text":"Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmYWtlLTA4NzUzNyJ9.56a2730ebe354b864fccbb2d37210b8f","entities":[{"type":"SECRET","start":22,"end":120}]}
+{"id":"code-25-16","category":"code","text":"Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmYWtlLTgxMjc1OCJ9.3bd7d84e9013a65fd10ea36ef36d7e83","entities":[{"type":"SECRET","start":22,"end":120}]}
+{"id":"code-25-17","category":"code","text":"Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmYWtlLTUzMjIxOCJ9.b84de348003ba05f0f49ca77383ee2e6","entities":[{"type":"SECRET","start":22,"end":120}]}
+{"id":"code-25-18","category":"code","text":"Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmYWtlLTM0MDY4MyJ9.094181dd1da005e05742b48012f6fa74","entities":[{"type":"SECRET","start":22,"end":120}]}
+{"id":"code-25-19","category":"code","text":"Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmYWtlLTczMDQ2NSJ9.96585d1914a215cc9951b4bbcea35365","entities":[{"type":"SECRET","start":22,"end":120}]}
+{"id":"code-26-00","category":"code","text":"DB_PASSWORD=process.env.DB_PASSWORD","entities":[]}
+{"id":"code-26-01","category":"code","text":"DB_PASSWORD=process.env.DB_PASSWORD","entities":[]}
+{"id":"code-26-02","category":"code","text":"DB_PASSWORD=process.env.DB_PASSWORD","entities":[]}
+{"id":"code-26-03","category":"code","text":"DB_PASSWORD=process.env.DB_PASSWORD","entities":[]}
+{"id":"code-26-04","category":"code","text":"DB_PASSWORD=process.env.DB_PASSWORD","entities":[]}
+{"id":"code-26-05","category":"code","text":"DB_PASSWORD=process.env.DB_PASSWORD","entities":[]}
+{"id":"code-26-06","category":"code","text":"DB_PASSWORD=process.env.DB_PASSWORD","entities":[]}
+{"id":"code-26-07","category":"code","text":"DB_PASSWORD=process.env.DB_PASSWORD","entities":[]}
+{"id":"code-26-08","category":"code","text":"DB_PASSWORD=process.env.DB_PASSWORD","entities":[]}
+{"id":"code-26-09","category":"code","text":"DB_PASSWORD=process.env.DB_PASSWORD","entities":[]}
+{"id":"code-26-10","category":"code","text":"DB_PASSWORD=process.env.DB_PASSWORD","entities":[]}
+{"id":"code-26-11","category":"code","text":"DB_PASSWORD=process.env.DB_PASSWORD","entities":[]}
+{"id":"code-26-12","category":"code","text":"DB_PASSWORD=process.env.DB_PASSWORD","entities":[]}
+{"id":"code-26-13","category":"code","text":"DB_PASSWORD=process.env.DB_PASSWORD","entities":[]}
+{"id":"code-26-14","category":"code","text":"DB_PASSWORD=process.env.DB_PASSWORD","entities":[]}
+{"id":"code-26-15","category":"code","text":"DB_PASSWORD=process.env.DB_PASSWORD","entities":[]}
+{"id":"code-26-16","category":"code","text":"DB_PASSWORD=process.env.DB_PASSWORD","entities":[]}
+{"id":"code-26-17","category":"code","text":"DB_PASSWORD=process.env.DB_PASSWORD","entities":[]}
+{"id":"code-26-18","category":"code","text":"DB_PASSWORD=process.env.DB_PASSWORD","entities":[]}
+{"id":"code-26-19","category":"code","text":"DB_PASSWORD=process.env.DB_PASSWORD","entities":[]}
+{"id":"code-27-00","category":"code","text":"const support = \"elisa.modelo60@example.com\"; // version 8.19.0","entities":[{"type":"EMAIL","start":17,"end":43}]}
+{"id":"code-27-01","category":"code","text":"const support = \"bruno.amostra26@example.com\"; // version 2.15.9","entities":[{"type":"EMAIL","start":17,"end":44}]}
+{"id":"code-27-02","category":"code","text":"const support = \"diego.exemplo96@example.com\"; // version 3.3.5","entities":[{"type":"EMAIL","start":17,"end":44}]}
+{"id":"code-27-03","category":"code","text":"const support = \"heitor.ficticio75@example.com\"; // version 7.8.2","entities":[{"type":"EMAIL","start":17,"end":46}]}
+{"id":"code-27-04","category":"code","text":"const support = \"carla.teste52@example.com\"; // version 8.15.1","entities":[{"type":"EMAIL","start":17,"end":42}]}
+{"id":"code-27-05","category":"code","text":"const support = \"bruno.amostra97@example.com\"; // version 1.5.2","entities":[{"type":"EMAIL","start":17,"end":44}]}
+{"id":"code-27-06","category":"code","text":"const support = \"ana.modelo11@example.com\"; // version 9.6.7","entities":[{"type":"EMAIL","start":17,"end":41}]}
+{"id":"code-27-07","category":"code","text":"const support = \"elisa.amostra52@example.com\"; // version 9.16.0","entities":[{"type":"EMAIL","start":17,"end":44}]}
+{"id":"code-27-08","category":"code","text":"const support = \"heitor.teste54@example.com\"; // version 8.2.3","entities":[{"type":"EMAIL","start":17,"end":43}]}
+{"id":"code-27-09","category":"code","text":"const support = \"bruno.modelo56@example.com\"; // version 8.4.1","entities":[{"type":"EMAIL","start":17,"end":43}]}
+{"id":"code-27-10","category":"code","text":"const support = \"bruno.ficticio51@example.com\"; // version 4.20.5","entities":[{"type":"EMAIL","start":17,"end":45}]}
+{"id":"code-27-11","category":"code","text":"const support = \"carla.simulado87@example.com\"; // version 3.6.2","entities":[{"type":"EMAIL","start":17,"end":45}]}
+{"id":"code-27-12","category":"code","text":"const support = \"heitor.modelo81@example.com\"; // version 1.16.2","entities":[{"type":"EMAIL","start":17,"end":44}]}
+{"id":"code-27-13","category":"code","text":"const support = \"ana.exemplo34@example.com\"; // version 2.3.6","entities":[{"type":"EMAIL","start":17,"end":42}]}
+{"id":"code-27-14","category":"code","text":"const support = \"carla.exemplo50@example.com\"; // version 5.11.2","entities":[{"type":"EMAIL","start":17,"end":44}]}
+{"id":"code-27-15","category":"code","text":"const support = \"carla.modelo18@example.com\"; // version 6.17.0","entities":[{"type":"EMAIL","start":17,"end":43}]}
+{"id":"code-27-16","category":"code","text":"const support = \"felipe.modelo2@example.com\"; // version 9.10.8","entities":[{"type":"EMAIL","start":17,"end":43}]}
+{"id":"code-27-17","category":"code","text":"const support = \"bruno.modelo58@example.com\"; // version 1.12.8","entities":[{"type":"EMAIL","start":17,"end":43}]}
+{"id":"code-27-18","category":"code","text":"const support = \"ana.simulado4@example.com\"; // version 8.12.2","entities":[{"type":"EMAIL","start":17,"end":42}]}
+{"id":"code-27-19","category":"code","text":"const support = \"heitor.simulado16@example.com\"; // version 3.15.1","entities":[{"type":"EMAIL","start":17,"end":46}]}
+{"id":"trap-28-00","category":"trap","text":"Pedido 31489153873 enviado em 14/11/2022 às 12:57:14.","entities":[]}
+{"id":"trap-28-01","category":"trap","text":"Pedido 92751655232 enviado em 14/12/2024 às 16:39:27.","entities":[]}
+{"id":"trap-28-02","category":"trap","text":"Pedido 99213082631 enviado em 17/10/2024 às 11:13:39.","entities":[]}
+{"id":"trap-28-03","category":"trap","text":"Pedido 51098965008 enviado em 16/10/2020 às 15:30:45.","entities":[]}
+{"id":"trap-28-04","category":"trap","text":"Pedido 10268614040 enviado em 11/12/2024 às 17:23:59.","entities":[]}
+{"id":"trap-28-05","category":"trap","text":"Pedido 74491333503 enviado em 10/10/2020 às 11:31:57.","entities":[]}
+{"id":"trap-28-06","category":"trap","text":"Pedido 12547690068 enviado em 17/10/2024 às 17:44:33.","entities":[]}
+{"id":"trap-28-07","category":"trap","text":"Pedido 77171488056 enviado em 24/10/2026 às 22:25:57.","entities":[]}
+{"id":"trap-28-08","category":"trap","text":"Pedido 84851113531 enviado em 10/12/2023 às 16:39:36.","entities":[]}
+{"id":"trap-28-09","category":"trap","text":"Pedido 69597449322 enviado em 20/11/2024 às 18:30:57.","entities":[]}
+{"id":"trap-28-10","category":"trap","text":"Pedido 78540719229 enviado em 22/11/2024 às 23:11:17.","entities":[]}
+{"id":"trap-28-11","category":"trap","text":"Pedido 33261784489 enviado em 26/12/2026 às 21:40:29.","entities":[]}
+{"id":"trap-28-12","category":"trap","text":"Pedido 40078832929 enviado em 26/11/2024 às 14:12:25.","entities":[]}
+{"id":"trap-28-13","category":"trap","text":"Pedido 34226559170 enviado em 11/12/2025 às 22:37:35.","entities":[]}
+{"id":"trap-28-14","category":"trap","text":"Pedido 58778616763 enviado em 28/10/2025 às 14:33:25.","entities":[]}
+{"id":"trap-28-15","category":"trap","text":"Pedido 48216211634 enviado em 14/10/2020 às 22:42:41.","entities":[]}
+{"id":"trap-28-16","category":"trap","text":"Pedido 64882418972 enviado em 12/10/2022 às 18:32:40.","entities":[]}
+{"id":"trap-28-17","category":"trap","text":"Pedido 76440115849 enviado em 23/12/2021 às 23:13:35.","entities":[]}
+{"id":"trap-28-18","category":"trap","text":"Pedido 42541864278 enviado em 15/12/2026 às 13:53:42.","entities":[]}
+{"id":"trap-28-19","category":"trap","text":"Pedido 87363422626 enviado em 14/10/2024 às 16:10:41.","entities":[]}
+{"id":"trap-29-00","category":"trap","text":"Nota fiscal 26443002366151 no valor de R$ 4.313,97.","entities":[]}
+{"id":"trap-29-01","category":"trap","text":"Nota fiscal 54403317304497 no valor de R$ 7.489,55.","entities":[]}
+{"id":"trap-29-02","category":"trap","text":"Nota fiscal 77598843315169 no valor de R$ 7.628,20.","entities":[]}
+{"id":"trap-29-03","category":"trap","text":"Nota fiscal 36364270048624 no valor de R$ 4.158,32.","entities":[]}
+{"id":"trap-29-04","category":"trap","text":"Nota fiscal 97938089858714 no valor de R$ 7.527,35.","entities":[]}
+{"id":"trap-29-05","category":"trap","text":"Nota fiscal 78969791715443 no valor de R$ 1.367,17.","entities":[]}
+{"id":"trap-29-06","category":"trap","text":"Nota fiscal 59247750055247 no valor de R$ 6.339,16.","entities":[]}
+{"id":"trap-29-07","category":"trap","text":"Nota fiscal 21267793857831 no valor de R$ 4.897,45.","entities":[]}
+{"id":"trap-29-08","category":"trap","text":"Nota fiscal 90178016377608 no valor de R$ 3.789,97.","entities":[]}
+{"id":"trap-29-09","category":"trap","text":"Nota fiscal 85251844477799 no valor de R$ 4.114,27.","entities":[]}
+{"id":"trap-29-10","category":"trap","text":"Nota fiscal 27872054849301 no valor de R$ 7.859,30.","entities":[]}
+{"id":"trap-29-11","category":"trap","text":"Nota fiscal 40573612187620 no valor de R$ 9.611,93.","entities":[]}
+{"id":"trap-29-12","category":"trap","text":"Nota fiscal 86703640458982 no valor de R$ 2.809,44.","entities":[]}
+{"id":"trap-29-13","category":"trap","text":"Nota fiscal 44156485188237 no valor de R$ 5.315,05.","entities":[]}
+{"id":"trap-29-14","category":"trap","text":"Nota fiscal 85363994174449 no valor de R$ 5.436,30.","entities":[]}
+{"id":"trap-29-15","category":"trap","text":"Nota fiscal 14565941879071 no valor de R$ 8.141,51.","entities":[]}
+{"id":"trap-29-16","category":"trap","text":"Nota fiscal 12349167563944 no valor de R$ 9.461,48.","entities":[]}
+{"id":"trap-29-17","category":"trap","text":"Nota fiscal 75202944514137 no valor de R$ 3.851,92.","entities":[]}
+{"id":"trap-29-18","category":"trap","text":"Nota fiscal 91384511394598 no valor de R$ 2.595,51.","entities":[]}
+{"id":"trap-29-19","category":"trap","text":"Nota fiscal 12262724049416 no valor de R$ 9.500,91.","entities":[]}
+{"id":"trap-30-00","category":"trap","text":"CPF digitado errado: 396.023.957-20","entities":[]}
+{"id":"trap-30-01","category":"trap","text":"CPF digitado errado: 342.314.357-67","entities":[]}
+{"id":"trap-30-02","category":"trap","text":"CPF digitado errado: 179.247.652-30","entities":[]}
+{"id":"trap-30-03","category":"trap","text":"CPF digitado errado: 397.309.268-09","entities":[]}
+{"id":"trap-30-04","category":"trap","text":"CPF digitado errado: 350.456.665-51","entities":[]}
+{"id":"trap-30-05","category":"trap","text":"CPF digitado errado: 082.771.773-31","entities":[]}
+{"id":"trap-30-06","category":"trap","text":"CPF digitado errado: 866.194.944-05","entities":[]}
+{"id":"trap-30-07","category":"trap","text":"CPF digitado errado: 622.046.252-14","entities":[]}
+{"id":"trap-30-08","category":"trap","text":"CPF digitado errado: 265.000.235-29","entities":[]}
+{"id":"trap-30-09","category":"trap","text":"CPF digitado errado: 481.993.690-52","entities":[]}
+{"id":"trap-30-10","category":"trap","text":"CPF digitado errado: 683.871.509-09","entities":[]}
+{"id":"trap-30-11","category":"trap","text":"CPF digitado errado: 919.670.929-41","entities":[]}
+{"id":"trap-30-12","category":"trap","text":"CPF digitado errado: 758.514.433-41","entities":[]}
+{"id":"trap-30-13","category":"trap","text":"CPF digitado errado: 781.828.369-22","entities":[]}
+{"id":"trap-30-14","category":"trap","text":"CPF digitado errado: 072.814.855-23","entities":[]}
+{"id":"trap-30-15","category":"trap","text":"CPF digitado errado: 033.788.354-87","entities":[]}
+{"id":"trap-30-16","category":"trap","text":"CPF digitado errado: 499.915.606-71","entities":[]}
+{"id":"trap-30-17","category":"trap","text":"CPF digitado errado: 879.148.526-61","entities":[]}
+{"id":"trap-30-18","category":"trap","text":"CPF digitado errado: 434.204.844-20","entities":[]}
+{"id":"trap-30-19","category":"trap","text":"CPF digitado errado: 881.404.583-69","entities":[]}
+{"id":"trap-31-00","category":"trap","text":"CNPJ com dígito errado: 39.376.034/0001-11","entities":[]}
+{"id":"trap-31-01","category":"trap","text":"CNPJ com dígito errado: 37.818.143/0001-16","entities":[]}
+{"id":"trap-31-02","category":"trap","text":"CNPJ com dígito errado: 00.328.307/0001-17","entities":[]}
+{"id":"trap-31-03","category":"trap","text":"CNPJ com dígito errado: 31.989.982/0001-11","entities":[]}
+{"id":"trap-31-04","category":"trap","text":"CNPJ com dígito errado: 91.648.213/0001-81","entities":[]}
+{"id":"trap-31-05","category":"trap","text":"CNPJ com dígito errado: 03.969.599/0001-65","entities":[]}
+{"id":"trap-31-06","category":"trap","text":"CNPJ com dígito errado: 02.654.064/0001-32","entities":[]}
+{"id":"trap-31-07","category":"trap","text":"CNPJ com dígito errado: 70.407.687/0001-61","entities":[]}
+{"id":"trap-31-08","category":"trap","text":"CNPJ com dígito errado: 06.466.646/0001-46","entities":[]}
+{"id":"trap-31-09","category":"trap","text":"CNPJ com dígito errado: 68.443.218/0001-55","entities":[]}
+{"id":"trap-31-10","category":"trap","text":"CNPJ com dígito errado: 16.405.579/0001-03","entities":[]}
+{"id":"trap-31-11","category":"trap","text":"CNPJ com dígito errado: 03.218.354/0001-04","entities":[]}
+{"id":"trap-31-12","category":"trap","text":"CNPJ com dígito errado: 58.631.402/0001-75","entities":[]}
+{"id":"trap-31-13","category":"trap","text":"CNPJ com dígito errado: 91.611.570/0001-74","entities":[]}
+{"id":"trap-31-14","category":"trap","text":"CNPJ com dígito errado: 82.971.698/0001-58","entities":[]}
+{"id":"trap-31-15","category":"trap","text":"CNPJ com dígito errado: 89.301.125/0001-66","entities":[]}
+{"id":"trap-31-16","category":"trap","text":"CNPJ com dígito errado: 31.378.701/0001-93","entities":[]}
+{"id":"trap-31-17","category":"trap","text":"CNPJ com dígito errado: 25.749.427/0001-19","entities":[]}
+{"id":"trap-31-18","category":"trap","text":"CNPJ com dígito errado: 30.705.268/0001-91","entities":[]}
+{"id":"trap-31-19","category":"trap","text":"CNPJ com dígito errado: 55.625.218/0001-24","entities":[]}
+{"id":"trap-32-00","category":"trap","text":"Card number with a typo: 5105 1051 0510 5101","entities":[]}
+{"id":"trap-32-01","category":"trap","text":"Card number with a typo: 6011 1111 1111 1118","entities":[]}
+{"id":"trap-32-02","category":"trap","text":"Card number with a typo: 4242 4242 4242 4243","entities":[]}
+{"id":"trap-32-03","category":"trap","text":"Card number with a typo: 5105 1051 0510 5101","entities":[]}
+{"id":"trap-32-04","category":"trap","text":"Card number with a typo: 4111 1111 1111 1112","entities":[]}
+{"id":"trap-32-05","category":"trap","text":"Card number with a typo: 3782 822463 10006","entities":[]}
+{"id":"trap-32-06","category":"trap","text":"Card number with a typo: 4111 1111 1111 1112","entities":[]}
+{"id":"trap-32-07","category":"trap","text":"Card number with a typo: 3782 822463 10006","entities":[]}
+{"id":"trap-32-08","category":"trap","text":"Card number with a typo: 3782 822463 10006","entities":[]}
+{"id":"trap-32-09","category":"trap","text":"Card number with a typo: 4111 1111 1111 1112","entities":[]}
+{"id":"trap-32-10","category":"trap","text":"Card number with a typo: 6011 1111 1111 1118","entities":[]}
+{"id":"trap-32-11","category":"trap","text":"Card number with a typo: 5555 5555 5555 4445","entities":[]}
+{"id":"trap-32-12","category":"trap","text":"Card number with a typo: 5105 1051 0510 5101","entities":[]}
+{"id":"trap-32-13","category":"trap","text":"Card number with a typo: 5105 1051 0510 5101","entities":[]}
+{"id":"trap-32-14","category":"trap","text":"Card number with a typo: 4111 1111 1111 1112","entities":[]}
+{"id":"trap-32-15","category":"trap","text":"Card number with a typo: 5105 1051 0510 5101","entities":[]}
+{"id":"trap-32-16","category":"trap","text":"Card number with a typo: 5555 5555 5555 4445","entities":[]}
+{"id":"trap-32-17","category":"trap","text":"Card number with a typo: 5555 5555 5555 4445","entities":[]}
+{"id":"trap-32-18","category":"trap","text":"Card number with a typo: 6011 1111 1111 1118","entities":[]}
+{"id":"trap-32-19","category":"trap","text":"Card number with a typo: 4111 1111 1111 1112","entities":[]}
+{"id":"trap-33-00","category":"trap","text":"request_id=372c720a-dd4c-4313-a6fe-1363a902752d status=200 duration=35ms","entities":[]}
+{"id":"trap-33-01","category":"trap","text":"request_id=3cfe4131-a2e2-45a5-a85b-03f6cf689d1d status=200 duration=35ms","entities":[]}
+{"id":"trap-33-02","category":"trap","text":"request_id=c31b6132-e467-4080-afe8-18bca2a9509c status=200 duration=35ms","entities":[]}
+{"id":"trap-33-03","category":"trap","text":"request_id=aed293d0-16ca-4347-a855-03cfb4408b47 status=200 duration=35ms","entities":[]}
+{"id":"trap-33-04","category":"trap","text":"request_id=48a2bb4f-73ee-44b6-a5d0-568020b87a6a status=200 duration=35ms","entities":[]}
+{"id":"trap-33-05","category":"trap","text":"request_id=2b5834e1-32bb-4e99-afc1-bf75fe3c249e status=200 duration=35ms","entities":[]}
+{"id":"trap-33-06","category":"trap","text":"request_id=3986c97a-5dea-4c64-abb7-2f65f772121e status=200 duration=35ms","entities":[]}
+{"id":"trap-33-07","category":"trap","text":"request_id=ded98442-9389-490c-a002-289a7094ca84 status=200 duration=35ms","entities":[]}
+{"id":"trap-33-08","category":"trap","text":"request_id=b670fda5-cf30-4ab4-a02a-15522e646641 status=200 duration=35ms","entities":[]}
+{"id":"trap-33-09","category":"trap","text":"request_id=5058e371-39c5-4a86-a545-efb5098846d9 status=200 duration=35ms","entities":[]}
+{"id":"trap-33-10","category":"trap","text":"request_id=480b37bf-4063-46b3-a47d-8fdfba414d85 status=200 duration=35ms","entities":[]}
+{"id":"trap-33-11","category":"trap","text":"request_id=92c72c4f-a1c0-4624-a9cb-c226f2f4451c status=200 duration=35ms","entities":[]}
+{"id":"trap-33-12","category":"trap","text":"request_id=13621fd0-c936-4840-ab4f-b336f04474d4 status=200 duration=35ms","entities":[]}
+{"id":"trap-33-13","category":"trap","text":"request_id=6d9e5937-08d5-49a1-a111-7391faeba8d1 status=200 duration=35ms","entities":[]}
+{"id":"trap-33-14","category":"trap","text":"request_id=e0105a3d-8c2d-42c9-a4ba-6451be2bf3ec status=200 duration=35ms","entities":[]}
+{"id":"trap-33-15","category":"trap","text":"request_id=827b13a6-ba8e-4fc4-a6aa-942ff120e731 status=200 duration=35ms","entities":[]}
+{"id":"trap-33-16","category":"trap","text":"request_id=3f13d32c-6732-4cfd-abe9-43319c31f1a0 status=200 duration=35ms","entities":[]}
+{"id":"trap-33-17","category":"trap","text":"request_id=1002d4cd-179c-4802-af9f-9c129fe8d4a2 status=200 duration=35ms","entities":[]}
+{"id":"trap-33-18","category":"trap","text":"request_id=3b2d8b45-7d7e-4738-ac8a-e4d8e6a59140 status=200 duration=35ms","entities":[]}
+{"id":"trap-33-19","category":"trap","text":"request_id=bd23819c-e03e-4cae-ac9a-eceab5641854 status=200 duration=35ms","entities":[]}
+{"id":"trap-34-00","category":"trap","text":"Produto PYZ-2608 em estoque, lote 48211-932.","entities":[]}
+{"id":"trap-34-01","category":"trap","text":"Produto OOW-6490 em estoque, lote 32622-655.","entities":[]}
+{"id":"trap-34-02","category":"trap","text":"Produto MLA-8241 em estoque, lote 28852-748.","entities":[]}
+{"id":"trap-34-03","category":"trap","text":"Produto JBV-8599 em estoque, lote 64998-439.","entities":[]}
+{"id":"trap-34-04","category":"trap","text":"Produto KTT-7597 em estoque, lote 46416-307.","entities":[]}
+{"id":"trap-34-05","category":"trap","text":"Produto BFI-7202 em estoque, lote 24671-822.","entities":[]}
+{"id":"trap-34-06","category":"trap","text":"Produto CPB-8772 em estoque, lote 02817-665.","entities":[]}
+{"id":"trap-34-07","category":"trap","text":"Produto KQR-2556 em estoque, lote 64776-579.","entities":[]}
+{"id":"trap-34-08","category":"trap","text":"Produto CWW-5800 em estoque, lote 96225-638.","entities":[]}
+{"id":"trap-34-09","category":"trap","text":"Produto UBH-6910 em estoque, lote 04927-587.","entities":[]}
+{"id":"trap-34-10","category":"trap","text":"Produto FTA-2525 em estoque, lote 94002-198.","entities":[]}
+{"id":"trap-34-11","category":"trap","text":"Produto KIP-8378 em estoque, lote 31137-746.","entities":[]}
+{"id":"trap-34-12","category":"trap","text":"Produto MGZ-9266 em estoque, lote 75136-079.","entities":[]}
+{"id":"trap-34-13","category":"trap","text":"Produto MZK-6835 em estoque, lote 63050-043.","entities":[]}
+{"id":"trap-34-14","category":"trap","text":"Produto VUC-0778 em estoque, lote 43799-340.","entities":[]}
+{"id":"trap-34-15","category":"trap","text":"Produto VCS-1074 em estoque, lote 19563-923.","entities":[]}
+{"id":"trap-34-16","category":"trap","text":"Produto WAY-0197 em estoque, lote 30459-228.","entities":[]}
+{"id":"trap-34-17","category":"trap","text":"Produto YWU-5414 em estoque, lote 09583-385.","entities":[]}
+{"id":"trap-34-18","category":"trap","text":"Produto GCC-9807 em estoque, lote 51914-982.","entities":[]}
+{"id":"trap-34-19","category":"trap","text":"Produto LTH-8005 em estoque, lote 21157-412.","entities":[]}
+{"id":"trap-35-00","category":"trap","text":"Firmware 8.0.1.140 instalado, build 7.15.3.","entities":[]}
+{"id":"trap-35-01","category":"trap","text":"Firmware 1.18.4.351 instalado, build 7.15.8.","entities":[]}
+{"id":"trap-35-02","category":"trap","text":"Firmware 6.17.7.100 instalado, build 1.15.6.","entities":[]}
+{"id":"trap-35-03","category":"trap","text":"Firmware 5.12.7.396 instalado, build 1.15.5.","entities":[]}
+{"id":"trap-35-04","category":"trap","text":"Firmware 8.5.8.588 instalado, build 5.1.9.","entities":[]}
+{"id":"trap-35-05","category":"trap","text":"Firmware 2.3.9.290 instalado, build 4.13.5.","entities":[]}
+{"id":"trap-35-06","category":"trap","text":"Firmware 9.20.1.607 instalado, build 5.11.0.","entities":[]}
+{"id":"trap-35-07","category":"trap","text":"Firmware 3.11.2.657 instalado, build 3.6.0.","entities":[]}
+{"id":"trap-35-08","category":"trap","text":"Firmware 7.1.2.696 instalado, build 4.3.0.","entities":[]}
+{"id":"trap-35-09","category":"trap","text":"Firmware 7.15.0.740 instalado, build 1.2.2.","entities":[]}
+{"id":"trap-35-10","category":"trap","text":"Firmware 8.8.7.575 instalado, build 5.7.4.","entities":[]}
+{"id":"trap-35-11","category":"trap","text":"Firmware 2.6.9.549 instalado, build 3.16.1.","entities":[]}
+{"id":"trap-35-12","category":"trap","text":"Firmware 5.16.9.255 instalado, build 6.18.8.","entities":[]}
+{"id":"trap-35-13","category":"trap","text":"Firmware 5.13.6.662 instalado, build 4.14.2.","entities":[]}
+{"id":"trap-35-14","category":"trap","text":"Firmware 3.3.6.286 instalado, build 9.19.7.","entities":[]}
+{"id":"trap-35-15","category":"trap","text":"Firmware 2.16.7.889 instalado, build 3.15.9.","entities":[]}
+{"id":"trap-35-16","category":"trap","text":"Firmware 1.17.6.833 instalado, build 8.6.5.","entities":[]}
+{"id":"trap-35-17","category":"trap","text":"Firmware 4.16.1.886 instalado, build 6.16.6.","entities":[]}
+{"id":"trap-35-18","category":"trap","text":"Firmware 1.7.2.703 instalado, build 9.18.6.","entities":[]}
+{"id":"trap-35-19","category":"trap","text":"Firmware 6.18.4.884 instalado, build 2.20.1.","entities":[]}
+{"id":"trap-36-00","category":"trap","text":"Resposta da IA: obrigado, [CPF_8]!","entities":[]}
+{"id":"trap-36-01","category":"trap","text":"Resposta da IA: obrigado, [PHONE_5]!","entities":[]}
+{"id":"trap-36-02","category":"trap","text":"Resposta da IA: obrigado, [EMAIL_2]!","entities":[]}
+{"id":"trap-36-03","category":"trap","text":"Resposta da IA: obrigado, [PHONE_1]!","entities":[]}
+{"id":"trap-36-04","category":"trap","text":"Resposta da IA: obrigado, [EMAIL_5]!","entities":[]}
+{"id":"trap-36-05","category":"trap","text":"Resposta da IA: obrigado, [CPF_9]!","entities":[]}
+{"id":"trap-36-06","category":"trap","text":"Resposta da IA: obrigado, [PHONE_5]!","entities":[]}
+{"id":"trap-36-07","category":"trap","text":"Resposta da IA: obrigado, [PHONE_4]!","entities":[]}
+{"id":"trap-36-08","category":"trap","text":"Resposta da IA: obrigado, [CPF_8]!","entities":[]}
+{"id":"trap-36-09","category":"trap","text":"Resposta da IA: obrigado, [CPF_8]!","entities":[]}
+{"id":"trap-36-10","category":"trap","text":"Resposta da IA: obrigado, [EMAIL_5]!","entities":[]}
+{"id":"trap-36-11","category":"trap","text":"Resposta da IA: obrigado, [PHONE_4]!","entities":[]}
+{"id":"trap-36-12","category":"trap","text":"Resposta da IA: obrigado, [PHONE_8]!","entities":[]}
+{"id":"trap-36-13","category":"trap","text":"Resposta da IA: obrigado, [CPF_4]!","entities":[]}
+{"id":"trap-36-14","category":"trap","text":"Resposta da IA: obrigado, [PHONE_7]!","entities":[]}
+{"id":"trap-36-15","category":"trap","text":"Resposta da IA: obrigado, [PHONE_2]!","entities":[]}
+{"id":"trap-36-16","category":"trap","text":"Resposta da IA: obrigado, [EMAIL_8]!","entities":[]}
+{"id":"trap-36-17","category":"trap","text":"Resposta da IA: obrigado, [EMAIL_2]!","entities":[]}
+{"id":"trap-36-18","category":"trap","text":"Resposta da IA: obrigado, [EMAIL_1]!","entities":[]}
+{"id":"trap-36-19","category":"trap","text":"Resposta da IA: obrigado, [EMAIL_7]!","entities":[]}
+{"id":"trap-37-00","category":"trap","text":"Código de verificação 780994 enviado.","entities":[]}
+{"id":"trap-37-01","category":"trap","text":"Código de verificação 459348 enviado.","entities":[]}
+{"id":"trap-37-02","category":"trap","text":"Código de verificação 075225 enviado.","entities":[]}
+{"id":"trap-37-03","category":"trap","text":"Código de verificação 690582 enviado.","entities":[]}
+{"id":"trap-37-04","category":"trap","text":"Código de verificação 187332 enviado.","entities":[]}
+{"id":"trap-37-05","category":"trap","text":"Código de verificação 101811 enviado.","entities":[]}
+{"id":"trap-37-06","category":"trap","text":"Código de verificação 387759 enviado.","entities":[]}
+{"id":"trap-37-07","category":"trap","text":"Código de verificação 254404 enviado.","entities":[]}
+{"id":"trap-37-08","category":"trap","text":"Código de verificação 553752 enviado.","entities":[]}
+{"id":"trap-37-09","category":"trap","text":"Código de verificação 423207 enviado.","entities":[]}
+{"id":"trap-37-10","category":"trap","text":"Código de verificação 010198 enviado.","entities":[]}
+{"id":"trap-37-11","category":"trap","text":"Código de verificação 832514 enviado.","entities":[]}
+{"id":"trap-37-12","category":"trap","text":"Código de verificação 835893 enviado.","entities":[]}
+{"id":"trap-37-13","category":"trap","text":"Código de verificação 140541 enviado.","entities":[]}
+{"id":"trap-37-14","category":"trap","text":"Código de verificação 550803 enviado.","entities":[]}
+{"id":"trap-37-15","category":"trap","text":"Código de verificação 260006 enviado.","entities":[]}
+{"id":"trap-37-16","category":"trap","text":"Código de verificação 027419 enviado.","entities":[]}
+{"id":"trap-37-17","category":"trap","text":"Código de verificação 190258 enviado.","entities":[]}
+{"id":"trap-37-18","category":"trap","text":"Código de verificação 710256 enviado.","entities":[]}
+{"id":"trap-37-19","category":"trap","text":"Código de verificação 946984 enviado.","entities":[]}

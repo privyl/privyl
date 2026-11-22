@@ -10,7 +10,8 @@ Privyl (say "PRI-vil", from _private_) is a privacy layer for AI. It masks perso
 your text reaches any LLM, and restores it in the response.
 
 **[Website](https://privyl.vercel.app)** · [Live demo](https://privyl.vercel.app/en#demo) ·
-[Playground](https://privyl.vercel.app/en/playground) · [Docs](https://privyl.vercel.app/en/docs)
+[Playground](https://privyl.vercel.app/en/playground) · [Docs](https://privyl.vercel.app/en/docs) ·
+[Benchmark](https://privyl.vercel.app/en/benchmark)
 
 > **Status:** early release (0.x). The API may still change between minor versions.
 

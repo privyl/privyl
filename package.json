@@ -10,9 +10,10 @@
     "build": "pnpm -r build",
     "test": "vitest run",
     "test:watch": "vitest",
-    "typecheck": "pnpm -r typecheck",
+    "typecheck": "pnpm -r typecheck && tsc -p benchmark",
     "lint": "eslint . && prettier --check .",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "bench": "vitest run benchmark --update"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",

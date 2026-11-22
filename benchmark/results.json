@@ -1,0 +1,327 @@
+{
+  "version": "0.1.0",
+  "records": 760,
+  "cleanRecords": 240,
+  "entities": 760,
+  "overall": {
+    "support": 760,
+    "truePositives": 700,
+    "falsePositives": 70,
+    "falseNegatives": 60,
+    "precision": 0.9091,
+    "recall": 0.9211,
+    "f1": 0.915
+  },
+  "byType": {
+    "EMAIL": {
+      "support": 160,
+      "truePositives": 140,
+      "falsePositives": 19,
+      "falseNegatives": 20,
+      "precision": 0.8805,
+      "recall": 0.875,
+      "f1": 0.8777
+    },
+    "PHONE": {
+      "support": 140,
+      "truePositives": 120,
+      "falsePositives": 0,
+      "falseNegatives": 20,
+      "precision": 1,
+      "recall": 0.8571,
+      "f1": 0.9231
+    },
+    "CARD": {
+      "support": 60,
+      "truePositives": 60,
+      "falsePositives": 1,
+      "falseNegatives": 0,
+      "precision": 0.9836,
+      "recall": 1,
+      "f1": 0.9917
+    },
+    "IP": {
+      "support": 40,
+      "truePositives": 40,
+      "falsePositives": 4,
+      "falseNegatives": 0,
+      "precision": 0.9091,
+      "recall": 1,
+      "f1": 0.9524
+    },
+    "SECRET": {
+      "support": 60,
+      "truePositives": 60,
+      "falsePositives": 0,
+      "falseNegatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1": 1
+    },
+    "CPF": {
+      "support": 80,
+      "truePositives": 80,
+      "falsePositives": 5,
+      "falseNegatives": 0,
+      "precision": 0.9412,
+      "recall": 1,
+      "f1": 0.9697
+    },
+    "CNPJ": {
+      "support": 60,
+      "truePositives": 60,
+      "falsePositives": 1,
+      "falseNegatives": 0,
+      "precision": 0.9836,
+      "recall": 1,
+      "f1": 0.9917
+    },
+    "PIX": {
+      "support": 20,
+      "truePositives": 20,
+      "falsePositives": 0,
+      "falseNegatives": 0,
+      "precision": 1,
+      "recall": 1,
+      "f1": 1
+    },
+    "CEP": {
+      "support": 40,
+      "truePositives": 40,
+      "falsePositives": 20,
+      "falseNegatives": 0,
+      "precision": 0.6667,
+      "recall": 1,
+      "f1": 0.8
+    },
+    "CNH": {
+      "support": 60,
+      "truePositives": 40,
+      "falsePositives": 0,
+      "falseNegatives": 20,
+      "precision": 1,
+      "recall": 0.6667,
+      "f1": 0.8
+    },
+    "PLATE": {
+      "support": 40,
+      "truePositives": 40,
+      "falsePositives": 20,
+      "falseNegatives": 0,
+      "precision": 0.6667,
+      "recall": 1,
+      "f1": 0.8
+    }
+  },
+  "cleanRecordsWithFindings": 26,
+  "errors": [
+    {
+      "kind": "false-positive",
+      "type": "CPF",
+      "recordId": "chat-08-05",
+      "text": "O carro de placa VBX5Z10 foi multado no pedido 73228597237.",
+      "start": 47,
+      "end": 58
+    },
+    {
+      "kind": "false-positive",
+      "type": "CPF",
+      "recordId": "chat-10-00",
+      "text": "Carteira de motorista número 49278323411, categoria B.",
+      "start": 29,
+      "end": 40
+    },
+    {
+      "kind": "false-negative",
+      "type": "CNH",
+      "recordId": "chat-10-00",
+      "text": "Carteira de motorista número 49278323411, categoria B.",
+      "start": 29,
+      "end": 40
+    },
+    {
+      "kind": "false-negative",
+      "type": "CNH",
+      "recordId": "chat-10-01",
+      "text": "Carteira de motorista número 16298548921, categoria B.",
+      "start": 29,
+      "end": 40
+    },
+    {
+      "kind": "false-negative",
+      "type": "CNH",
+      "recordId": "chat-10-02",
+      "text": "Carteira de motorista número 56569530736, categoria B.",
+      "start": 29,
+      "end": 40
+    },
+    {
+      "kind": "false-positive",
+      "type": "CPF",
+      "recordId": "chat-10-17",
+      "text": "Carteira de motorista número 82680659155, categoria B.",
+      "start": 29,
+      "end": 40
+    },
+    {
+      "kind": "false-negative",
+      "type": "PHONE",
+      "recordId": "chat-11-00",
+      "text": "Me chama no 83907097072 depois das 18h.",
+      "start": 12,
+      "end": 23
+    },
+    {
+      "kind": "false-negative",
+      "type": "PHONE",
+      "recordId": "chat-11-01",
+      "text": "Me chama no 45959976823 depois das 18h.",
+      "start": 12,
+      "end": 23
+    },
+    {
+      "kind": "false-negative",
+      "type": "PHONE",
+      "recordId": "chat-11-02",
+      "text": "Me chama no 81932592017 depois das 18h.",
+      "start": 12,
+      "end": 23
+    },
+    {
+      "kind": "false-positive",
+      "type": "EMAIL",
+      "recordId": "form-12-00",
+      "text": "E-mail de contato: joão.1@example.com",
+      "start": 22,
+      "end": 37
+    },
+    {
+      "kind": "false-negative",
+      "type": "EMAIL",
+      "recordId": "form-12-00",
+      "text": "E-mail de contato: joão.1@example.com",
+      "start": 19,
+      "end": 37
+    },
+    {
+      "kind": "false-positive",
+      "type": "EMAIL",
+      "recordId": "form-12-01",
+      "text": "E-mail de contato: conceição.54@example.com",
+      "start": 27,
+      "end": 43
+    },
+    {
+      "kind": "false-negative",
+      "type": "EMAIL",
+      "recordId": "form-12-01",
+      "text": "E-mail de contato: conceição.54@example.com",
+      "start": 19,
+      "end": 43
+    },
+    {
+      "kind": "false-positive",
+      "type": "EMAIL",
+      "recordId": "form-12-02",
+      "text": "E-mail de contato: joão.60@example.com",
+      "start": 22,
+      "end": 38
+    },
+    {
+      "kind": "false-negative",
+      "type": "EMAIL",
+      "recordId": "form-12-02",
+      "text": "E-mail de contato: joão.60@example.com",
+      "start": 19,
+      "end": 38
+    },
+    {
+      "kind": "false-positive",
+      "type": "IP",
+      "recordId": "log-21-10",
+      "text": "10:32:50 INFO app version 5.9.9.136 started on 127.0.0.1",
+      "start": 26,
+      "end": 35
+    },
+    {
+      "kind": "false-positive",
+      "type": "CNPJ",
+      "recordId": "trap-29-10",
+      "text": "Nota fiscal 27872054849301 no valor de R$ 7.859,30.",
+      "start": 12,
+      "end": 26
+    },
+    {
+      "kind": "false-positive",
+      "type": "CARD",
+      "recordId": "trap-29-13",
+      "text": "Nota fiscal 44156485188237 no valor de R$ 5.315,05.",
+      "start": 12,
+      "end": 26
+    },
+    {
+      "kind": "false-positive",
+      "type": "PLATE",
+      "recordId": "trap-34-00",
+      "text": "Produto PYZ-2608 em estoque, lote 48211-932.",
+      "start": 8,
+      "end": 16
+    },
+    {
+      "kind": "false-positive",
+      "type": "CEP",
+      "recordId": "trap-34-00",
+      "text": "Produto PYZ-2608 em estoque, lote 48211-932.",
+      "start": 34,
+      "end": 43
+    },
+    {
+      "kind": "false-positive",
+      "type": "PLATE",
+      "recordId": "trap-34-01",
+      "text": "Produto OOW-6490 em estoque, lote 32622-655.",
+      "start": 8,
+      "end": 16
+    },
+    {
+      "kind": "false-positive",
+      "type": "CEP",
+      "recordId": "trap-34-01",
+      "text": "Produto OOW-6490 em estoque, lote 32622-655.",
+      "start": 34,
+      "end": 43
+    },
+    {
+      "kind": "false-positive",
+      "type": "PLATE",
+      "recordId": "trap-34-02",
+      "text": "Produto MLA-8241 em estoque, lote 28852-748.",
+      "start": 8,
+      "end": 16
+    },
+    {
+      "kind": "false-positive",
+      "type": "CEP",
+      "recordId": "trap-34-02",
+      "text": "Produto MLA-8241 em estoque, lote 28852-748.",
+      "start": 34,
+      "end": 43
+    },
+    {
+      "kind": "false-positive",
+      "type": "IP",
+      "recordId": "trap-35-00",
+      "text": "Firmware 8.0.1.140 instalado, build 7.15.3.",
+      "start": 9,
+      "end": 18
+    },
+    {
+      "kind": "false-positive",
+      "type": "IP",
+      "recordId": "trap-35-02",
+      "text": "Firmware 6.17.7.100 instalado, build 1.15.6.",
+      "start": 9,
+      "end": 19
+    }
+  ]
+}
