@@ -136,6 +136,17 @@ const SLOTS: Record<string, Slot> = {
   rut: pii("RUT", (f) => f.rut()),
   rutPlain: pii("RUT", (f) => f.rut({ dots: false })),
 
+  // Added in 0.3.0
+  emailPlus: pii("EMAIL", (f) => f.email().replace("@", "+loja@")),
+  phoneBrSpaced9: pii("PHONE", (f) => f.phoneBr().replace(/\) 9/, ") 9 ")),
+  phoneBrEnDash: pii("PHONE", (f) => f.phoneBr().replace("-", "\u2013")),
+  cpfNbsp: pii("CPF", (f) => f.cpf().replace(/[.-]/g, "\u00a0")),
+  // Fictional ranges again: PT mobile numbers without "+", US 555-01xx without "+".
+  phonePtLocal: pii("PHONE", (f) => `912 ${digits(f, 3)} ${digits(f, 3)}`),
+  phoneUsLocal: pii("PHONE", (f) => `(202) 555-01${digits(f, 2)}`),
+  curpLower: pii("CURP", (f) => f.curp().toLowerCase()),
+  rutPlainNoContext: pii("RUT", (f) => f.rut({ dots: false })),
+
   // ---- traps: look like personal data, but are not ----
   orderId: trap((f) => `${f.int(1, 9)}${digits(f, 10)}`),
   invoice: trap((f) => `${f.int(1, 9)}${digits(f, 13)}`),
@@ -161,6 +172,19 @@ const SLOTS: Record<string, Slot> = {
   cuitBadDigit: trap((f) => breakCheckDigit(f.cuit())),
   rfcGeneric: trap((f) => f.pick(["XAXX010101000", "XEXX010101000"])),
   rutNoContext: trap((f) => f.rut({ dots: false })),
+  // Added in 0.3.0
+  boleto: trap(
+    (f) =>
+      `${digits(f, 5)}.${digits(f, 5)} ${digits(f, 5)}.${digits(f, 6)} ${digits(f, 5)}.${digits(f, 6)} ${f.int(1, 9)} ${digits(f, 14)}`,
+  ),
+  coordinates: trap((f) => `-23.${digits(f, 4)}, -46.${digits(f, 4)}`),
+  isbn: trap((f) => `978-85-${digits(f, 3)}-${digits(f, 4)}-${f.int(0, 9)}`),
+  lawsuit: trap((f) => `${digits(f, 7)}-${digits(f, 2)}.20${f.int(10, 26)}.8.26.${digits(f, 4)}`),
+  coupon: trap((f) => f.plate()), // a coupon code that happens to look like a Mercosul plate
+  isoDate: trap((f) => `20${f.int(10, 26)}-${f.int(10, 12)}-${f.int(10, 28)}`),
+  mac: trap((f) => Array.from({ length: 6 }, () => hex(f, 2).toUpperCase()).join(":")),
+  serial: trap((f) => `SN-${digits(f, 4)}-${digits(f, 4)}-${digits(f, 4)}`),
+  usd: trap((f) => `US$ ${f.int(1, 9)},${digits(f, 3)},${digits(f, 3)}.${digits(f, 2)}`),
 };
 
 interface Template {
@@ -247,6 +271,25 @@ const TEMPLATES: Template[] = [
   { category: "chat", text: "Mi RUT es {rut}, correo {email}." },
   { category: "form", text: "RUN {rutPlain}" },
   { category: "trap", text: "Lote {rutNoContext} despachado." },
+
+  // ---- Added in 0.3.0. New cases, written before running the new version ----
+  { category: "chat", text: "Meu e-mail: {emailPlus} e telefone {phoneBrSpaced9}" },
+  { category: "log", text: '{"user":{"email":"{email}","cpf":"{cpfDigits}"},"ip":"{ipv4}"}' },
+  { category: "form", text: "Cliente Teste;{cpfDigits};{phoneBrDigits}" },
+  { category: "chat", text: "Segue meu cartão {card}, validade 08/30" },
+  { category: "chat", text: "Pode ligar no {phoneBrEnDash}, CPF {cpfNbsp}" },
+  { category: "chat", text: "Telemóvel {phonePtLocal}, obrigado." },
+  { category: "chat", text: "Call me at {phoneUsLocal} after 5pm." },
+  { category: "form", text: "curp: {curpLower}" },
+  { category: "chat", text: "Cliente {rutPlainNoContext} pidió la factura." },
+  { category: "trap", text: "Linha digitável: {boleto}" },
+  { category: "trap", text: "Entrega perto de {coordinates}." },
+  { category: "trap", text: "ISBN {isbn}, segunda edição." },
+  { category: "trap", text: "Processo nº {lawsuit} em andamento." },
+  { category: "trap", text: "Use o cupom {coupon} no checkout!" },
+  { category: "trap", text: "Backup de {isoDate} concluído, MAC {mac}." },
+  { category: "trap", text: "Equipamento {serial} em garantia." },
+  { category: "trap", text: "Total: {usd}" },
 ];
 
 /** How many records each template produces. */
