@@ -64,6 +64,42 @@ describe("protectAnthropic", () => {
     expect(found).toContain("[CPF_1]");
   });
 
+  it("masks plain-text documents and search results", async () => {
+    const { client, calls } = fakeClient(() => ({ content: [] }));
+    await protectAnthropic(client).messages.create({
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "document",
+              title: `Ficha de ${EMAIL}`,
+              source: { type: "text", media_type: "text/plain", data: `CPF ${CPF}` },
+            },
+            {
+              type: "document",
+              source: { type: "content", content: [{ type: "text", text: `CPF ${CPF}` }] },
+            },
+            {
+              type: "search_result",
+              source: "https://example.com",
+              title: "Cliente",
+              content: [{ type: "text", text: `email ${EMAIL}` }],
+            },
+            {
+              type: "document",
+              source: { type: "base64", media_type: "application/pdf", data: "JVBERi0" },
+            },
+          ],
+        },
+      ],
+    });
+    const sent = JSON.stringify(calls[0]);
+    expect(sent).not.toContain(CPF);
+    expect(sent).not.toContain(EMAIL);
+    expect(sent).toContain("JVBERi0"); // PDFs go unchanged
+  });
+
   it("does not change the caller's params", async () => {
     const { client } = fakeClient(() => ({ content: [] }));
     const params = { messages: [{ role: "user", content: `CPF ${CPF}` }] };

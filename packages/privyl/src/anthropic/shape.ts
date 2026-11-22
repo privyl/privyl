@@ -15,10 +15,38 @@ function maskBlock(block: unknown, m: RequestMasker): unknown {
       if (Array.isArray(block.content))
         return { ...block, content: block.content.map((b) => maskBlock(b, m)) };
       return block;
+    case "document":
+      // Plain-text documents (source.type "text") and custom-content documents are text the
+      // model reads, so they are masked. PDFs and files by id or URL are sent unchanged.
+      return { ...withMaskedTitle(block, m), source: maskDocumentSource(block.source, m) };
+    case "search_result":
+      return {
+        ...withMaskedTitle(block, m),
+        content: Array.isArray(block.content)
+          ? block.content.map((b) => maskBlock(b, m))
+          : block.content,
+      };
     default:
-      // Images, documents and thinking blocks are sent unchanged (thinking is signed by the API).
+      // Images, PDFs and thinking blocks are sent unchanged (thinking is signed by the API).
       return block;
   }
+}
+
+function maskDocumentSource(source: unknown, m: RequestMasker): unknown {
+  if (!isObject(source)) return source;
+  if (source.type === "text" && typeof source.data === "string")
+    return { ...source, data: m.text(source.data) };
+  if (source.type === "content" && Array.isArray(source.content))
+    return { ...source, content: source.content.map((b) => maskBlock(b, m)) };
+  return source;
+}
+
+/** Titles and the `context` field of documents can also hold personal data. */
+function withMaskedTitle(block: Record<string, unknown>, m: RequestMasker) {
+  const out = { ...block };
+  if (typeof block.title === "string") out.title = m.text(block.title);
+  if (typeof block.context === "string") out.context = m.text(block.context);
+  return out;
 }
 
 function maskContent(content: unknown, m: RequestMasker): unknown {
