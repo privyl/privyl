@@ -8,7 +8,7 @@ your text reaches any LLM, and restores it in the response.
 **[Website](https://privyl.vercel.app)** · [Live demo](https://privyl.vercel.app/en#demo) ·
 [Playground](https://privyl.vercel.app/en/playground) · [Docs](https://privyl.vercel.app/en/docs)
 
-> **Status:** early development. Not published to npm yet.
+> **Status:** early release (0.x). The API may still change between minor versions.
 
 ## Why
 
