@@ -57,6 +57,14 @@
       "import": "./dist/testing/index.js",
       "require": "./dist/testing/index.cjs"
     },
+    "./anthropic": {
+      "import": "./dist/anthropic/index.js",
+      "require": "./dist/anthropic/index.cjs"
+    },
+    "./openai": {
+      "import": "./dist/openai/index.js",
+      "require": "./dist/openai/index.cjs"
+    },
     "./package.json": "./package.json"
   },
   "scripts": {

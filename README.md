@@ -46,6 +46,27 @@ const restored = shield.unmask(aiResponse, vault);
 - Privyl makes no network calls. The vault lives in memory unless you save it yourself
   (`vault.toJSON()` / `Vault.fromJSON()`); it contains the real data, so store it carefully.
 
+## Use with AI SDKs
+
+Wrap the client you already use. The SDKs are not dependencies of Privyl.
+
+```ts
+import Anthropic from "@anthropic-ai/sdk";
+import { protectAnthropic } from "privyl/anthropic";
+
+const claude = protectAnthropic(new Anthropic());
+const msg = await claude.messages.create({
+  model: "claude-sonnet-5-5",
+  max_tokens: 1024,
+  messages: [{ role: "user", content: "Meu CPF é 529.982.247-25" }],
+});
+// Anthropic receives "Meu CPF é [CPF_1]". msg.content comes back with the real CPF.
+```
+
+`privyl/openai` works the same way with `protectOpenAI(new OpenAI())`, for
+`chat.completions.create` and `responses.create`. Streaming is not supported yet: the call fails
+instead of sending unprotected data.
+
 ## Scan a project
 
 See how much personal data a project could send to an AI:
