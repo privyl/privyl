@@ -1,5 +1,5 @@
 import type { Detector, Finding, MatchContext } from "./types.js";
-import { unmask } from "./unmask.js";
+import { placeholdersIn, unmask } from "./unmask.js";
 import { Vault } from "./vault.js";
 
 export interface ShieldOptions {
@@ -54,6 +54,7 @@ export function createShield(options: ShieldOptions): Shield {
   }
 
   const detect = (text: string) => resolveOverlaps(findCandidates(text, detectors), detectors);
+  const tokens = [...new Set(detectors.map((d) => d.token))];
 
   return {
     detect,
@@ -63,10 +64,12 @@ export function createShield(options: ShieldOptions): Shield {
       const findings: Finding[] = [];
       let out = "";
       let cursor = 0;
+      // Placeholders already written in the input, in any form unmask accepts ("CPF_1",
+      // "[cpf 1]"...). They are skipped, so unmask never turns the user's own text into real data.
+      const taken = placeholdersIn(text, tokens);
 
       for (const c of detect(text)) {
-        // Skip placeholders that already appear in the input, so unmask never touches them.
-        const placeholder = vault.assign(c.detector.token, c.value, (p) => text.includes(p));
+        const placeholder = vault.assign(c.detector.token, c.value, (p) => taken.has(p));
         out += text.slice(cursor, c.start) + placeholder;
         cursor = c.end;
         findings.push({
@@ -86,7 +89,22 @@ export function createShield(options: ShieldOptions): Shield {
   };
 }
 
-function findCandidates(text: string, detectors: readonly Detector[]): Candidate[] {
+// Look-alike characters that copy and paste often brings: non-breaking and thin spaces, Unicode
+// dashes, full-width digits and symbols. Detectors see their ASCII version, so "529.982.247-25"
+// (with a non-breaking hyphen) is still a CPF. Each one is a single UTF-16 unit, like its
+// replacement, so positions stay the same and the original text is what gets masked.
+const LOOKALIKE_RE = /[\u00A0\u2007\u2009\u202F\u2010-\u2015\u2212\uFF01-\uFF5E]/g;
+const toAscii = (c: string): string => {
+  const code = c.charCodeAt(0);
+  if (code >= 0xff01) return String.fromCharCode(code - 0xfee0); // full-width → ASCII
+  return code >= 0x2010 ? "-" : " ";
+};
+
+/** The text as detectors see it (same length, look-alike characters replaced). */
+export const normalizeForDetection = (text: string): string => text.replace(LOOKALIKE_RE, toAscii);
+
+function findCandidates(original: string, detectors: readonly Detector[]): Candidate[] {
+  const text = normalizeForDetection(original);
   const candidates: Candidate[] = [];
   for (const detector of detectors) {
     // A fresh copy of the regex, so a shared `lastIndex` never leaks between calls.
@@ -94,14 +112,16 @@ function findCandidates(text: string, detectors: readonly Detector[]): Candidate
     const re = new RegExp(source, flags.includes("g") ? flags : flags + "g");
 
     for (const match of text.matchAll(re)) {
-      const value = match[0];
-      if (value.length === 0) continue;
-      const context: MatchContext = { text, start: match.index, end: match.index + value.length };
-      if (detector.validate && !detector.validate(value, context)) continue;
+      const seen = match[0];
+      if (seen.length === 0) continue;
+      const context: MatchContext = { text, start: match.index, end: match.index + seen.length };
+      if (detector.validate && !detector.validate(seen, context)) continue;
 
       const raw = detector.confidence ?? DEFAULT_CONFIDENCE;
-      const confidence = typeof raw === "function" ? raw(value, context) : raw;
+      const confidence = typeof raw === "function" ? raw(seen, context) : raw;
       if (confidence <= 0) continue;
+      // The vault keeps the original characters, so unmask gives back exactly what was written.
+      const value = original.slice(context.start, context.end);
       candidates.push({ detector, value, start: context.start, end: context.end, confidence });
     }
   }
