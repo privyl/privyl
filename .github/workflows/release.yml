@@ -1,0 +1,47 @@
+name: Release
+
+# Publishes the `privyl` package to npm when a GitHub release is published.
+# Uses npm Trusted Publishing (OIDC): no npm token is stored in this repository.
+# npm checks that the package comes from this repository and this workflow, and adds a
+# provenance statement to the package page.
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write # lets npm verify this workflow (Trusted Publishing + provenance)
+    steps:
+      - uses: actions/checkout@v7
+      - uses: pnpm/action-setup@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+          registry-url: https://registry.npmjs.org
+      - run: pnpm install --frozen-lockfile
+
+      # The release tag (v0.2.0) must match the version in package.json (0.2.0).
+      - name: Check tag and version
+        run: |
+          version=$(node -p "require('./packages/privyl/package.json').version")
+          if [ "v$version" != "$GITHUB_REF_NAME" ]; then
+            echo "::error::Release tag $GITHUB_REF_NAME does not match package version $version"
+            exit 1
+          fi
+
+      - run: pnpm lint
+      - run: pnpm --filter privyl build
+      - run: pnpm typecheck
+      - run: pnpm test
+
+      - name: Publish to npm
+        working-directory: packages/privyl
+        run: npm publish --access public
