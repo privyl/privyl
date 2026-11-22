@@ -318,7 +318,11 @@ const en = {
       },
       {
         title: "Known gaps included",
-        body: 'A CEP or an old plate with no address or vehicle word nearby, a CPF written with spaces, an email written as "[at]", a DNI without the word DNI and SSN-shaped part numbers are in the dataset even though Privyl gets them wrong today.',
+        body: "Cases Privyl got wrong stay in the dataset after they are fixed, so a later change that breaks them again shows up right away. An 11-digit number valid as both a CPF and a mobile phone is still ambiguous today.",
+      },
+      {
+        title: "Blind first run",
+        body: "Each release adds new cases before the detectors are tuned for them, and we publish that first score. In 0.3.0, 340 new cases first scored F1 0.960; after general fixes (not rules for those texts), 0.999. Trust the first-run number more.",
       },
     ],
     limitsTitle: "Limits",
@@ -649,7 +653,11 @@ const pt: Dictionary = {
       },
       {
         title: "Falhas conhecidas incluídas",
-        body: 'CEP ou placa antiga sem palavra de endereço ou de veículo por perto, CPF escrito com espaços, e-mail escrito com "[at]", DNI sem a palavra DNI e códigos de peça no formato do SSN estão no conjunto, mesmo o Privyl errando neles hoje.',
+        body: "Casos em que o Privyl errou continuam no conjunto depois de corrigidos, então uma mudança futura que os quebre de novo aparece na hora. Um número de 11 dígitos válido como CPF e como celular ao mesmo tempo ainda é ambíguo hoje.",
+      },
+      {
+        title: "Primeira rodada às cegas",
+        body: "Cada versão acrescenta casos novos antes de ajustar os detectores para eles, e publicamos essa primeira nota. Na 0.3.0, 340 casos novos tiveram F1 0,960 na primeira rodada; depois de correções gerais (não regras para aqueles textos), 0,999. Confie mais no número da primeira rodada.",
       },
     ],
     limitsTitle: "Limites",
