@@ -1,18 +1,19 @@
 // Shared helpers for the AI SDK adapters (privyl/anthropic, privyl/openai).
 // No SDK is imported: the adapters work with the client object you already have.
 
-import { br } from "../br/index.js";
 import { createShield, type Shield } from "../core/shield.js";
 import type { Finding } from "../core/types.js";
 import { Vault } from "../core/vault.js";
-import { global } from "../global/index.js";
+import { allDetectors } from "../scan/index.js";
 
 export interface ProtectOptions {
-  /** The shield to use. Default: all global and Brazilian detectors. */
+  /** The shield to use. Default: every built-in detector (global and all countries). */
   shield?: Shield;
   /** Called on every request with what was masked (never the real values). */
   onFindings?: (findings: Finding[]) => void;
 }
+
+let defaultShield: Shield | undefined;
 
 /** Masks strings for one request. All parts share one vault, so values keep one placeholder. */
 export class RequestMasker {
@@ -21,7 +22,7 @@ export class RequestMasker {
   readonly shield: Shield;
 
   constructor(options: ProtectOptions) {
-    this.shield = options.shield ?? createShield({ detectors: [...global, ...br] });
+    this.shield = options.shield ?? (defaultShield ??= createShield({ detectors: allDetectors }));
   }
 
   text = (value: string): string => {
